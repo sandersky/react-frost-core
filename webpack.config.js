@@ -11,6 +11,7 @@ function getPlugins () {
   const plugins = [
     new webpack.DefinePlugin({
       'process.env': {
+        'ASSET_PATH': JSON.stringify('/react-frost-core/'),
         'NODE_ENV': `"${process.env.NODE_ENV}"`,
       },
     }),
@@ -81,6 +82,7 @@ module.exports = {
   },
   output: {
     path: PUBLIC_PATH,
+    publicPath: '/react-frost-core',
     filename: 'bundle.js',
   },
   plugins: getPlugins(),

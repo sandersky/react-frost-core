@@ -1,2 +1,5 @@
 /coverage
 /node_modules
+/public/*.css*
+/public/*.js*
+/public/*.svg

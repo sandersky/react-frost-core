@@ -1,0 +1,88 @@
+{
+  "name": "react-frost-core",
+  "version": "0.0.1",
+  "description": "The library of core frost components.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build-app-dev": "webpack-dev-server",
+    "build-app-prod": "NODE_ENV=production webpack",
+    "deploy": "npm run build-app-prod && gh-pages -d public",
+    "postpublish": "codecov",
+    "prepublishOnly": "npm run build",
+    "test": "lintly app src && flow && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dogma-io/react-frost-core.git"
+  },
+  "keywords": [
+    "core",
+    "component",
+    "components",
+    "frost",
+    "library",
+    "react",
+    "ui",
+    "widget",
+    "widgets"
+  ],
+  "author": "Matthew Dahl <https://github.com/dogma-io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dogma-io/react-frost-core/issues"
+  },
+  "homepage": "https://github.com/dogma-io/react-frost-core#readme",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.34",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.34",
+    "@babel/preset-env": "7.0.0-beta.34",
+    "@babel/preset-flow": "7.0.0-beta.34",
+    "@babel/preset-react": "7.0.0-beta.34",
+    "babel-loader": "8.0.0-beta.0",
+    "codecov": "3.0.0",
+    "css-loader": "0.28.7",
+    "extract-text-webpack-plugin": "3.0.2",
+    "flow-bin": "0.60.1",
+    "gh-pages": "1.1.0",
+    "gonzales-pe": "4.2.3",
+    "jest-cli": "21.2.1",
+    "lintly": "0.0.12",
+    "node-sass": "4.7.2",
+    "prettier": "1.8.2",
+    "prismjs": "1.8.4",
+    "react-dom": "16.2.0",
+    "react-router-dom": "4.2.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.0",
+    "svg-spritemap-webpack-plugin": "1.0.3",
+    "uglifyjs-webpack-plugin": "1.1.2",
+    "webpack": "3.9.1",
+    "webpack-dev-server": "2.9.5"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.34",
+    "react": "^16.2.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "json-summary",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testRegex": "/__tests__/.*-test\\.js$"
+  }
+}

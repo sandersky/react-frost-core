@@ -1,0 +1,65 @@
+@import '../../src/styles/colors';
+
+.bg-content-color {
+  background-color: $frost-color-grey-3;
+}
+
+.bg-hint-text-color {
+  background-color: $frost-color-grey-6;
+}
+
+.bg-info-color {
+  background-color: $frost-color-grey-5;
+}
+
+.bg-line-color {
+  background-color: #e8e8ef;
+}
+
+.bg-main-button-color {
+  background-color: $frost-color-blue-1;
+}
+
+.bg-tile-color {
+  background-color: $frost-color-grey-1;
+}
+
+.bg-white-color {
+  background-color: $frost-color-white;
+}
+
+.IconBackgroundColorSwatch {
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  height: 50px;
+  padding: 5px;
+  width: 50px;
+
+  &.bg-white-color {
+    border: 1px solid $frost-color-night-3;
+  }
+}
+
+.IconSwatch {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding:6px;
+  width: 300px;
+}
+
+.IconSwatchGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.IconSwatchIcon {
+  height: 40px;
+  margin-bottom: 6px;
+  width: 40px;
+}
+
+.IconSwatchIconWrapper {
+  padding: 8px 8px 2px;
+}

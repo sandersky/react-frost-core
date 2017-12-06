@@ -1,0 +1,31 @@
+@import '../../src/styles/colors';
+
+.ColorPaletteSwatch {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+.ColorPaletteTable {
+  td {
+    &:nth-child(1) {
+      padding: 0;
+    }
+
+    &:nth-child(2) {
+      width: 250px;
+    }
+
+    &:nth-child(3) {
+      width: 200px;
+    }
+  }
+}
+
+.ColorPaletteTables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

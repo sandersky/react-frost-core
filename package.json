@@ -7,6 +7,7 @@
     "lib"
   ],
   "scripts": {
+    "build": "echo 'implement me'",
     "build-app-dev": "webpack-dev-server",
     "build-app-prod": "NODE_ENV=production webpack",
     "deploy": "npm run build-app-prod && gh-pages -d public",

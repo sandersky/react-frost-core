@@ -4,7 +4,7 @@
 
 /* global HTMLElement */
 
-// $FlowFixMe
+// $FlowFixMe - Flow doesn't understand SASS imports
 import './CodeBlock.scss'
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
@@ -14,6 +14,7 @@ type Props = {
   code?: string,
   demo?: boolean,
   language: 'js' | 'jsx' | 'sass',
+  maxLineLength?: number,
   togglable?: boolean,
 }
 
@@ -52,8 +53,15 @@ export default class CodeBlock extends Component<Props, State> {
     const {code, language, togglable} = this.props
     const {expanded} = this.state
 
-    return code && (expanded || togglable === false) ? (
-      <pre className={`language-${language}`}>
+    if (!code || (!expanded && togglable !== false)) {
+      return null
+    }
+
+    return [
+      <div className="frost-code-block-language" key="language">
+        {language}
+      </div>,
+      <pre className={`language-${language}`} key="code">
         <code
           className={`language-${language}`}
           ref={el => {
@@ -62,8 +70,8 @@ export default class CodeBlock extends Component<Props, State> {
         >
           {code.replace(/\\n/g, '\n')}
         </code>
-      </pre>
-    ) : null
+      </pre>,
+    ]
   }
 
   _renderCodeToggle(): Node {

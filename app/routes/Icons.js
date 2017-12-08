@@ -4,7 +4,7 @@
 
 import {CodeBlock, Icon, ICON_ROUND_ADD} from '../../src'
 import route from './factory'
-// $FlowFixMe
+// $FlowFixMe - Flow doesn't understand SASS imports
 import './Icons.scss'
 import React, {Component, type Node} from 'react'
 

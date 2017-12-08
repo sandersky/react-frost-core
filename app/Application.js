@@ -2,7 +2,7 @@
  * @flow
  */
 
-// $FlowFixMe
+// $FlowFixMe - Flow doesn't understand SASS imports
 import './Application.scss'
 import AjaxErrorPage from './routes/AjaxErrorPage'
 import Bookends from './routes/Bookends'
@@ -20,8 +20,8 @@ import Password from './routes/Password'
 import Radio from './routes/Radio'
 import Scroll from './routes/Scroll'
 import Select from './routes/Select'
+import Text from './routes/Text'
 import TextArea from './routes/TextArea'
-import TextField from './routes/TextField'
 import Toggle from './routes/Toggle'
 import Typography from './routes/Typography'
 import React, {type Node} from 'react'
@@ -101,8 +101,8 @@ const PAGES = [
     path: '/text-area',
   },
   {
-    Component: TextField,
-    path: '/text-field',
+    Component: Text,
+    path: '/text',
   },
   {
     Component: Toggle,

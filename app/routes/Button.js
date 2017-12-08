@@ -17,6 +17,7 @@ import React, {type Node} from 'react'
 
 const IMPORTS_CODE = `
 import {
+  Button,
   BUTTON_DESIGN_APP_BAR,
   BUTTON_DESIGN_INFO_BAR,
   BUTTON_DESIGN_TAB,

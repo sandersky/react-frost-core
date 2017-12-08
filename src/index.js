@@ -99,3 +99,9 @@ export const ICON_VIEW_SMALL = _ICON_VIEW_SMALL
 export const ICON_WARNING = _ICON_WARNING
 
 export type ICON_PROPS = _ICON_PROPS
+
+export {
+  default as Text,
+  ALIGN_LEFT as TEXT_ALIGN_LEFT,
+  ALIGN_RIGHT as TEXT_ALIGN_RIGHT,
+} from './components/Text'

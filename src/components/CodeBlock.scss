@@ -8,3 +8,13 @@
 .frost-code-block-demo + .frost-code-block-expand {
   margin-top: 10px;
 }
+
+.frost-code-block-language {
+  background-color: $frost-color-night-3;
+  color: $frost-color-night-2;
+  padding: 6px;
+}
+
+.frost-code-block-language + pre[class*="language-"] {
+  margin-top: 0;
+}

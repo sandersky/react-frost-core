@@ -5,7 +5,7 @@
 /* global HTMLElement */
 
 import Application from './Application'
-// $FlowFixMe
+// $FlowFixMe - Flow doesn't understand SASS imports
 import './prism-theme.scss'
 import React from 'react'
 import {render} from 'react-dom'

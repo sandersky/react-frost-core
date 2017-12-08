@@ -3,7 +3,7 @@
  */
 
 import {CodeBlock} from '../../src'
-// $FlowFixMe
+// $FlowFixMe - Flow doesn't understand SASS imports
 import './ColorPalette.scss'
 import route from './factory'
 import React, {type Node} from 'react'

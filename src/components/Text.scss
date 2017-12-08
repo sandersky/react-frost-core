@@ -1,0 +1,96 @@
+@import '../styles/animations';
+@import '../styles/colors';
+@import '../styles/typography';
+
+$frost-text-border: 1px solid $frost-color-input-border;
+$frost-text-color: $frost-color-input;
+$frost-text-disabled-bg: $frost-color-input-disabled-bg;
+$frost-text-disabled-border: 1px solid $frost-color-input-disabled-border;
+$frost-text-error-border: 1px solid $frost-color-input-error-border;
+$frost-text-font-size: $frost-font-m;
+$frost-text-focus-border: 1px solid $frost-color-input-focus-border;
+$frost-text-height: 35px;
+$frost-text-hover-border: 1px solid $frost-color-input-hover-border;
+$frost-text-padding: 0 30px 0 8px;
+
+.frost-text {
+  display: block;
+  position: relative;
+  min-width: 175px;
+
+  &.frost-text-error {
+    .frost-text-input {
+      border: $frost-text-error-border;
+
+      &:hover {
+        &:enabled {
+          &:read-write {
+            &:not(:focus) {
+              border: $frost-text-error-border;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.frost-text-clear {
+  display: inline-block;
+  fill: $frost-color-grey-6;
+  height: 23px;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  width: 23px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.frost-text-input {
+  display: inline-block;
+  width: 100%;
+  height: $frost-text-height;
+  padding: $frost-text-padding;
+  transition: border .2s ease;
+  border: $frost-text-border;
+  outline: none;
+  color: $frost-text-color;
+  font-size: $frost-text-font-size;
+  font-weight: 200;
+
+  &.frost-text-align-right {
+    text-align: right;
+  }
+
+  &:focus {
+    border: $frost-text-focus-border;
+  }
+
+  &:read-only {
+    border: 0;
+  }
+
+  // Note: without this Firefox ends up applying the read-only pseudo selector
+  // to number inputs which causes them not to get a border.
+  &[type='number'] {
+    border: 1px solid $frost-color-input-border;
+  }
+
+  &:disabled {
+    border: $frost-text-disabled-border;
+    background-color: $frost-text-disabled-bg;
+  }
+
+  &:hover {
+    &:enabled {
+      &:read-write {
+        &:not(:focus) {
+          border: $frost-text-hover-border;
+        }
+      }
+    }
+  }
+}

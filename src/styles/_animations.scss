@@ -1,0 +1,30 @@
+@keyframes frostFadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.frost-fade-in {
+  animation: frostFadeIn 0.2s;
+}
+
+@keyframes frostFadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.frost-fade-out {
+  animation: frostFadeOut 0.2s;
+}

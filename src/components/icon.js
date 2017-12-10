@@ -2,8 +2,6 @@
  * @flow
  */
 
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './Icon.scss'
 import React, {type Node} from 'react'
 
 const DEFAULT_PACK = 'frost'

@@ -7,7 +7,7 @@ import route from './factory'
 import React, {type Node} from 'react'
 
 const EXAMPLE_TEXT = 'The quick brown fox jumps over the lazy dog'
-const IMPORTS_CODE = "@import 'react-frost-core';"
+const IMPORTS_CODE = "@import 'react-frost-core.css';"
 
 // Note: this array is auto-populated by the plugin:
 // babel-plugin-auto-generate-typography
@@ -21,12 +21,12 @@ const Size = ({size}: SizeProps): Node => {
   return (
     <tr>
       <td>
-        <code>{`$frost-font-${size}`}</code>
+        <code>{`--frost-font-size-${size}`}</code>
       </td>
       <td>
-        <code>{`frost-font-${size}`}</code>
+        <code>{`frost-font-size-${size}`}</code>
       </td>
-      <td className={`frost-font-${size}`}>{EXAMPLE_TEXT}</td>
+      <td className={`frost-font-size-${size}`}>{EXAMPLE_TEXT}</td>
     </tr>
   )
 }
@@ -37,12 +37,7 @@ export default route('Typography', (): Node => {
       For typography Frost has SASS variables for a predefined font and font
       sizes which can be used by simply importing:
     </p>,
-    <CodeBlock
-      key="imports"
-      code={IMPORTS_CODE}
-      demo={false}
-      language="sass"
-    />,
+    <CodeBlock key="imports" code={IMPORTS_CODE} demo={false} language="css" />,
     <p key="sizes-description">
       Below are examples of the available sizes which can be consumed via SASS
       variables as well as by simply using their respective CSS classes.
@@ -50,7 +45,7 @@ export default route('Typography', (): Node => {
     <table key="sizes">
       <thead>
         <tr>
-          <th>SASS Variable</th>
+          <th>CSS Variable</th>
           <th>CSS Class</th>
           <th>Example</th>
         </tr>

@@ -2,8 +2,6 @@
  * @flow
  */
 
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './Expand.scss'
 import Icon from './Icon'
 import React, {Component, type Node} from 'react'
 
@@ -47,7 +45,6 @@ export default class Expand extends Component<Props, State> {
   }
 
   _renderLabelIcon(): Node {
-    // TODO: implement
     return <Icon icon="chevron" />
   }
 

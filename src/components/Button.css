@@ -1,0 +1,489 @@
+@import '../styles/colors.css';
+@import '../styles/typography.css';
+
+:root {
+  --frost-button-large-padding: 20px;
+  --frost-button-medium-padding: 20px;
+  --frost-button-small-padding: 10px;
+  --frost-color-button-focus-shadow: color(var(--frost-color-blue-1) alpha(75%));
+  --frost-color-button-in-line-darken-1: color(var(--frost-color-blue-1) shade(8));
+  --frost-color-button-in-line-darken-2: color(var(--frost-color-blue-1) shade(15));
+  --frost-color-button-info-bar-active:  rgba(var(--frost-color-blue-1) .1);
+  --frost-color-button-info-bar-bg: var(--frost-color-white);
+  --frost-color-button-info-bar-bg-hover: rgba(var(--frost-color-blue-1) .05);
+  --frost-color-button-info-bar-focus: 0 1px 6px rgba(var(--frost-color-blue-1) .75);
+  --frost-color-button-info-content-subtext-color: rgba(var(--frost-color-white) .8);
+  --frost-color-button-primary: var(--frost-color-white);
+  --frost-color-button-primary-active: var(--frost-color-blue-4);
+  --frost-color-button-primary-active-bg: #1e9de5;
+  --frost-color-button-primary-bg: linear-gradient(color(var(--frost-color-blue-1) tint(14)), var(--frost-color-blue-1));
+  --frost-color-button-primary-hover-bg: var(--frost-color-blue-3);
+  --frost-color-button-secondary: var(--frost-color-blue-1);
+  --frost-color-button-secondary-active: var(--frost-color-blue-3);
+  --frost-color-button-secondary-active-bg: #e7eef3;
+  --frost-color-button-secondary-bg: var(--frost-color-white);
+  --frost-color-button-secondary-border: var(--frost-color-blue-1);
+  --frost-color-button-secondary-hover-bg: color(var(--frost-color-blue-1) alpha(10%));
+  --frost-color-button-tertiary: var(--frost-color-blue-1);
+  --frost-color-button-tertiary-active: var(--frost-color-blue-3);
+  --frost-color-button-tertiary-active-bg: #e7eef3;
+  --frost-color-button-tertiary-bg: inherit;
+  --frost-color-button-tertiary-hover-bg: color(var(--frost-color-blue-1) alpha(5%));
+}
+
+.frost-button {
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  color: var(--frost-color-white);
+  font-family: var(--frost-font-family);
+  cursor: pointer;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:active {
+    > .info {
+      background-color: var(--frost-color-button-primary-bg);
+      color: var(--frost-color-button-primary-active);
+
+      & .content {
+        & .text,
+        .subtext {
+          color: var(--frost-color-button-primary-active);
+        }
+      }
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 1px 6px var(--frost-color-button-focus-shadow);
+  }
+
+  &.app-bar {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    background: var(--frost-color-night-2);
+
+    > .icon-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      & .text {
+        margin-left: 20px;
+      }
+    }
+
+    & .frost-icon  {
+      width: 35px;
+      height: 35px;
+      padding-bottom: 0;
+    }
+
+    & .text {
+      display: flex;
+      color: var(--frost-color-white);
+    }
+
+    & .svg {
+      order: 2;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      color: inherit;
+
+      & .frost-icon {
+        vertical-align: middle;
+      }
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  &.disabled {
+    opacity: .25;
+
+    /**
+     * In Firefox, the click on the app bar was not detected - added this to enable it.
+     * From https://developer.mozilla.org/en/docs/Web/CSS/pointer-events
+     *     The CSS property pointer-events allows authors to control under what circumstances (if any)
+     *     a particular graphic element can become the target of mouse events.
+     *     none: The element is never the target of mouse events; however, mouse events may target
+     *            its descendant elements if those descendants have pointer-events set to some other value.
+     *            In these circumstances, mouse events will trigger event listeners on this parent element
+     *            as appropriate on their way to/from the descendant during the event capture/bubble phases.
+     */
+    pointer-events: none;
+  }
+
+  &.hidden {
+    visibility: hidden;
+  }
+
+  &.in-line {
+    & .text {
+      color: var(--frost-color-blue-1);
+    }
+
+    &:hover {
+      &:not(.disabled) {
+        & .text {
+          color: var(--frost-color-button-in-line-darken-1);
+        }
+      }
+    }
+
+    &:focus {
+      &:not(.disabled) {
+        outline: 0;
+        box-shadow: none;
+
+        & .text {
+          color: var(--frost-color-button-in-line-darken-1);
+        }
+      }
+    }
+
+    &:active {
+      &:not(.disabled) {
+        & .text {
+          color: var(--frost-color-button-in-line-darken-2);
+          box-shadow: none;
+        }
+      }
+    }
+
+    &.disabled {
+      background: none;
+      box-shadow: none;
+      opacity: .3;
+    }
+  }
+
+  &.info-bar {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    height: 60px;
+    margin-right: 5px;
+    padding: 0 5px;
+    background-color: var(--frost-color-button-info-bar-bg);
+    color: var(--frost-color-blue-1);
+
+    & .frost-icon  {
+      width: 30px;
+      height: 30px;
+      margin-left: -10px;
+      padding-bottom: 0;
+    }
+
+    & .text {
+      display: inline-block;
+      margin-top: -5px;
+      padding: 5px 1px 2px;
+      color: var(--frost-color-blue-1);
+      font-size: var(--frost-font-size-s);
+      line-height: 1;
+    }
+
+    > .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      box-sizing: border-box;
+
+      & .text {
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      & .svg {
+        margin-bottom: 5px;
+        margin-left: 10px;
+
+        & .frost-icon {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &:hover {
+      &:not(.disabled) {
+        background-color: var(--frost-color-button-info-bar-bg-hover);
+        box-shadow: none;
+      }
+    }
+
+    &:focus {
+      &:not(.disabled) {
+        outline: 0;
+        box-shadow: var(--frost-color-button-info-bar-focus);
+      }
+    }
+
+    &:active {
+      &:not(.disabled) {
+        background-color: var(--frost-color-button-info-bar-active);
+        color: var(--frost-color-blue-1);
+        box-shadow: none;
+        opacity: .7;
+      }
+    }
+  }
+
+  &.large {
+    height: 50px;
+    padding: 0 var(--frost-button-large-padding);
+    font-size: var(--frost-font-size-l);
+
+    & .frost-icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &.medium {
+    height: 40px;
+    padding: 0 var(--frost-button-medium-padding);
+    font-size: var(--frost-font-size-m);
+
+    & .frost-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &.primary {
+    background: var(--frost-color-button-primary-bg);
+    color: var(--frost-color-button-primary);
+
+    &:hover {
+      &:not(.disabled) {
+        background: var(--frost-color-button-primary-hover-bg);
+      }
+    }
+
+    &:focus {
+      &:not(.disabled) {
+        border: solid 2px var(--frost-color-blue-4);
+      }
+
+      &.small {
+        padding: 0 var(--frost-button-small-padding) - 2px;
+      }
+
+      &.medium {
+        padding: 0 var(--frost-button-medium-padding) - 2px;
+      }
+
+      &.large {
+        padding: 0 var(--frost-button-large-padding) - 2px;
+      }
+    }
+
+    &:active {
+      &:not(.disabled) {
+        background: var(--frost-color-button-primary-active-bg);
+        color: var(--frost-color-button-primary-active);
+
+        & .text {
+          opacity: .5;
+        }
+      }
+    }
+
+    & svg {
+      fill: var(--frost-color-button-primary);
+    }
+  }
+
+  &.secondary {
+    border: 2px solid var(--frost-color-button-secondary-border);
+    background-color: var(--frost-color-button-secondary-bg);
+    color: var(--frost-color-button-secondary);
+
+    &:hover {
+      &:not(.disabled) {
+        background-color: var(--frost-color-button-secondary-hover-bg);
+      }
+    }
+
+    &:active {
+      &:not(.disabled) {
+        background: var(--frost-color-button-secondary-active-bg);
+        color: var(--frost-color-button-secondary-active);
+
+        & .text {
+          opacity: .5;
+        }
+      }
+    }
+
+    & svg {
+      fill: var(--frost-color-button-secondary);
+    }
+  }
+
+  &.small {
+    height: 30px;
+    padding: 0 var(--frost-button-small-padding);
+    font-size: var(--frost-font-size-s);
+
+    & .frost-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.tab {
+    height: 35px;
+    padding: 0 15px;
+    box-shadow: none;
+    cursor: default;
+
+    & .text {
+      color: var(--frost-color-grey-5);
+      font-family: var(--frost-font-family);
+      font-size: var(--frost-font-size-m);
+    }
+
+    &:hover {
+      background-color: var(--frost-color-button-tertiary-hover-bg);
+    }
+  }
+
+  &.tertiary {
+    background-color: var(--frost-color-button-tertiary-bg);
+    color: var(--frost-color-button-tertiary);
+
+    &:hover {
+      &:not(.disabled) {
+        background-color: var(--frost-color-button-tertiary-hover-bg);
+      }
+    }
+
+    &:focus {
+      &:not(.disabled) {
+        outline: 0;
+        box-shadow: 1px solid var(--frost-color-blue-4);
+      }
+    }
+
+    &:active {
+      &:not(.disabled) {
+        background: var(--frost-color-button-tertiary-active-bg);
+        color: var(--frost-color-button-tertiary-active);
+
+        & .text {
+          opacity: .5;
+        }
+      }
+    }
+
+    & svg {
+      fill: var(--frost-color-button-tertiary);
+    }
+  }
+
+  &.vertical {
+    height: auto;
+
+    &.extra-large {
+      padding: 19px 15px;
+
+      & .icon {
+        height: 22px;
+      }
+    }
+
+    &.large {
+      padding: 16px 20px;
+
+      & .icon {
+        height: 18px;
+      }
+    }
+
+    &.medium {
+      padding: 13px 20px;
+
+      & .icon {
+        height: 14px;
+      }
+    }
+
+    &.small {
+      padding: 9px 10px;
+
+      & .icon {
+        height: 12px;
+      }
+    }
+
+    & .frost-icon + .content,
+    .frost-icon + .text {
+      margin-top: 8px;
+    }
+
+    & .icon-text {
+      flex-direction: column;
+
+      & .text {
+        margin-left: 0;
+      }
+    }
+  }
+
+  > .icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  > .icon-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .text {
+      margin-left: 10px;
+    }
+  }
+
+  > .info {
+    display: flex;
+    align-items: center;
+
+    & .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10px;
+
+      & .text {
+        color: var(--frost-color-button-primary);
+        font-size: var(--frost-font-size-m);
+      }
+
+      & .subtext {
+        color: var(--frost-color-button-info-content-subtext-color);
+        font-size: var(--frost-font-size-xs);
+      }
+    }
+  }
+
+  > .text {
+    vertical-align: middle;
+  }
+}

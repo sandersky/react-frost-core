@@ -1,4 +1,4 @@
-@import '../../src/styles/colors';
+@import '../../src/styles/colors.css';
 
 .ColorPaletteSwatch {
   display: block;
@@ -9,7 +9,7 @@
 }
 
 .ColorPaletteTable {
-  td {
+  & td {
     &:nth-child(1) {
       padding: 0;
     }

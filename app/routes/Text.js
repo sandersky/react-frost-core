@@ -4,8 +4,6 @@
 
 import {CodeBlock, Text, TEXT_ALIGN_RIGHT} from '../../src'
 import route from './factory'
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './Text.scss'
 import React, {type Element, type Node} from 'react'
 
 const DOCS = [

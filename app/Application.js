@@ -2,8 +2,6 @@
  * @flow
  */
 
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './Application.scss'
 import AjaxErrorPage from './routes/AjaxErrorPage'
 import Bookends from './routes/Bookends'
 import Button from './routes/Button'

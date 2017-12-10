@@ -2,8 +2,6 @@
  * @flow
  */
 
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './Button.scss'
 import Icon from './Icon'
 import React, {type Node} from 'react'
 

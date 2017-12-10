@@ -1,0 +1,6 @@
+:root {
+  --frost-z-index-application-bar: 9000;
+  --frost-z-index-navigation: 8000;
+  --frost-z-index-notification: 7000;
+  --frost-z-index-modal: 6000;
+}

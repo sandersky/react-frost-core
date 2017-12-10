@@ -4,8 +4,6 @@
 
 /* global HTMLButtonElement, SyntheticInputEvent */
 
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './Text.scss'
 import React, {Component, type Node} from 'react'
 
 export const ALIGN_LEFT: 'left' = 'left'
@@ -22,6 +20,7 @@ type Props = {
 
 type State = {
   animatingClearButtonOut: boolean,
+  focused: boolean,
   value?: ?string,
 }
 
@@ -41,16 +40,9 @@ export default class Text extends Component<Props, State> {
 
     this.state = {
       animatingClearButtonOut: false,
+      focused: false,
       value: this.props.value,
     }
-  }
-
-  _clear = () => {
-    this._updateValue('')
-  }
-
-  _handleChange = (e: SyntheticInputEvent<*>) => {
-    this._updateValue(e.target.value)
   }
 
   _addClearButtonAnimationEndListener() {
@@ -58,10 +50,10 @@ export default class Text extends Component<Props, State> {
     // animationend event listener, go ahead and add one.
     if (this._clearButtonElement && !this._clearButtonAnimationEndHandler) {
       this._clearButtonAnimationEndHandler = () => {
-        const {value} = this.state
+        const {animatingClearButtonOut, value} = this.state
 
         // We don't want to do anything if this is the fade in animation.
-        if (value) {
+        if (!animatingClearButtonOut && value) {
           return
         }
 
@@ -74,6 +66,10 @@ export default class Text extends Component<Props, State> {
         this._clearButtonAnimationEndHandler,
       )
     }
+  }
+
+  _clear = () => {
+    this._updateValue('')
   }
 
   _getClassName() {
@@ -99,6 +95,26 @@ export default class Text extends Component<Props, State> {
     return classNames.join(' ')
   }
 
+  _handleBlur = () => {
+    const {disabled, readOnly} = this.props
+    const {animatingClearButtonOut, value} = this.state
+    const state: any = {focused: false}
+
+    if (!animatingClearButtonOut && !disabled && !readOnly && value) {
+      state.animatingClearButtonOut = true
+    }
+
+    this.setState(state)
+  }
+
+  _handleChange = (e: SyntheticInputEvent<*>) => {
+    this._updateValue(e.target.value)
+  }
+
+  _handleFocus = () => {
+    this.setState({focused: true})
+  }
+
   _removeClearButtonAnimationEndListener() {
     // If the clear button is present and we have an event listener, make sure
     // to remove it.
@@ -114,9 +130,12 @@ export default class Text extends Component<Props, State> {
 
   _renderClearButton(): Node {
     const {disabled, readOnly} = this.props
-    const {animatingClearButtonOut, value} = this.state
+    const {animatingClearButtonOut, focused, value} = this.state
 
-    if (disabled || readOnly || (!animatingClearButtonOut && !value)) {
+    if (
+      !animatingClearButtonOut &&
+      (disabled || !focused || readOnly || !value)
+    ) {
       return null
     }
 
@@ -186,7 +205,9 @@ export default class Text extends Component<Props, State> {
       <div className={this._getClassName()}>
         <input
           className={this._getInputClassName()}
+          onBlur={this._handleBlur}
           onChange={this._handleChange}
+          onFocus={this._handleFocus}
           value={value || ''}
           {...passThroughProps}
         />

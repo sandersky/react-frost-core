@@ -46,25 +46,18 @@ module.exports = {
     loaders: [
       {
         exclude: [/node_modules/],
-        test: /\.s(a|c)ss$/,
+        test: /\.css$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
               loader: 'css-loader',
               options: {
+                importLoaders: 1,
                 minimize: IS_PRODUCTION,
                 sourceMap: true,
               },
             },
-            // {
-            //   loader: 'autoprefixer-loader',
-            // },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true,
-              },
-            },
+            'postcss-loader',
           ],
         }),
       },

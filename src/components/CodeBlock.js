@@ -4,8 +4,6 @@
 
 /* global HTMLElement */
 
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './CodeBlock.scss'
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
 
@@ -13,7 +11,7 @@ type Props = {
   children?: Node,
   code?: string,
   demo?: boolean,
-  language: 'js' | 'jsx' | 'sass',
+  language: 'css' | 'js' | 'jsx',
   maxLineLength?: number,
   togglable?: boolean,
 }

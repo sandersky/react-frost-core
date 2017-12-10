@@ -3,11 +3,32 @@
  */
 
 import {CodeBlock} from '../../src'
-// $FlowFixMe - Flow doesn't understand SASS imports
-import './ColorPalette.scss'
 import route from './factory'
 import React, {type Node} from 'react'
 
+const ALARM_STATUSES = [
+  'active-1',
+  'active-2',
+  'active-3',
+  'clear',
+  'critical-1',
+  'critical-2',
+  'critical-3',
+  'indeter-1',
+  'info-1',
+  'loa-1',
+  'loa-2',
+  'loa-3',
+  'major-1',
+  'major-2',
+  'major-3',
+  'minor-1',
+  'minor-2',
+  'minor-3',
+  'warn-1',
+  'warn-2',
+  'warn-3',
+]
 const BLUES = ['blue-1', 'blue-2', 'blue-3', 'blue-4']
 const BROWNS = ['brown-1', 'brown-2', 'brown-3']
 const GREENS = ['green-1', 'green-2', 'green-3', 'green-4', 'green-5']
@@ -31,7 +52,7 @@ const TEALS = ['teal-1', 'teal-2', 'teal-3', 'teal-4']
 const YELLOWS = ['yellow-1', 'yellow-2', 'yellow-3', 'yellow-4']
 const WHITES = ['white']
 
-const IMPORTS_CODE = "@import 'react-frost-core';"
+const IMPORTS_CODE = "@import 'react-frost-core.css';"
 const INFO = `
 The color palette is a set of predefined SASS variables that are used across
 all of the Frost components. It is recommended you use these colors in the
@@ -61,7 +82,7 @@ const Color = ({color}: ColorProps): Node => {
         <Swatch color={color} />
       </td>
       <td>
-        <code>{`$frost-color-${color}`}</code>
+        <code>{`--frost-color-${color}`}</code>
       </td>
       <td>
         <code>{`frost-bg-${color}`}</code>
@@ -82,7 +103,7 @@ const ColorTable = ({colors, title}: ColorTableProps): Node => {
       <thead>
         <tr>
           <th>Color</th>
-          <th>SASS Variable</th>
+          <th>CSS Variable</th>
           <th>Background Class</th>
         </tr>
       </thead>
@@ -96,12 +117,7 @@ const ColorTable = ({colors, title}: ColorTableProps): Node => {
 export default route('Color palette', (): Node => {
   return [
     <p key="info">{INFO}</p>,
-    <CodeBlock
-      key="imports"
-      code={IMPORTS_CODE}
-      demo={false}
-      language="sass"
-    />,
+    <CodeBlock key="imports" code={IMPORTS_CODE} demo={false} language="css" />,
     <p key="colors-description">
       Below is a list of all of the colors and their SASS variables. Also
       included are classes for setting the background of DOM elemnts to a
@@ -123,6 +139,7 @@ export default route('Color palette', (): Node => {
       <ColorTable colors={BROWNS} title="Browns" />
       <ColorTable colors={YELLOWS} title="Yellows" />
       <ColorTable colors={STATUSES} title="Statuses" />
+      <ColorTable colors={ALARM_STATUSES} title="Alarm statuses" />
     </div>,
   ]
 })

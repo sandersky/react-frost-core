@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders as expected without any properties passed in 1`] = `
+<Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;

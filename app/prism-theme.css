@@ -1,8 +1,8 @@
-@import '../src/styles/colors';
+@import '../src/styles/colors.css';
 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: $frost-color-teal-4;
+    color: var(--frost-color-teal-4);
     font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     direction: ltr;
     text-align: left;
@@ -37,7 +37,7 @@ pre[class*="language-"] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    background-color: $frost-color-grey-2;
+    background-color: var(--frost-color-grey-2);
 }
 
 :not(pre) > code[class*="language-"],
@@ -65,11 +65,11 @@ pre[class*="language-"] {
 
 .token.string,
 .token.attr-value {
-    color: $frost-color-orange-3;
+    color: var(--frost-color-orange-3);
 }
 .token.punctuation,
 .token.operator {
-    color: $frost-color-lilac-3; /* no highlight */
+    color: var(--frost-color-lilac-3); /* no highlight */
 }
 
 .token.entity,
@@ -89,7 +89,7 @@ pre[class*="language-"] {
 .token.keyword,
 .token.attr-name,
 .language-autohotkey .token.selector {
-    color: $frost-color-blue-4;
+    color: var(--frost-color-blue-4);
 }
 
 .token.function,
@@ -101,7 +101,7 @@ pre[class*="language-"] {
 .token.tag,
 .token.selector,
 .language-autohotkey .token.keyword {
-    color: $frost-color-green-5;
+    color: var(--frost-color-green-5);
 }
 
 .token.important,

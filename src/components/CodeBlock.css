@@ -1,7 +1,7 @@
-@import '../styles/colors';
+@import '../styles/colors.css';
 
 .frost-code-block-demo {
-  border: 1px solid $frost-color-lgrey-2;
+  border: 1px solid var(--frost-color-lgrey-2);
   padding: 6px;
 }
 
@@ -10,8 +10,8 @@
 }
 
 .frost-code-block-language {
-  background-color: $frost-color-night-3;
-  color: $frost-color-night-2;
+  background-color: var(--frost-color-night-3);
+  color: var(--frost-color-night-2);
   padding: 6px;
 }
 

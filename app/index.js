@@ -6,7 +6,7 @@
 
 import Application from './Application'
 // $FlowFixMe - Flow doesn't understand SASS imports
-import './prism-theme.scss'
+import './prism-theme.css'
 import React from 'react'
 import {render} from 'react-dom'
 

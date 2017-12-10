@@ -1,20 +1,20 @@
-@import '../src/styles/frost-theme';
-@import '../src/styles/frost-app';
+@import '../src/styles/frost-theme.css';
+@import '../src/styles/frost-app.css';
 
 body {
   display: flex;
 }
 
 caption {
-  font-size: $frost-font-l;
+  font-size: var(--frost-font-size-l);
   padding-top: 10px;
   text-align: left;
 }
 
 tbody {
-  tr {
+  & tr {
     &:nth-child(even) {
-      background-color: $frost-color-lgrey-4;
+      background-color: var(--frost-color-lgrey-4);
     }
   }
 }
@@ -24,8 +24,8 @@ td {
 }
 
 th {
-  background-color: $frost-color-blue-2;
-  color: $frost-color-white;
+  background-color: var(--frost-color-blue-2);
+  color: var(--frost-color-white);
   text-align: left;
   padding: 6px;
 }
@@ -40,31 +40,31 @@ th {
   flex: 1 auto;
   flex-direction: column;
 
-  header {
-    background-color: $frost-color-blue-2;
+  & header {
+    background-color: var(--frost-color-blue-2);
     padding: 10px;
   }
 
-  h1 {
-    font-size: $frost-font-xl;
-    color: $frost-color-white;
+  & h1 {
+    font-size: var(--frost-font-size-xl);
+    color: var(--frost-color-white);
     margin: 0;
   }
 
-  .body {
+  & .body {
     display: flex;
     flex: 1 0 auto;
   }
 
-  .navigation {
+  & .navigation {
     background-color: #e2e2e2;
     border-right: 1px solid #dbdbdb;
     display: flex;
     flex-direction: column;
 
-    a {
+    & a {
       color: #33424f;
-      font-size: $frost-font-m;
+      font-size: var(--frost-font-size-m);
       padding: 10px;
       text-decoration: none;
 
@@ -74,11 +74,11 @@ th {
     }
   }
 
-  .content {
+  & .content {
     flex: 1 auto;
     padding: 20px;
 
-    h2 {
+    & h2 {
       margin-top: 0;
     }
   }

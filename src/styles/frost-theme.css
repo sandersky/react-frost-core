@@ -1,0 +1,12 @@
+@import 'colors.css';
+@import 'typography.css';
+
+:root {
+  --frost-color-button-focus-shadow: rgba(var(--frost-color-blue-1) .75);
+  --frost-color-select-container-background: var(--frost-color-white);
+  --frost-color-select-container-shadow: var(--frost-color-grey-5);
+  --frost-color-select-footer-divider: var(--frost-color-blue-1);
+  --frost-color-select-indicator: var(--frost-color-grey-5);
+  --frost-color-select-item-divider: var(--frost-color-lgrey-1);
+  --frost-color-selection: var(--frost-color-blue-1);
+}

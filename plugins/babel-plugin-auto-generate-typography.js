@@ -1,5 +1,4 @@
 const {readFileSync} = require('fs')
-const {parse} = require('gonzales-pe')
 const {join} = require('path')
 
 /**
@@ -25,58 +24,17 @@ const TYPOGRAPHY_APP_COMPONENT_PATH = join(
  * This is the path to the typography styles in the source
  * @type {String}
  */
-const TYPOGRAPHY_SCSS_PATH = join(
+const TYPOGRAPHY_CSS_PATH = join(
   __dirname,
   '..',
   'src',
   'styles',
-  '_typography.scss'
+  'typography.css'
 )
 
-function getFontSizesFromSassAST(ast) {
-  return ast
-    .content
-    .filter(node => node.type === 'declaration')
-    .map(declaration => {
-      const name = getVariableNameFromDeclaration(declaration)
-
-      if (name.indexOf('frost-font') === -1) {
-        return null
-      }
-
-      const value = getVariableValueFromDeclaration(declaration)
-
-      return isNaN(value) || value === null ? null : {name, value}
-    })
-    .filter(item => item !== null)
-    .sort((a, b) => b.value - a.value)
-    .map(item => item.name.replace('frost-font-', ''))
-}
-
-function getVariableNameFromDeclaration(declaration) {
-  return declaration
-    .content
-    .find(node => node.type === 'property')
-    .content
-    .find(node => node.type === 'variable')
-    .content
-    .find(node => node.type === 'ident')
-    .content
-}
-
-function getVariableValueFromDeclaration(declaration) {
-  const value = declaration.content.find(node => node.type === 'value').content
-  const dimension = value.find(node => node.type === 'dimension')
-
-  return dimension
-    ? dimension.content.find(node => node.type === 'number').content
-    : null
-}
-
 module.exports = ({types: t, template}) => {
-  const sassCode = readFileSync(TYPOGRAPHY_SCSS_PATH, 'utf8')
-  const sassAST = parse(sassCode, {syntax: 'scss'})
-  const fontSizes = getFontSizesFromSassAST(sassAST)
+  // TODO: generate this list by parsing the typography.css file
+  const fontSizes = ['xxxl', 'xxl', 'xl', 'l', 'm', 'x', 'xs']
 
   return {
     visitor: {

@@ -1,0 +1,15 @@
+/**
+ * The plugin postcss-auto-font-size-classes automatically generates a class for
+ * each of the font sizes below.
+ */
+
+:root {
+  --frost-font-family: Roboto, Arial, sans-serif;
+  --frost-font-size-l: 23px;
+  --frost-font-size-m: 18px;
+  --frost-font-size-s: 14px;
+  --frost-font-size-xl: 29px;
+  --frost-font-size-xs: 12px;
+  --frost-font-size-xxl: 36px;
+  --frost-font-size-xxxl: 45px;
+}

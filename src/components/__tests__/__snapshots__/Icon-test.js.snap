@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon when className and icon set functions as expected 1`] = `
+<_default
+  className="foobar"
+  icon="add"
+>
+  <svg
+    className="frost-icon-frost-add foobar"
+  >
+    <use
+      xlinkHref="frost-pack.svg#sprite-add"
+    />
+  </svg>
+</_default>
+`;
+
+exports[`Icon when className, icon, and pack set functions as expected 1`] = `
+<_default
+  className="foobar"
+  icon="add"
+  pack="fire"
+>
+  <svg
+    className="frost-icon-fire-add foobar"
+  >
+    <use
+      xlinkHref="fire-pack.svg#sprite-add"
+    />
+  </svg>
+</_default>
+`;
+
+exports[`Icon when icon and pack set functions as expected 1`] = `
+<_default
+  icon="add"
+  pack="fire"
+>
+  <svg
+    className="frost-icon-fire-add"
+  >
+    <use
+      xlinkHref="fire-pack.svg#sprite-add"
+    />
+  </svg>
+</_default>
+`;
+
+exports[`Icon when icon set functions as expected 1`] = `
+<_default
+  icon="add"
+>
+  <svg
+    className="frost-icon-frost-add"
+  >
+    <use
+      xlinkHref="frost-pack.svg#sprite-add"
+    />
+  </svg>
+</_default>
+`;

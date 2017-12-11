@@ -77,7 +77,7 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "<rootDir>/src/**/*.js"
+      "src/**/*.js"
     ],
     "coverageReporters": [
       "json-summary",

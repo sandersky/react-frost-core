@@ -1,5 +1,6 @@
 const {readFileSync} = require('fs')
 const {join} = require('path')
+const {parse} = require('postcss')
 
 /**
  * This is the name of the variable in the demo typography component that should
@@ -33,8 +34,17 @@ const TYPOGRAPHY_CSS_PATH = join(
 )
 
 module.exports = ({types: t, template}) => {
-  // TODO: generate this list by parsing the typography.css file
-  const fontSizes = ['xxxl', 'xxl', 'xl', 'l', 'm', 'x', 'xs']
+  const css = readFileSync(TYPOGRAPHY_CSS_PATH, 'utf8')
+  const fontSizes = []
+
+  parse(css).walkDecls(/^--frost-font-size-/, ({prop, value}) => {
+    fontSizes.push({
+      key: prop.replace('--frost-font-size-', ''),
+      value: parseInt(value),
+    })
+  })
+
+  fontSizes.sort((a, b) => b.value - a.value)
 
   return {
     visitor: {
@@ -53,9 +63,9 @@ module.exports = ({types: t, template}) => {
         ) {
           const {elements} = init
 
-          fontSizes.forEach(fontSize => {
+          fontSizes.forEach(({key}) => {
             elements.push(
-              t.stringLiteral(fontSize)
+              t.stringLiteral(key)
             )
           })
         }

@@ -1,7 +1,1665 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text renders as expected without any properties passed in 1`] = `
+exports[`Text when align set to left functions as expected 1`] = `
+<Text
+  align="left"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to left when input is focused functions as expected 1`] = `
+<Text
+  align="left"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to left when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  align="left"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to left when input is focused when value changed functions as expected 1`] = `
+<Text
+  align="left"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to left when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  align="left"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to left when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  align="left"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to right functions as expected 1`] = `
+<Text
+  align="right"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to right when input is focused functions as expected 1`] = `
+<Text
+  align="right"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to right when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  align="right"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to right when input is focused when value changed functions as expected 1`] = `
+<Text
+  align="right"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to right when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  align="right"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when align set to right when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  align="right"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to false functions as expected 1`] = `
+<Text
+  disabled={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to false when input is focused functions as expected 1`] = `
+<Text
+  disabled={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to false when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  disabled={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to false when input is focused when value changed functions as expected 1`] = `
+<Text
+  disabled={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to false when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  disabled={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to false when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  disabled={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to true functions as expected 1`] = `
+<Text
+  disabled={true}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={true}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to true when input is focused functions as expected 1`] = `
+<Text
+  disabled={true}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={true}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to true when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  disabled={true}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={true}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to false functions as expected 1`] = `
+<Text
+  error={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to false when input is focused functions as expected 1`] = `
+<Text
+  error={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to false when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  error={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to false when input is focused when value changed functions as expected 1`] = `
+<Text
+  error={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to false when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  error={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to false when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  error={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true functions as expected 1`] = `
+<Text
+  error={true}
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true when input is focused functions as expected 1`] = `
+<Text
+  error={true}
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  error={true}
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true when input is focused when value changed functions as expected 1`] = `
+<Text
+  error={true}
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  error={true}
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  error={true}
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in functions as expected 1`] = `
 <Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in when input is focused functions as expected 1`] = `
+<Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in when input is focused when input looses focus renders as expected 1`] = `
+<Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in when input is focused when value changed functions as expected 1`] = `
+<Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when onChange set functions as expected 1`] = `
+<Text
+  onChange={[MockFunction]}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when onChange set when input is focused functions as expected 1`] = `
+<Text
+  onChange={[MockFunction]}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when onChange set when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  onChange={[MockFunction]}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when onChange set when input is focused when value changed functions as expected 1`] = `
+<Text
+  onChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "baz",
+        ],
+      ],
+    }
+  }
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when onChange set when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  onChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "baz",
+        ],
+        Array [
+          null,
+        ],
+      ],
+    }
+  }
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when onChange set when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  onChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "baz",
+        ],
+        Array [
+          null,
+        ],
+      ],
+    }
+  }
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to false functions as expected 1`] = `
+<Text
+  readOnly={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to false when input is focused functions as expected 1`] = `
+<Text
+  readOnly={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to false when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  readOnly={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to false when input is focused when value changed functions as expected 1`] = `
+<Text
+  readOnly={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to false when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  readOnly={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to false when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  readOnly={false}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to true functions as expected 1`] = `
+<Text
+  readOnly={true}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to true when input is focused functions as expected 1`] = `
+<Text
+  readOnly={true}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to true when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  readOnly={true}
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string functions as expected 1`] = `
+<Text
+  value=""
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string when input is focused functions as expected 1`] = `
+<Text
+  value=""
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  value=""
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string when input is focused when value changed functions as expected 1`] = `
+<Text
+  value=""
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  value=""
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  value=""
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string functions as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="foobar"
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused functions as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="foobar"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused when clear button fade in animation has completed functions as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="foobar"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused when input looses focus renders as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="foobar"
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused when input looses focus when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="foobar"
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused when value changed functions as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-text-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Text
+  value="foobar"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-text-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Text
+  value="foobar"
+>
   <div
     className="frost-text"
   >

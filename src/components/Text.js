@@ -2,7 +2,7 @@
  * @flow
  */
 
-/* global HTMLButtonElement, SyntheticInputEvent */
+/* global SyntheticInputEvent */
 
 import React, {Component, type Node} from 'react'
 
@@ -32,9 +32,6 @@ const CLEAR_SVG = (
 )
 
 export default class Text extends Component<Props, State> {
-  _clearButtonElement: ?HTMLButtonElement
-  _clearButtonAnimationEndHandler: ?() => void
-
   constructor() {
     super(...arguments)
 
@@ -45,31 +42,19 @@ export default class Text extends Component<Props, State> {
     }
   }
 
-  _addClearButtonAnimationEndListener() {
-    // If the clear button is present and it doesn't currently have an
-    // animationend event listener, go ahead and add one.
-    if (this._clearButtonElement && !this._clearButtonAnimationEndHandler) {
-      this._clearButtonAnimationEndHandler = () => {
-        const {animatingClearButtonOut, value} = this.state
-
-        // We don't want to do anything if this is the fade in animation.
-        if (!animatingClearButtonOut && value) {
-          return
-        }
-
-        this._removeClearButtonAnimationEndListener()
-        this.setState({animatingClearButtonOut: false})
-      }
-
-      this._clearButtonElement.addEventListener(
-        'animationend',
-        this._clearButtonAnimationEndHandler,
-      )
-    }
-  }
-
   _clear = () => {
     this._updateValue('')
+  }
+
+  _handleClearButtonAnimationEnd = () => {
+    const {animatingClearButtonOut, value} = this.state
+
+    // We don't want to do anything if this is the fade in animation.
+    if (!animatingClearButtonOut && value) {
+      return
+    }
+
+    this.setState({animatingClearButtonOut: false})
   }
 
   _getClassName() {
@@ -115,19 +100,6 @@ export default class Text extends Component<Props, State> {
     this.setState({focused: true})
   }
 
-  _removeClearButtonAnimationEndListener() {
-    // If the clear button is present and we have an event listener, make sure
-    // to remove it.
-    if (this._clearButtonElement && this._clearButtonAnimationEndHandler) {
-      this._clearButtonElement.removeEventListener(
-        'animationend',
-        this._clearButtonAnimationEndHandler,
-      )
-    }
-
-    this._clearButtonAnimationEndHandler = null
-  }
-
   _renderClearButton(): Node {
     const {disabled, readOnly} = this.props
     const {animatingClearButtonOut, focused, value} = this.state
@@ -147,10 +119,8 @@ export default class Text extends Component<Props, State> {
     return (
       <button
         className={classNames.join(' ')}
+        onAnimationEnd={this._handleClearButtonAnimationEnd}
         onClick={this._clear}
-        ref={el => {
-          this._clearButtonElement = el
-        }}
       >
         {CLEAR_SVG}
       </button>
@@ -179,20 +149,9 @@ export default class Text extends Component<Props, State> {
     }
   }
 
-  componentDidMount() {
-    this._addClearButtonAnimationEndListener()
-  }
-
-  componentDidUpdate() {
-    this._addClearButtonAnimationEndListener()
-  }
-
-  componentWillUnmount() {
-    this._removeClearButtonAnimationEndListener()
-  }
-
   render(): Node {
     const {
+      align: _align,
       error: _error,
       onChange: _onChange,
       value: _value,

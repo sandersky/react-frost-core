@@ -1,29 +1,9 @@
 @import '../styles/colors.css';
 
-svg {
-  &.frost-icon {
-    fill: currentColor;
+.frost-icon-frost-add {
+  fill: var(--frost-color-white);
+}
 
-    &-frost {
-      &-add {
-        color: var(--frost-color-white);
-      }
-
-      &-chevron {
-        color: var(--frost-color-grey-5);
-      }
-
-      &-close-circle {
-        color: var(--frost-color-blue-1);
-      }
-
-      &-link {
-        color: var(--frost-color-white);
-      }
-
-      &-search {
-        color: var(--frost-color-grey-4);
-      }
-    }
-  }
+.frost-icon-frost-chevron {
+  fill: var(--frost-color-grey-5);
 }

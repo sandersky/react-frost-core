@@ -7,12 +7,12 @@ import route from './factory'
 import React, {Component, type Node} from 'react'
 
 const BACKGROUND_COLORS = [
-  'white',
   'tile',
   'content',
   'info',
   'hint-text',
   'line',
+  'white',
   'main-button',
 ]
 

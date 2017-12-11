@@ -8,7 +8,7 @@ import React, {Component, type Node} from 'react'
 const DEFAULT_COLLAPSED_LABEL = 'Expand'
 const DEFAULT_EXPANDED_LABEL = 'Collapse'
 
-export type Props = {
+export type PROPS = {
   children?: Node,
   className?: string,
   collapsedLabel?: string,
@@ -21,7 +21,7 @@ export type State = {|
   expanded: boolean,
 |}
 
-export default class Expand extends Component<Props, State> {
+export default class Expand extends Component<PROPS, State> {
   constructor() {
     super(...arguments)
 
@@ -73,7 +73,7 @@ export default class Expand extends Component<Props, State> {
     }
   }
 
-  componentWillReceiveProps(nextProps: Props): void {
+  componentWillReceiveProps(nextProps: PROPS): void {
     const {expanded: expandedProp} = nextProps
     const {expanded} = this.state
 

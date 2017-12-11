@@ -7,7 +7,7 @@
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
 
-type Props = {
+type PROPS = {
   children?: Node,
   code?: string,
   demo?: boolean,
@@ -20,7 +20,7 @@ type State = {|
   expanded: boolean,
 |}
 
-export default class CodeBlock extends Component<Props, State> {
+export default class CodeBlock extends Component<PROPS, State> {
   _codeElement: ?HTMLElement
 
   constructor() {

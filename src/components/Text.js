@@ -9,7 +9,7 @@ import React, {Component, type Node} from 'react'
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
-type Props = {
+export type PROPS = {
   align?: typeof ALIGN_LEFT | typeof ALIGN_RIGHT,
   disabled?: ?boolean,
   error?: ?boolean,
@@ -31,7 +31,7 @@ const CLEAR_SVG = (
   </svg>
 )
 
-export default class Text extends Component<Props, State> {
+export default class Text extends Component<PROPS, State> {
   constructor() {
     super(...arguments)
 

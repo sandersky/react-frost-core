@@ -3,7 +3,7 @@
  */
 
 import Icon from './Icon'
-import React, {type Node} from 'react'
+import React, {Component, type Node} from 'react'
 
 export const DESIGN_APP_BAR: 'app-bar' = 'app-bar'
 export const DESIGN_INFO_BAR: 'info-bar' = 'info-bar'
@@ -43,6 +43,7 @@ export type PROPS = {
   design?: ?DESIGN,
   disabled?: ?boolean,
   icon?: ?string,
+  onClick?: () => void,
   pack?: ?string,
   priority?: ?PRIORITY,
   size?: ?SIZE,
@@ -198,38 +199,50 @@ function renderButtonContents(
   }
 }
 
-export default (props: PROPS): Node => {
-  const {
-    children,
-    className,
-    design,
-    disabled,
-    icon,
-    pack,
-    priority,
-    size,
-    text,
-    vertical,
-    ...passThroughProps
-  } = props
+export default class Button extends Component<PROPS> {
+  _handleClick = () => {
+    const {onClick} = this.props
 
-  return (
-    <button
-      className={getClassName(
-        className,
-        design,
-        disabled,
-        icon,
-        priority,
-        size,
-        text,
-        vertical,
-      )}
-      disabled={disabled}
-      {...passThroughProps}
-    >
-      {renderButtonContents(design, icon, pack, text)}
-      {children}
-    </button>
-  )
+    if (onClick) {
+      onClick()
+    }
+  }
+
+  render() {
+    const {
+      children,
+      className,
+      design,
+      disabled,
+      icon,
+      onClick: _onClick,
+      pack,
+      priority,
+      size,
+      text,
+      vertical,
+      ...passThroughProps
+    } = this.props
+
+    return (
+      <button
+        className={getClassName(
+          className,
+          design,
+          disabled,
+          icon,
+          priority,
+          size,
+          text,
+          vertical,
+        )}
+        disabled={disabled}
+        onClick={this._handleClick}
+        {...passThroughProps}
+      >
+        {renderButtonContents(design, icon, pack, text)}
+        {children}
+      </button>
+    )
+  }
 }

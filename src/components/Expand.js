@@ -5,6 +5,7 @@
 import Icon from './Icon'
 import React, {Component, type Node} from 'react'
 
+// TODO: i18n
 const DEFAULT_COLLAPSED_LABEL = 'Expand'
 const DEFAULT_EXPANDED_LABEL = 'Collapse'
 

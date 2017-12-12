@@ -91,8 +91,8 @@ function getClassName(
     }
 
     if (priority || size) {
-      console.warn(
-        'Warning: The "design" property takes precedence over "priority" and "size".',
+      throw new Error(
+        'The "design" property takes precedence over "priority" and "size".',
       )
     }
 

@@ -44,7 +44,7 @@ export type PROPS = {
   pack?: ?string,
 }
 
-export default ({className, icon, pack, ...passThroughProps}: PROPS): Node => {
+const Icon = ({className, icon, pack, ...passThroughProps}: PROPS): Node => {
   pack = pack || DEFAULT_PACK
 
   const classNames = [`frost-icon-${pack}-${icon}`]
@@ -59,3 +59,7 @@ export default ({className, icon, pack, ...passThroughProps}: PROPS): Node => {
     </svg>
   )
 }
+
+Icon.displayName = 'Icon'
+
+export default Icon

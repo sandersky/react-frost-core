@@ -9,8 +9,10 @@ import React, {Component, type Node} from 'react'
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
+type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
+
 export type PROPS = {
-  align?: typeof ALIGN_LEFT | typeof ALIGN_RIGHT,
+  align?: ?ALIGN,
   disabled?: ?boolean,
   error?: ?boolean,
   onChange?: (value: ?string) => void,
@@ -31,6 +33,37 @@ const CLEAR_SVG = (
   </svg>
 )
 
+/**
+ * Get class name for text component given it's current state
+ * @param error - whether or not input has an error
+ * @returns class name for text component
+ */
+function getClassName(error?: ?boolean): string {
+  const classNames = ['frost-text']
+
+  if (error) {
+    classNames.push('frost-text-error')
+  }
+
+  return classNames.join(' ')
+}
+
+/**
+ * Get class name for text component's input
+ * @param align - how to align text within input
+ * @returns class name for text component's input
+ */
+function getInputClassName(align?: ?ALIGN): string {
+  const classNames = ['frost-text-input']
+
+  switch (align) {
+    case 'right':
+      classNames.push('frost-text-align-right')
+  }
+
+  return classNames.join(' ')
+}
+
 export default class Text extends Component<PROPS, State> {
   constructor() {
     super(...arguments)
@@ -40,44 +73,6 @@ export default class Text extends Component<PROPS, State> {
       focused: false,
       value: this.props.value,
     }
-  }
-
-  _clear = () => {
-    this._updateValue('')
-  }
-
-  _handleClearButtonAnimationEnd = () => {
-    const {animatingClearButtonOut, value} = this.state
-
-    // We don't want to do anything if this is the fade in animation.
-    if (!animatingClearButtonOut && value) {
-      return
-    }
-
-    this.setState({animatingClearButtonOut: false})
-  }
-
-  _getClassName() {
-    const {error} = this.props
-    const classNames = ['frost-text']
-
-    if (error) {
-      classNames.push('frost-text-error')
-    }
-
-    return classNames.join(' ')
-  }
-
-  _getInputClassName() {
-    const {align} = this.props
-    const classNames = ['frost-text-input']
-
-    switch (align) {
-      case 'right':
-        classNames.push('frost-text-align-right')
-    }
-
-    return classNames.join(' ')
   }
 
   _handleBlur = () => {
@@ -94,6 +89,21 @@ export default class Text extends Component<PROPS, State> {
 
   _handleChange = (e: SyntheticInputEvent<*>) => {
     this._updateValue(e.target.value)
+  }
+
+  _handleClear = () => {
+    this._updateValue('')
+  }
+
+  _handleClearButtonAnimationEnd = () => {
+    const {animatingClearButtonOut, value} = this.state
+
+    // We don't want to do anything if this is the fade in animation.
+    if (!animatingClearButtonOut && value) {
+      return
+    }
+
+    this.setState({animatingClearButtonOut: false})
   }
 
   _handleFocus = () => {
@@ -120,7 +130,7 @@ export default class Text extends Component<PROPS, State> {
       <button
         className={classNames.join(' ')}
         onAnimationEnd={this._handleClearButtonAnimationEnd}
-        onClick={this._clear}
+        onClick={this._handleClear}
       >
         {CLEAR_SVG}
       </button>
@@ -151,8 +161,8 @@ export default class Text extends Component<PROPS, State> {
 
   render(): Node {
     const {
-      align: _align,
-      error: _error,
+      align,
+      error,
       onChange: _onChange,
       value: _value,
       ...passThroughProps
@@ -161,9 +171,9 @@ export default class Text extends Component<PROPS, State> {
     const {value} = this.state
 
     return (
-      <div className={this._getClassName()}>
+      <div className={getClassName(error)}>
         <input
-          className={this._getInputClassName()}
+          className={getInputClassName(align)}
           onBlur={this._handleBlur}
           onChange={this._handleChange}
           onFocus={this._handleFocus}

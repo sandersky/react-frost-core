@@ -4,7 +4,7 @@
 
 import React, {type Node} from 'react'
 
-const DEFAULT_PACK = 'frost'
+export const DEFAULT_PACK = 'frost'
 
 export const ICON_ADD: 'add' = 'add'
 export const ICON_CHECKBOX: 'checkbox' = 'checkbox'

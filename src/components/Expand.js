@@ -22,6 +22,38 @@ export type State = {|
   expanded: boolean,
 |}
 
+/**
+ * Get content to render in expand component given current state
+ * @param children - children to render when expanded
+ * @param expanded - whether or not component is expanded
+ * @returns content to render in expand component
+ */
+function renderContent(children?: Node, expanded: boolean): Node {
+  // TODO: wrap div in scroll component
+  return expanded ? (
+    <div className="frost-expand-content">{children}</div>
+  ) : null
+}
+
+/**
+ * Get label to render given expand component's current state
+ * @param collapsedLabel - label to render when component is collapsed
+ * @param expanded - whether or not component is expanded
+ * @param expandedLabel - label to render when component is expanded
+ * @returns label to render given component's current state
+ */
+function renderLabelText(
+  collapsedLabel?: string,
+  expanded: boolean,
+  expandedLabel?: string,
+): Node {
+  const text = expanded
+    ? expandedLabel || DEFAULT_EXPANDED_LABEL
+    : collapsedLabel || DEFAULT_COLLAPSED_LABEL
+
+  return <div className="frost-expand-label-text">{text}</div>
+}
+
 export default class Expand extends Component<PROPS, State> {
   constructor() {
     super(...arguments)
@@ -35,31 +67,7 @@ export default class Expand extends Component<PROPS, State> {
     }
   }
 
-  _renderContent(): Node {
-    const {children} = this.props
-    const {expanded} = this.state
-
-    // TODO: wrap div in scroll component
-    return expanded ? (
-      <div className="frost-expand-content">{children}</div>
-    ) : null
-  }
-
-  _renderLabelIcon(): Node {
-    return <Icon icon="chevron" />
-  }
-
-  _renderLabelText(): Node {
-    const {collapsedLabel, expandedLabel} = this.props
-    const {expanded} = this.state
-    const text = expanded
-      ? expandedLabel || DEFAULT_EXPANDED_LABEL
-      : collapsedLabel || DEFAULT_COLLAPSED_LABEL
-
-    return <div className="frost-expand-label-text">{text}</div>
-  }
-
-  _toggle = (): void => {
+  _handleToggle = (): void => {
     const {onChange} = this.props
     const {expanded} = this.state
 
@@ -89,7 +97,7 @@ export default class Expand extends Component<PROPS, State> {
   }
 
   render(): Node {
-    const {className} = this.props
+    const {children, className, collapsedLabel, expandedLabel} = this.props
     const {expanded} = this.state
     const classNames = ['frost-expand', expanded ? 'expanded' : 'collapsed']
 
@@ -101,13 +109,13 @@ export default class Expand extends Component<PROPS, State> {
       <div className={classNames.join(' ')}>
         <label
           className="frost-expand-label"
-          onClick={this._toggle}
+          onClick={this._handleToggle}
           role="button"
         >
-          {this._renderLabelIcon()}
-          {this._renderLabelText()}
+          <Icon icon="chevron" />
+          {renderLabelText(collapsedLabel, expanded, expandedLabel)}
         </label>
-        {this._renderContent()}
+        {renderContent(children, expanded)}
       </div>
     )
   }

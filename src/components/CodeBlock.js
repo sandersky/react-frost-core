@@ -7,7 +7,7 @@
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
 
-type PROPS = {
+export type PROPS = {
   children?: Node,
   code?: string,
   demo?: boolean,
@@ -20,6 +20,20 @@ type State = {|
   expanded: boolean,
 |}
 
+/**
+ * Get code demo to render for code block component
+ * @param children - children to render
+ * @param demo - whether or not to render a demo
+ * @returns code demo for code block component
+ */
+function renderCodeDemo(children?: Node, demo?: boolean): Node {
+  if (demo === false) {
+    return null
+  }
+
+  return <div className="frost-code-block-demo">{children}</div>
+}
+
 export default class CodeBlock extends Component<PROPS, State> {
   _codeElement: ?HTMLElement
 
@@ -31,20 +45,23 @@ export default class CodeBlock extends Component<PROPS, State> {
     }
   }
 
+  _handleCodeToggle = (): void => {
+    const {expanded} = this.state
+
+    this.setState(
+      {
+        expanded: !expanded,
+      },
+      (): void => {
+        this._highlightCode()
+      },
+    )
+  }
+
   _highlightCode(): void {
     if (this._codeElement) {
       window.Prism.highlightElement(this._codeElement, false)
     }
-  }
-
-  _renderCodeDemo(): Node {
-    const {children, demo} = this.props
-
-    if (demo === false) {
-      return null
-    }
-
-    return <div className="frost-code-block-demo">{children}</div>
   }
 
   _renderCodeSample(): Node {
@@ -86,23 +103,10 @@ export default class CodeBlock extends Component<PROPS, State> {
         collapsedLabel="Show code"
         expandedLabel="Hide code"
         expanded={expanded}
-        onChange={this._toggleCode}
+        onChange={this._handleCodeToggle}
       >
         {this._renderCodeSample()}
       </Expand>
-    )
-  }
-
-  _toggleCode = (): void => {
-    const {expanded} = this.state
-
-    this.setState(
-      {
-        expanded: !expanded,
-      },
-      (): void => {
-        this._highlightCode()
-      },
     )
   }
 
@@ -111,11 +115,11 @@ export default class CodeBlock extends Component<PROPS, State> {
   }
 
   render(): Node {
-    const {togglable} = this.props
+    const {children, demo, togglable} = this.props
 
     return (
       <div className="frost-code-block">
-        {this._renderCodeDemo()}
+        {renderCodeDemo(children, demo)}
         {togglable !== false
           ? this._renderCodeToggle()
           : this._renderCodeSample()}

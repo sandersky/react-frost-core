@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AjaxErrorPage when suggestion omitted functions as expected 1`] = `
+<AjaxErrorPage
+  description="Service is currently unavailable."
+  errorCode={500}
+  errorDetails="Detailed information would be displayed here."
+  errorMessage="Failure to retrieve network elements"
+  errorTitle="Internal server error"
+>
+  <div>
+    <div
+      className="frost-ajax-error-page-description"
+    >
+      Service is currently unavailable.
+    </div>
+    <div
+      className="frost-ajax-error-page-http-error"
+    >
+      Error 
+      500
+       - 
+      Internal server error
+    </div>
+    <div
+      className="frost-ajax-error-page-message"
+    >
+      Failure to retrieve network elements
+    </div>
+    <Expand
+      className="frost-ajax-error-page-expand"
+      collapsedLabel="Show details"
+      expanded={false}
+      expandedLabel="Hide details"
+      onChange={[Function]}
+    >
+      <div
+        className="frost-expand collapsed frost-ajax-error-page-expand"
+      >
+        <label
+          className="frost-expand-label"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            icon="chevron"
+          >
+            <svg
+              className="frost-icon-frost-chevron"
+            >
+              <use
+                xlinkHref="frost-pack.svg#sprite-chevron"
+              />
+            </svg>
+          </Icon>
+          <div
+            className="frost-expand-label-text"
+          >
+            Show details
+          </div>
+        </label>
+      </div>
+    </Expand>
+  </div>
+</AjaxErrorPage>
+`;
+
+exports[`AjaxErrorPage when suggestion omitted when details expanded functions as expected 1`] = `
+<AjaxErrorPage
+  description="Service is currently unavailable."
+  errorCode={500}
+  errorDetails="Detailed information would be displayed here."
+  errorMessage="Failure to retrieve network elements"
+  errorTitle="Internal server error"
+>
+  <div>
+    <div
+      className="frost-ajax-error-page-description"
+    >
+      Service is currently unavailable.
+    </div>
+    <div
+      className="frost-ajax-error-page-http-error"
+    >
+      Error 
+      500
+       - 
+      Internal server error
+    </div>
+    <div
+      className="frost-ajax-error-page-message"
+    >
+      Failure to retrieve network elements
+    </div>
+    <Expand
+      className="frost-ajax-error-page-expand"
+      collapsedLabel="Show details"
+      expanded={true}
+      expandedLabel="Hide details"
+      onChange={[Function]}
+    >
+      <div
+        className="frost-expand expanded frost-ajax-error-page-expand"
+      >
+        <label
+          className="frost-expand-label"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            icon="chevron"
+          >
+            <svg
+              className="frost-icon-frost-chevron"
+            >
+              <use
+                xlinkHref="frost-pack.svg#sprite-chevron"
+              />
+            </svg>
+          </Icon>
+          <div
+            className="frost-expand-label-text"
+          >
+            Hide details
+          </div>
+        </label>
+        <div
+          className="frost-expand-content"
+        >
+          <div
+            className="frost-ajax-error-page-details"
+          >
+            Detailed information would be displayed here.
+          </div>
+        </div>
+      </div>
+    </Expand>
+  </div>
+</AjaxErrorPage>
+`;
+
+exports[`AjaxErrorPage when suggestion omitted when details expanded when details collapsed functions as expected 1`] = `
+<AjaxErrorPage
+  description="Service is currently unavailable."
+  errorCode={500}
+  errorDetails="Detailed information would be displayed here."
+  errorMessage="Failure to retrieve network elements"
+  errorTitle="Internal server error"
+>
+  <div>
+    <div
+      className="frost-ajax-error-page-description"
+    >
+      Service is currently unavailable.
+    </div>
+    <div
+      className="frost-ajax-error-page-http-error"
+    >
+      Error 
+      500
+       - 
+      Internal server error
+    </div>
+    <div
+      className="frost-ajax-error-page-message"
+    >
+      Failure to retrieve network elements
+    </div>
+    <Expand
+      className="frost-ajax-error-page-expand"
+      collapsedLabel="Show details"
+      expanded={false}
+      expandedLabel="Hide details"
+      onChange={[Function]}
+    >
+      <div
+        className="frost-expand collapsed frost-ajax-error-page-expand"
+      >
+        <label
+          className="frost-expand-label"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            icon="chevron"
+          >
+            <svg
+              className="frost-icon-frost-chevron"
+            >
+              <use
+                xlinkHref="frost-pack.svg#sprite-chevron"
+              />
+            </svg>
+          </Icon>
+          <div
+            className="frost-expand-label-text"
+          >
+            Show details
+          </div>
+        </label>
+      </div>
+    </Expand>
+  </div>
+</AjaxErrorPage>
+`;
+
+exports[`AjaxErrorPage when suggestion provided functions as expected 1`] = `
+<AjaxErrorPage
+  description="Service is currently unavailable."
+  errorCode={500}
+  errorDetails="Detailed information would be displayed here."
+  errorMessage="Failure to retrieve network elements"
+  errorTitle="Internal server error"
+  suggestion="Try again later."
+>
+  <div>
+    <div
+      className="frost-ajax-error-page-description"
+    >
+      Service is currently unavailable.
+    </div>
+    <div
+      className="frost-ajax-error-page-suggestion"
+    >
+      Try again later.
+    </div>
+    <div
+      className="frost-ajax-error-page-http-error"
+    >
+      Error 
+      500
+       - 
+      Internal server error
+    </div>
+    <div
+      className="frost-ajax-error-page-message"
+    >
+      Failure to retrieve network elements
+    </div>
+    <Expand
+      className="frost-ajax-error-page-expand"
+      collapsedLabel="Show details"
+      expanded={false}
+      expandedLabel="Hide details"
+      onChange={[Function]}
+    >
+      <div
+        className="frost-expand collapsed frost-ajax-error-page-expand"
+      >
+        <label
+          className="frost-expand-label"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            icon="chevron"
+          >
+            <svg
+              className="frost-icon-frost-chevron"
+            >
+              <use
+                xlinkHref="frost-pack.svg#sprite-chevron"
+              />
+            </svg>
+          </Icon>
+          <div
+            className="frost-expand-label-text"
+          >
+            Show details
+          </div>
+        </label>
+      </div>
+    </Expand>
+  </div>
+</AjaxErrorPage>
+`;
+
+exports[`AjaxErrorPage when suggestion provided when details expanded functions as expected 1`] = `
+<AjaxErrorPage
+  description="Service is currently unavailable."
+  errorCode={500}
+  errorDetails="Detailed information would be displayed here."
+  errorMessage="Failure to retrieve network elements"
+  errorTitle="Internal server error"
+  suggestion="Try again later."
+>
+  <div>
+    <div
+      className="frost-ajax-error-page-description"
+    >
+      Service is currently unavailable.
+    </div>
+    <div
+      className="frost-ajax-error-page-suggestion"
+    >
+      Try again later.
+    </div>
+    <div
+      className="frost-ajax-error-page-http-error"
+    >
+      Error 
+      500
+       - 
+      Internal server error
+    </div>
+    <div
+      className="frost-ajax-error-page-message"
+    >
+      Failure to retrieve network elements
+    </div>
+    <Expand
+      className="frost-ajax-error-page-expand"
+      collapsedLabel="Show details"
+      expanded={true}
+      expandedLabel="Hide details"
+      onChange={[Function]}
+    >
+      <div
+        className="frost-expand expanded frost-ajax-error-page-expand"
+      >
+        <label
+          className="frost-expand-label"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            icon="chevron"
+          >
+            <svg
+              className="frost-icon-frost-chevron"
+            >
+              <use
+                xlinkHref="frost-pack.svg#sprite-chevron"
+              />
+            </svg>
+          </Icon>
+          <div
+            className="frost-expand-label-text"
+          >
+            Hide details
+          </div>
+        </label>
+        <div
+          className="frost-expand-content"
+        >
+          <div
+            className="frost-ajax-error-page-details"
+          >
+            Detailed information would be displayed here.
+          </div>
+        </div>
+      </div>
+    </Expand>
+  </div>
+</AjaxErrorPage>
+`;
+
+exports[`AjaxErrorPage when suggestion provided when details expanded when details collapsed functions as expected 1`] = `
+<AjaxErrorPage
+  description="Service is currently unavailable."
+  errorCode={500}
+  errorDetails="Detailed information would be displayed here."
+  errorMessage="Failure to retrieve network elements"
+  errorTitle="Internal server error"
+  suggestion="Try again later."
+>
+  <div>
+    <div
+      className="frost-ajax-error-page-description"
+    >
+      Service is currently unavailable.
+    </div>
+    <div
+      className="frost-ajax-error-page-suggestion"
+    >
+      Try again later.
+    </div>
+    <div
+      className="frost-ajax-error-page-http-error"
+    >
+      Error 
+      500
+       - 
+      Internal server error
+    </div>
+    <div
+      className="frost-ajax-error-page-message"
+    >
+      Failure to retrieve network elements
+    </div>
+    <Expand
+      className="frost-ajax-error-page-expand"
+      collapsedLabel="Show details"
+      expanded={false}
+      expandedLabel="Hide details"
+      onChange={[Function]}
+    >
+      <div
+        className="frost-expand collapsed frost-ajax-error-page-expand"
+      >
+        <label
+          className="frost-expand-label"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            icon="chevron"
+          >
+            <svg
+              className="frost-icon-frost-chevron"
+            >
+              <use
+                xlinkHref="frost-pack.svg#sprite-chevron"
+              />
+            </svg>
+          </Icon>
+          <div
+            className="frost-expand-label-text"
+          >
+            Show details
+          </div>
+        </label>
+      </div>
+    </Expand>
+  </div>
+</AjaxErrorPage>
+`;

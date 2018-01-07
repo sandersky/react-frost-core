@@ -3,6 +3,14 @@
  */
 
 /**
+ * AjaxErrorPage
+ */
+
+export {default as AjaxErrorPage} from './components/AjaxErrorPage'
+import type {PROPS as _AJAX_ERROR_PAGE_PROPS} from './components/AjaxErrorPage'
+export type AJAX_ERROR_PAGE_PROPS = _AJAX_ERROR_PAGE_PROPS
+
+/**
  * Button
  */
 

@@ -13,7 +13,7 @@ const DEFAULT_COLLAPSED_LABEL = t(
 
 const DEFAULT_EXPANDED_LABEL = t(
   'Collapse',
-  'Label for toggle in collapsed state',
+  'Label for toggle in expanded state',
 )
 
 export type PROPS = {

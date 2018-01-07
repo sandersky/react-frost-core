@@ -1,3 +1,7 @@
+## 0.0.7
+
+*   Added ajax error page component.
+
 ## 0.0.6
 
 *   Added loading component.

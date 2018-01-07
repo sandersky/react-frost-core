@@ -1,4 +1,5 @@
 import {
+  AjaxErrorPage as _AjaxErrorPage,
   Button as _Button,
   CodeBlock as _CodeBlock,
   Expand as _Expand,
@@ -10,6 +11,7 @@ import {
   TEXT_ALIGN_RIGHT as _TEXT_ALIGN_RIGHT,
 } from '../'
 
+import AjaxErrorPage from '../components/AjaxErrorPage'
 import Button from '../components/Button'
 import CodeBlock from '../components/CodeBlock'
 import Expand from '../components/Expand'
@@ -22,6 +24,10 @@ import Text, {
 } from '../components/Text'
 
 describe('react-frost-core', () => {
+  it('exports AjaxErrorPage component', () => {
+    expect(_AjaxErrorPage).toBe(AjaxErrorPage)
+  })
+
   it('exports Button component', () => {
     expect(_Button).toBe(Button)
   })

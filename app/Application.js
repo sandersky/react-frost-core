@@ -9,7 +9,6 @@ import Checkbox from './routes/Checkbox'
 import CodeBlock from './routes/CodeBlock'
 import ColorPalette from './routes/ColorPalette'
 import Expand from './routes/Expand'
-import Helpers from './routes/Helpers'
 import Icons from './routes/Icons'
 import Layout from './routes/Layout'
 import Link from './routes/Link'
@@ -44,10 +43,6 @@ const PAGES: Array<PAGE_TYPE> = [
   {
     Component: Typography,
     path: '/typography',
-  },
-  {
-    Component: Helpers,
-    path: '/helpers',
   },
   {
     Component: AjaxErrorPage,

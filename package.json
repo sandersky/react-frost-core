@@ -1,6 +1,6 @@
 {
   "name": "react-frost-core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The library of core frost components.",
   "main": "lib/index.js",
   "files": [
@@ -46,6 +46,7 @@
     "babel-core": "^7.0.0-0",
     "babel-jest": "22.0.4",
     "babel-loader": "8.0.0-beta.0",
+    "babel-plugin-auto-css-modules": "0.0.1",
     "codecov": "3.0.0",
     "css-loader": "0.28.8",
     "enzyme": "3.3.0",

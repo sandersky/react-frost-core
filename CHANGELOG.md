@@ -1,3 +1,7 @@
+## 0.0.5
+
+*   Moved babel-plugin-auto-css-modules to it's own npm package.
+
 ## 0.0.4
 
 *   Upgraded dependencies.

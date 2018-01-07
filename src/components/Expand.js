@@ -74,7 +74,7 @@ export default class Expand extends Component<PROPS, State> {
     }
   }
 
-  _handleToggle = (): void => {
+  _handleToggle = () => {
     const {onChange} = this.props
     const {expanded} = this.state
 
@@ -89,7 +89,7 @@ export default class Expand extends Component<PROPS, State> {
     }
   }
 
-  componentWillReceiveProps(nextProps: PROPS): void {
+  componentWillReceiveProps(nextProps: PROPS) {
     const {expanded: expandedProp} = nextProps
     const {expanded} = this.state
 

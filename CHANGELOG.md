@@ -1,3 +1,7 @@
+## 0.0.6
+
+*   Added loading component.
+
 ## 0.0.5
 
 *   Moved babel-plugin-auto-css-modules to it's own npm package.

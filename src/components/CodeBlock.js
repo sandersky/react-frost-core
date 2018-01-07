@@ -45,20 +45,20 @@ export default class CodeBlock extends Component<PROPS, State> {
     }
   }
 
-  _handleCodeToggle = (): void => {
+  _handleCodeToggle = () => {
     const {expanded} = this.state
 
     this.setState(
       {
         expanded: !expanded,
       },
-      (): void => {
+      () => {
         this._highlightCode()
       },
     )
   }
 
-  _highlightCode(): void {
+  _highlightCode() {
     if (this._codeElement) {
       window.Prism.highlightElement(this._codeElement, false)
     }
@@ -79,7 +79,7 @@ export default class CodeBlock extends Component<PROPS, State> {
       <pre className={`language-${language}`} key="code">
         <code
           className={`language-${language}`}
-          ref={el => {
+          ref={(el: ?HTMLElement) => {
             this._codeElement = el
           }}
         >
@@ -110,7 +110,7 @@ export default class CodeBlock extends Component<PROPS, State> {
     )
   }
 
-  componentDidMount(): void {
+  componentDidMount() {
     this._highlightCode()
   }
 

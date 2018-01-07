@@ -66,7 +66,7 @@ class IconDemo extends Component<{}, State> {
     }
   }
 
-  _changeBackground = (background: string): void => {
+  _changeBackground = (background: string) => {
     this.setState({background})
   }
 

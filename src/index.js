@@ -49,6 +49,14 @@ import type {PROPS as _ICON_PROPS} from './components/Icon'
 export type ICON_PROPS = _ICON_PROPS
 
 /**
+ * Loading
+ */
+
+export {default as Loading} from './components/Loading'
+import type {PROPS as _LOADING_PROPS} from './components/Loading'
+export type LOADING_PROPS = _LOADING_PROPS
+
+/**
  * Text
  */
 

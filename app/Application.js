@@ -25,7 +25,14 @@ import Typography from './routes/Typography'
 import React, {type Node} from 'react'
 import {HashRouter, NavLink, Redirect, Route} from 'react-router-dom'
 
-const PAGES = [
+/* eslint-disable flowtype/no-weak-types */
+type PAGE_TYPE = {|
+  Component: any,
+  path: string,
+|}
+/* eslint-enable flowtype/no-weak-types */
+
+const PAGES: Array<PAGE_TYPE> = [
   {
     Component: ColorPalette,
     path: '/color-palette',
@@ -117,7 +124,7 @@ export default (): Node => {
         </header>
         <div className="body">
           <div className="navigation">
-            {PAGES.map(({Component, path}) => {
+            {PAGES.map(({Component, path}: PAGE_TYPE): Node => {
               return (
                 <NavLink activeClassName="active" key={path} to={path}>
                   {Component.title}
@@ -126,15 +133,19 @@ export default (): Node => {
             })}
           </div>
           <div className="content">
-            {PAGES.map(({Component, path}): Node => {
+            {PAGES.map(({Component, path}: PAGE_TYPE): Node => {
               return (
-                <Route key={path} path={path} render={() => <Component />} />
+                <Route
+                  key={path}
+                  path={path}
+                  render={(): Node => <Component />}
+                />
               )
             })}
             <Route
               exact={true}
               path="/"
-              render={() => <Redirect from="/" to="color-palette" />}
+              render={(): Node => <Redirect from="/" to="color-palette" />}
             />
           </div>
         </div>

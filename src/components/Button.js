@@ -208,7 +208,7 @@ class Button extends Component<PROPS> {
     }
   }
 
-  render() {
+  render(): Node {
     const {
       children,
       className,

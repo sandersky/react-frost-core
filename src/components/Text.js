@@ -78,6 +78,7 @@ export default class Text extends Component<PROPS, State> {
   _handleBlur = () => {
     const {disabled, readOnly} = this.props
     const {animatingClearButtonOut, value} = this.state
+    // eslint-disable-next-line flowtype/no-weak-types
     const state: any = {focused: false}
 
     if (!animatingClearButtonOut && !disabled && !readOnly && value) {

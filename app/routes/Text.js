@@ -6,7 +6,12 @@ import {CodeBlock, Text, TEXT_ALIGN_RIGHT} from '../../src'
 import route from './factory'
 import React, {type Element, type Node} from 'react'
 
-const DOCS = [
+type DOC_TYPE = {|
+  examples: {[key: string]: Element<*>},
+  title: string,
+|}
+
+const DOCS: Array<DOC_TYPE> = [
   {
     title: 'State',
     examples: {
@@ -72,7 +77,7 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
     return null
   }
 
-  return Object.keys(examples).map((key: string, index: number) => {
+  return Object.keys(examples).map((key: string, index: number): Node => {
     return (
       <div className="text-field-example" key={index}>
         <h4>{key}</h4>
@@ -99,7 +104,7 @@ export default route('Text field', (): Node => {
       </div>
     </section>,
   ].concat(
-    DOCS.map(({example, examples, title}, index: number) => {
+    DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
       return (
         <section key={index}>
           <h3>{title}</h3>

@@ -6,38 +6,6 @@ import React, {type Node} from 'react'
 
 export const DEFAULT_PACK = 'frost'
 
-export const ICON_ADD: 'add' = 'add'
-export const ICON_CHECKBOX: 'checkbox' = 'checkbox'
-export const ICON_CHECKBOX_CHECKED: 'checkbox-checked' = 'checkbox-checked'
-export const ICON_CHECKBOX_DISABLED: 'checkbox-disabled' = 'checkbox-disabled'
-export const ICON_CHECKBOX_DISABLED_CHECKBOX: 'checkbox-disabled-checked' =
-  'checkbox-disabled-checked'
-export const ICON_CHECKBOX_ERROR: 'checkbox-error' = 'checkbox-error'
-export const ICON_CHECKBOX_HOVER: 'checkbox-hover' = 'checkbox-hover'
-export const ICON_CHECKBOX_HOVER_CHECKED: 'checkbox-hover-checked' =
-  'checkbox-hover-checked'
-export const ICON_CHEVRON: 'chevron' = 'chevron'
-export const ICON_HEVRON_DOUBLE: 'chevron-double' = 'chevron-double'
-export const ICON_CLOSE: 'close' = 'close'
-export const ICON_EMAIL: 'email' = 'email'
-export const ICON_ERROR: 'error' = 'error'
-export const ICON_EXPAND_COLLAPSE: 'expand-collapse' = 'expand-collapse'
-export const ICON_EXPORT: 'export' = 'export'
-export const ICON_INFO: 'info' = 'info'
-export const ICON_LOADING_RING: 'loading-ring' = 'loading-ring'
-export const ICON_LOADING_RIPPLE: 'loading-ripple' = 'loading-ripple'
-export const ICON_MENU: 'menu' = 'menu'
-export const ICON_MORE: 'more' = 'more'
-export const ICON_OPEN_TABS: 'open-tabs' = 'open-tabs'
-export const ICON_PRINT: 'print' = 'print'
-export const ICON_ROUND_ADD: 'round-add' = 'round-add'
-export const ICON_ROUND_CLOSE: 'round-close' = 'round-close'
-export const ICON_ROUND_REMOVE: 'round-remove' = 'round-remove'
-export const ICON_VIEW_LARGE: 'view-large' = 'view-large'
-export const ICON_VIEW_MEDIUM: 'view-medium' = 'view-medium'
-export const ICON_VIEW_SMALL: 'view-small' = 'view-small'
-export const ICON_WARNING: 'warning' = 'warning'
-
 export type PROPS = {
   className?: string,
   icon: string,
@@ -61,5 +29,37 @@ const Icon = ({className, icon, pack, ...passThroughProps}: PROPS): Node => {
 }
 
 Icon.displayName = 'Icon'
+
+Icon.ICONS = {
+  ADD: 'add',
+  CHECKBOX: 'checkbox',
+  CHECKBOX_CHECKED: 'checkbox-checked',
+  CHECKBOX_DISABLED: 'checkbox-disabled',
+  CHECKBOX_DISABLED_CHECKBOX: 'checkbox-disabled-checked',
+  CHECKBOX_ERROR: 'checkbox-error',
+  CHECKBOX_HOVER: 'checkbox-hover',
+  CHECKBOX_HOVER_CHECKED: 'checkbox-hover-checked',
+  CHEVRON: 'chevron',
+  CHEVRON_DOUBLE: 'chevron-double',
+  CLOSE: 'close',
+  EMAIL: 'email',
+  ERROR: 'error',
+  EXPAND_COLLAPSE: 'expand-collapse',
+  EXPORT: 'export',
+  INFO: 'info',
+  LOADING_RING: 'loading-ring',
+  LOADING_RIPPLE: 'loading-ripple',
+  MENU: 'menu',
+  MORE: 'more',
+  OPEN_TABS: 'open-tabs',
+  PRINT: 'print',
+  ROUND_ADD: 'round-add',
+  ROUND_CLOSE: 'round-close',
+  ROUND_REMOVE: 'round-remove',
+  VIEW_LARGE: 'view-large',
+  VIEW_MEDIUM: 'view-medium',
+  VIEW_SMALL: 'view-small',
+  WARNING: 'warning',
+}
 
 export default Icon

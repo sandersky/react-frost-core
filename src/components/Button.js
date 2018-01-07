@@ -2,40 +2,36 @@
  * @flow
  */
 
+/* global $Values */
+
 import Icon from './Icon'
 import React, {Component, type Node} from 'react'
 
-export const DESIGN_APP_BAR: 'app-bar' = 'app-bar'
-export const DESIGN_INFO_BAR: 'info-bar' = 'info-bar'
-export const DESIGN_INLINE: 'in-line' = 'in-line'
-export const DESIGN_TAB: 'tab' = 'tab'
+const DESIGNS = {
+  APP_BAR: 'app-bar',
+  INFO_BAR: 'info-bar',
+  INLINE: 'in-line',
+  TAB: 'tab',
+}
 
-export const PRIORITY_CANCEL: 'cancel' = 'cancel'
-export const PRIORITY_CONFIRM: 'confirm' = 'confirm'
-export const PRIORITY_NORMAL: 'normal' = 'normal'
-export const PRIORITY_PRIMARY: 'primary' = 'primary'
-export const PRIORITY_SECONDARY: 'secondary' = 'secondary'
-export const PRIORITY_TERTIARY: 'tertiary' = 'tertiary'
+const PRIORITIES = {
+  CANCEL: 'cancel',
+  CONFIRM: 'confirm',
+  NORMAL: 'normal',
+  PRIMARY: 'primary',
+  SECONDARY: 'secondary',
+  TERTIARY: 'tertiary',
+}
 
-export const SIZE_LARGE: 'large' = 'large'
-export const SIZE_MEDIUM: 'medium' = 'medium'
-export const SIZE_SMALL: 'small' = 'small'
+const SIZES = {
+  LARGE: 'large',
+  MEDIUM: 'medium',
+  SMALL: 'small',
+}
 
-export type DESIGN =
-  | typeof DESIGN_APP_BAR
-  | typeof DESIGN_INFO_BAR
-  | typeof DESIGN_INLINE
-  | typeof DESIGN_TAB
-
-export type PRIORITY =
-  | typeof PRIORITY_CANCEL
-  | typeof PRIORITY_CONFIRM
-  | typeof PRIORITY_NORMAL
-  | typeof PRIORITY_PRIMARY
-  | typeof PRIORITY_SECONDARY
-  | typeof PRIORITY_TERTIARY
-
-export type SIZE = typeof SIZE_LARGE | typeof SIZE_MEDIUM | typeof SIZE_SMALL
+export type DESIGN = $Values<typeof DESIGNS>
+export type PRIORITY = $Values<typeof PRIORITIES>
+export type SIZE = $Values<typeof SIZES>
 
 export type PROPS = {
   children?: Node,
@@ -155,7 +151,7 @@ function renderButtonContents(
   text?: ?string,
 ): Node {
   switch (design) {
-    case DESIGN_INFO_BAR:
+    case DESIGNS.INFO_BAR:
       return (
         <div className="content">
           <div className="text">
@@ -167,7 +163,7 @@ function renderButtonContents(
         </div>
       )
 
-    case DESIGN_INLINE:
+    case DESIGNS.INLINE:
       return <div className="text">{text}</div>
 
     default: {
@@ -199,7 +195,11 @@ function renderButtonContents(
   }
 }
 
-export default class Button extends Component<PROPS> {
+class Button extends Component<PROPS> {
+  static DESIGNS = DESIGNS
+  static PRIORITIES = PRIORITIES
+  static SIZES = SIZES
+
   _handleClick = () => {
     const {onClick} = this.props
 
@@ -246,3 +246,5 @@ export default class Button extends Component<PROPS> {
     )
   }
 }
+
+export default Button

@@ -2,7 +2,7 @@
  * @flow
  */
 
-import {CodeBlock, Icon, ICON_ROUND_ADD} from '../../src'
+import {CodeBlock, Icon} from '../../src'
 import route from './factory'
 import React, {Component, type Node} from 'react'
 
@@ -16,28 +16,7 @@ const BACKGROUND_COLORS = [
   'main-button',
 ]
 
-// Note: this array is auto-populated by the plugin:
-// babel-plugin-auto-generate-icons
-const ICONS: string[] = []
-
-const ICON_MAPPING: {[icon: string]: string} = ICONS.reduce(
-  (
-    mapping: {[icon: string]: string},
-    icon: string,
-  ): {[icon: string]: string} => {
-    return Object.assign(mapping, {
-      [`ICON_${icon.toUpperCase().replace(/-/g, '_')}`]: icon,
-    })
-  },
-  {},
-)
-
-const IMPORTS_CODE =
-  'import {\n  Icon,\n' +
-  Object.keys(ICON_MAPPING)
-    .map((icon: string) => `  ${icon},\n`)
-    .join('') +
-  "} from 'react-frost-core'"
+const IMPORTS_CODE = "'import {Icon} from 'react-frost-core'"
 
 type IconBackgroundColorSwatchProps = {
   color: string,
@@ -109,7 +88,7 @@ class IconDemo extends Component<{}, State> {
         Then consume the component like so, passing in whichever icon you want:
       </p>,
       <CodeBlock demo={false} key="example" language="jsx">
-        <Icon icon={ICON_ROUND_ADD} />
+        <Icon icon={Icon.ICONS.ROUND_ADD} />
       </CodeBlock>,
       <p key="background-description">
         Click on these colors to see what the icons below look like against each
@@ -135,13 +114,13 @@ class IconDemo extends Component<{}, State> {
         types in a non-Javascript layer such as database rows or JSON files.
       </p>,
       <div className="IconSwatchGroup" key="icons">
-        {Object.keys(ICON_MAPPING).map((icon: string): Node => {
+        {Object.keys(Icon.ICONS).map((icon: string): Node => {
           return (
             <IconSwatch
               background={background}
               icon={icon}
               key={icon}
-              literal={ICON_MAPPING[icon]}
+              literal={Icon.ICONS[icon]}
             />
           )
         })}

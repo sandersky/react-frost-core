@@ -2,37 +2,11 @@
  * @flow
  */
 
-import {
-  Button,
-  CodeBlock,
-  BUTTON_PRIORITY_PRIMARY,
-  BUTTON_PRIORITY_SECONDARY,
-  BUTTON_PRIORITY_TERTIARY,
-  BUTTON_SIZE_LARGE,
-  BUTTON_SIZE_MEDIUM,
-  BUTTON_SIZE_SMALL,
-} from '../../src'
+import {Button, CodeBlock} from '../../src'
 import route from './factory'
 import React, {type Node} from 'react'
 
-const IMPORTS_CODE = `
-import {
-  Button,
-  BUTTON_DESIGN_APP_BAR,
-  BUTTON_DESIGN_INFO_BAR,
-  BUTTON_DESIGN_INLINE,
-  BUTTON_DESIGN_TAB,
-  BUTTON_PRIORITY_CANCEL, // Alias for BUTTON_PRIORITY_TERTIARY
-  BUTTON_PRIORITY_CONFIRM, // Alias for BUTTON_PRIORITY_PRIMARY
-  BUTTON_PRIORITY_NORMAL, // Alias for BUTTON_PRIORITY_SECONDARY
-  BUTTON_PRIORITY_PRIMARY,
-  BUTTON_PRIORITY_SECONDARY,
-  BUTTON_PRIORITY_TERTIARY,
-  BUTTON_SIZE_LARGE,
-  BUTTON_SIZE_MEDIUM,
-  BUTTON_SIZE_SMALL,
-} from 'react-frost-core'
-`.trim()
+const IMPORTS_CODE = "import {Button} from 'react-frost-core'"
 
 export default route('Button', (): Node => {
   return [
@@ -43,19 +17,19 @@ export default route('Button', (): Node => {
       <h3>Priorities</h3>
       <CodeBlock language="jsx">
         <Button
-          priority={BUTTON_PRIORITY_PRIMARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_PRIORITY_PRIMARY}
+          priority={Button.PRIORITIES.PRIMARY}
+          size={Button.SIZES.SMALL}
+          text={Button.PRIORITIES.PRIMARY}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_SECONDARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_PRIORITY_SECONDARY}
+          priority={Button.PRIORITIES.SECONDARY}
+          size={Button.SIZES.SMALL}
+          text={Button.PRIORITIES.SECONDARY}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_TERTIARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_PRIORITY_TERTIARY}
+          priority={Button.PRIORITIES.TERTIARY}
+          size={Button.SIZES.SMALL}
+          text={Button.PRIORITIES.TERTIARY}
         />
       </CodeBlock>
     </section>,
@@ -63,53 +37,53 @@ export default route('Button', (): Node => {
       <h3>Sizes</h3>
       <CodeBlock language="jsx">
         <Button
-          priority={BUTTON_PRIORITY_PRIMARY}
-          size={BUTTON_SIZE_LARGE}
-          text={BUTTON_SIZE_LARGE}
+          priority={Button.PRIORITIES.PRIMARY}
+          size={Button.SIZES.LARGE}
+          text={Button.SIZES.LARGE}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_SECONDARY}
-          size={BUTTON_SIZE_LARGE}
-          text={BUTTON_SIZE_LARGE}
+          priority={Button.PRIORITIES.SECONDARY}
+          size={Button.SIZES.LARGE}
+          text={Button.SIZES.LARGE}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_TERTIARY}
-          size={BUTTON_SIZE_LARGE}
-          text={BUTTON_SIZE_LARGE}
+          priority={Button.PRIORITIES.TERTIARY}
+          size={Button.SIZES.LARGE}
+          text={Button.SIZES.LARGE}
         />
         <br />
         <br />
         <Button
-          priority={BUTTON_PRIORITY_PRIMARY}
-          size={BUTTON_SIZE_MEDIUM}
-          text={BUTTON_SIZE_MEDIUM}
+          priority={Button.PRIORITIES.PRIMARY}
+          size={Button.SIZES.MEDIUM}
+          text={Button.SIZES.MEDIUM}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_SECONDARY}
-          size={BUTTON_SIZE_MEDIUM}
-          text={BUTTON_SIZE_MEDIUM}
+          priority={Button.PRIORITIES.SECONDARY}
+          size={Button.SIZES.MEDIUM}
+          text={Button.SIZES.MEDIUM}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_TERTIARY}
-          size={BUTTON_SIZE_MEDIUM}
-          text={BUTTON_SIZE_MEDIUM}
+          priority={Button.PRIORITIES.TERTIARY}
+          size={Button.SIZES.MEDIUM}
+          text={Button.SIZES.MEDIUM}
         />
         <br />
         <br />
         <Button
-          priority={BUTTON_PRIORITY_PRIMARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_SIZE_SMALL}
+          priority={Button.PRIORITIES.PRIMARY}
+          size={Button.SIZES.SMALL}
+          text={Button.SIZES.SMALL}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_SECONDARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_SIZE_SMALL}
+          priority={Button.PRIORITIES.SECONDARY}
+          size={Button.SIZES.SMALL}
+          text={Button.SIZES.SMALL}
         />{' '}
         <Button
-          priority={BUTTON_PRIORITY_TERTIARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_SIZE_SMALL}
+          priority={Button.PRIORITIES.TERTIARY}
+          size={Button.SIZES.SMALL}
+          text={Button.SIZES.SMALL}
         />
       </CodeBlock>
     </section>,
@@ -118,21 +92,21 @@ export default route('Button', (): Node => {
       <CodeBlock language="jsx">
         <Button
           disabled={true}
-          priority={BUTTON_PRIORITY_PRIMARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_PRIORITY_PRIMARY}
+          priority={Button.PRIORITIES.PRIMARY}
+          size={Button.SIZES.SMALL}
+          text={Button.PRIORITIES.PRIMARY}
         />{' '}
         <Button
           disabled={true}
-          priority={BUTTON_PRIORITY_SECONDARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_PRIORITY_SECONDARY}
+          priority={Button.PRIORITIES.SECONDARY}
+          size={Button.SIZES.SMALL}
+          text={Button.PRIORITIES.SECONDARY}
         />{' '}
         <Button
           disabled={true}
-          priority={BUTTON_PRIORITY_TERTIARY}
-          size={BUTTON_SIZE_SMALL}
-          text={BUTTON_PRIORITY_TERTIARY}
+          priority={Button.PRIORITIES.TERTIARY}
+          size={Button.SIZES.SMALL}
+          text={Button.PRIORITIES.TERTIARY}
         />
       </CodeBlock>
     </section>,

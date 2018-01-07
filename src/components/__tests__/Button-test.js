@@ -1,36 +1,16 @@
-import Button, {
-  DESIGN_APP_BAR,
-  DESIGN_INFO_BAR,
-  DESIGN_INLINE,
-  PRIORITY_CANCEL,
-  PRIORITY_CONFIRM,
-  PRIORITY_NORMAL,
-  PRIORITY_PRIMARY,
-  PRIORITY_SECONDARY,
-  PRIORITY_TERTIARY,
-  SIZE_LARGE,
-  SIZE_MEDIUM,
-  SIZE_SMALL,
-} from '../Button'
-import {ICON_ADD} from '../Icon'
+import Button from '../Button'
+import Icon from '../Icon'
 import {mount} from 'enzyme'
 import React from 'react'
 
-const PRIORITIES = [
-  PRIORITY_CANCEL,
-  PRIORITY_CONFIRM,
-  PRIORITY_NORMAL,
-  PRIORITY_PRIMARY,
-  PRIORITY_SECONDARY,
-  PRIORITY_TERTIARY,
-]
-
-const SIZES = [SIZE_LARGE, SIZE_MEDIUM, SIZE_SMALL]
-
 const TESTS = []
 
-PRIORITIES.forEach(priority => {
-  SIZES.forEach(size => {
+Object.keys(Button.PRIORITIES).forEach(priorityKey => {
+  const priority = Button.PRIORITIES[priorityKey]
+
+  Object.keys(Button.SIZES).forEach(sizeKey => {
+    const size = Button.SIZES[sizeKey]
+
     TESTS.push(
       {
         desc: `when ${size} ${priority} button`,
@@ -114,11 +94,11 @@ function test(desc, props) {
 describe('Button', () => {
   TESTS.forEach(({desc, props}) => {
     describe(desc, () => {
-      run('with icon set', Object.assign({icon: ICON_ADD}, props))
+      run('with icon set', Object.assign({icon: Icon.ICONS.ADD}, props))
       run('with text set', Object.assign({text: 'foobar'}, props))
       run(
         'with text and icon set',
-        Object.assign({icon: ICON_ADD, text: 'foobar'}, props),
+        Object.assign({icon: Icon.ICONS.ADD, text: 'foobar'}, props),
       )
     })
   })
@@ -126,7 +106,7 @@ describe('Button', () => {
   describe('when design property set', () => {
     it('throws an error if icon and text properties are missing', () => {
       expect(() => {
-        mount(<Button design={DESIGN_APP_BAR} />)
+        mount(<Button design={Button.DESIGNS.APP_BAR} />)
       }).toThrowErrorMatchingSnapshot()
     })
   })
@@ -135,8 +115,8 @@ describe('Button', () => {
     expect(() => {
       mount(
         <Button
-          design={DESIGN_APP_BAR}
-          priority={PRIORITY_SECONDARY}
+          design={Button.DESIGNS.APP_BAR}
+          priority={Button.PRIORITIES.SECONDARY}
           text="foobar"
         />,
       )
@@ -145,13 +125,19 @@ describe('Button', () => {
 
   it('functions as expected when size is set alongside design', () => {
     expect(() => {
-      mount(<Button design={DESIGN_APP_BAR} size={SIZE_MEDIUM} text="foobar" />)
+      mount(
+        <Button
+          design={Button.DESIGNS.APP_BAR}
+          size={Button.SIZES.MEDIUM}
+          text="foobar"
+        />,
+      )
     }).toThrowErrorMatchingSnapshot()
   })
 
   it('functions as expected when design is set with text', () => {
     expect(
-      mount(<Button design={DESIGN_APP_BAR} text="foobar" />),
+      mount(<Button design={Button.DESIGNS.APP_BAR} text="foobar" />),
     ).toMatchSnapshot()
   })
 
@@ -165,25 +151,25 @@ describe('Button', () => {
 
   it('functions as expected when design is info-bar with icon', () => {
     expect(
-      mount(<Button design={DESIGN_INFO_BAR} icon={ICON_ADD} />),
+      mount(<Button design={Button.DESIGNS.INFO_BAR} icon={Icon.ICONS.ADD} />),
     ).toMatchSnapshot()
   })
 
   it('functions as expected when design is info-bar with text', () => {
     expect(
-      mount(<Button design={DESIGN_INFO_BAR} text="foobar" />),
+      mount(<Button design={Button.DESIGNS.INFO_BAR} text="foobar" />),
     ).toMatchSnapshot()
   })
 
   it('functions as expected when design is inline with icon', () => {
     expect(
-      mount(<Button design={DESIGN_INLINE} icon={ICON_ADD} />),
+      mount(<Button design={Button.DESIGNS.INLINE} icon={Icon.ICONS.ADD} />),
     ).toMatchSnapshot()
   })
 
   it('functions as expected when design is inline with text', () => {
     expect(
-      mount(<Button design={DESIGN_INLINE} text="foobar" />),
+      mount(<Button design={Button.DESIGNS.INLINE} text="foobar" />),
     ).toMatchSnapshot()
   })
 })

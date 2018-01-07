@@ -1,3 +1,8 @@
+## 0.0.4
+
+*   Upgraded dependencies.
+*   Move type exports to classes themselves.
+
 ## 0.0.3
 
 *   Switched from SASS to postcss/cssnext.

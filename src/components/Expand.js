@@ -3,11 +3,18 @@
  */
 
 import Icon from './Icon'
+import t from 'grammatic'
 import React, {Component, type Node} from 'react'
 
-// TODO: i18n
-const DEFAULT_COLLAPSED_LABEL = 'Expand'
-const DEFAULT_EXPANDED_LABEL = 'Collapse'
+const DEFAULT_COLLAPSED_LABEL = t(
+  'Expand',
+  'Label for toggle in collapsed state',
+)
+
+const DEFAULT_EXPANDED_LABEL = t(
+  'Collapse',
+  'Label for toggle in collapsed state',
+)
 
 export type PROPS = {
   children?: Node,

@@ -25,23 +25,23 @@
   }
 
   & .frost-expand-label {
+    align-items: center;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
-    align-items: center;
     justify-content: flex-start;
     margin-bottom: 5px;
-    cursor: pointer;
 
     & .frost-expand-label-text {
-      padding-left: 10px;
       color: var(--frost-color-expand-label-text);
+      padding-left: 10px;
     }
 
     & .frost-icon-frost-chevron {
-      width: 30px;
       height: 30px;
       transition: transform .3s;
+      width: 30px;
     }
   }
 
@@ -49,10 +49,10 @@
     background-color: var(--frost-color-expand-content-bg);
 
     & .frost-expand-content {
-      padding: 15px;
       color: var(--frost-color-expand-content-text);
       font-size: var(--frost-font-size-s);
       line-height: 1.4em;
+      padding: 15px;
     }
   }
 }

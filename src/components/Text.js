@@ -13,6 +13,7 @@ type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
 export type PROPS = {
   align?: ?ALIGN,
+  className?: ?string,
   disabled?: ?boolean,
   error?: ?boolean,
   onChange?: (value: ?string) => void,
@@ -35,11 +36,16 @@ const CLEAR_SVG = (
 
 /**
  * Get class name for text component given it's current state
+ * @param className - user specified class name
  * @param error - whether or not input has an error
  * @returns class name for text component
  */
-function getClassName(error?: ?boolean): string {
+function getClassName(className?: ?string, error?: ?boolean): string {
   const classNames = ['frost-text']
+
+  if (className) {
+    classNames.push(className)
+  }
 
   if (error) {
     classNames.push('frost-text-error')
@@ -163,6 +169,7 @@ export default class Text extends Component<PROPS, State> {
   render(): Node {
     const {
       align,
+      className,
       error,
       onChange: _onChange,
       value: _value,
@@ -172,7 +179,7 @@ export default class Text extends Component<PROPS, State> {
     const {value} = this.state
 
     return (
-      <div className={getClassName(error)}>
+      <div className={getClassName(className, error)}>
         <input
           className={getInputClassName(align)}
           onBlur={this._handleBlur}

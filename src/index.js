@@ -65,6 +65,18 @@ import type {PROPS as _LOADING_PROPS} from './components/Loading'
 export type LOADING_PROPS = _LOADING_PROPS
 
 /**
+ * Password
+ */
+
+export {
+  default as Password,
+  ALIGN_LEFT as PASSWORD_ALIGN_LEFT,
+  ALIGN_RIGHT as PASSWORD_ALIGN_RIGHT,
+} from './components/Password'
+import type {PROPS as _PASSWORD_PROPS} from './components/Password'
+export type PASSWORD_PROPS = _PASSWORD_PROPS
+
+/**
  * Text
  */
 

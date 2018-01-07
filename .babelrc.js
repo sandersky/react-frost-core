@@ -14,7 +14,12 @@ module.exports = {
         "translationsDirectory": TRANSLATIONS_DIRECTORY,
       },
     ],
-    "./plugins/babel-plugin-react-code-block",
+    [
+      "babel-plugin-react-code-block",
+      {
+        "component": "CodeBlock",
+      },
+    ],
   ],
   "presets": [
     [

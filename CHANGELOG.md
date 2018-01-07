@@ -1,3 +1,7 @@
+## 0.0.8
+
+*   Added password component.
+
 ## 0.0.7
 
 *   Added ajax error page component.

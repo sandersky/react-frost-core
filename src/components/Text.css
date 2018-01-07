@@ -17,8 +17,8 @@
 
 .frost-text {
   display: block;
-  position: relative;
   min-width: 175px;
+  position: relative;
 
   &.frost-text-error {
     & .frost-text-input {
@@ -52,16 +52,16 @@
 }
 
 .frost-text-input {
-  display: inline-block;
-  width: 100%;
-  height: var(--frost-text-height);
-  padding: var(--frost-text-padding);
-  transition: border .2s ease;
   border: var(--frost-text-border);
-  outline: none;
   color: var(--frost-text-color);
+  display: inline-block;
   font-size: var(--frost-text-font-size);
   font-weight: 200;
+  height: var(--frost-text-height);
+  outline: none;
+  padding: var(--frost-text-padding);
+  transition: border .2s ease;
+  width: 100%;
 
   &.frost-text-align-right {
     text-align: right;
@@ -84,8 +84,8 @@
   }
 
   &:disabled {
-    border: var(--frost-text-disabled-border);
     background-color: var(--frost-text-disabled-bg);
+    border: var(--frost-text-disabled-border);
   }
 
   &:hover {

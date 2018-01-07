@@ -1,6 +1,6 @@
 {
   "name": "react-frost-core",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "The library of core frost components.",
   "main": "lib/index.js",
   "files": [
@@ -11,7 +11,7 @@
     "build-app-dev": "webpack-dev-server",
     "build-app-prod": "NODE_ENV=production webpack",
     "deploy": "npm run build-app-prod && gh-pages -d public",
-    "postpublish": "codecov",
+    "postpublish": "codecov && npm run deploy",
     "prepublishOnly": "npm run build",
     "test": "lintly app src && flow && jest"
   },
@@ -46,7 +46,8 @@
     "babel-core": "^7.0.0-0",
     "babel-jest": "22.0.4",
     "babel-loader": "8.0.0-beta.0",
-    "babel-plugin-auto-css-modules": "0.0.1",
+    "babel-plugin-auto-css-modules": "0.0.3",
+    "babel-plugin-react-code-block": "0.0.1",
     "codecov": "3.0.0",
     "css-loader": "0.28.8",
     "enzyme": "3.3.0",

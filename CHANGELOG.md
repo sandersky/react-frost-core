@@ -1,3 +1,7 @@
+## 0.0.9
+
+*   Upgrade dependencies.
+
 ## 0.0.8
 
 *   Added password component.

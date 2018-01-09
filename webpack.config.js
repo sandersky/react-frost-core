@@ -77,7 +77,7 @@ module.exports = {
   },
   output: {
     path: PUBLIC_PATH,
-    publicPath: '/react-frost-core',
+    publicPath: '/react-frost-core/',
     filename: 'bundle.js',
   },
   plugins: getPlugins(),

@@ -2,6 +2,7 @@
 
 /coverage
 /node_modules
+/public/assets
 /public/*.css*
 /public/*.js*
 /public/*.svg

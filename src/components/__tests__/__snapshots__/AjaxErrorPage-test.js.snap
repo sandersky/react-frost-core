@@ -46,7 +46,7 @@ exports[`AjaxErrorPage when suggestion omitted functions as expected 1`] = `
             icon="chevron"
           >
             <svg
-              className="frost-icon-frost-chevron"
+              className="frost-icon frost-icon-frost-chevron"
             >
               <use
                 xlinkHref="frost-pack.svg#sprite-chevron"
@@ -111,7 +111,7 @@ exports[`AjaxErrorPage when suggestion omitted when details expanded functions a
             icon="chevron"
           >
             <svg
-              className="frost-icon-frost-chevron"
+              className="frost-icon frost-icon-frost-chevron"
             >
               <use
                 xlinkHref="frost-pack.svg#sprite-chevron"
@@ -185,7 +185,7 @@ exports[`AjaxErrorPage when suggestion omitted when details expanded when detail
             icon="chevron"
           >
             <svg
-              className="frost-icon-frost-chevron"
+              className="frost-icon frost-icon-frost-chevron"
             >
               <use
                 xlinkHref="frost-pack.svg#sprite-chevron"
@@ -256,7 +256,7 @@ exports[`AjaxErrorPage when suggestion provided functions as expected 1`] = `
             icon="chevron"
           >
             <svg
-              className="frost-icon-frost-chevron"
+              className="frost-icon frost-icon-frost-chevron"
             >
               <use
                 xlinkHref="frost-pack.svg#sprite-chevron"
@@ -327,7 +327,7 @@ exports[`AjaxErrorPage when suggestion provided when details expanded functions 
             icon="chevron"
           >
             <svg
-              className="frost-icon-frost-chevron"
+              className="frost-icon frost-icon-frost-chevron"
             >
               <use
                 xlinkHref="frost-pack.svg#sprite-chevron"
@@ -407,7 +407,7 @@ exports[`AjaxErrorPage when suggestion provided when details expanded when detai
             icon="chevron"
           >
             <svg
-              className="frost-icon-frost-chevron"
+              className="frost-icon frost-icon-frost-chevron"
             >
               <use
                 xlinkHref="frost-pack.svg#sprite-chevron"

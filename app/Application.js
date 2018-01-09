@@ -21,6 +21,7 @@ import Text from './routes/Text'
 import TextArea from './routes/TextArea'
 import Toggle from './routes/Toggle'
 import Typography from './routes/Typography'
+import t from 'grammatic'
 import React, {type Node} from 'react'
 import {HashRouter, NavLink, Redirect, Route} from 'react-router-dom'
 
@@ -30,6 +31,11 @@ type PAGE_TYPE = {|
   path: string,
 |}
 /* eslint-enable flowtype/no-weak-types */
+
+const GITHUB_TEXT = t(
+  'Source code on Github',
+  'Alternative text for Github source code link.',
+)
 
 const PAGES: Array<PAGE_TYPE> = [
   {
@@ -116,6 +122,16 @@ export default (): Node => {
       <div className="Application">
         <header>
           <h1>react-frost-core</h1>
+          <a
+            href="https://github.com/dogma-io/react-frost-core"
+            target="_blank"
+          >
+            <img
+              alt={GITHUB_TEXT}
+              src={require('./assets/github-mark.svg')}
+              title={GITHUB_TEXT}
+            />
+          </a>
         </header>
         <div className="body">
           <div className="navigation">

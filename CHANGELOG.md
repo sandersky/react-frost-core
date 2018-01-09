@@ -1,3 +1,8 @@
+## 0.0.10
+
+*   Added link component.
+*   Added link to Github source code on documentation app.
+
 ## 0.0.9
 
 *   Upgrade dependencies.

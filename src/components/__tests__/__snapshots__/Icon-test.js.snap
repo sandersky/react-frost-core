@@ -6,7 +6,7 @@ exports[`Icon when className and icon set functions as expected 1`] = `
   icon="add"
 >
   <svg
-    className="frost-icon-frost-add foobar"
+    className="frost-icon frost-icon-frost-add foobar"
   >
     <use
       xlinkHref="frost-pack.svg#sprite-add"
@@ -22,7 +22,7 @@ exports[`Icon when className, icon, and pack set functions as expected 1`] = `
   pack="fire"
 >
   <svg
-    className="frost-icon-fire-add foobar"
+    className="frost-icon frost-icon-fire-add foobar"
   >
     <use
       xlinkHref="fire-pack.svg#sprite-add"
@@ -37,7 +37,7 @@ exports[`Icon when icon and pack set functions as expected 1`] = `
   pack="fire"
 >
   <svg
-    className="frost-icon-fire-add"
+    className="frost-icon frost-icon-fire-add"
   >
     <use
       xlinkHref="fire-pack.svg#sprite-add"
@@ -51,7 +51,7 @@ exports[`Icon when icon set functions as expected 1`] = `
   icon="add"
 >
   <svg
-    className="frost-icon-frost-add"
+    className="frost-icon frost-icon-frost-add"
   >
     <use
       xlinkHref="frost-pack.svg#sprite-add"

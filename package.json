@@ -1,6 +1,6 @@
 {
   "name": "react-frost-core",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The library of core frost components.",
   "main": "lib/index.js",
   "files": [
@@ -54,6 +54,7 @@
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
     "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.6",
     "flow-bin": "0.63.1",
     "gh-pages": "1.1.0",
     "grammatic": "0.0.2",
@@ -68,10 +69,10 @@
     "react-dom": "16.2.0",
     "react-router-dom": "4.2.2",
     "style-loader": "0.19.1",
-    "svg-spritemap-webpack-plugin": "1.1.0",
+    "svg-spritemap-webpack-plugin": "1.1.1",
     "uglifyjs-webpack-plugin": "1.1.6",
     "webpack": "3.10.0",
-    "webpack-dev-server": "2.10.0"
+    "webpack-dev-server": "2.10.1"
   },
   "dependencies": {
     "react": "^16.0.0"
@@ -92,9 +93,6 @@
         "lines": 100,
         "statements": 100
       }
-    },
-    "moduleNameMapper": {
-      "\\.css$": "<rootDir>/__mocks__/style.js"
     },
     "setupFiles": [
       "<rootDir>/jest-setup.js"

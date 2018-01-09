@@ -14,6 +14,8 @@ const DESIGNS = {
   TAB: 'tab',
 }
 
+const PREFIX = 'frost-button'
+
 const PRIORITIES = {
   CANCEL: 'cancel',
   CONFIRM: 'confirm',
@@ -67,14 +69,14 @@ function getClassName(
   text?: ?string,
   vertical?: ?boolean,
 ): string {
-  const classNames = ['frost-button']
+  const classNames = [PREFIX]
 
   if (className) {
     classNames.push(className)
   }
 
   if (disabled) {
-    classNames.push('disabled')
+    classNames.push(`${PREFIX}-disabled`)
   }
 
   if (design) {
@@ -153,41 +155,41 @@ function renderButtonContents(
   switch (design) {
     case DESIGNS.INFO_BAR:
       return (
-        <div className="content">
-          <div className="text">
-            <div className="svg">
+        <div className={`${PREFIX}-content`}>
+          <div className={`${PREFIX}-text`}>
+            <div className={`${PREFIX}-svg`}>
               {icon ? <Icon icon={icon} pack={pack} /> : null}
             </div>
-            <div className="text">{text}</div>
+            <div className={`${PREFIX}-text`}>{text}</div>
           </div>
         </div>
       )
 
     case DESIGNS.INLINE:
-      return <div className="text">{text}</div>
+      return <div className={`${PREFIX}-text`}>{text}</div>
 
     default: {
       if (icon && text) {
         return (
-          <div className="icon-text text">
-            <div className="icon">
+          <div className={`${PREFIX}-icon-text ${PREFIX}-text`}>
+            <div className={`${PREFIX}-icon`}>
               <Icon icon={icon} pack={pack} />
             </div>
-            <div className="text">{text}</div>
+            <div className={`${PREFIX}-text`}>{text}</div>
           </div>
         )
       }
 
       if (icon) {
         return (
-          <div className="icon">
+          <div className={`${PREFIX}-icon`}>
             <Icon icon={icon} pack={pack} />
           </div>
         )
       }
 
       if (text) {
-        return <div className="text">{text}</div>
+        return <div className={`${PREFIX}-text`}>{text}</div>
       }
 
       return null

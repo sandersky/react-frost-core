@@ -42,13 +42,26 @@ th {
 
   & header {
     background-color: var(--frost-color-blue-2);
+    display: flex;
+    flex-direction: row;
+    min-height: 52px;
     padding: 10px;
-  }
 
-  & h1 {
-    font-size: var(--frost-font-size-xl);
-    color: var(--frost-color-white);
-    margin: 0;
+    & h1 {
+      flex: 1 0 auto;
+      font-size: var(--frost-font-size-xl);
+      color: var(--frost-color-white);
+      margin: 0;
+    }
+
+    & a {
+      flex: 0 1 auto;
+      opacity: .6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   & .body {

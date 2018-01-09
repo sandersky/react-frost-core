@@ -15,7 +15,7 @@ export type PROPS = {
 const Icon = ({className, icon, pack, ...passThroughProps}: PROPS): Node => {
   pack = pack || DEFAULT_PACK
 
-  const classNames = [`frost-icon-${pack}-${icon}`]
+  const classNames = ['frost-icon', `frost-icon-${pack}-${icon}`]
 
   if (className) {
     classNames.push(className)

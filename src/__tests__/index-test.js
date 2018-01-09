@@ -5,6 +5,7 @@ import {
   Expand as _Expand,
   Icon as _Icon,
   ICON_DEFAULT_PACK as _ICON_DEFAULT_PACK,
+  Link as _Link,
   Loading as _Loading,
   Password as _Password,
   Text as _Text,
@@ -17,6 +18,7 @@ import Button from '../components/Button'
 import CodeBlock from '../components/CodeBlock'
 import Expand from '../components/Expand'
 import Icon, {DEFAULT_PACK as ICON_DEFAULT_PACK} from '../components/Icon'
+import Link from '../components/Link'
 import Loading from '../components/Loading'
 import Password from '../components/Password'
 
@@ -45,6 +47,10 @@ describe('react-frost-core', () => {
   it('exports Icon constants and component', () => {
     expect(_Icon).toBe(Icon)
     expect(_ICON_DEFAULT_PACK).toBe(ICON_DEFAULT_PACK)
+  })
+
+  it('exports Link component', () => {
+    expect(_Link).toBe(Link)
   })
 
   it('exports Loading component', () => {

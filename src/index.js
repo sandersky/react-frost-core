@@ -57,6 +57,24 @@ import type {PROPS as _ICON_PROPS} from './components/Icon'
 export type ICON_PROPS = _ICON_PROPS
 
 /**
+ * Link
+ */
+
+export {default as Link} from './components/Link'
+
+import type {
+  DESIGN as _LINK_DESIGN,
+  PRIORITY as _LINK_PRIORITY,
+  PROPS as _LINK_PROPS,
+  SIZE as _LINK_SIZE,
+} from './components/Link'
+
+export type LINK_DESIGN = _LINK_DESIGN
+export type LINK_PRIORITY = _LINK_PRIORITY
+export type LINK_PROPS = _LINK_PROPS
+export type LINK_SIZE = _LINK_SIZE
+
+/**
  * Loading
  */
 

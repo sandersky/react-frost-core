@@ -3,7 +3,7 @@
  */
 
 import {CodeBlock, Icon} from '../../src'
-import route from './factory'
+import route from '../factory'
 import React, {Component, type Node} from 'react'
 
 const BACKGROUND_COLORS = [

@@ -3,7 +3,7 @@
  */
 
 import {CodeBlock} from '../../src'
-import route from './factory'
+import route from '../factory'
 import React, {type Node} from 'react'
 
 const ALARM_STATUSES = [

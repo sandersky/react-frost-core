@@ -11,7 +11,7 @@ export type PROPS = {
   children?: Node,
   code?: string,
   demo?: boolean,
-  language: 'css' | 'js' | 'jsx',
+  language: 'bash' | 'css' | 'js' | 'jsx',
   maxLineLength?: number,
   togglable?: boolean,
 }

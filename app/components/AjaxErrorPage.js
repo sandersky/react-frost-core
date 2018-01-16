@@ -3,7 +3,7 @@
  */
 
 import {AjaxErrorPage, CodeBlock} from '../../src'
-import route from './factory'
+import route from '../factory'
 import React, {type Node} from 'react'
 
 const IMPORTS_CODE = "import {AjaxErrorPage} from 'react-frost-core'"

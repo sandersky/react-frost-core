@@ -3,7 +3,7 @@
  */
 
 import {CodeBlock, Text, TEXT_ALIGN_RIGHT} from '../../src'
-import route from './factory'
+import route from '../factory'
 import React, {type Element, type Node} from 'react'
 
 type DOC_TYPE = {|

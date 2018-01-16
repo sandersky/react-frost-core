@@ -3,7 +3,7 @@
  */
 
 import {CodeBlock, Link} from '../../src'
-import route from './factory'
+import route from '../factory'
 import React, {type Node} from 'react'
 
 const IMPORTS_CODE = "import {Link} from 'react-frost-core'"

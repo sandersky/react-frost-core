@@ -17,8 +17,8 @@ const TYPOGRAPHY_APP_COMPONENT_PATH = join(
   __dirname,
   '..',
   'app',
-  'routes',
-  'Typography.js'
+  'content',
+  'Typography.js',
 )
 
 /**
@@ -30,7 +30,7 @@ const TYPOGRAPHY_CSS_PATH = join(
   '..',
   'src',
   'styles',
-  'typography.css'
+  'typography.css',
 )
 
 module.exports = ({types: t, template}) => {
@@ -64,12 +64,10 @@ module.exports = ({types: t, template}) => {
           const {elements} = init
 
           fontSizes.forEach(({key}) => {
-            elements.push(
-              t.stringLiteral(key)
-            )
+            elements.push(t.stringLiteral(key))
           })
         }
-      }
+      },
     },
   }
 }

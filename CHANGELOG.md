@@ -1,3 +1,8 @@
+## 0.0.11
+
+*   Improved demo.
+*   Fixed icon color for primary link.
+
 ## 0.0.10
 
 *   Added link component.

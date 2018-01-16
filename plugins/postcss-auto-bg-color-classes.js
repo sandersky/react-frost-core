@@ -4,12 +4,11 @@ const postcss = require('postcss')
 const COLORS_CSS_FILE = join(__dirname, '..', 'src', 'styles', 'colors.css')
 
 module.exports = postcss.plugin('auto-bg-color-classes', () => {
-  return (css) => {
+  return css => {
     css.walkDecls(/^--frost-color-/, decl => {
       const {prop, source} = decl
       const {input} = source
       const {file} = input
-
 
       if (file === COLORS_CSS_FILE) {
         decl.parent.after(`

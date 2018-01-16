@@ -2,9 +2,9 @@
  * @flow
  */
 
-import route from './factory'
+import route from '../factory'
 import React, {type Node} from 'react'
 
-export default route('Layout', (): Node => {
+export default route('Radio', (): Node => {
   return <div />
 })

@@ -15,6 +15,7 @@
   --frost-color-link-secondary-border-bottom-color: #fff;
   --frost-color-link-secondary-hover-bg-color: color(var(--frost-color-blue-1) alpha(5%));
   --frost-color-link-secondary-pressed-bg: #e7eef3;
+  --frost-link-primary-color: var(--frost-color-white);
 }
 
 .frost-link {
@@ -222,7 +223,7 @@
   &.primary {
     background: linear-gradient(color(var(--frost-color-blue-1) tint(14)), var(--frost-color-blue-1));
     border: 0;
-    color: var(--frost-color-white);
+    color: var(--frost-link-primary-color);
 
     &:active {
       &:not(.disabled) {
@@ -256,6 +257,10 @@
       &:hover {
         background: linear-gradient(color(var(--frost-color-blue-1) tint(14)), var(--frost-color-blue-1));
       }
+    }
+
+    & .frost-link-svg {
+      fill: var(--frost-link-primary-color);
     }
   }
 

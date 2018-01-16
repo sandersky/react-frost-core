@@ -3,7 +3,7 @@
  */
 
 import {CodeBlock} from '../../src'
-import route from './factory'
+import route from '../factory'
 import React, {type Node} from 'react'
 
 const EXAMPLE_TEXT = 'The quick brown fox jumps over the lazy dog'

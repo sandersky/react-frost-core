@@ -2,9 +2,9 @@
  * @flow
  */
 
-import route from './factory'
+import route from '../factory'
 import React, {type Node} from 'react'
 
-export default route('Checkbox', (): Node => {
+export default route('Toggle', (): Node => {
   return <div />
 })

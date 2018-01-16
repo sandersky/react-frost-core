@@ -6,11 +6,11 @@ const TYPOGRPAHY_CSS_FILE = join(
   '..',
   'src',
   'styles',
-  'typography.css'
+  'typography.css',
 )
 
 module.exports = postcss.plugin('auto-font-size-classes', () => {
-  return (css) => {
+  return css => {
     css.walkDecls(/^--frost-font-size-/, decl => {
       const {prop, source} = decl
       const {input} = source

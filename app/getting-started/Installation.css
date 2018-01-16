@@ -1,0 +1,28 @@
+@import '../../src/styles/colors.css';
+
+:root {
+  --external-link-color: var(--frost-color-blue-1);
+  --external-link-hover-color: var(--frost-color-blue-2);
+}
+
+.ExternalLink {
+  color: var(--external-link-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--external-link-hover-color);
+
+    & .frost-icon {
+      fill: var(--external-link-hover-color);
+      stroke: var(--external-link-hover-color);
+    }
+  }
+
+  & .frost-icon {
+    fill: var(--external-link-color);
+    height: 16px;
+    margin-bottom: -2px;
+    stroke: var(--external-link-color);
+    width: 16px;
+  }
+}

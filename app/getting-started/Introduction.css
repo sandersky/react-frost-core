@@ -1,0 +1,6 @@
+@import '../../src/styles/colors.css';
+
+.Disclaimer {
+  font-style: italic;
+  margin-top: 0;
+}

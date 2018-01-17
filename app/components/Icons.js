@@ -58,12 +58,8 @@ type State = {|
 |}
 
 class IconDemo extends Component<{}, State> {
-  constructor() {
-    super(...arguments)
-
-    this.state = {
-      background: BACKGROUND_COLORS[0],
-    }
+  state = {
+    background: BACKGROUND_COLORS[0],
   }
 
   _changeBackground = (background: string) => {

@@ -79,7 +79,7 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 
   return Object.keys(examples).map((key: string, index: number): Node => {
     return (
-      <div className="text-field-example" key={index}>
+      <div className="text-example" key={index}>
         <h4>{key}</h4>
         {/* $FlowFixMe - Flow thinks examples could be null/undefined */}
         {examples[key]}
@@ -88,15 +88,15 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
   })
 }
 
-export default route('Text field', (): Node => {
+export default route('Text', (): Node => {
   return [
     <section key="imports">
       <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
     </section>,
     <section key="default">
       <h3>Default</h3>
-      <div className="text-field-examples">
-        <div className="text-field-example">
+      <div className="text-examples">
+        <div className="text-example">
           <CodeBlock language="jsx" maxLineLength={30}>
             <Text />
           </CodeBlock>
@@ -108,7 +108,7 @@ export default route('Text field', (): Node => {
       return (
         <section key={index}>
           <h3>{title}</h3>
-          <div className="text-field-examples">{renderExamples(examples)}</div>
+          <div className="text-examples">{renderExamples(examples)}</div>
         </section>
       )
     }),

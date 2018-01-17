@@ -1,75 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text when align set to left functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to left functions as expected 1`] = `
+<Textarea
   align="left"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to left when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to left when textarea is focused functions as expected 1`] = `
+<Textarea
   align="left"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to left when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when align set to left when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   align="left"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to left when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to left when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   align="left"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -90,25 +90,25 @@ exports[`Text when align set to left when input is focused when value changed fu
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to left when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to left when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   align="left"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -129,97 +129,97 @@ exports[`Text when align set to left when input is focused when value changed wh
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to left when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to left when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   align="left"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to right functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to right functions as expected 1`] = `
+<Textarea
   align="right"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input frost-text-align-right"
+    <textarea
+      className="frost-textarea-input frost-textarea-align-right"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to right when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to right when textarea is focused functions as expected 1`] = `
+<Textarea
   align="right"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input frost-text-align-right"
+    <textarea
+      className="frost-textarea-input frost-textarea-align-right"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to right when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when align set to right when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   align="right"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input frost-text-align-right"
+    <textarea
+      className="frost-textarea-input frost-textarea-align-right"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to right when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to right when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   align="right"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input frost-text-align-right"
+    <textarea
+      className="frost-textarea-input frost-textarea-align-right"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -240,25 +240,25 @@ exports[`Text when align set to right when input is focused when value changed f
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to right when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to right when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   align="right"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input frost-text-align-right"
+    <textarea
+      className="frost-textarea-input frost-textarea-align-right"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -279,97 +279,97 @@ exports[`Text when align set to right when input is focused when value changed w
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when align set to right when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when align set to right when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   align="right"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input frost-text-align-right"
+    <textarea
+      className="frost-textarea-input frost-textarea-align-right"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when class name passed in functions as expected 1`] = `
-<Text
+exports[`Textarea when class name passed in functions as expected 1`] = `
+<Textarea
   className="foobar"
 >
   <div
-    className="frost-text foobar"
+    className="frost-textarea foobar"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when class name passed in when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when class name passed in when textarea is focused functions as expected 1`] = `
+<Textarea
   className="foobar"
 >
   <div
-    className="frost-text foobar"
+    className="frost-textarea foobar"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when class name passed in when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when class name passed in when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   className="foobar"
 >
   <div
-    className="frost-text foobar"
+    className="frost-textarea foobar"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when class name passed in when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when class name passed in when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   className="foobar"
 >
   <div
-    className="frost-text foobar"
+    className="frost-textarea foobar"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -390,25 +390,25 @@ exports[`Text when class name passed in when input is focused when value changed
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when class name passed in when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when class name passed in when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   className="foobar"
 >
   <div
-    className="frost-text foobar"
+    className="frost-textarea foobar"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -429,36 +429,36 @@ exports[`Text when class name passed in when input is focused when value changed
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when class name passed in when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when class name passed in when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   className="foobar"
 >
   <div
-    className="frost-text foobar"
+    className="frost-textarea foobar"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to false functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to false functions as expected 1`] = `
+<Textarea
   disabled={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -466,18 +466,18 @@ exports[`Text when disabled set to false functions as expected 1`] = `
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to false when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to false when textarea is focused functions as expected 1`] = `
+<Textarea
   disabled={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -485,18 +485,18 @@ exports[`Text when disabled set to false when input is focused functions as expe
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to false when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to false when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   disabled={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -504,18 +504,18 @@ exports[`Text when disabled set to false when input is focused when input looses
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to false when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to false when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   disabled={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -523,7 +523,7 @@ exports[`Text when disabled set to false when input is focused when value change
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -544,18 +544,18 @@ exports[`Text when disabled set to false when input is focused when value change
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to false when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to false when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   disabled={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -563,7 +563,7 @@ exports[`Text when disabled set to false when input is focused when value change
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -584,18 +584,18 @@ exports[`Text when disabled set to false when input is focused when value change
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to false when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to false when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   disabled={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -603,18 +603,18 @@ exports[`Text when disabled set to false when input is focused when value change
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to true functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to true functions as expected 1`] = `
+<Textarea
   disabled={true}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={true}
       onBlur={[Function]}
       onChange={[Function]}
@@ -622,18 +622,18 @@ exports[`Text when disabled set to true functions as expected 1`] = `
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to true when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to true when textarea is focused functions as expected 1`] = `
+<Textarea
   disabled={true}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={true}
       onBlur={[Function]}
       onChange={[Function]}
@@ -641,18 +641,18 @@ exports[`Text when disabled set to true when input is focused functions as expec
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when disabled set to true when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when disabled set to true when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   disabled={true}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       disabled={true}
       onBlur={[Function]}
       onChange={[Function]}
@@ -660,79 +660,79 @@ exports[`Text when disabled set to true when input is focused when input looses 
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to false functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to false functions as expected 1`] = `
+<Textarea
   error={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to false when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to false when textarea is focused functions as expected 1`] = `
+<Textarea
   error={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to false when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when error set to false when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   error={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to false when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to false when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   error={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -753,25 +753,25 @@ exports[`Text when error set to false when input is focused when value changed f
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to false when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to false when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   error={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -792,97 +792,97 @@ exports[`Text when error set to false when input is focused when value changed w
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to false when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to false when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   error={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to true functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to true functions as expected 1`] = `
+<Textarea
   error={true}
 >
   <div
-    className="frost-text frost-text-error"
+    className="frost-textarea frost-textarea-error"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to true when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to true when textarea is focused functions as expected 1`] = `
+<Textarea
   error={true}
 >
   <div
-    className="frost-text frost-text-error"
+    className="frost-textarea frost-textarea-error"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to true when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when error set to true when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   error={true}
 >
   <div
-    className="frost-text frost-text-error"
+    className="frost-textarea frost-textarea-error"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to true when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to true when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   error={true}
 >
   <div
-    className="frost-text frost-text-error"
+    className="frost-textarea frost-textarea-error"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -903,25 +903,25 @@ exports[`Text when error set to true when input is focused when value changed fu
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to true when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to true when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   error={true}
 >
   <div
-    className="frost-text frost-text-error"
+    className="frost-textarea frost-textarea-error"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -942,89 +942,89 @@ exports[`Text when error set to true when input is focused when value changed wh
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when error set to true when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when error set to true when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   error={true}
 >
   <div
-    className="frost-text frost-text-error"
+    className="frost-textarea frost-textarea-error"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when no properties passed in functions as expected 1`] = `
-<Text>
+exports[`Textarea when no properties passed in functions as expected 1`] = `
+<Textarea>
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when no properties passed in when input is focused functions as expected 1`] = `
-<Text>
+exports[`Textarea when no properties passed in when textarea is focused functions as expected 1`] = `
+<Textarea>
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when no properties passed in when input is focused when input looses focus renders as expected 1`] = `
-<Text>
+exports[`Textarea when no properties passed in when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea>
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when no properties passed in when input is focused when value changed functions as expected 1`] = `
-<Text>
+exports[`Textarea when no properties passed in when textarea is focused when value changed functions as expected 1`] = `
+<Textarea>
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1045,23 +1045,23 @@ exports[`Text when no properties passed in when input is focused when value chan
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when no properties passed in when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text>
+exports[`Textarea when no properties passed in when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea>
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1082,81 +1082,81 @@ exports[`Text when no properties passed in when input is focused when value chan
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when no properties passed in when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text>
+exports[`Textarea when no properties passed in when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea>
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when onChange set functions as expected 1`] = `
-<Text
+exports[`Textarea when onChange set functions as expected 1`] = `
+<Textarea
   onChange={[MockFunction]}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when onChange set when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when onChange set when textarea is focused functions as expected 1`] = `
+<Textarea
   onChange={[MockFunction]}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when onChange set when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when onChange set when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   onChange={[MockFunction]}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when onChange set when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when onChange set when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   onChange={
     [MockFunction] {
       "calls": Array [
@@ -1168,17 +1168,17 @@ exports[`Text when onChange set when input is focused when value changed functio
   }
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1199,61 +1199,11 @@ exports[`Text when onChange set when input is focused when value changed functio
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when onChange set when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
-  onChange={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          "baz",
-        ],
-        Array [
-          null,
-        ],
-      ],
-    }
-  }
->
-  <div
-    className="frost-text"
-  >
-    <input
-      className="frost-text-input"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      value=""
-    />
-    <button
-      className="frost-text-clear frost-fade-out"
-      onAnimationEnd={[Function]}
-      onClick={[Function]}
-      tabIndex={-1}
-    >
-      <_default>
-        <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-          />
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-        </svg>
-      </_default>
-    </button>
-  </div>
-</Text>
-`;
-
-exports[`Text when onChange set when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when onChange set when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   onChange={
     [MockFunction] {
       "calls": Array [
@@ -1268,28 +1218,78 @@ exports[`Text when onChange set when input is focused when value changed when cl
   }
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-textarea-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <_default>
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </_default>
+    </button>
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when onChange set when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
+  onChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "baz",
+        ],
+        Array [
+          null,
+        ],
+      ],
+    }
+  }
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to false functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to false functions as expected 1`] = `
+<Textarea
   readOnly={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1297,18 +1297,18 @@ exports[`Text when readOnly set to false functions as expected 1`] = `
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to false when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to false when textarea is focused functions as expected 1`] = `
+<Textarea
   readOnly={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1316,18 +1316,18 @@ exports[`Text when readOnly set to false when input is focused functions as expe
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to false when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to false when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   readOnly={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1335,18 +1335,18 @@ exports[`Text when readOnly set to false when input is focused when input looses
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to false when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to false when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   readOnly={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1354,7 +1354,7 @@ exports[`Text when readOnly set to false when input is focused when value change
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1375,18 +1375,18 @@ exports[`Text when readOnly set to false when input is focused when value change
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to false when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to false when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   readOnly={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1394,7 +1394,7 @@ exports[`Text when readOnly set to false when input is focused when value change
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1415,18 +1415,18 @@ exports[`Text when readOnly set to false when input is focused when value change
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to false when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to false when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   readOnly={false}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1434,18 +1434,18 @@ exports[`Text when readOnly set to false when input is focused when value change
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to true functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to true functions as expected 1`] = `
+<Textarea
   readOnly={true}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1453,18 +1453,18 @@ exports[`Text when readOnly set to true functions as expected 1`] = `
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to true when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to true when textarea is focused functions as expected 1`] = `
+<Textarea
   readOnly={true}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1472,18 +1472,18 @@ exports[`Text when readOnly set to true when input is focused functions as expec
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when readOnly set to true when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when readOnly set to true when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   readOnly={true}
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1491,79 +1491,79 @@ exports[`Text when readOnly set to true when input is focused when input looses 
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to empty string functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to empty string functions as expected 1`] = `
+<Textarea
   value=""
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to empty string when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to empty string when textarea is focused functions as expected 1`] = `
+<Textarea
   value=""
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to empty string when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when value set to empty string when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   value=""
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to empty string when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to empty string when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   value=""
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1584,25 +1584,25 @@ exports[`Text when value set to empty string when input is focused when value ch
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to empty string when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to empty string when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   value=""
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1623,61 +1623,61 @@ exports[`Text when value set to empty string when input is focused when value ch
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to empty string when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to empty string when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   value=""
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="foobar"
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="foobar"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1698,25 +1698,25 @@ exports[`Text when value set to non-empty string when input is focused functions
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused when clear button fade in animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused when clear button fade in animation has completed functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="foobar"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1737,25 +1737,25 @@ exports[`Text when value set to non-empty string when input is focused when clea
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused when input looses focus renders as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="foobar"
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1776,43 +1776,43 @@ exports[`Text when value set to non-empty string when input is focused when inpu
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused when input looses focus when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused when input looses focus when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="foobar"
     />
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused when value changed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value="baz"
     />
     <button
-      className="frost-text-clear frost-fade-in"
+      className="frost-textarea-clear frost-fade-in"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1833,25 +1833,25 @@ exports[`Text when value set to non-empty string when input is focused when valu
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused when value changed when clear button is pressed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
     <button
-      className="frost-text-clear frost-fade-out"
+      className="frost-textarea-clear frost-fade-out"
       onAnimationEnd={[Function]}
       onClick={[Function]}
       tabIndex={-1}
@@ -1872,23 +1872,23 @@ exports[`Text when value set to non-empty string when input is focused when valu
       </_default>
     </button>
   </div>
-</Text>
+</Textarea>
 `;
 
-exports[`Text when value set to non-empty string when input is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
-<Text
+exports[`Textarea when value set to non-empty string when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
   value="foobar"
 >
   <div
-    className="frost-text"
+    className="frost-textarea"
   >
-    <input
-      className="frost-text-input"
+    <textarea
+      className="frost-textarea-input"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       value=""
     />
   </div>
-</Text>
+</Textarea>
 `;

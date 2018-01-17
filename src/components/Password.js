@@ -33,6 +33,10 @@ const SHOW_LABEL = t('Show', 'Label for showing raw password')
 function getClassName(className?: ?string, revealable?: ?boolean): string {
   const classNames = ['frost-password']
 
+  if (className) {
+    classNames.push(className)
+  }
+
   if (revealable) {
     classNames.push('frost-password-revealable')
   }

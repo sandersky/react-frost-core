@@ -37,12 +37,8 @@ function renderCodeDemo(children?: Node, demo?: boolean): Node {
 export default class CodeBlock extends Component<PROPS, State> {
   _codeElement: ?HTMLElement
 
-  constructor() {
-    super(...arguments)
-
-    this.state = {
-      expanded: false,
-    }
+  state = {
+    expanded: false,
   }
 
   _handleCodeToggle = () => {

@@ -1,3 +1,7 @@
+## 0.0.12
+
+*   Added textarea component.
+
 ## 0.0.11
 
 *   Improved demo.

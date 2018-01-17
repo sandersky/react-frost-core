@@ -2,7 +2,7 @@
  * @flow
  */
 
-import {CodeBlock, Password, PASSWORD_ALIGN_RIGHT} from '../../src'
+import {CodeBlock, Textarea, TEXTAREA_ALIGN_RIGHT} from '../../src'
 import route from '../factory'
 import React, {type Element, type Node} from 'react'
 
@@ -17,17 +17,20 @@ const DOCS: Array<DOC_TYPE> = [
     examples: {
       Disabled: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password disabled={true} value="can't touch this" />
+          <Textarea disabled={true} value="can't touch this" />
         </CodeBlock>
       ),
       Error: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password error={true} />
+          <Textarea error={true} />
         </CodeBlock>
       ),
       'Read only': (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password readOnly={true} value="Jane Doe" />
+          <Textarea
+            readOnly={true}
+            value="The quick brown fox jumps over the lazy dog"
+          />
         </CodeBlock>
       ),
     },
@@ -37,32 +40,37 @@ const DOCS: Array<DOC_TYPE> = [
     examples: {
       Align: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password align={PASSWORD_ALIGN_RIGHT} />
+          <Textarea align={TEXTAREA_ALIGN_RIGHT} />
         </CodeBlock>
       ),
       Autofocus: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password autoFocus={true} />
+          <Textarea autoFocus={true} />
+        </CodeBlock>
+      ),
+      Columns: (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Textarea cols={2} />
         </CodeBlock>
       ),
       Placeholder: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password placeholder="Password" />
+          <Textarea placeholder="Username" />
         </CodeBlock>
       ),
-      Revealable: (
+      Rows: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password revealable={true} />
+          <Textarea rows={3} />
         </CodeBlock>
       ),
       'Tab index': (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password tabIndex={-1} />
+          <Textarea tabIndex={-1} />
         </CodeBlock>
       ),
       Value: (
         <CodeBlock language="jsx" maxLineLength={30}>
-          <Password value="Password123" />
+          <Textarea value="John Doe" />
         </CodeBlock>
       ),
     },
@@ -71,9 +79,9 @@ const DOCS: Array<DOC_TYPE> = [
 
 const IMPORTS_CODE = `
 import {
-  Password,
-  PASSWORD_ALIGN_LEFT,
-  PASSWORD_ALIGN_RIGHT,
+  Textarea,
+  TEXTAREA_ALIGN_LEFT,
+  TEXTAREA_ALIGN_RIGHT,
 } from 'react-frost-core'
 `.trim()
 
@@ -84,7 +92,7 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 
   return Object.keys(examples).map((key: string, index: number): Node => {
     return (
-      <div className="password-example" key={index}>
+      <div className="textarea-example" key={index}>
         <h4>{key}</h4>
         {/* $FlowFixMe - Flow thinks examples could be null/undefined */}
         {examples[key]}
@@ -93,17 +101,17 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
   })
 }
 
-export default route('Password', (): Node => {
+export default route('Textarea', (): Node => {
   return [
     <section key="imports">
       <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
     </section>,
     <section key="default">
       <h3>Default</h3>
-      <div className="password-examples">
-        <div className="password-example">
+      <div className="textarea-examples">
+        <div className="textarea-example">
           <CodeBlock language="jsx" maxLineLength={30}>
-            <Password />
+            <Textarea />
           </CodeBlock>
         </div>
       </div>
@@ -113,7 +121,7 @@ export default route('Password', (): Node => {
       return (
         <section key={index}>
           <h3>{title}</h3>
-          <div className="password-examples">{renderExamples(examples)}</div>
+          <div className="textarea-examples">{renderExamples(examples)}</div>
         </section>
       )
     }),

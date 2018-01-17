@@ -16,6 +16,10 @@ const TESTS = [
     props: {align: ALIGN_RIGHT},
   },
   {
+    desc: 'when class name passed in',
+    props: {className: 'foobar'},
+  },
+  {
     desc: 'when disabled set to true',
     props: {disabled: true},
   },

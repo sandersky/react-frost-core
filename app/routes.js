@@ -16,7 +16,7 @@ import Radio from './components/Radio'
 import Scroll from './components/Scroll'
 import Select from './components/Select'
 import Text from './components/Text'
-import TextArea from './components/TextArea'
+import Textarea from './components/Textarea'
 import Toggle from './components/Toggle'
 import ColorPalette from './content/ColorPalette'
 import Typography from './content/Typography'
@@ -123,12 +123,12 @@ const ROUTES = [
         path: 'select',
       },
       {
-        Component: TextArea,
-        path: 'text-area',
-      },
-      {
         Component: Text,
         path: 'text',
+      },
+      {
+        Component: Textarea,
+        path: 'textarea',
       },
       {
         Component: Toggle,

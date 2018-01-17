@@ -106,3 +106,16 @@ export {
 
 import type {PROPS as _TEXT_PROPS} from './components/Text'
 export type TEXT_PROPS = _TEXT_PROPS
+
+/**
+ * Textarea
+ */
+
+export {
+  default as Textarea,
+  ALIGN_LEFT as TEXTAREA_ALIGN_LEFT,
+  ALIGN_RIGHT as TEXTAREA_ALIGN_RIGHT,
+} from './components/Textarea'
+
+import type {PROPS as _TEXTAREA_PROPS} from './components/Textarea'
+export type TEXTAREA_PROPS = _TEXTAREA_PROPS

@@ -1,4 +1,4 @@
-import Password, {ALIGN_LEFT, ALIGN_RIGHT} from '../Password'
+import Textarea, {ALIGN_LEFT, ALIGN_RIGHT} from '../Textarea'
 import {mount} from 'enzyme'
 import React from 'react'
 
@@ -48,14 +48,6 @@ const TESTS = [
     props: {readOnly: false},
   },
   {
-    desc: 'when revealable set to true',
-    props: {revealable: true},
-  },
-  {
-    desc: 'when revealable set to false',
-    props: {revealable: false},
-  },
-  {
     desc: 'when value set to empty string',
     props: {value: ''},
   },
@@ -65,7 +57,7 @@ const TESTS = [
   },
 ]
 
-describe('Password', () => {
+describe('Textarea', () => {
   TESTS.forEach(({desc, props}) => {
     describe(desc, () => {
       let wrapper
@@ -75,19 +67,19 @@ describe('Password', () => {
           props.onChange.mockReset()
         }
 
-        wrapper = mount(<Password {...props} />)
+        wrapper = mount(<Textarea {...props} />)
       })
 
       it('functions as expected', () => {
         expect(wrapper).toMatchSnapshot()
       })
 
-      describe('when input is focused', () => {
-        let input
+      describe('when textarea is focused', () => {
+        let textarea
 
         beforeEach(() => {
-          input = wrapper.find('input')
-          input.simulate('focus')
+          textarea = wrapper.find('textarea')
+          textarea.simulate('focus')
         })
 
         it('functions as expected', () => {
@@ -109,12 +101,12 @@ describe('Password', () => {
         if (props.disabled !== true && props.readOnly !== true) {
           describe('when value changed', () => {
             beforeEach(() => {
-              const target = input.at(0)
+              const target = textarea.at(0)
               const event = {target}
 
               target.value = 'baz'
 
-              input.simulate('change', event)
+              textarea.simulate('change', event)
             })
 
             it('functions as expected', () => {
@@ -143,74 +135,12 @@ describe('Password', () => {
                 })
               })
             })
-
-            if (props.revealable === true) {
-              describe('when reveal toggled', () => {
-                let toggle
-
-                beforeEach(() => {
-                  toggle = wrapper.find('.frost-password-reveal')
-                  toggle.simulate('click')
-                })
-
-                it('functions as expected', done => {
-                  setTimeout(() => {
-                    expect(wrapper).toMatchSnapshot()
-                    done()
-                  }, 1)
-                })
-
-                describe('when reveal toggled again', () => {
-                  beforeEach(() => {
-                    toggle.simulate('click')
-                  })
-
-                  it('functions as expected', done => {
-                    setTimeout(() => {
-                      expect(wrapper).toMatchSnapshot()
-                      done()
-                    }, 1)
-                  })
-                })
-              })
-            }
           })
-
-          if (props.revealable === true) {
-            describe('when reveal toggled', () => {
-              let toggle
-
-              beforeEach(() => {
-                toggle = wrapper.find('.frost-password-reveal')
-                toggle.simulate('click')
-              })
-
-              it('functions as expected', done => {
-                setTimeout(() => {
-                  expect(wrapper).toMatchSnapshot()
-                  done()
-                }, 1)
-              })
-
-              describe('when reveal toggled again', () => {
-                beforeEach(() => {
-                  toggle.simulate('click')
-                })
-
-                it('functions as expected', done => {
-                  setTimeout(() => {
-                    expect(wrapper).toMatchSnapshot()
-                    done()
-                  }, 1)
-                })
-              })
-            })
-          }
         }
 
         describe('when input looses focus', () => {
           beforeEach(() => {
-            input.simulate('blur')
+            textarea.simulate('blur')
           })
 
           it('renders as expected', () => {

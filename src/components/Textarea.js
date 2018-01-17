@@ -8,7 +8,7 @@ import React, {Component, type Node} from 'react'
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
-const PREFIX = 'frost-text'
+const PREFIX = 'frost-textarea'
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
@@ -64,7 +64,7 @@ function getInputClassName(align?: ?ALIGN): string {
   return classNames.join(' ')
 }
 
-export default class Text extends Component<PROPS, State> {
+export default class Textarea extends Component<PROPS, State> {
   constructor() {
     super(...arguments)
 
@@ -114,6 +114,8 @@ export default class Text extends Component<PROPS, State> {
   _renderClearButton(): Node {
     const {disabled, readOnly} = this.props
     const {animatingClearButtonOut, focused, value} = this.state
+
+    console.info({animatingClearButtonOut, disabled, focused, readOnly, value})
 
     if (
       !animatingClearButtonOut &&
@@ -175,7 +177,7 @@ export default class Text extends Component<PROPS, State> {
 
     return (
       <div className={getClassName(className, error)}>
-        <input
+        <textarea
           className={getInputClassName(align)}
           onBlur={this._handleBlur}
           onChange={this._handleChange}

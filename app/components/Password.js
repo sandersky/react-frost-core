@@ -45,6 +45,16 @@ const DOCS: Array<DOC_TYPE> = [
           <Password autoFocus={true} />
         </CodeBlock>
       ),
+      'Max length': (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Password maxLength={4} />
+        </CodeBlock>
+      ),
+      'Min length': (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Password minLength={4} />
+        </CodeBlock>
+      ),
       Placeholder: (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Password placeholder="Password" />
@@ -53,6 +63,11 @@ const DOCS: Array<DOC_TYPE> = [
       Revealable: (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Password revealable={true} />
+        </CodeBlock>
+      ),
+      Size: (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Password size={5} />
         </CodeBlock>
       ),
       'Tab index': (
@@ -94,28 +109,29 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 }
 
 export default route('Password', (): Node => {
-  return [
-    <section key="imports">
-      <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
-    </section>,
-    <section key="default">
-      <h3>Default</h3>
-      <div className="password-examples">
-        <div className="password-example">
-          <CodeBlock language="jsx" maxLineLength={30}>
-            <Password />
-          </CodeBlock>
+  return (
+    <div>
+      <section>
+        <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
+      </section>
+      <section>
+        <h3>Default</h3>
+        <div className="password-examples">
+          <div className="password-example">
+            <CodeBlock language="jsx" maxLineLength={30}>
+              <Password />
+            </CodeBlock>
+          </div>
         </div>
-      </div>
-    </section>,
-  ].concat(
-    DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
-      return (
-        <section key={index}>
-          <h3>{title}</h3>
-          <div className="password-examples">{renderExamples(examples)}</div>
-        </section>
-      )
-    }),
+      </section>
+      {DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
+        return (
+          <section key={index}>
+            <h3>{title}</h3>
+            <div className="password-examples">{renderExamples(examples)}</div>
+          </section>
+        )
+      })}
+    </div>
   )
 })

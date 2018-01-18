@@ -32,27 +32,29 @@ const Size = ({size}: SizeProps): Node => {
 }
 
 export default route('Typography', (): Node => {
-  return [
-    <p key="imports-description">
-      For typography Frost has SASS variables for a predefined font and font
-      sizes which can be used by simply importing:
-    </p>,
-    <CodeBlock key="imports" code={IMPORTS_CODE} demo={false} language="css" />,
-    <p key="sizes-description">
-      Below are examples of the available sizes which can be consumed via SASS
-      variables as well as by simply using their respective CSS classes.
-    </p>,
-    <table key="sizes">
-      <thead>
-        <tr>
-          <th>CSS Variable</th>
-          <th>CSS Class</th>
-          <th>Example</th>
-        </tr>
-      </thead>
-      <tbody>
-        {SIZES.map((size: string): Node => <Size key={size} size={size} />)}
-      </tbody>
-    </table>,
-  ]
+  return (
+    <div>
+      <p>
+        For typography Frost has SASS variables for a predefined font and font
+        sizes which can be used by simply importing:
+      </p>
+      <CodeBlock code={IMPORTS_CODE} demo={false} language="css" />,
+      <p>
+        Below are examples of the available sizes which can be consumed via SASS
+        variables as well as by simply using their respective CSS classes.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>CSS Variable</th>
+            <th>CSS Class</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          {SIZES.map((size: string): Node => <Size key={size} size={size} />)}
+        </tbody>
+      </table>
+    </div>
+  )
 })

@@ -53,6 +53,16 @@ const DOCS: Array<DOC_TYPE> = [
           <Textarea cols={2} />
         </CodeBlock>
       ),
+      'Max length': (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Textarea maxLength={4} />
+        </CodeBlock>
+      ),
+      'Min length': (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Textarea minLength={4} />
+        </CodeBlock>
+      ),
       Placeholder: (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Textarea placeholder="Username" />
@@ -102,28 +112,29 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 }
 
 export default route('Textarea', (): Node => {
-  return [
-    <section key="imports">
-      <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
-    </section>,
-    <section key="default">
-      <h3>Default</h3>
-      <div className="textarea-examples">
-        <div className="textarea-example">
-          <CodeBlock language="jsx" maxLineLength={30}>
-            <Textarea />
-          </CodeBlock>
+  return (
+    <div>
+      <section>
+        <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
+      </section>
+      <section>
+        <h3>Default</h3>
+        <div className="textarea-examples">
+          <div className="textarea-example">
+            <CodeBlock language="jsx" maxLineLength={30}>
+              <Textarea />
+            </CodeBlock>
+          </div>
         </div>
-      </div>
-    </section>,
-  ].concat(
-    DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
-      return (
-        <section key={index}>
-          <h3>{title}</h3>
-          <div className="textarea-examples">{renderExamples(examples)}</div>
-        </section>
-      )
-    }),
+      </section>
+      {DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
+        return (
+          <section key={index}>
+            <h3>{title}</h3>
+            <div className="textarea-examples">{renderExamples(examples)}</div>
+          </section>
+        )
+      })}
+    </div>
   )
 })

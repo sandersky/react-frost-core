@@ -1,3 +1,8 @@
+## 0.0.13
+
+*   Added maxLength and minLength properties to Password, Text, and Textarea.
+*   Added size property to Password and Text.
+
 ## 0.0.12
 
 *   Added textarea component.

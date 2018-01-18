@@ -963,6 +963,318 @@ exports[`Textarea when error set to true when textarea is focused when value cha
 </Textarea>
 `;
 
+exports[`Textarea when maximum length set to 1 functions as expected 1`] = `
+<Textarea
+  maxLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when maximum length set to 1 when textarea is focused functions as expected 1`] = `
+<Textarea
+  maxLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when maximum length set to 1 when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
+  maxLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when maximum length set to 1 when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
+  maxLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="b"
+    />
+    <button
+      className="frost-textarea-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <_default>
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </_default>
+    </button>
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when maximum length set to 1 when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
+  maxLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-textarea-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <_default>
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </_default>
+    </button>
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when maximum length set to 1 when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
+  maxLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when minimum length set to 1 functions as expected 1`] = `
+<Textarea
+  minLength={1}
+>
+  <div
+    className="frost-textarea frost-textarea-error"
+  >
+    <textarea
+      className="frost-textarea-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when minimum length set to 1 when textarea is focused functions as expected 1`] = `
+<Textarea
+  minLength={1}
+>
+  <div
+    className="frost-textarea frost-textarea-error"
+  >
+    <textarea
+      className="frost-textarea-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when minimum length set to 1 when textarea is focused when input looses focus renders as expected 1`] = `
+<Textarea
+  minLength={1}
+>
+  <div
+    className="frost-textarea frost-textarea-error"
+  >
+    <textarea
+      className="frost-textarea-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when minimum length set to 1 when textarea is focused when value changed functions as expected 1`] = `
+<Textarea
+  minLength={1}
+>
+  <div
+    className="frost-textarea"
+  >
+    <textarea
+      className="frost-textarea-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="baz"
+    />
+    <button
+      className="frost-textarea-clear frost-fade-in"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <_default>
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </_default>
+    </button>
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when minimum length set to 1 when textarea is focused when value changed when clear button is pressed functions as expected 1`] = `
+<Textarea
+  minLength={1}
+>
+  <div
+    className="frost-textarea frost-textarea-error"
+  >
+    <textarea
+      className="frost-textarea-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+    <button
+      className="frost-textarea-clear frost-fade-out"
+      onAnimationEnd={[Function]}
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <_default>
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </_default>
+    </button>
+  </div>
+</Textarea>
+`;
+
+exports[`Textarea when minimum length set to 1 when textarea is focused when value changed when clear button is pressed when clear button fade out animation has completed functions as expected 1`] = `
+<Textarea
+  minLength={1}
+>
+  <div
+    className="frost-textarea frost-textarea-error"
+  >
+    <textarea
+      className="frost-textarea-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value=""
+    />
+  </div>
+</Textarea>
+`;
+
 exports[`Textarea when no properties passed in functions as expected 1`] = `
 <Textarea>
   <div

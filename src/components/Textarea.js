@@ -17,6 +17,8 @@ export type PROPS = {
   className?: ?string,
   disabled?: ?boolean,
   error?: ?boolean,
+  maxLength?: ?number,
+  minLength?: ?number,
   onChange?: (value: ?string) => void,
   readOnly?: ?boolean,
   value?: ?string,
@@ -32,16 +34,27 @@ type State = {
  * Get class name for text component given it's current state
  * @param className - user specified class name
  * @param error - whether or not input has an error
+ * @param minLength - minimum length input's value should be
+ * @param value - input value
  * @returns class name for text component
  */
-function getClassName(className?: ?string, error?: ?boolean): string {
+function getClassName(
+  className?: ?string,
+  error?: ?boolean,
+  minLength?: ?number,
+  value?: ?string,
+): string {
   const classNames = [PREFIX]
 
   if (className) {
     classNames.push(className)
   }
 
-  if (error) {
+  if (
+    error ||
+    (typeof minLength === 'number' &&
+      (typeof value !== 'string' || minLength > value.length))
+  ) {
     classNames.push(`${PREFIX}-error`)
   }
 
@@ -115,8 +128,6 @@ export default class Textarea extends Component<PROPS, State> {
     const {disabled, readOnly} = this.props
     const {animatingClearButtonOut, focused, value} = this.state
 
-    console.info({animatingClearButtonOut, disabled, focused, readOnly, value})
-
     if (
       !animatingClearButtonOut &&
       (disabled || !focused || readOnly || !value)
@@ -142,11 +153,17 @@ export default class Textarea extends Component<PROPS, State> {
   }
 
   _updateValue(nextValue: ?string) {
-    const {onChange} = this.props
+    const {maxLength, onChange} = this.props
     const {value} = this.state
 
     if (nextValue === '') {
       nextValue = null
+    } else if (
+      typeof nextValue === 'string' &&
+      typeof maxLength === 'number' &&
+      nextValue.length > maxLength
+    ) {
+      nextValue = nextValue.slice(0, maxLength)
     }
 
     // Determine if the value was just cleared, which is used to determine
@@ -168,6 +185,7 @@ export default class Textarea extends Component<PROPS, State> {
       align,
       className,
       error,
+      minLength,
       onChange: _onChange,
       value: _value,
       ...passThroughProps
@@ -176,9 +194,10 @@ export default class Textarea extends Component<PROPS, State> {
     const {value} = this.state
 
     return (
-      <div className={getClassName(className, error)}>
+      <div className={getClassName(className, error, minLength, value)}>
         <textarea
           className={getInputClassName(align)}
+          minLength={minLength}
           onBlur={this._handleBlur}
           onChange={this._handleChange}
           onFocus={this._handleFocus}

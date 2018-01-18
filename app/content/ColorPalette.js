@@ -117,31 +117,33 @@ const ColorTable = ({colors, title}: ColorTableProps): Node => {
 }
 
 export default route('Color palette', (): Node => {
-  return [
-    <p key="info">{INFO}</p>,
-    <CodeBlock key="imports" code={IMPORTS_CODE} demo={false} language="css" />,
-    <p key="colors-description">
-      Below is a list of all of the colors and their SASS variables. Also
-      included are classes for setting the background of DOM elemnts to a
-      particular color which are sometimes more useful then defining a bunch of
-      extra classes that utilize the SASS variables.
-    </p>,
-    <div className="ColorPaletteTables" key="tables">
-      <ColorTable colors={WHITES} title="Whites" />
-      <ColorTable colors={BLUES} title="Blues" />
-      <ColorTable colors={NIGHTS} title="Nights" />
-      <ColorTable colors={ORANGES} title="Oranges" />
-      <ColorTable colors={GREENS} title="Greens" />
-      <ColorTable colors={TEALS} title="Teals" />
-      <ColorTable colors={LILACS} title="Lilacs" />
-      <ColorTable colors={INDIGOS} title="Indigos" />
-      <ColorTable colors={PINKS} title="Pinks" />
-      <ColorTable colors={GREYS} title="Greys" />
-      <ColorTable colors={LGREYS} title="Light greys" />
-      <ColorTable colors={BROWNS} title="Browns" />
-      <ColorTable colors={YELLOWS} title="Yellows" />
-      <ColorTable colors={STATUSES} title="Statuses" />
-      <ColorTable colors={ALARM_STATUSES} title="Alarm statuses" />
-    </div>,
-  ]
+  return (
+    <div>
+      <p>{INFO}</p>
+      <CodeBlock code={IMPORTS_CODE} demo={false} language="css" />
+      <p>
+        Below is a list of all of the colors and their SASS variables. Also
+        included are classes for setting the background of DOM elemnts to a
+        particular color which are sometimes more useful then defining a bunch
+        of extra classes that utilize the SASS variables.
+      </p>
+      <div className="ColorPaletteTables">
+        <ColorTable colors={WHITES} title="Whites" />
+        <ColorTable colors={BLUES} title="Blues" />
+        <ColorTable colors={NIGHTS} title="Nights" />
+        <ColorTable colors={ORANGES} title="Oranges" />
+        <ColorTable colors={GREENS} title="Greens" />
+        <ColorTable colors={TEALS} title="Teals" />
+        <ColorTable colors={LILACS} title="Lilacs" />
+        <ColorTable colors={INDIGOS} title="Indigos" />
+        <ColorTable colors={PINKS} title="Pinks" />
+        <ColorTable colors={GREYS} title="Greys" />
+        <ColorTable colors={LGREYS} title="Light greys" />
+        <ColorTable colors={BROWNS} title="Browns" />
+        <ColorTable colors={YELLOWS} title="Yellows" />
+        <ColorTable colors={STATUSES} title="Statuses" />
+        <ColorTable colors={ALARM_STATUSES} title="Alarm statuses" />
+      </div>
+    </div>
+  )
 })

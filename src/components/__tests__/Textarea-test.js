@@ -36,6 +36,14 @@ const TESTS = [
     props: {error: false},
   },
   {
+    desc: 'when maximum length set to 1',
+    props: {maxLength: 1},
+  },
+  {
+    desc: 'when minimum length set to 1',
+    props: {minLength: 1},
+  },
+  {
     desc: 'when onChange set',
     props: {onChange: jest.fn()},
   },

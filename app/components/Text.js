@@ -45,9 +45,24 @@ const DOCS: Array<DOC_TYPE> = [
           <Text autoFocus={true} />
         </CodeBlock>
       ),
+      'Max length': (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Text maxLength={4} />
+        </CodeBlock>
+      ),
+      'Min length': (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Text minLength={4} />
+        </CodeBlock>
+      ),
       Placeholder: (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Text placeholder="Username" />
+        </CodeBlock>
+      ),
+      Size: (
+        <CodeBlock language="jsx" maxLineLength={30}>
+          <Text size={5} />
         </CodeBlock>
       ),
       'Tab index': (
@@ -89,28 +104,29 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 }
 
 export default route('Text', (): Node => {
-  return [
-    <section key="imports">
-      <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
-    </section>,
-    <section key="default">
-      <h3>Default</h3>
-      <div className="text-examples">
-        <div className="text-example">
-          <CodeBlock language="jsx" maxLineLength={30}>
-            <Text />
-          </CodeBlock>
+  return (
+    <div>
+      <section>
+        <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
+      </section>
+      <section>
+        <h3>Default</h3>
+        <div className="text-examples">
+          <div className="text-example">
+            <CodeBlock language="jsx" maxLineLength={30}>
+              <Text />
+            </CodeBlock>
+          </div>
         </div>
-      </div>
-    </section>,
-  ].concat(
-    DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
-      return (
-        <section key={index}>
-          <h3>{title}</h3>
-          <div className="text-examples">{renderExamples(examples)}</div>
-        </section>
-      )
-    }),
+      </section>
+      {DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
+        return (
+          <section key={index}>
+            <h3>{title}</h3>
+            <div className="text-examples">{renderExamples(examples)}</div>
+          </section>
+        )
+      })}
+    </div>
   )
 })

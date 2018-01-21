@@ -17,6 +17,7 @@ export type PROPS = {
   className?: ?string,
   disabled?: ?boolean,
   error?: ?boolean,
+  inputRef?: (el: ?HTMLInputElement) => void,
   maxLength?: ?number,
   minLength?: ?number,
   onChange?: (value: ?string) => void,
@@ -192,6 +193,7 @@ export default class Text extends Component<PROPS, State> {
       align,
       className,
       error,
+      inputRef,
       minLength,
       onChange: _onChange,
       size,
@@ -209,6 +211,7 @@ export default class Text extends Component<PROPS, State> {
           onBlur={this._handleBlur}
           onChange={this._handleChange}
           onFocus={this._handleFocus}
+          ref={inputRef}
           size={size}
           value={value || ''}
           {...passThroughProps}

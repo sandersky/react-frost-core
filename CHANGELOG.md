@@ -1,3 +1,7 @@
+## 0.0.14
+
+*   Added selected component (missing checkboxes on multi-select still).
+
 ## 0.0.13
 
 *   Added maxLength and minLength properties to Password, Text, and Textarea.

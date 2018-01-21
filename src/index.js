@@ -95,6 +95,14 @@ import type {PROPS as _PASSWORD_PROPS} from './components/Password'
 export type PASSWORD_PROPS = _PASSWORD_PROPS
 
 /**
+ * Select
+ */
+
+export {default as Select} from './components/Select'
+import type {PROPS as _SELECT_PROPS} from './components/Select'
+export type SELECT_PROPS = _SELECT_PROPS
+
+/**
  * Text
  */
 

@@ -10,6 +10,7 @@ import {
   Password as _Password,
   PASSWORD_ALIGN_LEFT as _PASSWORD_ALIGN_LEFT,
   PASSWORD_ALIGN_RIGHT as _PASSWORD_ALIGN_RIGHT,
+  Select as _Select,
   Text as _Text,
   TEXT_ALIGN_LEFT as _TEXT_ALIGN_LEFT,
   TEXT_ALIGN_RIGHT as _TEXT_ALIGN_RIGHT,
@@ -30,6 +31,8 @@ import Password, {
   ALIGN_LEFT as PASSWORD_ALIGN_LEFT,
   ALIGN_RIGHT as PASSWORD_ALIGN_RIGHT,
 } from '../components/Password'
+
+import Select from '../components/Select'
 
 import Text, {
   ALIGN_LEFT as TEXT_ALIGN_LEFT,
@@ -75,6 +78,10 @@ describe('react-frost-core', () => {
     expect(_Password).toBe(Password)
     expect(_PASSWORD_ALIGN_LEFT).toBe(PASSWORD_ALIGN_LEFT)
     expect(_PASSWORD_ALIGN_RIGHT).toBe(PASSWORD_ALIGN_RIGHT)
+  })
+
+  it('exports Select component', () => {
+    expect(_Select).toBe(Select)
   })
 
   it('exports Text constants and component', () => {

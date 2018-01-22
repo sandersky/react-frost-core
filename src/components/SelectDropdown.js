@@ -5,6 +5,7 @@
 import KEY_CODES from '../key-codes'
 import {trimLongDataInElement} from '../utils'
 import Button from './Button'
+import Checkbox from './Checkbox'
 import Text from './Text'
 import t from 'grammatic'
 import React, {Component, type Node as ReactNode} from 'react'
@@ -100,14 +101,14 @@ function getDropdownSecondaryLabelsTextClassName(multiselect: boolean): string {
 /**
  * Get the class name for a particular item in the select dropdown
  * @param item - item to get class name for
- * @param selectedItems - the currently selected items
  * @param isFocused - whether or not this item is currently focused
+ * @param isSelected - whether or not this item is currently selected
  * @returns the class name for a particular item in the select dropdown
  */
 function getItemClassName(
   item: Item,
-  selectedItems: Array<Item>,
   isFocused: boolean,
+  isSelected: boolean,
 ): string {
   const classNames = [`${PREFIX}-list-item`]
 
@@ -115,11 +116,7 @@ function getItemClassName(
     classNames.push(`${PREFIX}-list-secondary-item`)
   }
 
-  if (
-    selectedItems.find(
-      (selectedItem: Item): boolean => selectedItem.value === item.value,
-    )
-  ) {
+  if (isSelected) {
     classNames.push(`${PREFIX}-list-item-selected`)
   }
 
@@ -365,7 +362,7 @@ export default class SelectDropdown extends Component<PROPS, State> {
   }
 
   _renderItem = (item: Item, index: number): ReactNode => {
-    const {selectedItems} = this.props
+    const {multiselect, selectedItems} = this.props
 
     const {
       dropdownSecondaryLabelsTextClassName,
@@ -373,19 +370,22 @@ export default class SelectDropdown extends Component<PROPS, State> {
       focusedIndex,
     } = this.state
 
+    const isSelected = !!selectedItems.find(
+      (selectedItem: Item): boolean => selectedItem.value === item.value,
+    )
+
     const secondaryText = item.secondaryLabels
       ? item.secondaryLabels.join(' | ')
       : ''
 
     return (
       <li
-        className={getItemClassName(
-          item,
-          selectedItems,
-          index === focusedIndex,
-        )}
+        className={getItemClassName(item, index === focusedIndex, isSelected)}
         key={item.value}
       >
+        {multiselect ? (
+          <Checkbox checked={isSelected} size={Checkbox.SIZES.MEDIUM} />
+        ) : null}
         {item.secondaryLabels && item.secondaryLabels.length ? (
           <div className={`${PREFIX}-list-item-container`}>
             <div className={dropdownTextClassName} data-text={item.label}>

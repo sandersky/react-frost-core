@@ -1,3 +1,7 @@
+## 0.0.15
+
+*   Added checkbox component and included in select component when multiselect is true.
+
 ## 0.0.14
 
 *   Added selected component (missing checkboxes on multi-select still).

@@ -29,6 +29,14 @@ export type BUTTON_PROPS = _BUTTON_PROPS
 export type BUTTON_SIZE = _BUTTON_SIZE
 
 /**
+ * Checkbox
+ */
+
+export {default as Checkbox} from './components/Checkbox'
+import type {PROPS as _CHECKBOX_PROPS} from './components/Checkbox'
+export type CHECKBOX_PROPS = _CHECKBOX_PROPS
+
+/**
  * CodeBlock
  */
 

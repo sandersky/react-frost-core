@@ -1,8 +1,8 @@
 @import '../styles/colors.css';
 @import '../styles/typography.css';
+@import './Checkbox.css';
 
 :root {
-  --frost-checkbox-medium-width: 32px;
   --frost-input-select-option-row-height: 35px;
   --frost-input-select-option-with-secondary-labels-row-height: 45px;
   --frost-select-arrow-box-shadow: 0 0 7px 3px color(var(--frost-select-container-shadow) alpha(60%));
@@ -39,7 +39,7 @@
 }
 
 .frost-multi-select-list-item-text {
-  max-width: calc(100% - var(--frost-checkbox-medium-width) - var(--frost-select-list-item-horizontal-padding));
+  max-width: calc(100% - var(--frost-checkbox-size-medium) - var(--frost-select-list-item-horizontal-padding));
 }
 
 .frost-select {
@@ -196,15 +196,15 @@
     box-sizing: content-box;
     pointer-events: none;
     position: relative;
-    top: -2px;
+    top: 4px;
 
     & input {
       visibility: hidden;
     }
 
     & svg {
-      left: 2px;
-      top: 6px;
+      left: 4px;
+      top: 4px;
     }
   }
 
@@ -237,10 +237,6 @@
 .frost-select-list-secondary-item {
   line-height: var(--frost-input-select-option-with-secondary-labels-row-height);
   min-height: var(--frost-input-select-option-with-secondary-labels-row-height);
-
-  & .frost-checkbox {
-    top: -2px;
-  }
 
   & .frost-select-list-item-text {
     line-height: var(--frost-font-size-m);

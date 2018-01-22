@@ -1,6 +1,7 @@
 import {
   AjaxErrorPage as _AjaxErrorPage,
   Button as _Button,
+  Checkbox as _Checkbox,
   CodeBlock as _CodeBlock,
   Expand as _Expand,
   Icon as _Icon,
@@ -21,6 +22,7 @@ import {
 
 import AjaxErrorPage from '../components/AjaxErrorPage'
 import Button from '../components/Button'
+import Checkbox from '../components/Checkbox'
 import CodeBlock from '../components/CodeBlock'
 import Expand from '../components/Expand'
 import Icon, {DEFAULT_PACK as ICON_DEFAULT_PACK} from '../components/Icon'
@@ -51,6 +53,10 @@ describe('react-frost-core', () => {
 
   it('exports Button component', () => {
     expect(_Button).toBe(Button)
+  })
+
+  it('exports Checkbox component', () => {
+    expect(_Checkbox).toBe(Checkbox)
   })
 
   it('exports CodeBlock component', () => {

@@ -1,3 +1,9 @@
+## 0.0.16
+
+*   Upgraded dev dependencies to latest versions.
+*   Moved grammatic and react-dom from dev dependencies to dependencies.
+*   Added dist to npm package.
+
 ## 0.0.15
 
 *   Added checkbox component and included in select component when multiselect is true.

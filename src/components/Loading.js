@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, {type Node} from 'React'
+import React, {type Node} from 'react'
 
 const TYPES = {
   RING: 'ring',

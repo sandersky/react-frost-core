@@ -1,3 +1,7 @@
+## 0.0.17
+
+*   Added style to package config so projects can easily import this projects CSS.
+
 ## 0.0.16
 
 *   Upgraded dev dependencies to latest versions.

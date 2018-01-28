@@ -1,3 +1,7 @@
+## 0.0.18
+
+*   Added lib build.
+
 ## 0.0.17
 
 *   Added style to package config so projects can easily import this projects CSS.

@@ -4,9 +4,9 @@ module.exports = {
     require('./plugins/postcss-auto-bg-color-classes')(),
     require('./plugins/postcss-auto-font-size-classes')(),
     require('postcss-for')(),
+    require('postcss-mixins')(),
     require('postcss-cssnext')({
       browsers: ['last 2 versions', '> 5%'],
     }),
-    require('postcss-mixins')(),
   ],
 }

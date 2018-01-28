@@ -5,8 +5,15 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const webpack = require('webpack')
 
 const IS_PRODUCTION = process.env.NODE_ENV === 'production'
-const CSS_FILE_NAME = IS_PRODUCTION ? 'react-frost-core.min.css' : 'react-frost-core.css'
-const JS_FILE_NAME = IS_PRODUCTION ? 'react-frost-core.min.js' : 'react-frost-core.js'
+
+const CSS_FILE_NAME = IS_PRODUCTION
+  ? 'react-frost-core.min.css'
+  : 'react-frost-core.css'
+
+const JS_FILE_NAME = IS_PRODUCTION
+  ? 'react-frost-core.min.js'
+  : 'react-frost-core.js'
+
 const DIST_PATH = path.join(__dirname, 'dist')
 
 function getPlugins() {

@@ -220,7 +220,7 @@ export default class Select extends Component<PROPS, State> {
     let element: HTMLElement = e.target
 
     while (element) {
-      if (element.classList.contains(`${PREFIX}-dropdown`)) {
+      if (element.classList.contains(`${PREFIX}-dropdown-wrapper`)) {
         return
       }
 

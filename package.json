@@ -1,6 +1,6 @@
 {
   "name": "react-frost-core",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "The library of core frost components.",
   "main": "dist/react-frost-core.min.js",
   "style": "dist/react-frost-core.min.css",

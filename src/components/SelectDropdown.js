@@ -542,7 +542,6 @@ export default class SelectDropdown extends Component<PROPS, State> {
     this._updatePosition()
     this._updateText()
 
-    document.addEventListener('keydown', this._handleKeyDown)
     document.addEventListener('scroll', this._updatePosition)
     window.addEventListener('resize', this._updatePosition)
   }
@@ -569,7 +568,6 @@ export default class SelectDropdown extends Component<PROPS, State> {
   }
 
   componentWillUnmount() {
-    document.removeEventListener('keydown', this._handleKeyDown)
     document.removeEventListener('scroll', this._updatePosition)
     window.removeEventListener('resize', this._updatePosition)
   }
@@ -603,8 +601,8 @@ export default class SelectDropdown extends Component<PROPS, State> {
     const selectedText = `${selectedItems.length} selected`
 
     return (
-      <div>
-        <div className={`${PREFIX}-overlay`} onClick={onClose} />,
+      <div className={`${PREFIX}-dropdown-wrapper`}>
+        <div className={`${PREFIX}-overlay`} onClick={onClose} />
         <div
           className={
             top === 'auto'
@@ -634,6 +632,7 @@ export default class SelectDropdown extends Component<PROPS, State> {
               this._textInput = el
             }}
             onChange={onFilterInput}
+            onKeyDown={this._handleKeyDown}
             role="combobox"
             value={filter}
           />

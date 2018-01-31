@@ -1,3 +1,8 @@
+## 0.0.19
+
+*   Removed comma from select dropdown output HTML.
+*   Fixed issues with select component with Inferno and Preact.
+
 ## 0.0.18
 
 *   Added lib build.

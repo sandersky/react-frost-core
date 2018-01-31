@@ -34,6 +34,26 @@ function getPlugins() {
   return plugins
 }
 
+function getResolver() {
+  const resolver = {
+    alias: {},
+  }
+
+  if (process.env.INFERNO) {
+    Object.assign(resolver.alias, {
+      react: 'inferno-compat',
+      'react-dom': 'inferno-compat',
+    })
+  } else if (process.env.PREACT) {
+    Object.assign(resolver.alias, {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat',
+    })
+  }
+
+  return resolver
+}
+
 module.exports = {
   devServer: {
     contentBase: PUBLIC_PATH,
@@ -81,4 +101,5 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: getPlugins(),
+  resolve: getResolver(),
 }

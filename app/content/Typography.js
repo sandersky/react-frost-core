@@ -38,7 +38,7 @@ export default route('Typography', (): Node => {
         For typography Frost has SASS variables for a predefined font and font
         sizes which can be used by simply importing:
       </p>
-      <CodeBlock code={IMPORTS_CODE} demo={false} language="css" />,
+      <CodeBlock code={IMPORTS_CODE} demo={false} language="css" />
       <p>
         Below are examples of the available sizes which can be consumed via SASS
         variables as well as by simply using their respective CSS classes.

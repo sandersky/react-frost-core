@@ -602,70 +602,69 @@ export default class SelectDropdown extends Component<PROPS, State> {
     // TODO: i18n
     const selectedText = `${selectedItems.length} selected`
 
-    return [
-      <div className={`${PREFIX}-overlay`} key="overlay" onClick={onClose} />,
-      <div
-        className={
-          top === 'auto'
-            ? `${PREFIX}-down-arrow-shadow`
-            : `${PREFIX}-up-arrow-shadow`
-        }
-        key="shadow"
-        style={arrowStyle}
-      />,
-      <div
-        className={
-          top === 'auto' ? `${PREFIX}-down-arrow` : `${PREFIX}-up-arrow`
-        }
-        key="arrow"
-        style={arrowStyle}
-      />,
-      <div
-        className={dropdownClassName}
-        key="content"
-        onMouseDown={this._handleMouseDown}
-        role="button"
-        style={{bottom, left, maxHeight, top, width}}
-      >
-        <Text
-          aria-autocomplete="list"
-          aria-expanded={true}
-          aria-multiselectable={true}
-          aria-owns={`${PREFIX}-list`}
-          inputRef={(el: ?HTMLInputElement) => {
-            this._textInput = el
-          }}
-          onChange={onFilterInput}
-          role="combobox"
-          value={filter}
+    return (
+      <div>
+        <div className={`${PREFIX}-overlay`} onClick={onClose} />,
+        <div
+          className={
+            top === 'auto'
+              ? `${PREFIX}-down-arrow-shadow`
+              : `${PREFIX}-up-arrow-shadow`
+          }
+          style={arrowStyle}
         />
-        {multiselect ? (
-          <div className="multi-status">
-            <span className="number-selected">{selectedText}</span>
-            <Button
-              className={`${PREFIX}-clear`}
-              onClick={this._handleClear}
-              priority={Button.PRIORITIES.TERTIARY}
-              text={CLEAR_ALL_LABEL}
-            />
-          </div>
-        ) : null}
-        <ul
-          id={`${PREFIX}-list`}
-          ref={(el: ?HTMLUListElement) => {
-            this._ul = el
-          }}
-          role="listbox"
+        <div
+          className={
+            top === 'auto' ? `${PREFIX}-down-arrow` : `${PREFIX}-up-arrow`
+          }
+          style={arrowStyle}
+        />
+        <div
+          className={dropdownClassName}
+          onMouseDown={this._handleMouseDown}
+          role="button"
+          style={{bottom, left, maxHeight, top, width}}
         >
-          {items.length === 0 ? (
-            <div className={`${PREFIX}-dropdown-empty-msg`}>
-              {filter ? NO_FILTERED_ITEMS_LABEL : NO_ITEMS_LABEL}
+          <Text
+            aria-autocomplete="list"
+            aria-expanded={true}
+            aria-multiselectable={true}
+            aria-owns={`${PREFIX}-list`}
+            inputRef={(el: ?HTMLInputElement) => {
+              this._textInput = el
+            }}
+            onChange={onFilterInput}
+            role="combobox"
+            value={filter}
+          />
+          {multiselect ? (
+            <div className="multi-status">
+              <span className="number-selected">{selectedText}</span>
+              <Button
+                className={`${PREFIX}-clear`}
+                onClick={this._handleClear}
+                priority={Button.PRIORITIES.TERTIARY}
+                text={CLEAR_ALL_LABEL}
+              />
             </div>
-          ) : (
-            items.map(this._renderItem)
-          )}
-        </ul>
-      </div>,
-    ]
+          ) : null}
+          <ul
+            id={`${PREFIX}-list`}
+            ref={(el: ?HTMLUListElement) => {
+              this._ul = el
+            }}
+            role="listbox"
+          >
+            {items.length === 0 ? (
+              <div className={`${PREFIX}-dropdown-empty-msg`}>
+                {filter ? NO_FILTERED_ITEMS_LABEL : NO_ITEMS_LABEL}
+              </div>
+            ) : (
+              items.map(this._renderItem)
+            )}
+          </ul>
+        </div>
+      </div>
+    )
   }
 }

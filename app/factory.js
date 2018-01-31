@@ -9,7 +9,12 @@ export default (
   Contents: ComponentType<*>,
 ): ComponentType<*> => {
   const Route = (): Node => {
-    return [<h2 key="title">{title}</h2>, <Contents key="contents" />]
+    return (
+      <div>
+        <h2>{title}</h2>
+        <Contents />
+      </div>
+    )
   }
 
   Route.title = title

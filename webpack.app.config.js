@@ -22,14 +22,14 @@ function getPlugins() {
     new ExtractTextPlugin('styles.css'),
   ]
 
-  if (IS_PRODUCTION) {
-    plugins.push(
-      new UglifyJSPlugin({
-        extractComments: true,
-        sourceMap: true,
-      }),
-    )
-  }
+  // if (IS_PRODUCTION) {
+  //   plugins.push(
+  //     new UglifyJSPlugin({
+  //       extractComments: true,
+  //       sourceMap: true,
+  //     }),
+  //   )
+  // }
 
   return plugins
 }

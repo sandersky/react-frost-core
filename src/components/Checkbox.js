@@ -183,6 +183,7 @@ export default class Checkbox extends Component<PROPS, State> {
     } = this.props
 
     const {checked} = this.state
+    const areChildrenPresent = Array.isArray(children) && !!children.length
 
     return (
       <div
@@ -205,7 +206,7 @@ export default class Checkbox extends Component<PROPS, State> {
             type="checkbox"
             {...passedThroughProps}
           />
-          {children || label}
+          {areChildrenPresent ? children : label}
           {SVG}
         </label>
       </div>

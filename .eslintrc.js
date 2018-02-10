@@ -3,4 +3,13 @@ module.exports = {
   globals: {
     HTMLLIElement: false,
   },
+  overrides: [
+    {
+      files: ['plugins/*.js'],
+      rules: {
+        'flowtype/require-parameter-type': [0],
+        'flowtype/require-return-type': [0],
+      },
+    },
+  ],
 }

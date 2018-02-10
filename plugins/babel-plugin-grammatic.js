@@ -8,10 +8,9 @@ const {join} = require('path')
  * @returns {Object} default specifier
  */
 function getDefaultSpecifierFromImportDeclaration(t, path) {
-  return path
-    .node
-    .specifiers
-    .find(specifier => t.isImportDefaultSpecifier(specifier))
+  return path.node.specifiers.find(specifier =>
+    t.isImportDefaultSpecifier(specifier),
+  )
 }
 
 /**
@@ -44,7 +43,7 @@ function loadExistingTranslations(options) {
           [fileName]: JSON.parse(data),
         })
       },
-      {}
+      {},
     )
   }
 
@@ -63,7 +62,7 @@ function missingDescriptionArgument(loc, state) {
   const {filename} = state
 
   return new Error(
-    `Grammatic translate function requires a 2nd argument containing a description of what the translation is for. (${filename}:${line}:${column})`
+    `Grammatic translate function requires a 2nd argument containing a description of what the translation is for. (${filename}:${line}:${column})`,
   )
 }
 
@@ -100,17 +99,17 @@ module.exports = ({types: t, template}, options) => {
     visitor: {
       CallExpression(path, state) {
         const {node} = path
-        const {arguments, callee, loc} = node
+        const {arguments: args, callee, loc} = node
 
         // If this is a call to the translation function then we can replace the
         // function call with a string literal of the appropriate translation.
         if (callee.name === translateFunctionName) {
-          switch (arguments.length) {
+          switch (args.length) {
             case 1:
               throw missingDescriptionArgument(loc, state)
 
             case 2:
-              processTranslation(path, arguments[0], arguments[1], translations)
+              processTranslation(path, args[0], args[1], translations)
               break
 
             default:
@@ -120,11 +119,11 @@ module.exports = ({types: t, template}, options) => {
       },
 
       ImportDeclaration(path) {
-        const {node} = path
-
         if (isGrammaticImportDeclaration(t, path)) {
-          const defaultSpecifier =
-            getDefaultSpecifierFromImportDeclaration(t, path)
+          const defaultSpecifier = getDefaultSpecifierFromImportDeclaration(
+            t,
+            path,
+          )
 
           // make note of what the default import variable name is so we can
           // properly compile translations throughout each module.
@@ -134,7 +133,7 @@ module.exports = ({types: t, template}, options) => {
 
           path.remove()
         }
-      }
+      },
     },
   }
 }

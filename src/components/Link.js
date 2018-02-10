@@ -96,9 +96,10 @@ export default class Link extends Component<PROPS> {
 
   _renderContent(): Node {
     const {children, design, icon, pack, priority, text} = this.props
-    const content = children || text
+    const childrenArePresent = Array.isArray(children) && !!children.length
+    const content = childrenArePresent ? children : text
 
-    if (children) {
+    if (childrenArePresent) {
       switch (design) {
         case DESIGNS.INFO_BAR:
           return (

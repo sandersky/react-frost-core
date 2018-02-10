@@ -1,3 +1,7 @@
+## 0.0.20
+
+*   Attempt to get preact and inferno builds working.
+
 ## 0.0.19
 
 *   Removed comma from select dropdown output HTML.

@@ -2,14 +2,10 @@
 
 /coverage
 /dist
-/inferno/CHANGELOG.md
-/inferno/LICENSE.md
-/inferno/package.json
+/inferno
 /lib
 /node_modules
-/preact/CHANGELOG.md
-/preact/LICENSE.md
-/preact/package.json
+/preact
 /public/assets
 /public/*.css*
 /public/*.js*

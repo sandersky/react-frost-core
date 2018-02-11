@@ -28,3 +28,5 @@ delete data.scripts
 data.style = 'dist/preact-frost-core.min.css'
 
 writeFileSync(packageJSONPath, JSON.stringify(data, null, 2))
+
+execSync('yarn run build-dist-preact')

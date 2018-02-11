@@ -4,23 +4,36 @@ const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const webpack = require('webpack')
 
-const IS_PRODUCTION = process.env.NODE_ENV === 'production'
+const {INFERNO, NODE_ENV, PREACT} = process.env
+const IS_PRODUCTION = NODE_ENV === 'production'
+
+let PREFIX
+let DIST_PATH
+
+if (INFERNO) {
+  DIST_PATH = path.join(__dirname, 'inferno', 'dist')
+  PREFIX = 'inferno'
+} else if (PREACT) {
+  DIST_PATH = path.join(__dirname, 'preact', 'dist')
+  PREFIX = 'preact'
+} else {
+  DIST_PATH = path.join(__dirname, 'dist')
+  PREFIX = 'react'
+}
 
 const CSS_FILE_NAME = IS_PRODUCTION
-  ? 'react-frost-core.min.css'
-  : 'react-frost-core.css'
+  ? `${PREFIX}-frost-core.min.css`
+  : `${PREFIX}-frost-core.css`
 
 const JS_FILE_NAME = IS_PRODUCTION
-  ? 'react-frost-core.min.js'
-  : 'react-frost-core.js'
-
-const DIST_PATH = path.join(__dirname, 'dist')
+  ? `${PREFIX}-frost-core.min.js`
+  : `${PREFIX}-frost-core.js`
 
 function getPlugins() {
   const plugins = [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: `"${process.env.NODE_ENV}"`,
+        NODE_ENV: `"${NODE_ENV}"`,
       },
     }),
     new SVGSpritemapPlugin({
@@ -45,7 +58,14 @@ function getPlugins() {
 module.exports = {
   devtool: 'source-map',
   entry: path.resolve('src', 'index.js'),
-  externals: ['grammatic', 'react', 'react-dom'],
+  externals: [
+    'grammatic',
+    'inferno',
+    'inferno-component',
+    'preact',
+    'react',
+    'react-dom',
+  ],
   module: {
     loaders: [
       {
@@ -82,7 +102,7 @@ module.exports = {
   output: {
     path: DIST_PATH,
     filename: JS_FILE_NAME,
-    library: 'reactFrostCore',
+    library: `${PREFIX}FrostCore`,
     libraryTarget: 'umd',
   },
   plugins: getPlugins(),

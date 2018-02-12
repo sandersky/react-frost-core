@@ -18,8 +18,11 @@ const contents = readFileSync(packageJSONPath)
 const data = JSON.parse(contents)
 
 data.dependencies = {
-  inferno: '^3.0.0',
-  'inferno-component': '^3.0.0',
+  inferno: '^4.0.0',
+  'inferno-clone-vnode': '^4.0.0',
+  'inferno-component': '^4.0.0',
+  'inferno-create-class': '^4.0.0',
+  'inferno-create-element': '^4.0.0',
 }
 delete data.devDependencies
 data.name = 'inferno-frost-core'

@@ -1,3 +1,7 @@
+## 0.0.21
+
+*   Upgrade inferno to `4.x.x`.
+
 ## 0.0.20
 
 *   Attempt to get preact and inferno builds working.

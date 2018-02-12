@@ -27,7 +27,7 @@
     "build-inferno": "INFERNO=1 ./scripts/inferno.js",
     "build-preact": "PREACT=1 ./scripts/preact.js",
     "deploy": "npm run build-app-prod-react && gh-pages -d public",
-    "postpublish": "codecov && npm run deploy && npm run publish-inferno && npm run publish-preact",
+    "postpublish": "codecov && npm run deploy && npm run build-inferno && npm run build-preact",
     "prepublishOnly": "npm run build-dist-react",
     "test": "lintly app src && flow && jest"
   },

@@ -74,7 +74,7 @@ exports[`Text when align set to left when input is focused when value changed fu
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ exports[`Text when align set to left when input is focused when value changed fu
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -113,7 +113,7 @@ exports[`Text when align set to left when input is focused when value changed wh
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ exports[`Text when align set to left when input is focused when value changed wh
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -224,7 +224,7 @@ exports[`Text when align set to right when input is focused when value changed f
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@ exports[`Text when align set to right when input is focused when value changed f
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -263,7 +263,7 @@ exports[`Text when align set to right when input is focused when value changed w
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -276,7 +276,7 @@ exports[`Text when align set to right when input is focused when value changed w
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -374,7 +374,7 @@ exports[`Text when class name passed in when input is focused when value changed
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +387,7 @@ exports[`Text when class name passed in when input is focused when value changed
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -413,7 +413,7 @@ exports[`Text when class name passed in when input is focused when value changed
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -426,7 +426,7 @@ exports[`Text when class name passed in when input is focused when value changed
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -528,7 +528,7 @@ exports[`Text when disabled set to false when input is focused when value change
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -541,7 +541,7 @@ exports[`Text when disabled set to false when input is focused when value change
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -568,7 +568,7 @@ exports[`Text when disabled set to false when input is focused when value change
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -581,7 +581,7 @@ exports[`Text when disabled set to false when input is focused when value change
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -737,7 +737,7 @@ exports[`Text when error set to false when input is focused when value changed f
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -750,7 +750,7 @@ exports[`Text when error set to false when input is focused when value changed f
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -776,7 +776,7 @@ exports[`Text when error set to false when input is focused when value changed w
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -789,7 +789,7 @@ exports[`Text when error set to false when input is focused when value changed w
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -887,7 +887,7 @@ exports[`Text when error set to true when input is focused when value changed fu
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -900,7 +900,7 @@ exports[`Text when error set to true when input is focused when value changed fu
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -926,7 +926,7 @@ exports[`Text when error set to true when input is focused when value changed wh
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -939,7 +939,7 @@ exports[`Text when error set to true when input is focused when value changed wh
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1041,7 +1041,7 @@ exports[`Text when maximum length set to 1 when input is focused when value chan
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1054,7 +1054,7 @@ exports[`Text when maximum length set to 1 when input is focused when value chan
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1081,7 +1081,7 @@ exports[`Text when maximum length set to 1 when input is focused when value chan
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1094,7 +1094,7 @@ exports[`Text when maximum length set to 1 when input is focused when value chan
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1197,7 +1197,7 @@ exports[`Text when minimum length set to 1 when input is focused when value chan
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1210,7 +1210,7 @@ exports[`Text when minimum length set to 1 when input is focused when value chan
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1237,7 +1237,7 @@ exports[`Text when minimum length set to 1 when input is focused when value chan
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1250,7 +1250,7 @@ exports[`Text when minimum length set to 1 when input is focused when value chan
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1341,7 +1341,7 @@ exports[`Text when no properties passed in when input is focused when value chan
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1354,7 +1354,7 @@ exports[`Text when no properties passed in when input is focused when value chan
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1378,7 +1378,7 @@ exports[`Text when no properties passed in when input is focused when value chan
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1391,7 +1391,7 @@ exports[`Text when no properties passed in when input is focused when value chan
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1495,7 +1495,7 @@ exports[`Text when onChange set when input is focused when value changed functio
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1508,7 +1508,7 @@ exports[`Text when onChange set when input is focused when value changed functio
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1545,7 +1545,7 @@ exports[`Text when onChange set when input is focused when value changed when cl
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1558,7 +1558,7 @@ exports[`Text when onChange set when input is focused when value changed when cl
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1671,7 +1671,7 @@ exports[`Text when readOnly set to false when input is focused when value change
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1684,7 +1684,7 @@ exports[`Text when readOnly set to false when input is focused when value change
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1711,7 +1711,7 @@ exports[`Text when readOnly set to false when input is focused when value change
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1724,7 +1724,7 @@ exports[`Text when readOnly set to false when input is focused when value change
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1884,7 +1884,7 @@ exports[`Text when size set to 3 when input is focused when value changed functi
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1897,7 +1897,7 @@ exports[`Text when size set to 3 when input is focused when value changed functi
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -1924,7 +1924,7 @@ exports[`Text when size set to 3 when input is focused when value changed when c
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1937,7 +1937,7 @@ exports[`Text when size set to 3 when input is focused when value changed when c
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2036,7 +2036,7 @@ exports[`Text when value set to empty string when input is focused when value ch
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2049,7 +2049,7 @@ exports[`Text when value set to empty string when input is focused when value ch
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2075,7 +2075,7 @@ exports[`Text when value set to empty string when input is focused when value ch
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2088,7 +2088,7 @@ exports[`Text when value set to empty string when input is focused when value ch
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2150,7 +2150,7 @@ exports[`Text when value set to non-empty string when input is focused functions
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2163,7 +2163,7 @@ exports[`Text when value set to non-empty string when input is focused functions
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2189,7 +2189,7 @@ exports[`Text when value set to non-empty string when input is focused when clea
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2202,7 +2202,7 @@ exports[`Text when value set to non-empty string when input is focused when clea
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2228,7 +2228,7 @@ exports[`Text when value set to non-empty string when input is focused when inpu
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2241,7 +2241,7 @@ exports[`Text when value set to non-empty string when input is focused when inpu
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2285,7 +2285,7 @@ exports[`Text when value set to non-empty string when input is focused when valu
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2298,7 +2298,7 @@ exports[`Text when value set to non-empty string when input is focused when valu
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>
@@ -2324,7 +2324,7 @@ exports[`Text when value set to non-empty string when input is focused when valu
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2337,7 +2337,7 @@ exports[`Text when value set to non-empty string when input is focused when valu
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Text>

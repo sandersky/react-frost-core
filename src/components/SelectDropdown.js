@@ -10,12 +10,12 @@ import Text from './Text'
 import t from 'grammatic'
 import React, {Component, type Node as ReactNode} from 'react'
 
-export type Item = {
+export type Item = {|
   className?: ?string,
   label: string,
   secondaryLabels?: ?Array<string>,
   value: *,
-}
+|}
 
 type PROPS = {|
   element: ?HTMLElement,

@@ -7,14 +7,14 @@
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
 
-export type PROPS = {
+export type PROPS = {|
   children?: Node,
   code?: string,
   demo?: boolean,
   language: 'bash' | 'css' | 'js' | 'jsx',
   maxLineLength?: number,
   togglable?: boolean,
-}
+|}
 
 type State = {|
   expanded: boolean,

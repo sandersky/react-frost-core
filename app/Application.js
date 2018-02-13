@@ -17,7 +17,7 @@ const GITHUB_TEXT = t(
 const NAVIGATION = getNavigation()
 const ROUTES = getRoutes()
 
-export default (): Node => {
+const Application = (): Node => {
   return (
     <HashRouter basename="/">
       <div className="Application">
@@ -27,6 +27,7 @@ export default (): Node => {
           </NavLink>
           <a
             href="https://github.com/dogma-io/react-frost-core"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <img
@@ -50,3 +51,7 @@ export default (): Node => {
     </HashRouter>
   )
 }
+
+Application.displayName = 'Application'
+
+export default Application

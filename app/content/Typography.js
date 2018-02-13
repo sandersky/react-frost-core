@@ -13,9 +13,9 @@ const IMPORTS_CODE = "@import 'react-frost-core.css';"
 // babel-plugin-auto-generate-typography
 const SIZES = []
 
-type SizeProps = {
+type SizeProps = {|
   size: string,
-}
+|}
 
 const Size = ({size}: SizeProps): Node => {
   return (

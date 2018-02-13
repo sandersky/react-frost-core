@@ -16,14 +16,14 @@ const DEFAULT_EXPANDED_LABEL = t(
   'Label for toggle in expanded state',
 )
 
-export type PROPS = {
+export type PROPS = {|
   children?: Node,
   className?: string,
   collapsedLabel?: string,
   expanded?: boolean,
   expandedLabel?: string,
   onChange?: (expanded: boolean) => void,
-}
+|}
 
 export type State = {|
   expanded: boolean,

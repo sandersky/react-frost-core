@@ -74,7 +74,7 @@ exports[`Textarea when align set to left when textarea is focused when value cha
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ exports[`Textarea when align set to left when textarea is focused when value cha
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -113,7 +113,7 @@ exports[`Textarea when align set to left when textarea is focused when value cha
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ exports[`Textarea when align set to left when textarea is focused when value cha
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -224,7 +224,7 @@ exports[`Textarea when align set to right when textarea is focused when value ch
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@ exports[`Textarea when align set to right when textarea is focused when value ch
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -263,7 +263,7 @@ exports[`Textarea when align set to right when textarea is focused when value ch
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -276,7 +276,7 @@ exports[`Textarea when align set to right when textarea is focused when value ch
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -374,7 +374,7 @@ exports[`Textarea when class name passed in when textarea is focused when value 
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +387,7 @@ exports[`Textarea when class name passed in when textarea is focused when value 
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -413,7 +413,7 @@ exports[`Textarea when class name passed in when textarea is focused when value 
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -426,7 +426,7 @@ exports[`Textarea when class name passed in when textarea is focused when value 
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -528,7 +528,7 @@ exports[`Textarea when disabled set to false when textarea is focused when value
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -541,7 +541,7 @@ exports[`Textarea when disabled set to false when textarea is focused when value
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -568,7 +568,7 @@ exports[`Textarea when disabled set to false when textarea is focused when value
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -581,7 +581,7 @@ exports[`Textarea when disabled set to false when textarea is focused when value
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -737,7 +737,7 @@ exports[`Textarea when error set to false when textarea is focused when value ch
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -750,7 +750,7 @@ exports[`Textarea when error set to false when textarea is focused when value ch
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -776,7 +776,7 @@ exports[`Textarea when error set to false when textarea is focused when value ch
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -789,7 +789,7 @@ exports[`Textarea when error set to false when textarea is focused when value ch
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -887,7 +887,7 @@ exports[`Textarea when error set to true when textarea is focused when value cha
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -900,7 +900,7 @@ exports[`Textarea when error set to true when textarea is focused when value cha
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -926,7 +926,7 @@ exports[`Textarea when error set to true when textarea is focused when value cha
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -939,7 +939,7 @@ exports[`Textarea when error set to true when textarea is focused when value cha
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1041,7 +1041,7 @@ exports[`Textarea when maximum length set to 1 when textarea is focused when val
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1054,7 +1054,7 @@ exports[`Textarea when maximum length set to 1 when textarea is focused when val
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1081,7 +1081,7 @@ exports[`Textarea when maximum length set to 1 when textarea is focused when val
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1094,7 +1094,7 @@ exports[`Textarea when maximum length set to 1 when textarea is focused when val
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1197,7 +1197,7 @@ exports[`Textarea when minimum length set to 1 when textarea is focused when val
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1210,7 +1210,7 @@ exports[`Textarea when minimum length set to 1 when textarea is focused when val
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1237,7 +1237,7 @@ exports[`Textarea when minimum length set to 1 when textarea is focused when val
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1250,7 +1250,7 @@ exports[`Textarea when minimum length set to 1 when textarea is focused when val
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1341,7 +1341,7 @@ exports[`Textarea when no properties passed in when textarea is focused when val
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1354,7 +1354,7 @@ exports[`Textarea when no properties passed in when textarea is focused when val
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1378,7 +1378,7 @@ exports[`Textarea when no properties passed in when textarea is focused when val
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1391,7 +1391,7 @@ exports[`Textarea when no properties passed in when textarea is focused when val
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1495,7 +1495,7 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1508,7 +1508,7 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1545,7 +1545,7 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1558,7 +1558,7 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1671,7 +1671,7 @@ exports[`Textarea when readOnly set to false when textarea is focused when value
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1684,7 +1684,7 @@ exports[`Textarea when readOnly set to false when textarea is focused when value
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1711,7 +1711,7 @@ exports[`Textarea when readOnly set to false when textarea is focused when value
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1724,7 +1724,7 @@ exports[`Textarea when readOnly set to false when textarea is focused when value
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1880,7 +1880,7 @@ exports[`Textarea when value set to empty string when textarea is focused when v
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1893,7 +1893,7 @@ exports[`Textarea when value set to empty string when textarea is focused when v
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1919,7 +1919,7 @@ exports[`Textarea when value set to empty string when textarea is focused when v
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -1932,7 +1932,7 @@ exports[`Textarea when value set to empty string when textarea is focused when v
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -1994,7 +1994,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused fu
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2007,7 +2007,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused fu
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -2033,7 +2033,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2046,7 +2046,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -2072,7 +2072,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2085,7 +2085,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -2129,7 +2129,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2142,7 +2142,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>
@@ -2168,7 +2168,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
       onClick={[Function]}
       tabIndex={-1}
     >
-      <_default>
+      <ClearSVG>
         <svg
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -2181,7 +2181,7 @@ exports[`Textarea when value set to non-empty string when textarea is focused wh
             fill="none"
           />
         </svg>
-      </_default>
+      </ClearSVG>
     </button>
   </div>
 </Textarea>

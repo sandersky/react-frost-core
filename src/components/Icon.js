@@ -6,11 +6,11 @@ import React, {type Node} from 'react'
 
 export const DEFAULT_PACK = 'frost'
 
-export type PROPS = {
+export type PROPS = {|
   className?: string,
   icon: string,
   pack?: ?string,
-}
+|}
 
 const Icon = ({className, icon, pack, ...passThroughProps}: PROPS): Node => {
   pack = pack || DEFAULT_PACK

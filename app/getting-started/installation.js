@@ -24,6 +24,7 @@ const Installation = (): Node => {
         <a
           className="ExternalLink"
           href="https://www.npmjs.com/"
+          rel="noopener noreferrer"
           target="_blank"
           title={NPM_TITLE}
         >
@@ -40,6 +41,7 @@ const Installation = (): Node => {
         <a
           className="ExternalLink"
           href="https://yarnpkg.com/"
+          rel="noopener noreferrer"
           target="_blank"
           title={YARN_TITLE}
         >

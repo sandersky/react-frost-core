@@ -11,9 +11,9 @@ const TYPES = {
 
 export type TYPE = $Values<typeof TYPES>
 
-export type PROPS = {
+export type PROPS = {|
   type?: ?TYPE,
-}
+|}
 
 const RING_JSX = (
   <svg viewBox="0 0 100 100" className="uil-ring">

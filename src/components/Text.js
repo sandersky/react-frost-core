@@ -12,6 +12,7 @@ const PREFIX = 'frost-text'
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
+// eslint-disable-next-line flowtype/require-exact-type
 export type PROPS = {
   align?: ?ALIGN,
   className?: ?string,
@@ -26,11 +27,11 @@ export type PROPS = {
   value?: ?string,
 }
 
-type State = {
+type State = {|
   animatingClearButtonOut: boolean,
   focused: boolean,
   value?: ?string,
-}
+|}
 
 /**
  * Get class name for text component given it's current state

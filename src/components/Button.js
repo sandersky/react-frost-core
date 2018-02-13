@@ -35,7 +35,7 @@ export type DESIGN = $Values<typeof DESIGNS>
 export type PRIORITY = $Values<typeof PRIORITIES>
 export type SIZE = $Values<typeof SIZES>
 
-export type PROPS = {
+export type PROPS = {|
   children?: Node,
   className?: string,
   design?: ?DESIGN,
@@ -47,7 +47,7 @@ export type PROPS = {
   size?: ?SIZE,
   text?: ?string,
   vertical?: ?boolean,
-}
+|}
 
 /**
  * Get class name for button given it's current state

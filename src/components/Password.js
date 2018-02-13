@@ -12,6 +12,7 @@ import React, {Component, type Node} from 'react'
 export const ALIGN_LEFT: 'left' = TEXT_ALIGN_LEFT
 export const ALIGN_RIGHT: 'right' = TEXT_ALIGN_RIGHT
 
+// eslint-disable-next-line flowtype/require-exact-type
 export type PROPS = {
   className?: ?string,
   revealable?: ?boolean,

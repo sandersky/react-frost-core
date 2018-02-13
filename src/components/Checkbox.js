@@ -34,7 +34,7 @@ const SVG = (
 
 export type SIZE = $Values<typeof SIZES>
 
-export type PROPS = {
+export type PROPS = {|
   autofocus?: ?boolean,
   checked?: ?boolean,
   children?: Node,
@@ -47,7 +47,7 @@ export type PROPS = {
   onChange?: ?({id?: ?string, value: any}) => void, // eslint-disable-line
   size?: ?SIZE,
   trueValue?: any, // eslint-disable-line
-}
+|}
 
 type State = {|
   checked: boolean,

@@ -18,10 +18,10 @@ const BACKGROUND_COLORS = [
 
 const IMPORTS_CODE = "'import {Icon} from 'react-frost-core'"
 
-type IconBackgroundColorSwatchProps = {
+type IconBackgroundColorSwatchProps = {|
   color: string,
   onClick: (color: string) => void,
-}
+|}
 
 const IconBackgroundColorSwatch = ({
   color,
@@ -35,11 +35,11 @@ const IconBackgroundColorSwatch = ({
   )
 }
 
-type IconSwatchProps = {
+type IconSwatchProps = {|
   background: string,
   icon: string,
   literal: string,
-}
+|}
 
 const IconSwatch = ({background, icon, literal}: IconSwatchProps): Node => {
   return (
@@ -48,7 +48,7 @@ const IconSwatch = ({background, icon, literal}: IconSwatchProps): Node => {
         <Icon className="IconSwatchIcon" icon={literal} />
       </div>
       <strong>{icon}</strong>
-      <em>"{literal}"</em>
+      <em>{`"${literal}"`}</em>
     </div>
   )
 }

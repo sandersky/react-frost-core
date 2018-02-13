@@ -63,17 +63,17 @@ get started simply import the react-frost-core SASS like in the code snippet
 below:
 `
 
-type SwatchProps = {
+type SwatchProps = {|
   color: string,
-}
+|}
 
 const Swatch = ({color}: SwatchProps): Node => {
   return <span className={`ColorPaletteSwatch frost-bg-${color}`} />
 }
 
-type ColorProps = {
+type ColorProps = {|
   color: string,
-}
+|}
 
 const Color = ({color}: ColorProps): Node => {
   return (
@@ -91,10 +91,10 @@ const Color = ({color}: ColorProps): Node => {
   )
 }
 
-type ColorTableProps = {
+type ColorTableProps = {|
   colors: string[],
   title: string,
-}
+|}
 
 const ColorTable = ({colors, title}: ColorTableProps): Node => {
   return (

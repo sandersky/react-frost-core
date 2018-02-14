@@ -25,7 +25,7 @@ export type DESIGN = $Values<typeof DESIGNS>
 export type PRIORITY = $Values<typeof PRIORITIES>
 export type SIZE = $Values<typeof SIZES>
 
-export type PROPS = {|
+export type LinkProps = {|
   children?: ?Node,
   className?: string,
   design?: ?DESIGN,
@@ -79,7 +79,7 @@ function getClassName(
   return classNames.join(' ')
 }
 
-export default class Link extends Component<PROPS> {
+export default class Link extends Component<LinkProps> {
   static DESIGNS = DESIGNS
   static PRIORITIES = PRIORITIES
   static SIZES = SIZES

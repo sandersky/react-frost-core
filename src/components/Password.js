@@ -13,12 +13,12 @@ export const ALIGN_LEFT: 'left' = TEXT_ALIGN_LEFT
 export const ALIGN_RIGHT: 'right' = TEXT_ALIGN_RIGHT
 
 // eslint-disable-next-line flowtype/require-exact-type
-export type PROPS = {
+export type PasswordProps = {
   className?: ?string,
   revealable?: ?boolean,
 }
 
-type STATE = {|
+type PasswordState = {|
   revealed: boolean,
 |}
 
@@ -45,7 +45,7 @@ function getClassName(className?: ?string, revealable?: ?boolean): string {
   return classNames.join(' ')
 }
 
-export default class Password extends Component<PROPS, STATE> {
+export default class Password extends Component<PasswordProps, PasswordState> {
   _el: ?HTMLDivElement
 
   state = {

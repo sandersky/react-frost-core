@@ -35,7 +35,7 @@ export type DESIGN = $Values<typeof DESIGNS>
 export type PRIORITY = $Values<typeof PRIORITIES>
 export type SIZE = $Values<typeof SIZES>
 
-export type PROPS = {|
+export type ButtonProps = {|
   children?: Node,
   className?: string,
   design?: ?DESIGN,
@@ -197,7 +197,7 @@ function renderButtonContents(
   }
 }
 
-class Button extends Component<PROPS> {
+class Button extends Component<ButtonProps> {
   static DESIGNS = DESIGNS
   static PRIORITIES = PRIORITIES
   static SIZES = SIZES

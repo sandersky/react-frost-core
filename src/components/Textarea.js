@@ -13,7 +13,7 @@ const PREFIX = 'frost-textarea'
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
 // eslint-disable-next-line flowtype/require-exact-type
-export type PROPS = {
+export type TextareaProps = {
   align?: ?ALIGN,
   className?: ?string,
   disabled?: ?boolean,
@@ -25,7 +25,7 @@ export type PROPS = {
   value?: ?string,
 }
 
-type State = {|
+type TextareaState = {|
   animatingClearButtonOut: boolean,
   focused: boolean,
   value?: ?string,
@@ -78,7 +78,7 @@ function getInputClassName(align?: ?ALIGN): string {
   return classNames.join(' ')
 }
 
-export default class Textarea extends Component<PROPS, State> {
+export default class Textarea extends Component<TextareaProps, TextareaState> {
   constructor() {
     super(...arguments)
 

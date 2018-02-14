@@ -9,7 +9,7 @@ import {createPortal} from 'react-dom'
 
 const PREFIX = 'frost-select'
 
-export type PROPS = {|
+export type SelectProps = {|
   autofocus?: ?boolean,
   className?: ?string,
   data: ?Array<Item>,
@@ -28,7 +28,7 @@ export type PROPS = {|
   wrapLabels?: ?boolean,
 |}
 
-type State = {|
+type SelectState = {|
   filter: string,
   focused: boolean,
   opened: boolean,
@@ -156,10 +156,10 @@ function getText(selectedItems: Array<Item>): ?string {
   return `${selectedItems.length} items selected`
 }
 
-export default class Select extends Component<PROPS, State> {
+export default class Select extends Component<SelectProps, SelectState> {
   _el: ?HTMLDivElement
 
-  constructor(props: PROPS) {
+  constructor(props: SelectProps) {
     super(props)
 
     const filter = ''

@@ -6,7 +6,7 @@ import Expand from './Expand'
 import t from 'grammatic'
 import React, {Component, type Node} from 'react'
 
-export type PROPS = {|
+export type AjaxErrorPageProps = {|
   description: string,
   errorCode: number,
   errorDetails: string,
@@ -15,7 +15,7 @@ export type PROPS = {|
   suggestion?: ?string,
 |}
 
-type STATE = {|
+type AjaxErrorPageState = {|
   expanded: boolean,
 |}
 
@@ -23,7 +23,10 @@ const COLLAPSED_LABEL = t('Show details', 'Label for toggle in collapsed state')
 const EXPANDED_LABEL = t('Hide details', 'Label for toggle in expanded state')
 const PREFIX = 'frost-ajax-error-page'
 
-export default class AjaxErrorPage extends Component<PROPS, STATE> {
+export default class AjaxErrorPage extends Component<
+  AjaxErrorPageProps,
+  AjaxErrorPageState,
+> {
   state = {
     expanded: false,
   }

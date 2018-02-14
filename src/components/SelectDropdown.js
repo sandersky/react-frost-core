@@ -17,7 +17,7 @@ export type Item = {|
   value: *,
 |}
 
-type PROPS = {|
+type SelectDropdownProps = {|
   element: ?HTMLElement,
   filter?: ?string,
   items: Array<Item>,
@@ -29,7 +29,7 @@ type PROPS = {|
   wrapLabels: boolean,
 |}
 
-type State = {|
+type SelectDropdownState = {|
   bottom: number | 'auto',
   dropdownClassName: string,
   dropdownSecondaryLabelsTextClassName: string,
@@ -154,11 +154,14 @@ function getItemIndex(target: *): ?number {
   return null
 }
 
-export default class SelectDropdown extends Component<PROPS, State> {
+export default class SelectDropdown extends Component<
+  SelectDropdownProps,
+  SelectDropdownState,
+> {
   _textInput: ?HTMLInputElement
   _ul: ?HTMLUListElement
 
-  constructor(props: PROPS) {
+  constructor(props: SelectDropdownProps) {
     super(props)
 
     const {multiselect, wrapLabels} = props
@@ -550,7 +553,7 @@ export default class SelectDropdown extends Component<PROPS, State> {
     this._updateText()
   }
 
-  componentWillReceiveProps(nextProps: PROPS) {
+  componentWillReceiveProps(nextProps: SelectDropdownProps) {
     const {multiselect, wrapLabels} = nextProps
 
     if (

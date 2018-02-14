@@ -7,8 +7,7 @@
  */
 
 export {default as AjaxErrorPage} from './components/AjaxErrorPage'
-import type {PROPS as _AJAX_ERROR_PAGE_PROPS} from './components/AjaxErrorPage'
-export type AJAX_ERROR_PAGE_PROPS = _AJAX_ERROR_PAGE_PROPS
+export type {AjaxErrorPageProps} from './components/AjaxErrorPage'
 
 /**
  * Button
@@ -17,40 +16,37 @@ export type AJAX_ERROR_PAGE_PROPS = _AJAX_ERROR_PAGE_PROPS
 export {default as Button} from './components/Button'
 
 import type {
+  ButtonProps as _ButtonProps,
   DESIGN as _BUTTON_DESIGN,
   PRIORITY as _BUTTON_PRIORITY,
-  PROPS as _BUTTON_PROPS,
   SIZE as _BUTTON_SIZE,
 } from './components/Button'
 
 export type BUTTON_DESIGN = _BUTTON_DESIGN
 export type BUTTON_PRIORITY = _BUTTON_PRIORITY
-export type BUTTON_PROPS = _BUTTON_PROPS
 export type BUTTON_SIZE = _BUTTON_SIZE
+export type ButtonProps = _ButtonProps
 
 /**
  * Checkbox
  */
 
 export {default as Checkbox} from './components/Checkbox'
-import type {PROPS as _CHECKBOX_PROPS} from './components/Checkbox'
-export type CHECKBOX_PROPS = _CHECKBOX_PROPS
+export type {CheckboxProps} from './components/Checkbox'
 
 /**
  * CodeBlock
  */
 
 export {default as CodeBlock} from './components/CodeBlock'
-import type {PROPS as _CODE_BLOCK_PROPS} from './components/CodeBlock'
-export type CODE_BLOCK_PROPS = _CODE_BLOCK_PROPS
+export type {CodeBlockProps} from './components/CodeBlock'
 
 /**
  * Expand
  */
 
 export {default as Expand} from './components/Expand'
-import type {PROPS as _EXPAND_PROPS} from './components/Expand'
-export type EXPAND_PROPS = _EXPAND_PROPS
+export type {ExpandProps} from './components/Expand'
 
 /**
  * Icon
@@ -72,15 +68,15 @@ export {default as Link} from './components/Link'
 
 import type {
   DESIGN as _LINK_DESIGN,
+  LinkProps as _LinkProps,
   PRIORITY as _LINK_PRIORITY,
-  PROPS as _LINK_PROPS,
   SIZE as _LINK_SIZE,
 } from './components/Link'
 
 export type LINK_DESIGN = _LINK_DESIGN
 export type LINK_PRIORITY = _LINK_PRIORITY
-export type LINK_PROPS = _LINK_PROPS
 export type LINK_SIZE = _LINK_SIZE
+export type LinkProps = _LinkProps
 
 /**
  * Loading
@@ -99,16 +95,14 @@ export {
   ALIGN_LEFT as PASSWORD_ALIGN_LEFT,
   ALIGN_RIGHT as PASSWORD_ALIGN_RIGHT,
 } from './components/Password'
-import type {PROPS as _PASSWORD_PROPS} from './components/Password'
-export type PASSWORD_PROPS = _PASSWORD_PROPS
+export type {PasswordProps} from './components/Password'
 
 /**
  * Select
  */
 
 export {default as Select} from './components/Select'
-import type {PROPS as _SELECT_PROPS} from './components/Select'
-export type SELECT_PROPS = _SELECT_PROPS
+export type {SelectProps} from './components/Select'
 
 /**
  * Text
@@ -120,8 +114,7 @@ export {
   ALIGN_RIGHT as TEXT_ALIGN_RIGHT,
 } from './components/Text'
 
-import type {PROPS as _TEXT_PROPS} from './components/Text'
-export type TEXT_PROPS = _TEXT_PROPS
+export type {TextProps} from './components/Text'
 
 /**
  * Textarea
@@ -133,5 +126,4 @@ export {
   ALIGN_RIGHT as TEXTAREA_ALIGN_RIGHT,
 } from './components/Textarea'
 
-import type {PROPS as _TEXTAREA_PROPS} from './components/Textarea'
-export type TEXTAREA_PROPS = _TEXTAREA_PROPS
+export type {TextareaProps} from './components/Textarea'

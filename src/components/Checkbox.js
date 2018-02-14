@@ -34,7 +34,7 @@ const SVG = (
 
 export type SIZE = $Values<typeof SIZES>
 
-export type PROPS = {|
+export type CheckboxProps = {|
   autofocus?: ?boolean,
   checked?: ?boolean,
   children?: Node,
@@ -49,7 +49,7 @@ export type PROPS = {|
   trueValue?: any, // eslint-disable-line
 |}
 
-type State = {|
+type CheckboxState = {|
   checked: boolean,
 |}
 
@@ -80,7 +80,7 @@ function getClassName(
   return classNames.join(' ')
 }
 
-export default class Checkbox extends Component<PROPS, State> {
+export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
   static defaultProps = {
     falseValue: false,
     size: SIZES.SMALL,
@@ -91,7 +91,7 @@ export default class Checkbox extends Component<PROPS, State> {
 
   _label: ?HTMLLabelElement
 
-  constructor(props: PROPS) {
+  constructor(props: CheckboxProps) {
     super(props)
 
     this.state = {
@@ -155,7 +155,7 @@ export default class Checkbox extends Component<PROPS, State> {
     }
   }
 
-  componentWillReceiveProps(nextProps: PROPS) {
+  componentWillReceiveProps(nextProps: CheckboxProps) {
     const {checked} = this.state
 
     if (

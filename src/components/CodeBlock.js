@@ -7,7 +7,7 @@
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
 
-export type PROPS = {|
+export type CodeBlockProps = {|
   children?: Node,
   code?: string,
   demo?: boolean,
@@ -16,7 +16,7 @@ export type PROPS = {|
   togglable?: boolean,
 |}
 
-type State = {|
+type CodeBlockState = {|
   expanded: boolean,
 |}
 
@@ -34,7 +34,10 @@ function renderCodeDemo(children?: Node, demo?: boolean): Node {
   return <div className="frost-code-block-demo">{children}</div>
 }
 
-export default class CodeBlock extends Component<PROPS, State> {
+export default class CodeBlock extends Component<
+  CodeBlockProps,
+  CodeBlockState,
+> {
   _codeElement: ?HTMLElement
 
   state = {

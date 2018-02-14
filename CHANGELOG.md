@@ -1,3 +1,7 @@
+## 0.0.23
+
+*   Upgrade dependencies and address lint errors.
+
 ## 0.0.22
 
 *   Upgrade dependencies and address lint errors.

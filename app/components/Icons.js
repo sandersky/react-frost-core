@@ -53,11 +53,11 @@ const IconSwatch = ({background, icon, literal}: IconSwatchProps): Node => {
   )
 }
 
-type State = {|
+type IconDemoState = {|
   background: string,
 |}
 
-class IconDemo extends Component<{}, State> {
+class IconDemo extends Component<{}, IconDemoState> {
   state = {
     background: BACKGROUND_COLORS[0],
   }

@@ -5,8 +5,9 @@ const {execSync} = require('child_process')
 const {join} = require('path')
 
 // Start fresh
-execSync('rm -rf preact')
-execSync('mkdir preact')
+execSync(
+  'rm -rf preact/dist preact/CHANGELOG.md preact/LICENSE.md preact/package.json',
+)
 
 // Copy files we need for preact npm package
 execSync('cp CHANGELOG.md LICENSE.md package.json preact')

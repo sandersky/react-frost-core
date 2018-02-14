@@ -5,8 +5,9 @@ const {execSync} = require('child_process')
 const {join} = require('path')
 
 // Start fresh
-execSync('rm -rf inferno')
-execSync('mkdir inferno')
+execSync(
+  'rm -rf inferno/dist inferno/CHANGELOG.md inferno/LICENSE.md inferno/package.json',
+)
 
 // Copy files we need for inferno npm package
 execSync('cp CHANGELOG.md LICENSE.md package.json inferno')

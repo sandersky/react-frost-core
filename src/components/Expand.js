@@ -16,7 +16,7 @@ const DEFAULT_EXPANDED_LABEL = t(
   'Label for toggle in expanded state',
 )
 
-export type PROPS = {|
+export type ExpandProps = {|
   children?: Node,
   className?: string,
   collapsedLabel?: string,
@@ -25,7 +25,7 @@ export type PROPS = {|
   onChange?: (expanded: boolean) => void,
 |}
 
-export type State = {|
+export type ExpandState = {|
   expanded: boolean,
 |}
 
@@ -61,7 +61,7 @@ function renderLabelText(
   return <div className="frost-expand-label-text">{text}</div>
 }
 
-export default class Expand extends Component<PROPS, State> {
+export default class Expand extends Component<ExpandProps, ExpandState> {
   constructor() {
     super(...arguments)
 
@@ -89,7 +89,7 @@ export default class Expand extends Component<PROPS, State> {
     }
   }
 
-  componentWillReceiveProps(nextProps: PROPS) {
+  componentWillReceiveProps(nextProps: ExpandProps) {
     const {expanded: expandedProp} = nextProps
     const {expanded} = this.state
 

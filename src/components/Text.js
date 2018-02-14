@@ -13,7 +13,7 @@ const PREFIX = 'frost-text'
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
 // eslint-disable-next-line flowtype/require-exact-type
-export type PROPS = {
+export type TextProps = {
   align?: ?ALIGN,
   className?: ?string,
   disabled?: ?boolean,
@@ -27,7 +27,7 @@ export type PROPS = {
   value?: ?string,
 }
 
-type State = {|
+type TextState = {|
   animatingClearButtonOut: boolean,
   focused: boolean,
   value?: ?string,
@@ -86,7 +86,7 @@ function getInputClassName(align?: ?ALIGN): string {
   return classNames.join(' ')
 }
 
-export default class Text extends Component<PROPS, State> {
+export default class Text extends Component<TextProps, TextState> {
   constructor() {
     super(...arguments)
 

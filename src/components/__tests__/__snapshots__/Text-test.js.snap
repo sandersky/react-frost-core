@@ -150,6 +150,25 @@ exports[`Text when align set to left when input is focused when value changed wh
 </Text>
 `;
 
+exports[`Text when align set to left when value property is updated functions as expected 1`] = `
+<Text
+  align="left"
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when align set to right functions as expected 1`] = `
 <Text
   align="right"
@@ -300,6 +319,25 @@ exports[`Text when align set to right when input is focused when value changed w
 </Text>
 `;
 
+exports[`Text when align set to right when value property is updated functions as expected 1`] = `
+<Text
+  align="right"
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input frost-text-align-right"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when class name passed in functions as expected 1`] = `
 <Text
   className="foobar"
@@ -445,6 +483,25 @@ exports[`Text when class name passed in when input is focused when value changed
       onChange={[Function]}
       onFocus={[Function]}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when class name passed in when value property is updated functions as expected 1`] = `
+<Text
+  className="foobar"
+  value="some-new-value"
+>
+  <div
+    className="frost-text foobar"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
     />
   </div>
 </Text>
@@ -606,6 +663,26 @@ exports[`Text when disabled set to false when input is focused when value change
 </Text>
 `;
 
+exports[`Text when disabled set to false when value property is updated functions as expected 1`] = `
+<Text
+  disabled={false}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when disabled set to true functions as expected 1`] = `
 <Text
   disabled={true}
@@ -658,6 +735,26 @@ exports[`Text when disabled set to true when input is focused when input looses 
       onChange={[Function]}
       onFocus={[Function]}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when disabled set to true when value property is updated functions as expected 1`] = `
+<Text
+  disabled={true}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      disabled={true}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
     />
   </div>
 </Text>
@@ -813,6 +910,25 @@ exports[`Text when error set to false when input is focused when value changed w
 </Text>
 `;
 
+exports[`Text when error set to false when value property is updated functions as expected 1`] = `
+<Text
+  error={false}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when error set to true functions as expected 1`] = `
 <Text
   error={true}
@@ -958,6 +1074,25 @@ exports[`Text when error set to true when input is focused when value changed wh
       onChange={[Function]}
       onFocus={[Function]}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when error set to true when value property is updated functions as expected 1`] = `
+<Text
+  error={true}
+  value="some-new-value"
+>
+  <div
+    className="frost-text frost-text-error"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
     />
   </div>
 </Text>
@@ -1119,6 +1254,26 @@ exports[`Text when maximum length set to 1 when input is focused when value chan
 </Text>
 `;
 
+exports[`Text when maximum length set to 1 when value property is updated functions as expected 1`] = `
+<Text
+  maxLength={1}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      maxLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when minimum length set to 1 functions as expected 1`] = `
 <Text
   minLength={1}
@@ -1275,6 +1430,26 @@ exports[`Text when minimum length set to 1 when input is focused when value chan
 </Text>
 `;
 
+exports[`Text when minimum length set to 1 when value property is updated functions as expected 1`] = `
+<Text
+  minLength={1}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      minLength={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when no properties passed in functions as expected 1`] = `
 <Text>
   <div
@@ -1408,6 +1583,24 @@ exports[`Text when no properties passed in when input is focused when value chan
       onChange={[Function]}
       onFocus={[Function]}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when no properties passed in when value property is updated functions as expected 1`] = `
+<Text
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
     />
   </div>
 </Text>
@@ -1593,6 +1786,25 @@ exports[`Text when onChange set when input is focused when value changed when cl
 </Text>
 `;
 
+exports[`Text when onChange set when value property is updated functions as expected 1`] = `
+<Text
+  onChange={[MockFunction]}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when readOnly set to false functions as expected 1`] = `
 <Text
   readOnly={false}
@@ -1749,6 +1961,26 @@ exports[`Text when readOnly set to false when input is focused when value change
 </Text>
 `;
 
+exports[`Text when readOnly set to false when value property is updated functions as expected 1`] = `
+<Text
+  readOnly={false}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={false}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when readOnly set to true functions as expected 1`] = `
 <Text
   readOnly={true}
@@ -1801,6 +2033,26 @@ exports[`Text when readOnly set to true when input is focused when input looses 
       onFocus={[Function]}
       readOnly={true}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when readOnly set to true when value property is updated functions as expected 1`] = `
+<Text
+  readOnly={true}
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      readOnly={true}
+      value="some-new-value"
     />
   </div>
 </Text>
@@ -1962,6 +2214,26 @@ exports[`Text when size set to 3 when input is focused when value changed when c
 </Text>
 `;
 
+exports[`Text when size set to 3 when value property is updated functions as expected 1`] = `
+<Text
+  size={3}
+  value="some-new-value"
+>
+  <div
+    className="frost-text frost-text-size"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      size={3}
+      value="some-new-value"
+    />
+  </div>
+</Text>
+`;
+
 exports[`Text when value set to empty string functions as expected 1`] = `
 <Text
   value=""
@@ -2107,6 +2379,24 @@ exports[`Text when value set to empty string when input is focused when value ch
       onChange={[Function]}
       onFocus={[Function]}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to empty string when value property is updated functions as expected 1`] = `
+<Text
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
     />
   </div>
 </Text>
@@ -2356,6 +2646,24 @@ exports[`Text when value set to non-empty string when input is focused when valu
       onChange={[Function]}
       onFocus={[Function]}
       value=""
+    />
+  </div>
+</Text>
+`;
+
+exports[`Text when value set to non-empty string when value property is updated functions as expected 1`] = `
+<Text
+  value="some-new-value"
+>
+  <div
+    className="frost-text"
+  >
+    <input
+      className="frost-text-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="some-new-value"
     />
   </div>
 </Text>

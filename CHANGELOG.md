@@ -1,3 +1,8 @@
+## 0.0.25
+
+*   Fixed select component filtering to work in preact.
+*   Fixed text component to allow updating it's value via the `value` property.
+
 ## 0.0.24
 
 *   Address accessibility issues.

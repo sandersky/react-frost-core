@@ -67,7 +67,7 @@ module.exports = {
     'react-dom',
   ],
   module: {
-    loaders: [
+    rules: [
       {
         exclude: [/node_modules/],
         test: /\.css$/,

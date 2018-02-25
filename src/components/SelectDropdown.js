@@ -314,6 +314,18 @@ export default class SelectDropdown extends Component<
     }
   }
 
+  _handleKeyUp = (e: KeyboardEvent) => {
+    const {onFilterInput} = this.props
+
+    if (![KEY_CODES.DOWN_ARROW, KEY_CODES.UP_ARROW].indexOf(e.keyCode) !== -1) {
+      const {target} = e
+
+      if (target instanceof HTMLInputElement) {
+        onFilterInput(target.value)
+      }
+    }
+  }
+
   _handleMouseDown = (e: SyntheticMouseEvent<*>) => {
     // This keeps the overlay from swallowing clicks on the clear button
     e.preventDefault()
@@ -597,15 +609,7 @@ export default class SelectDropdown extends Component<
   }
 
   render(): ReactNode {
-    const {
-      filter,
-      id,
-      items,
-      multiselect,
-      onClose,
-      onFilterInput,
-      selectedItems,
-    } = this.props
+    const {filter, id, items, multiselect, onClose, selectedItems} = this.props
 
     const {
       arrowNav,
@@ -662,8 +666,8 @@ export default class SelectDropdown extends Component<
             inputRef={(el: ?HTMLInputElement) => {
               this._textInput = el
             }}
-            onChange={onFilterInput}
             onKeyDown={this._handleKeyDown}
+            onKeyUp={this._handleKeyUp}
             role="combobox"
             value={filter}
           />

@@ -95,6 +95,16 @@ describe('Password', () => {
         expect(wrapper).toMatchSnapshot()
       })
 
+      describe('when value property is updated', () => {
+        beforeEach(() => {
+          wrapper.setProps({value: 'some-new-value'})
+        })
+
+        it('functions as expected', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
+      })
+
       describe('when input is focused', () => {
         let input
 

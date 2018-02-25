@@ -189,6 +189,14 @@ export default class Text extends Component<TextProps, TextState> {
     }
   }
 
+  componentWillReceiveProps(nextProps: TextProps) {
+    const {value} = nextProps
+
+    if (this.props.value !== value) {
+      this.setState({value})
+    }
+  }
+
   render(): Node {
     const {
       align,

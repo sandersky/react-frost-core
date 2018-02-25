@@ -63,7 +63,7 @@ module.exports = {
   devtool: 'source-map',
   entry: path.resolve('app', 'index.js'),
   module: {
-    loaders: [
+    rules: [
       {
         exclude: [/node_modules/],
         test: /\.css$/,

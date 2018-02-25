@@ -45,11 +45,6 @@ const DOCS: Array<DOC_TYPE> = [
   {
     title: 'Options',
     examples: {
-      Autofocus: (
-        <CodeBlock language="jsx" maxLineLength={30}>
-          <Select autofocus={true} data={DATA} label="superhero" />
-        </CodeBlock>
-      ),
       'Multiple selection': (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Select data={DATA} label="superhero" multiselect={true} />

@@ -153,6 +153,7 @@ export default class Link extends Component<LinkProps> {
         className={getClassName(className, design, disabled, priority, size)}
         href={href}
         onClick={this._handleClick}
+        tabIndex={disabled ? -1 : null}
       >
         {this._renderContent()}
       </a>

@@ -1,3 +1,4 @@
+import KEY_CODES from '../../key-codes'
 import Password, {ALIGN_LEFT, ALIGN_RIGHT} from '../Password'
 import {mount} from 'enzyme'
 import React from 'react'
@@ -137,7 +138,7 @@ describe('Password', () => {
               let button
 
               beforeEach(() => {
-                button = wrapper.find('button')
+                button = wrapper.find('.frost-text-clear')
                 button.simulate('click')
               })
 
@@ -157,12 +158,12 @@ describe('Password', () => {
             })
 
             if (props.revealable === true) {
-              describe('when reveal toggled', () => {
+              describe('when reveal toggled via mouse', () => {
                 let toggle
 
                 beforeEach(() => {
                   toggle = wrapper.find('.frost-password-reveal')
-                  toggle.simulate('click')
+                  toggle.simulate('mouseup')
                 })
 
                 it('functions as expected', done => {
@@ -172,9 +173,83 @@ describe('Password', () => {
                   }, 1)
                 })
 
-                describe('when reveal toggled again', () => {
+                describe('when reveal toggled again via mouse', () => {
                   beforeEach(() => {
-                    toggle.simulate('click')
+                    toggle.simulate('mouseup')
+                  })
+
+                  it('functions as expected', done => {
+                    setTimeout(() => {
+                      expect(wrapper).toMatchSnapshot()
+                      done()
+                    }, 1)
+                  })
+                })
+              })
+
+              describe('when reveal focused', () => {
+                let toggle
+
+                beforeEach(() => {
+                  toggle = wrapper.find('.frost-password-reveal')
+                  toggle.simulate('focus')
+                })
+
+                describe('when enter key pressed', () => {
+                  beforeEach(() => {
+                    toggle.simulate('keypress', {which: KEY_CODES.ENTER})
+                  })
+
+                  it('functions as expected', done => {
+                    setTimeout(() => {
+                      expect(wrapper).toMatchSnapshot()
+                      done()
+                    }, 1)
+                  })
+
+                  describe('when reveal toggled again via enter key', () => {
+                    beforeEach(() => {
+                      toggle.simulate('keypress', {which: KEY_CODES.ENTER})
+                    })
+
+                    it('functions as expected', done => {
+                      setTimeout(() => {
+                        expect(wrapper).toMatchSnapshot()
+                        done()
+                      }, 1)
+                    })
+                  })
+                })
+
+                describe('when spacebar pressed', () => {
+                  beforeEach(() => {
+                    toggle.simulate('keypress', {which: KEY_CODES.SPACE})
+                  })
+
+                  it('functions as expected', done => {
+                    setTimeout(() => {
+                      expect(wrapper).toMatchSnapshot()
+                      done()
+                    }, 1)
+                  })
+
+                  describe('when reveal toggled again via spacebar', () => {
+                    beforeEach(() => {
+                      toggle.simulate('keypress', {which: KEY_CODES.SPACE})
+                    })
+
+                    it('functions as expected', done => {
+                      setTimeout(() => {
+                        expect(wrapper).toMatchSnapshot()
+                        done()
+                      }, 1)
+                    })
+                  })
+                })
+
+                describe('when another key is pressed', () => {
+                  beforeEach(() => {
+                    toggle.simulate('keypress', {which: KEY_CODES.KEY_A})
                   })
 
                   it('functions as expected', done => {
@@ -189,12 +264,12 @@ describe('Password', () => {
           })
 
           if (props.revealable === true) {
-            describe('when reveal toggled', () => {
+            describe('when reveal toggled via mouse', () => {
               let toggle
 
               beforeEach(() => {
                 toggle = wrapper.find('.frost-password-reveal')
-                toggle.simulate('click')
+                toggle.simulate('mouseup')
               })
 
               it('functions as expected', done => {
@@ -204,9 +279,9 @@ describe('Password', () => {
                 }, 1)
               })
 
-              describe('when reveal toggled again', () => {
+              describe('when reveal toggled again via mouse', () => {
                 beforeEach(() => {
-                  toggle.simulate('click')
+                  toggle.simulate('mouseup')
                 })
 
                 it('functions as expected', done => {

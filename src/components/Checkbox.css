@@ -22,6 +22,17 @@
   display: inline-block;
   position: relative;
 
+  &:focus {
+    outline: none;
+
+    & label {
+      &::before {
+        background-image: var(--frost-checkbox-focus-bg);
+        border: var(--frost-checkbox-focus-border);
+      }
+    }
+  }
+
   & input {
     display: none;
     left: 2px;
@@ -47,15 +58,6 @@
       position: relative;
       vertical-align: middle;
     }
-
-    &:focus {
-      outline: none;
-
-      &::before {
-        background-image: var(--frost-checkbox-focus-bg);
-        border: var(--frost-checkbox-focus-border);
-      }
-    }
   }
 
   & svg {
@@ -78,9 +80,13 @@
 }
 
 .frost-checkbox-disabled {
-  & label::before {
-    background-image: var(--frost-checkbox-disabled-bg);
-    border: var(--frost-checkbox-disabled-border);
+  & label {
+    cursor: default;
+
+    &::before {
+      background-image: var(--frost-checkbox-disabled-bg);
+      border: var(--frost-checkbox-disabled-border);
+    }
   }
 }
 

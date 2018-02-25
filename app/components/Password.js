@@ -40,11 +40,6 @@ const DOCS: Array<DOC_TYPE> = [
           <Password align={PASSWORD_ALIGN_RIGHT} />
         </CodeBlock>
       ),
-      Autofocus: (
-        <CodeBlock language="jsx" maxLineLength={30}>
-          <Password autoFocus={true} />
-        </CodeBlock>
-      ),
       'Max length': (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Password maxLength={4} />

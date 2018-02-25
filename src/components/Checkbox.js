@@ -35,7 +35,7 @@ const SVG = (
 export type SIZE = $Values<typeof SIZES>
 
 export type CheckboxProps = {|
-  autofocus?: ?boolean,
+  autoFocus?: ?boolean,
   checked?: ?boolean,
   children?: Node,
   disabled?: ?boolean,
@@ -51,6 +51,7 @@ export type CheckboxProps = {|
 
 type CheckboxState = {|
   checked: boolean,
+  id: string,
 |}
 
 function getClassName(
@@ -80,6 +81,8 @@ function getClassName(
   return classNames.join(' ')
 }
 
+let counter = 0
+
 export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
   static defaultProps = {
     falseValue: false,
@@ -89,13 +92,23 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
 
   static SIZES = SIZES
 
-  _label: ?HTMLLabelElement
+  _el: ?HTMLDivElement
 
   constructor(props: CheckboxProps) {
     super(props)
 
     this.state = {
       checked: props.checked || false,
+      id: `${PREFIX}-${counter}`,
+    }
+
+    // If we've reached the max possible number for the counter we'll start back at zero.
+    // Most likely this will never happen but if an app were to be used long enough without
+    // a hard refresh this is theoretically possible.
+    if (counter === Number.MAX_SAFE_INTEGER) {
+      counter = 0
+    } else {
+      counter++
     }
   }
 
@@ -125,10 +138,10 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
     }
   }
 
-  _handleLabelMouseDown = (e: SyntheticEvent<*>) => {
+  _handleMouseDown = (e: SyntheticEvent<*>) => {
     const {disabled} = this.props
 
-    // Keep disabled checkbox label from being focused
+    // Keep disabled checkbox from being focused
     if (disabled) {
       e.preventDefault()
     }
@@ -148,10 +161,10 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
   }
 
   componentDidMount() {
-    const {autofocus} = this.props
+    const {autoFocus} = this.props
 
-    if (this._label && autofocus) {
-      this._label.focus()
+    if (this._el && autoFocus) {
+      this._el.focus()
     }
   }
 
@@ -168,7 +181,7 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
 
   render(): Node {
     const {
-      autofocus,
+      autoFocus,
       checked: _checked,
       children,
       disabled,
@@ -182,26 +195,27 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
       ...passedThroughProps
     } = this.props
 
-    const {checked} = this.state
+    const {checked, id} = this.state
     const areChildrenPresent = Array.isArray(children) && !!children.length
 
     return (
       <div
+        aria-checked={checked}
         className={getClassName(checked, disabled, error, size)}
+        onBlur={this.props.onBlur}
         onKeyPress={this._handleKeyPress}
+        onMouseDown={this._handleMouseDown}
+        ref={(el: ?HTMLDivElement) => {
+          this._el = el
+        }}
+        role="checkbox"
+        tabIndex={disabled ? -1 : 0}
       >
-        <label
-          disabled={disabled}
-          onBlur={this.props.onBlur}
-          onMouseDown={this._handleLabelMouseDown}
-          ref={(el: ?HTMLLabelElement) => {
-            this._label = el
-          }}
-          tabIndex={disabled ? -1 : 0}
-        >
+        <label disabled={disabled} htmlFor={id}>
           <input
             checked={checked}
             disabled={disabled}
+            id={id}
             onChange={this._handleInputChange}
             type="checkbox"
             {...passedThroughProps}

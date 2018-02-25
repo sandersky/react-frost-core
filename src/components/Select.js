@@ -10,7 +10,7 @@ import {createPortal} from 'react-dom'
 const PREFIX = 'frost-select'
 
 export type SelectProps = {|
-  autofocus?: ?boolean,
+  autoFocus?: ?boolean,
   className?: ?string,
   data: ?Array<Item>,
   disabled?: ?boolean,
@@ -31,6 +31,7 @@ export type SelectProps = {|
 type SelectState = {|
   filter: string,
   focused: boolean,
+  id: string,
   opened: boolean,
   selectedItems: Array<Item>,
 |}
@@ -156,6 +157,8 @@ function getText(selectedItems: Array<Item>): ?string {
   return `${selectedItems.length} items selected`
 }
 
+let counter = 0
+
 export default class Select extends Component<SelectProps, SelectState> {
   _el: ?HTMLDivElement
 
@@ -166,9 +169,19 @@ export default class Select extends Component<SelectProps, SelectState> {
 
     this.state = {
       filter,
+      id: `${PREFIX}-${counter}`,
       focused: false,
       opened: false,
       selectedItems: [],
+    }
+
+    // If we've reached the max possible number for the counter we'll start back at zero.
+    // Most likely this will never happen but if an app were to be used long enough without
+    // a hard refresh this is theoretically possible.
+    if (counter === Number.MAX_SAFE_INTEGER) {
+      counter = 0
+    } else {
+      counter++
     }
   }
 
@@ -320,7 +333,7 @@ export default class Select extends Component<SelectProps, SelectState> {
 
   _renderItems(): Node {
     const {data, multiselect, onInput, wrapLabels} = this.props
-    const {filter, selectedItems} = this.state
+    const {filter, id, selectedItems} = this.state
 
     if (!this.state.opened) {
       return null
@@ -330,6 +343,7 @@ export default class Select extends Component<SelectProps, SelectState> {
       <SelectDropdown
         element={this._el}
         filter={filter}
+        id={id}
         items={getItemsFromData(data, filter, onInput)}
         multiselect={multiselect || false}
         onClose={this._handleDropdownClose}
@@ -343,7 +357,7 @@ export default class Select extends Component<SelectProps, SelectState> {
 
   componentDidMount() {
     // If autofocus and nothing else has focus, focus on select
-    if (this.props.autofocus && this._el && !document.querySelector(':focus')) {
+    if (this.props.autoFocus && this._el && !document.querySelector(':focus')) {
       this._el.focus()
     }
   }
@@ -359,14 +373,16 @@ export default class Select extends Component<SelectProps, SelectState> {
       width,
     } = this.props
 
-    const {focused, opened, selectedItems} = this.state
+    const {focused, id, opened, selectedItems} = this.state
     const text = getText(selectedItems)
     const items = this._renderItems()
 
     return (
       <div
+        aria-expanded={opened}
+        aria-haspopup="listbox"
         aria-label={getAriaLabel(label, opened)}
-        aria-pressed={opened}
+        aria-owns={opened ? id : null}
         className={getClassName(
           className,
           disabled,
@@ -383,6 +399,7 @@ export default class Select extends Component<SelectProps, SelectState> {
         ref={(el: ?HTMLDivElement) => {
           this._el = el
         }}
+        role="combobox"
         style={width ? {maxWidth: 'initial', minWidth: 'initial', width} : null}
         tabIndex={disabled ? -1 : 0}
       >

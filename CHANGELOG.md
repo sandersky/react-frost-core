@@ -1,3 +1,7 @@
+## 0.0.24
+
+*   Address accessibility issues.
+
 ## 0.0.23
 
 *   Upgrade dependencies and address lint errors.

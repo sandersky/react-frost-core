@@ -8,6 +8,7 @@ exports[`Link functions as expected when design is info-bar with icon 1`] = `
   <a
     className="frost-link info-bar"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -20,6 +21,7 @@ exports[`Link functions as expected when design is info-bar with text 1`] = `
   <a
     className="frost-link info-bar"
     onClick={[Function]}
+    tabIndex={null}
   >
     foobar
   </a>
@@ -34,6 +36,7 @@ exports[`Link functions as expected when design is inline with icon 1`] = `
   <a
     className="frost-link inline"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -46,6 +49,7 @@ exports[`Link functions as expected when design is inline with text 1`] = `
   <a
     className="frost-link inline"
     onClick={[Function]}
+    tabIndex={null}
   >
     foobar
   </a>
@@ -60,6 +64,7 @@ exports[`Link functions as expected when design is set with text 1`] = `
   <a
     className="frost-link info-bar"
     onClick={[Function]}
+    tabIndex={null}
   >
     foobar
   </a>
@@ -79,6 +84,7 @@ exports[`Link when large primary button when onClick not set when className not 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -112,6 +118,7 @@ exports[`Link when large primary button when onClick not set when className not 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -146,6 +153,7 @@ exports[`Link when large primary button when onClick not set when className not 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -181,6 +189,7 @@ exports[`Link when large primary button when onClick not set when className not 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -215,6 +224,7 @@ exports[`Link when large primary button when onClick not set when className not 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -249,6 +259,7 @@ exports[`Link when large primary button when onClick not set when className not 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -288,6 +299,7 @@ exports[`Link when large primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -306,6 +318,7 @@ exports[`Link when large primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -325,6 +338,7 @@ exports[`Link when large primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -344,6 +358,7 @@ exports[`Link when large primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -362,6 +377,7 @@ exports[`Link when large primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -380,6 +396,7 @@ exports[`Link when large primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -394,6 +411,7 @@ exports[`Link when large primary button when onClick set when className not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -434,6 +452,7 @@ exports[`Link when large primary button when onClick set when className not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -469,6 +488,7 @@ exports[`Link when large primary button when onClick set when className not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -511,6 +531,7 @@ exports[`Link when large primary button when onClick set when className not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -546,6 +567,7 @@ exports[`Link when large primary button when onClick set when className not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -587,6 +609,7 @@ exports[`Link when large primary button when onClick set when className not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -623,6 +646,7 @@ exports[`Link when large primary button when onClick set when className set with
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -664,6 +688,7 @@ exports[`Link when large primary button when onClick set when className set with
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -700,6 +725,7 @@ exports[`Link when large primary button when onClick set when className set with
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -743,6 +769,7 @@ exports[`Link when large primary button when onClick set when className set with
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -779,6 +806,7 @@ exports[`Link when large primary button when onClick set when className set with
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -821,6 +849,7 @@ exports[`Link when large primary button when onClick set when className set with
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -856,6 +885,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -890,6 +920,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -925,6 +956,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -961,6 +993,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -996,6 +1029,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1031,6 +1065,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1071,6 +1106,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1090,6 +1126,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1110,6 +1147,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1130,6 +1168,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1149,6 +1188,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1168,6 +1208,7 @@ exports[`Link when large primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1183,6 +1224,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1218,6 +1260,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1254,6 +1297,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1291,6 +1335,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1327,6 +1372,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1363,6 +1409,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1400,6 +1447,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1436,6 +1484,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1473,6 +1522,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1511,6 +1561,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1548,6 +1599,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1585,6 +1637,7 @@ exports[`Link when large primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1620,6 +1673,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1654,6 +1708,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1689,6 +1744,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1725,6 +1781,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1760,6 +1817,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1795,6 +1853,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1835,6 +1894,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1854,6 +1914,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1874,6 +1935,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1894,6 +1956,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1913,6 +1976,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1932,6 +1996,7 @@ exports[`Link when large primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -1947,6 +2012,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -1988,6 +2054,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2024,6 +2091,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2067,6 +2135,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2103,6 +2172,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2145,6 +2215,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2182,6 +2253,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2224,6 +2296,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2261,6 +2334,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2305,6 +2379,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2342,6 +2417,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2385,6 +2461,7 @@ exports[`Link when large primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -2419,6 +2496,7 @@ exports[`Link when large secondary button when onClick not set when className no
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2440,6 +2518,7 @@ exports[`Link when large secondary button when onClick not set when className no
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2462,6 +2541,7 @@ exports[`Link when large secondary button when onClick not set when className no
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2486,6 +2566,7 @@ exports[`Link when large secondary button when onClick not set when className no
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2509,6 +2590,7 @@ exports[`Link when large secondary button when onClick not set when className no
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2532,6 +2614,7 @@ exports[`Link when large secondary button when onClick not set when className no
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2560,6 +2643,7 @@ exports[`Link when large secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -2578,6 +2662,7 @@ exports[`Link when large secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -2597,6 +2682,7 @@ exports[`Link when large secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -2616,6 +2702,7 @@ exports[`Link when large secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -2634,6 +2721,7 @@ exports[`Link when large secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -2652,6 +2740,7 @@ exports[`Link when large secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -2666,6 +2755,7 @@ exports[`Link when large secondary button when onClick set when className not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2694,6 +2784,7 @@ exports[`Link when large secondary button when onClick set when className not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2717,6 +2808,7 @@ exports[`Link when large secondary button when onClick set when className not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2748,6 +2840,7 @@ exports[`Link when large secondary button when onClick set when className not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2772,6 +2865,7 @@ exports[`Link when large secondary button when onClick set when className not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2802,6 +2896,7 @@ exports[`Link when large secondary button when onClick set when className not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2827,6 +2922,7 @@ exports[`Link when large secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2856,6 +2952,7 @@ exports[`Link when large secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2880,6 +2977,7 @@ exports[`Link when large secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2912,6 +3010,7 @@ exports[`Link when large secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2937,6 +3036,7 @@ exports[`Link when large secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2968,6 +3068,7 @@ exports[`Link when large secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -2992,6 +3093,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3014,6 +3116,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3037,6 +3140,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3062,6 +3166,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3086,6 +3191,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3110,6 +3216,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3139,6 +3246,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3158,6 +3266,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3178,6 +3287,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3198,6 +3308,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3217,6 +3328,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3236,6 +3348,7 @@ exports[`Link when large secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3251,6 +3364,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3274,6 +3388,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3298,6 +3413,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3324,6 +3440,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3349,6 +3466,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3374,6 +3492,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3400,6 +3519,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3424,6 +3544,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3449,6 +3570,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3476,6 +3598,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3502,6 +3625,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3528,6 +3652,7 @@ exports[`Link when large secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary large"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -3552,6 +3677,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3574,6 +3700,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3597,6 +3724,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3622,6 +3750,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3646,6 +3775,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3670,6 +3800,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3699,6 +3830,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3718,6 +3850,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3738,6 +3871,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3758,6 +3892,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3777,6 +3912,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3796,6 +3932,7 @@ exports[`Link when large secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -3811,6 +3948,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3840,6 +3978,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3864,6 +4003,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3896,6 +4036,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3921,6 +4062,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3952,6 +4094,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -3978,6 +4121,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -4008,6 +4152,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -4033,6 +4178,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -4066,6 +4212,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -4092,6 +4239,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -4124,6 +4272,7 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary large"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -4147,6 +4296,7 @@ exports[`Link when medium primary button when onClick not set when className not
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4180,6 +4330,7 @@ exports[`Link when medium primary button when onClick not set when className not
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4214,6 +4365,7 @@ exports[`Link when medium primary button when onClick not set when className not
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4249,6 +4401,7 @@ exports[`Link when medium primary button when onClick not set when className not
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4283,6 +4436,7 @@ exports[`Link when medium primary button when onClick not set when className not
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4317,6 +4471,7 @@ exports[`Link when medium primary button when onClick not set when className not
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4356,6 +4511,7 @@ exports[`Link when medium primary button when onClick not set when className set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -4374,6 +4530,7 @@ exports[`Link when medium primary button when onClick not set when className set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -4393,6 +4550,7 @@ exports[`Link when medium primary button when onClick not set when className set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -4412,6 +4570,7 @@ exports[`Link when medium primary button when onClick not set when className set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -4430,6 +4589,7 @@ exports[`Link when medium primary button when onClick not set when className set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -4448,6 +4608,7 @@ exports[`Link when medium primary button when onClick not set when className set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -4462,6 +4623,7 @@ exports[`Link when medium primary button when onClick set when className not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4502,6 +4664,7 @@ exports[`Link when medium primary button when onClick set when className not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4537,6 +4700,7 @@ exports[`Link when medium primary button when onClick set when className not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4579,6 +4743,7 @@ exports[`Link when medium primary button when onClick set when className not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4614,6 +4779,7 @@ exports[`Link when medium primary button when onClick set when className not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4655,6 +4821,7 @@ exports[`Link when medium primary button when onClick set when className not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4691,6 +4858,7 @@ exports[`Link when medium primary button when onClick set when className set wit
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4732,6 +4900,7 @@ exports[`Link when medium primary button when onClick set when className set wit
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4768,6 +4937,7 @@ exports[`Link when medium primary button when onClick set when className set wit
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4811,6 +4981,7 @@ exports[`Link when medium primary button when onClick set when className set wit
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4847,6 +5018,7 @@ exports[`Link when medium primary button when onClick set when className set wit
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4889,6 +5061,7 @@ exports[`Link when medium primary button when onClick set when className set wit
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4924,6 +5097,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4958,6 +5132,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -4993,6 +5168,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5029,6 +5205,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5064,6 +5241,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5099,6 +5277,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5139,6 +5318,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5158,6 +5338,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5178,6 +5359,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5198,6 +5380,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5217,6 +5400,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5236,6 +5420,7 @@ exports[`Link when medium primary disabled button when onClick not set when clas
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5251,6 +5436,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5286,6 +5472,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5322,6 +5509,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5359,6 +5547,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5395,6 +5584,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5431,6 +5621,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5468,6 +5659,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link baz disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5504,6 +5696,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link baz disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5541,6 +5734,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link baz disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5579,6 +5773,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link baz disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5616,6 +5811,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link baz disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5653,6 +5849,7 @@ exports[`Link when medium primary disabled button when onClick set when classNam
   <a
     className="frost-link baz disabled primary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5688,6 +5885,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5722,6 +5920,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5757,6 +5956,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5793,6 +5993,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5828,6 +6029,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5863,6 +6065,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -5903,6 +6106,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5922,6 +6126,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5942,6 +6147,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5962,6 +6168,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -5981,6 +6188,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6000,6 +6208,7 @@ exports[`Link when medium primary explicitly enabled button when onClick not set
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6015,6 +6224,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6056,6 +6266,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6092,6 +6303,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6135,6 +6347,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6171,6 +6384,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6213,6 +6427,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6250,6 +6465,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6292,6 +6508,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6329,6 +6546,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6373,6 +6591,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6410,6 +6629,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6453,6 +6673,7 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
   <a
     className="frost-link baz primary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -6487,6 +6708,7 @@ exports[`Link when medium secondary button when onClick not set when className n
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6508,6 +6730,7 @@ exports[`Link when medium secondary button when onClick not set when className n
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6530,6 +6753,7 @@ exports[`Link when medium secondary button when onClick not set when className n
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6554,6 +6778,7 @@ exports[`Link when medium secondary button when onClick not set when className n
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6577,6 +6802,7 @@ exports[`Link when medium secondary button when onClick not set when className n
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6600,6 +6826,7 @@ exports[`Link when medium secondary button when onClick not set when className n
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6628,6 +6855,7 @@ exports[`Link when medium secondary button when onClick not set when className s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6646,6 +6874,7 @@ exports[`Link when medium secondary button when onClick not set when className s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6665,6 +6894,7 @@ exports[`Link when medium secondary button when onClick not set when className s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6684,6 +6914,7 @@ exports[`Link when medium secondary button when onClick not set when className s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6702,6 +6933,7 @@ exports[`Link when medium secondary button when onClick not set when className s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6720,6 +6952,7 @@ exports[`Link when medium secondary button when onClick not set when className s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -6734,6 +6967,7 @@ exports[`Link when medium secondary button when onClick set when className not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6762,6 +6996,7 @@ exports[`Link when medium secondary button when onClick set when className not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6785,6 +7020,7 @@ exports[`Link when medium secondary button when onClick set when className not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6816,6 +7052,7 @@ exports[`Link when medium secondary button when onClick set when className not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6840,6 +7077,7 @@ exports[`Link when medium secondary button when onClick set when className not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6870,6 +7108,7 @@ exports[`Link when medium secondary button when onClick set when className not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6895,6 +7134,7 @@ exports[`Link when medium secondary button when onClick set when className set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6924,6 +7164,7 @@ exports[`Link when medium secondary button when onClick set when className set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6948,6 +7189,7 @@ exports[`Link when medium secondary button when onClick set when className set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -6980,6 +7222,7 @@ exports[`Link when medium secondary button when onClick set when className set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7005,6 +7248,7 @@ exports[`Link when medium secondary button when onClick set when className set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7036,6 +7280,7 @@ exports[`Link when medium secondary button when onClick set when className set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7060,6 +7305,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7082,6 +7328,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7105,6 +7352,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7130,6 +7378,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7154,6 +7403,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7178,6 +7428,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7207,6 +7458,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7226,6 +7478,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7246,6 +7499,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7266,6 +7520,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7285,6 +7540,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7304,6 +7560,7 @@ exports[`Link when medium secondary disabled button when onClick not set when cl
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7319,6 +7576,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7342,6 +7600,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7366,6 +7625,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7392,6 +7652,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7417,6 +7678,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7442,6 +7704,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7468,6 +7731,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link baz disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7492,6 +7756,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link baz disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7517,6 +7782,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link baz disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7544,6 +7810,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link baz disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7570,6 +7837,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link baz disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7596,6 +7864,7 @@ exports[`Link when medium secondary disabled button when onClick set when classN
   <a
     className="frost-link baz disabled secondary medium"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -7620,6 +7889,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7642,6 +7912,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7665,6 +7936,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7690,6 +7962,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7714,6 +7987,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7738,6 +8012,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7767,6 +8042,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7786,6 +8062,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7806,6 +8083,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7826,6 +8104,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7845,6 +8124,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7864,6 +8144,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick not s
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -7879,6 +8160,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7908,6 +8190,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7932,6 +8215,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7964,6 +8248,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -7989,6 +8274,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8020,6 +8306,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8046,6 +8333,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8076,6 +8364,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8101,6 +8390,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8134,6 +8424,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8160,6 +8451,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8192,6 +8484,7 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
   <a
     className="frost-link baz secondary medium"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -8215,6 +8508,7 @@ exports[`Link when small primary button when onClick not set when className not 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8248,6 +8542,7 @@ exports[`Link when small primary button when onClick not set when className not 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8282,6 +8577,7 @@ exports[`Link when small primary button when onClick not set when className not 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8317,6 +8613,7 @@ exports[`Link when small primary button when onClick not set when className not 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8351,6 +8648,7 @@ exports[`Link when small primary button when onClick not set when className not 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8385,6 +8683,7 @@ exports[`Link when small primary button when onClick not set when className not 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8424,6 +8723,7 @@ exports[`Link when small primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -8442,6 +8742,7 @@ exports[`Link when small primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -8461,6 +8762,7 @@ exports[`Link when small primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -8480,6 +8782,7 @@ exports[`Link when small primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -8498,6 +8801,7 @@ exports[`Link when small primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -8516,6 +8820,7 @@ exports[`Link when small primary button when onClick not set when className set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -8530,6 +8835,7 @@ exports[`Link when small primary button when onClick set when className not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8570,6 +8876,7 @@ exports[`Link when small primary button when onClick set when className not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8605,6 +8912,7 @@ exports[`Link when small primary button when onClick set when className not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8647,6 +8955,7 @@ exports[`Link when small primary button when onClick set when className not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8682,6 +8991,7 @@ exports[`Link when small primary button when onClick set when className not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8723,6 +9033,7 @@ exports[`Link when small primary button when onClick set when className not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8759,6 +9070,7 @@ exports[`Link when small primary button when onClick set when className set with
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8800,6 +9112,7 @@ exports[`Link when small primary button when onClick set when className set with
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8836,6 +9149,7 @@ exports[`Link when small primary button when onClick set when className set with
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8879,6 +9193,7 @@ exports[`Link when small primary button when onClick set when className set with
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8915,6 +9230,7 @@ exports[`Link when small primary button when onClick set when className set with
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8957,6 +9273,7 @@ exports[`Link when small primary button when onClick set when className set with
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -8992,6 +9309,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9026,6 +9344,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9061,6 +9380,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9097,6 +9417,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9132,6 +9453,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9167,6 +9489,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9207,6 +9530,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9226,6 +9550,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9246,6 +9571,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9266,6 +9592,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9285,6 +9612,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9304,6 +9632,7 @@ exports[`Link when small primary disabled button when onClick not set when class
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9319,6 +9648,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9354,6 +9684,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9390,6 +9721,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9427,6 +9759,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9463,6 +9796,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9499,6 +9833,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9536,6 +9871,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9572,6 +9908,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9609,6 +9946,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9647,6 +9985,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9684,6 +10023,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9721,6 +10061,7 @@ exports[`Link when small primary disabled button when onClick set when className
   <a
     className="frost-link baz disabled primary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9756,6 +10097,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9790,6 +10132,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9825,6 +10168,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9861,6 +10205,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9896,6 +10241,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9931,6 +10277,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -9971,6 +10318,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -9990,6 +10338,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10010,6 +10359,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10030,6 +10380,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10049,6 +10400,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10068,6 +10420,7 @@ exports[`Link when small primary explicitly enabled button when onClick not set 
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10083,6 +10436,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10124,6 +10478,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10160,6 +10515,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10203,6 +10559,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10239,6 +10596,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10281,6 +10639,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10318,6 +10677,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10360,6 +10720,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10397,6 +10758,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10441,6 +10803,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10478,6 +10841,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10521,6 +10885,7 @@ exports[`Link when small primary explicitly enabled button when onClick set when
   <a
     className="frost-link baz primary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content frost-link-text"
@@ -10555,6 +10920,7 @@ exports[`Link when small secondary button when onClick not set when className no
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10576,6 +10942,7 @@ exports[`Link when small secondary button when onClick not set when className no
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10598,6 +10965,7 @@ exports[`Link when small secondary button when onClick not set when className no
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10622,6 +10990,7 @@ exports[`Link when small secondary button when onClick not set when className no
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10645,6 +11014,7 @@ exports[`Link when small secondary button when onClick not set when className no
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10668,6 +11038,7 @@ exports[`Link when small secondary button when onClick not set when className no
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10696,6 +11067,7 @@ exports[`Link when small secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10714,6 +11086,7 @@ exports[`Link when small secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10733,6 +11106,7 @@ exports[`Link when small secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10752,6 +11126,7 @@ exports[`Link when small secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10770,6 +11145,7 @@ exports[`Link when small secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10788,6 +11164,7 @@ exports[`Link when small secondary button when onClick not set when className se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -10802,6 +11179,7 @@ exports[`Link when small secondary button when onClick set when className not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10830,6 +11208,7 @@ exports[`Link when small secondary button when onClick set when className not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10853,6 +11232,7 @@ exports[`Link when small secondary button when onClick set when className not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10884,6 +11264,7 @@ exports[`Link when small secondary button when onClick set when className not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10908,6 +11289,7 @@ exports[`Link when small secondary button when onClick set when className not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10938,6 +11320,7 @@ exports[`Link when small secondary button when onClick set when className not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10963,6 +11346,7 @@ exports[`Link when small secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -10992,6 +11376,7 @@ exports[`Link when small secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11016,6 +11401,7 @@ exports[`Link when small secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11048,6 +11434,7 @@ exports[`Link when small secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11073,6 +11460,7 @@ exports[`Link when small secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11104,6 +11492,7 @@ exports[`Link when small secondary button when onClick set when className set wi
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11128,6 +11517,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11150,6 +11540,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11173,6 +11564,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11198,6 +11590,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11222,6 +11615,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11246,6 +11640,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11275,6 +11670,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11294,6 +11690,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11314,6 +11711,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11334,6 +11732,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11353,6 +11752,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11372,6 +11772,7 @@ exports[`Link when small secondary disabled button when onClick not set when cla
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11387,6 +11788,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11410,6 +11812,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11434,6 +11837,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11460,6 +11864,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11485,6 +11890,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11510,6 +11916,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11536,6 +11943,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11560,6 +11968,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11585,6 +11994,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11612,6 +12022,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11638,6 +12049,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11664,6 +12076,7 @@ exports[`Link when small secondary disabled button when onClick set when classNa
   <a
     className="frost-link baz disabled secondary small"
     onClick={[Function]}
+    tabIndex={-1}
   >
     <div
       className="frost-link-content"
@@ -11688,6 +12101,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11710,6 +12124,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11733,6 +12148,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11758,6 +12174,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11782,6 +12199,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11806,6 +12224,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11835,6 +12254,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11854,6 +12274,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11874,6 +12295,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11894,6 +12316,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11913,6 +12336,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11932,6 +12356,7 @@ exports[`Link when small secondary explicitly enabled button when onClick not se
   <a
     className="frost-link baz"
     onClick={[Function]}
+    tabIndex={null}
   />
 </Link>
 `;
@@ -11947,6 +12372,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -11976,6 +12402,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12000,6 +12427,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12032,6 +12460,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12057,6 +12486,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12088,6 +12518,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12114,6 +12545,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12144,6 +12576,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12169,6 +12602,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12202,6 +12636,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12228,6 +12663,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"
@@ -12260,6 +12696,7 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
   <a
     className="frost-link baz secondary small"
     onClick={[Function]}
+    tabIndex={null}
   >
     <div
       className="frost-link-content"

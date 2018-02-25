@@ -20,6 +20,7 @@ export type Item = {|
 type SelectDropdownProps = {|
   element: ?HTMLElement,
   filter?: ?string,
+  id: string,
   items: Array<Item>,
   multiselect: boolean,
   onClose: () => void,
@@ -30,6 +31,7 @@ type SelectDropdownProps = {|
 |}
 
 type SelectDropdownState = {|
+  arrowNav: boolean,
   bottom: number | 'auto',
   dropdownClassName: string,
   dropdownSecondaryLabelsTextClassName: string,
@@ -167,6 +169,7 @@ export default class SelectDropdown extends Component<
     const {multiselect, wrapLabels} = props
 
     this.state = {
+      arrowNav: false,
       bottom: 0,
       dropdownClassName: getDropdownClassName(wrapLabels),
       dropdownSecondaryLabelsTextClassName: getDropdownSecondaryLabelsTextClassName(
@@ -227,7 +230,10 @@ export default class SelectDropdown extends Component<
     ) {
       const newFocusedListItem: ?Node = this._ul.childNodes[newFocusedIndex]
 
-      this.setState({focusedIndex: newFocusedIndex})
+      this.setState({
+        arrowNav: true,
+        focusedIndex: newFocusedIndex,
+      })
 
       if (newFocusedListItem instanceof HTMLLIElement) {
         if (newFocusedIndex === 0) {
@@ -283,6 +289,7 @@ export default class SelectDropdown extends Component<
 
   _handleKeyDown = (e: KeyboardEvent) => {
     const {onClose} = this.props
+    const {arrowNav} = this.state
 
     if ([KEY_CODES.DOWN_ARROW, KEY_CODES.UP_ARROW].indexOf(e.keyCode) !== -1) {
       e.preventDefault() // Keep arrow keys from scrolling document
@@ -297,6 +304,13 @@ export default class SelectDropdown extends Component<
       case KEY_CODES.ESCAPE:
       case KEY_CODES.TAB:
         onClose()
+        return
+
+      default: {
+        if (arrowNav) {
+          this.setState({arrowNav: false})
+        }
+      }
     }
   }
 
@@ -365,7 +379,7 @@ export default class SelectDropdown extends Component<
   }
 
   _renderItem = (item: Item, index: number): ReactNode => {
-    const {multiselect, selectedItems} = this.props
+    const {id, multiselect, selectedItems} = this.props
 
     const {
       dropdownSecondaryLabelsTextClassName,
@@ -381,10 +395,17 @@ export default class SelectDropdown extends Component<
       ? item.secondaryLabels.join(' | ')
       : ''
 
+    const listItemProps = {}
+
+    if (isSelected) {
+      listItemProps['aria-activedescendant'] = `${id}-focused-item`
+    }
+
     return (
       <li
         className={getItemClassName(item, index === focusedIndex, isSelected)}
         key={item.value}
+        {...listItemProps}
       >
         {multiselect ? (
           <Checkbox checked={isSelected} size={Checkbox.SIZES.MEDIUM} />
@@ -578,6 +599,7 @@ export default class SelectDropdown extends Component<
   render(): ReactNode {
     const {
       filter,
+      id,
       items,
       multiselect,
       onClose,
@@ -585,7 +607,15 @@ export default class SelectDropdown extends Component<
       selectedItems,
     } = this.props
 
-    const {bottom, dropdownClassName, left, maxHeight, top, width} = this.state
+    const {
+      arrowNav,
+      bottom,
+      dropdownClassName,
+      left,
+      maxHeight,
+      top,
+      width,
+    } = this.state
 
     // eslint-disable-next-line flowtype/no-weak-types
     const arrowStyle: Object = {left: left + (width - ARROW_WIDTH) / 2}
@@ -623,14 +653,12 @@ export default class SelectDropdown extends Component<
         <div
           className={dropdownClassName}
           onMouseDown={this._handleMouseDown}
-          role="button"
           style={{bottom, left, maxHeight, top, width}}
         >
           <Text
+            aria-activedescendant={arrowNav ? `${id}-focused-item` : null}
             aria-autocomplete="list"
-            aria-expanded={true}
-            aria-multiselectable={true}
-            aria-owns={`${PREFIX}-list`}
+            aria-controls={id}
             inputRef={(el: ?HTMLInputElement) => {
               this._textInput = el
             }}
@@ -651,7 +679,7 @@ export default class SelectDropdown extends Component<
             </div>
           ) : null}
           <ul
-            id={`${PREFIX}-list`}
+            id={id}
             ref={(el: ?HTMLUListElement) => {
               this._ul = el
             }}

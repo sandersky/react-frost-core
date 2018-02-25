@@ -10,11 +10,11 @@ const DEFAULT_COLLAPSED_LABEL = t(
   'Expand',
   'Label for toggle in collapsed state',
 )
-
 const DEFAULT_EXPANDED_LABEL = t(
   'Collapse',
   'Label for toggle in expanded state',
 )
+const PREFIX = 'frost-expand'
 
 export type ExpandProps = {|
   children?: Node,
@@ -27,18 +27,22 @@ export type ExpandProps = {|
 
 export type ExpandState = {|
   expanded: boolean,
+  id: string,
 |}
 
 /**
  * Get content to render in expand component given current state
  * @param children - children to render when expanded
  * @param expanded - whether or not component is expanded
+ * @param id - unique identifier
  * @returns content to render in expand component
  */
-function renderContent(children?: Node, expanded: boolean): Node {
+function renderContent(children?: Node, expanded: boolean, id: string): Node {
   // TODO: wrap div in scroll component
   return expanded ? (
-    <div className="frost-expand-content">{children}</div>
+    <div className={`${PREFIX}-content`} id={id} role="region" tabIndex={-1}>
+      {children}
+    </div>
   ) : null
 }
 
@@ -58,8 +62,10 @@ function renderLabelText(
     ? expandedLabel || DEFAULT_EXPANDED_LABEL
     : collapsedLabel || DEFAULT_COLLAPSED_LABEL
 
-  return <div className="frost-expand-label-text">{text}</div>
+  return <div className={`${PREFIX}-label-text`}>{text}</div>
 }
+
+let counter = 0
 
 export default class Expand extends Component<ExpandProps, ExpandState> {
   constructor() {
@@ -71,6 +77,16 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
 
     this.state = {
       expanded,
+      id: `${PREFIX}-${counter}`,
+    }
+
+    // If we've reached the max possible number for the counter we'll start back at zero.
+    // Most likely this will never happen but if an app were to be used long enough without
+    // a hard refresh this is theoretically possible.
+    if (counter === Number.MAX_SAFE_INTEGER) {
+      counter = 0
+    } else {
+      counter++
     }
   }
 
@@ -105,8 +121,8 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
 
   render(): Node {
     const {children, className, collapsedLabel, expandedLabel} = this.props
-    const {expanded} = this.state
-    const classNames = ['frost-expand', expanded ? 'expanded' : 'collapsed']
+    const {expanded, id} = this.state
+    const classNames = [PREFIX, expanded ? 'expanded' : 'collapsed']
 
     if (className) {
       classNames.push(className)
@@ -114,15 +130,16 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
 
     return (
       <div className={classNames.join(' ')}>
-        <label
-          className="frost-expand-label"
+        <button
+          aria-controls={id}
+          aria-expanded={expanded}
+          className={`${PREFIX}-label`}
           onClick={this._handleToggle}
-          role="button"
         >
           <Icon icon="chevron" />
           {renderLabelText(collapsedLabel, expanded, expandedLabel)}
-        </label>
-        {renderContent(children, expanded)}
+        </button>
+        {renderContent(children, expanded, id)}
       </div>
     )
   }

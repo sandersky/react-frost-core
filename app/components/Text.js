@@ -40,11 +40,6 @@ const DOCS: Array<DOC_TYPE> = [
           <Text align={TEXT_ALIGN_RIGHT} />
         </CodeBlock>
       ),
-      Autofocus: (
-        <CodeBlock language="jsx" maxLineLength={30}>
-          <Text autoFocus={true} />
-        </CodeBlock>
-      ),
       'Max length': (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Text maxLength={4} />

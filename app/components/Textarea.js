@@ -43,11 +43,6 @@ const DOCS: Array<DOC_TYPE> = [
           <Textarea align={TEXTAREA_ALIGN_RIGHT} />
         </CodeBlock>
       ),
-      Autofocus: (
-        <CodeBlock language="jsx" maxLineLength={30}>
-          <Textarea autoFocus={true} />
-        </CodeBlock>
-      ),
       Columns: (
         <CodeBlock language="jsx" maxLineLength={30}>
           <Textarea cols={2} />

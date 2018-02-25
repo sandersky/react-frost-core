@@ -2,6 +2,7 @@
  * @flow
  */
 
+import KEY_CODES from '../key-codes'
 import Text, {
   ALIGN_LEFT as TEXT_ALIGN_LEFT,
   ALIGN_RIGHT as TEXT_ALIGN_RIGHT,
@@ -22,7 +23,15 @@ type PasswordState = {|
   revealed: boolean,
 |}
 
+const HIDE_A11Y_LABEL = t(
+  'Hide password',
+  'Accessible label for hiding raw password',
+)
 const HIDE_LABEL = t('Hide', 'Label for hiding raw password')
+const SHOW_A11Y_LABEL = t(
+  'Show password',
+  'Accessible label for showing raw password',
+)
 const SHOW_LABEL = t('Show', 'Label for showing raw password')
 
 /**
@@ -52,7 +61,13 @@ export default class Password extends Component<PasswordProps, PasswordState> {
     revealed: false,
   }
 
-  _handleRevealToggle = () => {
+  _handleRevealKeyPress = (e: SyntheticKeyboardEvent<*>) => {
+    if ([KEY_CODES.ENTER, KEY_CODES.SPACE].includes(e.which)) {
+      this.setState({revealed: !this.state.revealed})
+    }
+  }
+
+  _handleRevealMouseUp = (e: SyntheticEvent<*>) => {
     if (this._el) {
       // eslint-disable-next-line flowtype/no-weak-types
       const input: ?HTMLInputElement = (this._el.querySelector('input'): any)
@@ -91,13 +106,14 @@ export default class Password extends Component<PasswordProps, PasswordState> {
           {...passThroughProps}
         />
         {revealable ? (
-          <div
+          <button
+            aria-label={revealed ? HIDE_A11Y_LABEL : SHOW_A11Y_LABEL}
             className="frost-password-reveal"
-            role="button"
-            onClick={this._handleRevealToggle}
+            onKeyPress={this._handleRevealKeyPress}
+            onMouseUp={this._handleRevealMouseUp}
           >
             {revealed ? HIDE_LABEL : SHOW_LABEL}
-          </div>
+          </button>
         ) : null}
       </div>
     )

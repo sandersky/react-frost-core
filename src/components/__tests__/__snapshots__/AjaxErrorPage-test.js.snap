@@ -37,10 +37,11 @@ exports[`AjaxErrorPage when suggestion omitted functions as expected 1`] = `
       <div
         className="frost-expand collapsed frost-ajax-error-page-expand"
       >
-        <label
+        <button
+          aria-controls="frost-expand-3"
+          aria-expanded={false}
           className="frost-expand-label"
           onClick={[Function]}
-          role="button"
         >
           <Icon
             icon="chevron"
@@ -58,7 +59,7 @@ exports[`AjaxErrorPage when suggestion omitted functions as expected 1`] = `
           >
             Show details
           </div>
-        </label>
+        </button>
       </div>
     </Expand>
   </div>
@@ -102,10 +103,11 @@ exports[`AjaxErrorPage when suggestion omitted when details expanded functions a
       <div
         className="frost-expand expanded frost-ajax-error-page-expand"
       >
-        <label
+        <button
+          aria-controls="frost-expand-4"
+          aria-expanded={true}
           className="frost-expand-label"
           onClick={[Function]}
-          role="button"
         >
           <Icon
             icon="chevron"
@@ -123,9 +125,12 @@ exports[`AjaxErrorPage when suggestion omitted when details expanded functions a
           >
             Hide details
           </div>
-        </label>
+        </button>
         <div
           className="frost-expand-content"
+          id="frost-expand-4"
+          role="region"
+          tabIndex={-1}
         >
           <div
             className="frost-ajax-error-page-details"
@@ -176,10 +181,11 @@ exports[`AjaxErrorPage when suggestion omitted when details expanded when detail
       <div
         className="frost-expand collapsed frost-ajax-error-page-expand"
       >
-        <label
+        <button
+          aria-controls="frost-expand-5"
+          aria-expanded={false}
           className="frost-expand-label"
           onClick={[Function]}
-          role="button"
         >
           <Icon
             icon="chevron"
@@ -197,7 +203,7 @@ exports[`AjaxErrorPage when suggestion omitted when details expanded when detail
           >
             Show details
           </div>
-        </label>
+        </button>
       </div>
     </Expand>
   </div>
@@ -247,10 +253,11 @@ exports[`AjaxErrorPage when suggestion provided functions as expected 1`] = `
       <div
         className="frost-expand collapsed frost-ajax-error-page-expand"
       >
-        <label
+        <button
+          aria-controls="frost-expand-0"
+          aria-expanded={false}
           className="frost-expand-label"
           onClick={[Function]}
-          role="button"
         >
           <Icon
             icon="chevron"
@@ -268,7 +275,7 @@ exports[`AjaxErrorPage when suggestion provided functions as expected 1`] = `
           >
             Show details
           </div>
-        </label>
+        </button>
       </div>
     </Expand>
   </div>
@@ -318,10 +325,11 @@ exports[`AjaxErrorPage when suggestion provided when details expanded functions 
       <div
         className="frost-expand expanded frost-ajax-error-page-expand"
       >
-        <label
+        <button
+          aria-controls="frost-expand-1"
+          aria-expanded={true}
           className="frost-expand-label"
           onClick={[Function]}
-          role="button"
         >
           <Icon
             icon="chevron"
@@ -339,9 +347,12 @@ exports[`AjaxErrorPage when suggestion provided when details expanded functions 
           >
             Hide details
           </div>
-        </label>
+        </button>
         <div
           className="frost-expand-content"
+          id="frost-expand-1"
+          role="region"
+          tabIndex={-1}
         >
           <div
             className="frost-ajax-error-page-details"
@@ -398,10 +409,11 @@ exports[`AjaxErrorPage when suggestion provided when details expanded when detai
       <div
         className="frost-expand collapsed frost-ajax-error-page-expand"
       >
-        <label
+        <button
+          aria-controls="frost-expand-2"
+          aria-expanded={false}
           className="frost-expand-label"
           onClick={[Function]}
-          role="button"
         >
           <Icon
             icon="chevron"
@@ -419,7 +431,7 @@ exports[`AjaxErrorPage when suggestion provided when details expanded when detai
           >
             Show details
           </div>
-        </label>
+        </button>
       </div>
     </Expand>
   </div>

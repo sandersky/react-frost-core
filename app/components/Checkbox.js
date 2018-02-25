@@ -45,12 +45,6 @@ export default route('Checkbox', (): Node => {
           <Checkbox error={true} label="erred" />
         </CodeBlock>
       </section>
-      <section>
-        <h3>Options</h3>
-        <CodeBlock language="jsx" maxLineLength={30}>
-          <Checkbox autofocus={true} label="autofocus" />
-        </CodeBlock>
-      </section>
     </div>
   )
 })

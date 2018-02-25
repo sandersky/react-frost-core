@@ -40,7 +40,7 @@ Once you've cloned the project with one of the above you can run either `yarn in
 
 ### Running
 
-This project is designed to work with [Inferno](inferno), [Preact](preact), and [React](react). You can run this project with each of these frameworks using the following:
+This project is designed to work with [Inferno][inferno], [Preact][preact], and [React][react]. You can run this project with each of these frameworks using the following:
 
 #### Running with Inferno
 
@@ -138,7 +138,7 @@ Pull requests should be kept as small as possible, fixing a single bug or adding
 
 1.  If you are fixing a bug you should add tests that fail without the fix applied and pass with the fix applied.
 2.  If you are adding new functionality you should add full test coverage of the new functionality as well as update the docs as necessary.
-3.  The changes in your pull request should work for [Inferno](inferno), [Preact](preact), and [React](react) and should have been manually tested with all three.
+3.  The changes in your pull request should work for [Inferno][inferno], [Preact][preact], and [React][react] and should have been manually tested with all three.
 4.  Before your pull request is landed all commits in your pull request should be squashed into a single commit.
 5.  If this is your first contribution to the project make sure to add yourself to the [contributors section of the package.json][package-contributors].
 

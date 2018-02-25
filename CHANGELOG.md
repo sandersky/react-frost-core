@@ -1,3 +1,7 @@
+## 0.0.27
+
+*   Fix links in docs.
+
 ## 0.0.26
 
 *   Improve README and add contributing guide.

@@ -60,7 +60,7 @@ yarn add react-frost-core
 
 ## Documentation
 
-Please see the [documentation site](docs).
+Please see the [documentation site][docs].
 
 ## Contributing
 

@@ -147,4 +147,7 @@ Pull requests should be kept as small as possible, fixing a single bug or adding
 By contributing to this project, you agree that your contributions will be licensed under this project's [MIT license](LICENSE.md).
 
 [fork-repo]: https://github.com/dogma-io/react-frost-core#fork-destination-box
+[inferno]: https://infernojs.org/
 [package-contributors]: https://docs.npmjs.com/files/package.json#people-fields-author-contributors
+[preact]: https://preactjs.com/
+[react]: https://reactjs.org/

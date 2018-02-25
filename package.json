@@ -1,6 +1,6 @@
 {
   "name": "react-frost-core",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "The library of core frost components.",
   "main": "dist/react-frost-core.min.js",
   "style": "dist/react-frost-core.min.css",
@@ -64,6 +64,7 @@
     "babel-plugin-react-code-block": "0.0.3",
     "babel-plugin-transform-preact-import": "1.0.0",
     "babel-plugin-transform-rename-import": "2.1.1",
+    "canvas-prebuilt": "1.6.5-prerelease.1",
     "codecov": "3.0.0",
     "css-loader": "0.28.10",
     "enzyme": "3.3.0",

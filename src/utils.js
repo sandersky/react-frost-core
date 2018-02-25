@@ -23,10 +23,6 @@ function getTextWidth(text: string): number {
  * @returns trimmed text
  */
 function trimDataToFit(text: string, width: number): string {
-  if (!text) {
-    return text
-  }
-
   // Start at two end characters
   let leftIndex = 0
   let rightIndex = text.length - 1
@@ -73,6 +69,11 @@ export function trimLongDataInElement(
   element: HTMLElement,
 ): ?{text: string, tooltip: string} {
   const fullText = element.dataset.text
+
+  if (!fullText) {
+    return null
+  }
+
   const style = window.getComputedStyle(element)
   const width = parseInt(style.getPropertyValue('width'))
   const fontFamily = style.getPropertyValue('font-family')

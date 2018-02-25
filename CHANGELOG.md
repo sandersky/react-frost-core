@@ -1,3 +1,7 @@
+## 0.0.26
+
+*   Improve README and add contributing guide.
+
 ## 0.0.25
 
 *   Fixed select component filtering to work in preact.

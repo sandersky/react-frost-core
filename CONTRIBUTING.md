@@ -36,7 +36,7 @@ cd react-frost-core
 git remote add upstream git@github.com:dogma-io/react-frost-core.git
 ```
 
-Once you've cloned the project with one of the above you can run either `yarn install` or `npm install` from the root project directory, dependning on which package manager you prefer. At this point you are ready to beging running the development app, running tests, and hacking away to add awesome new features or fix any bugs you come across.
+Once you've cloned the project with one of the above you can run either `yarn install` or `npm install` from the root project directory, depending on which package manager you prefer. At this point you are ready to begin running the development app, running tests, and hacking away to add awesome new features or fix any bugs you come across.
 
 ### Running
 

@@ -68,12 +68,12 @@ function renderLabelText(
 let counter = 0
 
 export default class Expand extends Component<ExpandProps, ExpandState> {
-  constructor() {
-    super(...arguments)
+  constructor(props: ExpandProps) {
+    super(props)
 
     // If consumer is managing expanded state, ie prop is set, then use that
     // for the initial internal state, otherwise start with component collapsed.
-    const expanded = this.props.expanded || false
+    const expanded = props.expanded || false
 
     this.state = {
       expanded,

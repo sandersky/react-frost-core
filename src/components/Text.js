@@ -87,13 +87,13 @@ function getInputClassName(align?: ?ALIGN): string {
 }
 
 export default class Text extends Component<TextProps, TextState> {
-  constructor() {
-    super(...arguments)
+  constructor(props: TextProps) {
+    super(props)
 
     this.state = {
       animatingClearButtonOut: false,
       focused: false,
-      value: this.props.value,
+      value: props.value,
     }
   }
 

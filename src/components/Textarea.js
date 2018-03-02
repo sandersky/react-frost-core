@@ -79,13 +79,13 @@ function getInputClassName(align?: ?ALIGN): string {
 }
 
 export default class Textarea extends Component<TextareaProps, TextareaState> {
-  constructor() {
-    super(...arguments)
+  constructor(props: TextareaProps) {
+    super(props)
 
     this.state = {
       animatingClearButtonOut: false,
       focused: false,
-      value: this.props.value,
+      value: props.value,
     }
   }
 

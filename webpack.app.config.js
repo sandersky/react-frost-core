@@ -60,7 +60,7 @@ module.exports = {
     historyApiFallback: true,
     https: true,
   },
-  devtool: 'source-map',
+  devtool: IS_PRODUCTION ? 'eval' : 'source-map',
   entry: path.resolve('app', 'index.js'),
   module: {
     rules: [

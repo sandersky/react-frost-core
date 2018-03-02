@@ -1,7 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const webpack = require('webpack')
 
 const IS_PRODUCTION = process.env.NODE_ENV === 'production'
@@ -12,7 +11,6 @@ function getPlugins() {
     new webpack.DefinePlugin({
       'process.env': {
         ASSET_PATH: JSON.stringify('/react-frost-core/'),
-        NODE_ENV: `"${process.env.NODE_ENV}"`,
       },
     }),
     new SVGSpritemapPlugin({
@@ -21,15 +19,6 @@ function getPlugins() {
     }),
     new ExtractTextPlugin('styles.css'),
   ]
-
-  if (IS_PRODUCTION) {
-    plugins.push(
-      new UglifyJSPlugin({
-        extractComments: true,
-        sourceMap: true,
-      }),
-    )
-  }
 
   return plugins
 }
@@ -40,9 +29,45 @@ function getResolver() {
   }
 
   if (process.env.INFERNO) {
+    const nodeModulesPath = path.join(__dirname, 'node_modules')
+    const infernCloneVnodePath = path.join(
+      nodeModulesPath,
+      'inferno-clone-vnode',
+      'dist',
+      'inferno-clone-vnode.min.js',
+    )
+    const infernoCompatPath = path.join(
+      nodeModulesPath,
+      'inferno-compat',
+      'dist',
+      'inferno-compat.min.js',
+    )
+    const infernoComponentPath = path.join(
+      nodeModulesPath,
+      'inferno-component',
+      'dist',
+      'inferno-component.min.js',
+    )
+    const infernoCreateClassPath = path.join(
+      nodeModulesPath,
+      'inferno-create-class',
+      'dist',
+      'inferno-create-class.min.js',
+    )
+    const infernoCreateElementPath = path.join(
+      nodeModulesPath,
+      'inferno-create-element',
+      'dist',
+      'inferno-create-element.min.js',
+    )
+
     Object.assign(resolver.alias, {
-      react: 'inferno-compat',
-      'react-dom': 'inferno-compat',
+      'inferno-clone-vnode': infernCloneVnodePath,
+      'inferno-component': infernoComponentPath,
+      'inferno-create-class': infernoCreateClassPath,
+      'inferno-create-element': infernoCreateElementPath,
+      react: infernoCompatPath,
+      'react-dom': infernoCompatPath,
     })
   } else if (process.env.PREACT) {
     Object.assign(resolver.alias, {
@@ -62,6 +87,7 @@ module.exports = {
   },
   devtool: IS_PRODUCTION ? 'eval' : 'source-map',
   entry: path.resolve('app', 'index.js'),
+  mode: IS_PRODUCTION ? 'production' : 'development',
   module: {
     rules: [
       {

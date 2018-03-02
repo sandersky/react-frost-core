@@ -1,7 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const webpack = require('webpack')
 
 const {INFERNO, NODE_ENV, PREACT} = process.env
@@ -31,26 +30,12 @@ const JS_FILE_NAME = IS_PRODUCTION
 
 function getPlugins() {
   const plugins = [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: `"${NODE_ENV}"`,
-      },
-    }),
     new SVGSpritemapPlugin({
       filename: 'frost-pack.svg',
       src: 'src/svgs/**/*.svg',
     }),
     new ExtractTextPlugin(CSS_FILE_NAME),
   ]
-
-  if (IS_PRODUCTION) {
-    plugins.push(
-      new UglifyJSPlugin({
-        extractComments: true,
-        sourceMap: true,
-      }),
-    )
-  }
 
   return plugins
 }
@@ -61,11 +46,16 @@ module.exports = {
   externals: [
     'grammatic',
     'inferno',
+    'inferno-clone-vnode',
+    'inferno-compat',
     'inferno-component',
+    'inferno-create-class',
+    'inferno-create-element',
     'preact',
     'react',
     'react-dom',
   ],
+  mode: IS_PRODUCTION ? 'production' : 'development',
   module: {
     rules: [
       {

@@ -56,7 +56,7 @@ function getPlugins() {
 }
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: IS_PRODUCTION ? 'eval' : 'source-map',
   entry: path.resolve('src', 'index.js'),
   externals: [
     'grammatic',

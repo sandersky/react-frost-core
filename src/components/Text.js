@@ -2,13 +2,53 @@
  * @flow
  */
 
+import {
+  COLOR_GREY_6,
+  COLOR_INPUT,
+  COLOR_INPUT_BORDER,
+  COLOR_INPUT_DISABLED_BG,
+  COLOR_INPUT_DISABLED_BORDER,
+  COLOR_INPUT_ERROR_BORDER,
+  COLOR_INPUT_FOCUS_BORDER,
+  COLOR_INPUT_HOVER_BORDER,
+} from '../styles/colors'
+import {FONT_SIZE_M} from '../styles/typography'
 import ClearSVG from './ClearSVG'
+import {css, names} from 'linaria'
 import React, {Component, type Node} from 'react'
 
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
-const PREFIX = 'frost-text'
+// $FlowFixMe - babel-plugin-object-styles-to-template
+const ERRED_STYLE = css({
+  border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
+
+  '&:hover': {
+    '&:enabled': {
+      '&:read-write': {
+        '&:not(:focus)': {
+          border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
+        },
+      },
+    },
+  },
+})
+
+// $FlowFixMe - babel-plugin-object-styles-to-template
+const NOT_ERRED_STYLE = css({
+  border: `1px solid ${COLOR_INPUT_BORDER}`,
+
+  '&:hover': {
+    '&:enabled': {
+      '&:read-write': {
+        '&:not(:focus)': {
+          border: `1px solid ${COLOR_INPUT_HOVER_BORDER}`,
+        },
+      },
+    },
+  },
+})
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
@@ -16,6 +56,7 @@ type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 export type TextProps = {
   align?: ?ALIGN,
   className?: ?string,
+  clearOffset: ?number,
   disabled?: ?boolean,
   error?: ?boolean,
   inputRef?: (el: ?HTMLInputElement) => void,
@@ -32,59 +73,6 @@ type TextState = {|
   focused: boolean,
   value?: ?string,
 |}
-
-/**
- * Get class name for text component given it's current state
- * @param className - user specified class name
- * @param error - whether or not input has an error
- * @param minLength - minimum length input's value should be
- * @param size - size if input
- * @param value - input value
- * @returns class name for text component
- */
-function getClassName(
-  className?: ?string,
-  error?: ?boolean,
-  minLength?: ?number,
-  size?: ?number,
-  value?: ?string,
-): string {
-  const classNames = [PREFIX]
-
-  if (className) {
-    classNames.push(className)
-  }
-
-  if (size) {
-    classNames.push(`${PREFIX}-size`)
-  }
-
-  if (
-    error ||
-    (typeof minLength === 'number' &&
-      (typeof value !== 'string' || minLength > value.length))
-  ) {
-    classNames.push(`${PREFIX}-error`)
-  }
-
-  return classNames.join(' ')
-}
-
-/**
- * Get class name for text component's input
- * @param align - how to align text within input
- * @returns class name for text component's input
- */
-function getInputClassName(align?: ?ALIGN): string {
-  const classNames = [`${PREFIX}-input`]
-
-  switch (align) {
-    case ALIGN_RIGHT:
-      classNames.push(`${PREFIX}-align-right`)
-  }
-
-  return classNames.join(' ')
-}
 
 export default class Text extends Component<TextProps, TextState> {
   constructor(props: TextProps) {
@@ -134,7 +122,7 @@ export default class Text extends Component<TextProps, TextState> {
   }
 
   _renderClearButton(): Node {
-    const {disabled, readOnly} = this.props
+    const {clearOffset, disabled, readOnly} = this.props
     const {animatingClearButtonOut, focused, value} = this.state
 
     if (
@@ -144,16 +132,29 @@ export default class Text extends Component<TextProps, TextState> {
       return null
     }
 
-    const classNames = [
-      `${PREFIX}-clear`,
-      animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
-    ]
-
     return (
       <button
-        className={classNames.join(' ')}
+        className={names(
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            display: 'inline-block',
+            fill: COLOR_GREY_6,
+            height: 23,
+            position: 'absolute',
+            top: 7,
+            width: 23,
+
+            '&:focus': {
+              outline: 'none',
+            },
+          }),
+          animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
+        )}
         onAnimationEnd={this._handleClearButtonAnimationEnd}
         onClick={this._handleClear}
+        style={{
+          right: isNaN(clearOffset) ? 5 : clearOffset,
+        }}
         tabIndex={-1}
       >
         <ClearSVG />
@@ -212,16 +213,69 @@ export default class Text extends Component<TextProps, TextState> {
 
     const {value} = this.state
 
+    const showError =
+      error ||
+      (typeof minLength === 'number' &&
+        (typeof value !== 'string' || minLength > value.length))
+
     return (
-      <div className={getClassName(className, error, minLength, size, value)}>
+      <div
+        className={names(
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            display: 'block',
+            minWidth: 175,
+            position: 'relative',
+          }),
+          className,
+        )}
+      >
         <input
-          className={getInputClassName(align)}
+          className={names(
+            // $FlowFixMe - babel-plugin-object-styles-to-template
+            css({
+              color: COLOR_INPUT,
+              display: 'inline-block',
+              fontSize: FONT_SIZE_M,
+              fontWeight: 200,
+              height: 35,
+              outline: 'none',
+              padding: '0 30px 0 8px',
+              transition: 'border .2s ease',
+
+              '&:disabled': {
+                backgroundColor: COLOR_INPUT_DISABLED_BG,
+                border: `1px solid ${COLOR_INPUT_DISABLED_BORDER}`,
+              },
+
+              '&:focus': {
+                border: `1px solid ${COLOR_INPUT_FOCUS_BORDER}`,
+              },
+
+              '&:read-only': {
+                border: 0,
+              },
+
+              /**
+               * Note: without this Firefox ends up applying the read-only pseudo selector
+               * to number inputs which causes them not to get a border.
+               */
+              '&[type="number"]': {
+                border: `1px solid ${COLOR_INPUT_BORDER}`,
+              },
+            }),
+            showError ? ERRED_STYLE : NOT_ERRED_STYLE,
+          )}
           minLength={minLength}
           onBlur={this._handleBlur}
           onChange={this._handleChange}
           onFocus={this._handleFocus}
           ref={inputRef}
           size={size}
+          style={{
+            textAlign: align,
+            width: size ? 'auto' : '100%',
+          }}
           value={value || ''}
           {...passThroughProps}
         />

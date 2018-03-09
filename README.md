@@ -9,6 +9,7 @@ The library of core frost components.
     *   [Installing for Preact](#installing-for-preact)
     *   [Installing for React](#installing-for-react)
 *   [Documentation](#documentation)
+*   [Code of Conduct](#code-of-conduct)
 *   [Contributing](#contributing)
 *   [License](#license)
 
@@ -61,6 +62,10 @@ yarn add react-frost-core
 ## Documentation
 
 Please see the [documentation site][docs].
+
+## Code of Conduct
+
+Please see the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Contributing
 

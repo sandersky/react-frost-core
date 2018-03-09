@@ -4,7 +4,13 @@
 
 /* global HTMLElement */
 
+import {
+  COLOR_LIGHT_GREY_2,
+  COLOR_NIGHT_2,
+  COLOR_NIGHT_3,
+} from '../styles/colors'
 import Expand from './Expand'
+import {css, names} from 'linaria'
 import React, {Component, type Node} from 'react'
 
 export type CodeBlockProps = {|
@@ -31,7 +37,19 @@ function renderCodeDemo(children?: Node, demo?: boolean): Node {
     return null
   }
 
-  return <div className="frost-code-block-demo">{children}</div>
+  return (
+    <div
+      className={names(
+        // $FlowFixMe - babel-plugin-object-styles-to-template
+        css({
+          border: `1px solid ${COLOR_LIGHT_GREY_2}`,
+          padding: 6,
+        }),
+      )}
+    >
+      {children}
+    </div>
+  )
 }
 
 export default class CodeBlock extends Component<
@@ -72,10 +90,29 @@ export default class CodeBlock extends Component<
     }
 
     return [
-      <div className="frost-code-block-language" key="language">
+      <div
+        className={names(
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            backgroundColor: COLOR_NIGHT_3,
+            color: COLOR_NIGHT_2,
+            padding: 6,
+          }),
+        )}
+        key="language"
+      >
         {language}
       </div>,
-      <pre className={`language-${language}`} key="code">
+      <pre
+        className={names(
+          `language-${language}`,
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            marginTop: 0,
+          }),
+        )}
+        key="code"
+      >
         <code
           className={`language-${language}`}
           ref={(el: ?HTMLElement) => {
@@ -98,7 +135,12 @@ export default class CodeBlock extends Component<
 
     return (
       <Expand
-        className="frost-code-block-expand"
+        className={names(
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            marginTop: 10,
+          }),
+        )}
         collapsedLabel="Show code"
         expandedLabel="Hide code"
         expanded={expanded}

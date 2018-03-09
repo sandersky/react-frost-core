@@ -1,17 +1,24 @@
 const {join} = require('path')
 
 const {INFERNO, NODE_ENV, PREACT} = process.env
+const IS_PRODUCTION = NODE_ENV === 'production'
+const IS_TEST = NODE_ENV === 'test'
 const TRANSLATIONS_DIRECTORY = join(__dirname, "src", "translations")
+
+const CSS_FILENAME = IS_PRODUCTION
+  ? 'react-frost-core2.min.css'
+  : 'react-frost-core2.css'
 
 function getPlugins() {
   const plugins = [
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-object-rest-spread',
+    'object-styles-to-template',
   ]
 
   // Omit CSS modules in the test environment as Jest doesn't know how to handle
   // them and they provide no value to Jest tests anyways.
-  if (NODE_ENV !== 'test') {
+  if (!IS_TEST) {
     plugins.push('babel-plugin-auto-css-modules')
   }
 
@@ -76,6 +83,17 @@ function getPresets() {
 
   if (!INFERNO && !PREACT) {
     presets.push('@babel/react')
+  }
+
+  if (!IS_TEST) {
+    presets.push([
+      'linaria/babel',
+      {
+        filename: CSS_FILENAME,
+        outDir: 'dist',
+        single: true,
+      },
+    ])
   }
 
   return presets

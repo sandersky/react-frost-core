@@ -2,13 +2,56 @@
  * @flow
  */
 
+import {
+  COLOR_DANGER,
+  COLOR_GREY_1,
+  COLOR_GREY_6,
+  COLOR_INPUT_BORDER,
+  COLOR_INPUT_DISABLED_BG,
+  COLOR_INPUT_DISABLED_BORDER,
+  COLOR_INPUT_ERROR_BORDER,
+  COLOR_INPUT_FOCUS_BORDER,
+} from '../styles/colors'
+import {FONT_SIZE_S} from '../styles/typography'
 import ClearSVG from './ClearSVG'
+import {css, names} from 'linaria'
 import React, {Component, type Node} from 'react'
 
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
-const PREFIX = 'frost-textarea'
+const ERRED_STYLE = css({
+  border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
+  color: COLOR_DANGER,
+  margin: 1,
+
+  '&:hover': {
+    '&:enabled': {
+      '&:read-write': {
+        '&:not(:focus)': {
+          border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
+          outline: 'none',
+        },
+      },
+    },
+  },
+})
+
+const NOT_ERRED_STYLE = css({
+  border: `1px solid ${COLOR_INPUT_BORDER}`,
+  color: COLOR_GREY_1,
+
+  '&:hover': {
+    '&:enabled': {
+      '&:read-write': {
+        '&:not(:focus)': {
+          border: `1px solid ${COLOR_INPUT_FOCUS_BORDER}`,
+          outline: 'none',
+        },
+      },
+    },
+  },
+})
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
@@ -30,53 +73,6 @@ type TextareaState = {|
   focused: boolean,
   value?: ?string,
 |}
-
-/**
- * Get class name for text component given it's current state
- * @param className - user specified class name
- * @param error - whether or not input has an error
- * @param minLength - minimum length input's value should be
- * @param value - input value
- * @returns class name for text component
- */
-function getClassName(
-  className?: ?string,
-  error?: ?boolean,
-  minLength?: ?number,
-  value?: ?string,
-): string {
-  const classNames = [PREFIX]
-
-  if (className) {
-    classNames.push(className)
-  }
-
-  if (
-    error ||
-    (typeof minLength === 'number' &&
-      (typeof value !== 'string' || minLength > value.length))
-  ) {
-    classNames.push(`${PREFIX}-error`)
-  }
-
-  return classNames.join(' ')
-}
-
-/**
- * Get class name for text component's input
- * @param align - how to align text within input
- * @returns class name for text component's input
- */
-function getInputClassName(align?: ?ALIGN): string {
-  const classNames = [`${PREFIX}-input`]
-
-  switch (align) {
-    case ALIGN_RIGHT:
-      classNames.push(`${PREFIX}-align-right`)
-  }
-
-  return classNames.join(' ')
-}
 
 export default class Textarea extends Component<TextareaProps, TextareaState> {
   constructor(props: TextareaProps) {
@@ -136,14 +132,25 @@ export default class Textarea extends Component<TextareaProps, TextareaState> {
       return null
     }
 
-    const classNames = [
-      `${PREFIX}-clear`,
-      animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
-    ]
-
     return (
       <button
-        className={classNames.join(' ')}
+        className={names(
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            fill: COLOR_GREY_6,
+            height: 23,
+            position: 'relative',
+            right: 26,
+            top: 7,
+            transition: 'opacity .2s ease',
+            width: 23,
+
+            '&:focus': {
+              outline: 'none',
+            },
+          }),
+          animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
+        )}
         onAnimationEnd={this._handleClearButtonAnimationEnd}
         onClick={this._handleClear}
         tabIndex={-1}
@@ -194,14 +201,54 @@ export default class Textarea extends Component<TextareaProps, TextareaState> {
 
     const {value} = this.state
 
+    const showError =
+      error ||
+      (typeof minLength === 'number' &&
+        (typeof value !== 'string' || minLength > value.length))
+
     return (
-      <div className={getClassName(className, error, minLength, value)}>
+      <div
+        className={names(
+          // $FlowFixMe - babel-plugin-object-styles-to-template
+          css({
+            display: 'flex',
+            position: 'relative',
+          }),
+        )}
+      >
         <textarea
-          className={getInputClassName(align)}
+          className={names(
+            // $FlowFixMe - babel-plugin-object-styles-to-template
+            css({
+              fontSize: FONT_SIZE_S,
+              padding: '5px 30px 5px 5px',
+              resize: 'none',
+              transition: 'border .2s ease',
+
+              '&:disabled': {
+                backgroundColor: COLOR_INPUT_DISABLED_BG,
+                border: `1px solid ${COLOR_INPUT_DISABLED_BORDER}`,
+              },
+
+              '&:focus': {
+                border: `1px solid ${COLOR_INPUT_FOCUS_BORDER}`,
+                outline: 'none',
+              },
+
+              '&:read-only': {
+                border: 0,
+                cursor: 'default',
+              },
+            }),
+            showError ? ERRED_STYLE : NOT_ERRED_STYLE,
+          )}
           minLength={minLength}
           onBlur={this._handleBlur}
           onChange={this._handleChange}
           onFocus={this._handleFocus}
+          style={{
+            textAlign: align,
+          }}
           value={value || ''}
           {...passThroughProps}
         />

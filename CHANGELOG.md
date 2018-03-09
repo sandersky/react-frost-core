@@ -1,3 +1,8 @@
+## 0.0.28
+
+*   Added [code of conduct](CODE_OF_CONDUCT.md).
+*   Switched from [PostCSS](https://github.com/postcss/postcss) to [linaria](https://github.com/callstack/linaria).
+
 ## 0.0.27
 
 *   Fix links in docs.

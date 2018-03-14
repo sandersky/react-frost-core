@@ -79,12 +79,11 @@ export default class Password extends Component<PasswordProps, PasswordState> {
     return (
       <div
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            display: 'block',
-            minWidth: 175,
-            position: 'relative',
-          }),
+          css`
+            display: block;
+            min-width: 175px;
+            position: relative;
+          `,
         )}
         ref={(el: ?HTMLDivElement) => {
           this._el = el
@@ -100,26 +99,25 @@ export default class Password extends Component<PasswordProps, PasswordState> {
           <button
             aria-label={revealed ? HIDE_A11Y_LABEL : SHOW_A11Y_LABEL}
             className={names(
-              // $FlowFixMe - babel-plugin-object-styles-to-template
-              css({
-                borderLeft: `1px solid ${COLOR_LIGHT_GREY_2}`,
-                color: COLOR_BLUE_1,
-                cursor: 'pointer',
-                display: 'inline-block',
-                fontSize: FONT_SIZE_XS,
-                height: 33,
-                lineHeight: 35,
-                position: 'absolute',
-                right: 0,
-                textAlign: 'center',
-                top: 2,
-                verticalAlign: 'middle',
-                width: 45,
+              css`
+                border-left: 1px solid ${COLOR_LIGHT_GREY_2};
+                color: ${COLOR_BLUE_1};
+                cursor: pointer;
+                display: inline-block;
+                font-size: ${FONT_SIZE_XS};
+                height: 33px;
+                line-height: 35px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                top: 2px;
+                vertical-align: middle;
+                width: 45px;
 
-                '&:focus': {
-                  outline: 'none',
-                },
-              }),
+                &:focus {
+                  outline: none;
+                }
+              `,
             )}
             onKeyPress={this._handleRevealKeyPress}
             onMouseUp={this._handleRevealMouseUp}

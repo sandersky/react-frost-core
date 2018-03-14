@@ -58,21 +58,19 @@ export default class AjaxErrorPage extends Component<
     return (
       <div
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            display: 'inline-block',
-            fontFamily: FONT_FAMILY,
-          }),
+          css`
+            display: inline-block;
+            font-family: ${FONT_FAMILY};
+          `,
         )}
       >
         <div
           className={names(
-            // $FlowFixMe - babel-plugin-object-styles-to-template
-            css({
-              color: COLOR_GREY_1,
-              fontSize: FONT_SIZE_XXL,
-              marginBottom: 10,
-            }),
+            css`
+              color: ${COLOR_GREY_1};
+              font-size: ${FONT_SIZE_XXL};
+              margin-bottom: 10px;
+            `,
           )}
         >
           {description}
@@ -80,12 +78,11 @@ export default class AjaxErrorPage extends Component<
         {suggestion ? (
           <div
             className={names(
-              // $FlowFixMe - babel-plugin-object-styles-to-template
-              css({
-                color: COLOR_GREY_1,
-                fontSize: FONT_SIZE_L,
-                marginBottom: 15,
-              }),
+              css`
+                color: ${COLOR_GREY_1};
+                font-size: ${FONT_SIZE_L};
+                margin-bottom: 15px;
+              `,
             )}
           >
             {suggestion}
@@ -93,35 +90,32 @@ export default class AjaxErrorPage extends Component<
         ) : null}
         <div
           className={names(
-            // $FlowFixMe - babel-plugin-object-styles-to-template
-            css({
-              color: COLOR_GREY_5,
-              fontSize: FONT_SIZE_M,
-              marginBottom: 5,
-            }),
+            css`
+              color: ${COLOR_GREY_5};
+              font-size: ${FONT_SIZE_M};
+              margin-bottom: 5px;
+            `,
           )}
         >
           Error {errorCode} - {errorTitle}
         </div>
         <div
           className={names(
-            // $FlowFixMe - babel-plugin-object-styles-to-template
-            css({
-              color: COLOR_GREY_6,
-              fontSize: FONT_SIZE_S,
-              marginBottom: 20,
-            }),
+            css`
+              color: ${COLOR_GREY_6};
+              font-size: ${FONT_SIZE_S};
+              margin-bottom: 20px;
+            `,
           )}
         >
           {errorMessage}
         </div>
         <Expand
           className={names(
-            // $FlowFixMe - babel-plugin-object-styles-to-template
-            css({
-              maxHeight: 400,
-              width: 600,
-            }),
+            css`
+              max-height: 400px;
+              width: 600px;
+            `,
           )}
           collapsedLabel={COLLAPSED_LABEL}
           expanded={expanded}
@@ -130,10 +124,9 @@ export default class AjaxErrorPage extends Component<
         >
           <div
             className={names(
-              // $FlowFixMe - babel-plugin-object-styles-to-template
-              css({
-                whiteSpace: 'pre-line',
-              }),
+              css`
+                white-space: pre-line;
+              `,
             )}
           >
             {errorDetails}

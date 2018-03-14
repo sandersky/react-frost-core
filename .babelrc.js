@@ -13,7 +13,6 @@ function getPlugins() {
   const plugins = [
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-object-rest-spread',
-    'object-styles-to-template',
   ]
 
   // Omit CSS modules in the test environment as Jest doesn't know how to handle

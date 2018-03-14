@@ -19,7 +19,7 @@
   --frost-select-list-item-horizontal-padding: 10px;
   --frost-select-normal-border-color: var(--frost-color-grey-7);
   --frost-select-placeholder-color: var(--frost-color-grey-6);
-   --frost-selection: var(--frost-color-blue-1);
+  --frost-selection: var(--frost-color-blue-1);
 }
 
 @define-mixin triangle-down $color, $size {
@@ -65,10 +65,6 @@
   }
 }
 
-.frost-select-clear {
-  float: right;
-}
-
 .frost-select-disabled {
   background-color: var(--frost-select-disabled-background-color);
   border-color: var(--frost-select-disabled-border-color);
@@ -99,11 +95,6 @@
 
 .frost-select-dropdown-container {
   z-index: 9004;
-}
-
-.frost-select-dropdown-empty-msg {
-  color: var(--frost-color-grey-3);
-  padding: 0 5px 5px;
 }
 
 .frost-select-error {
@@ -153,21 +144,6 @@
     padding: 5px;
     width: auto;
   }
-
-  & .multi-status {
-    align-items: center;
-    border-bottom: solid 5px var(--frost-color-lgrey-3);
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    font-size: var(--frost-font-size-m);
-    justify-content: space-between;
-    padding: 5px;
-
-    & .number-selected {
-      color: var(--frost-color-grey-5);
-    }
-  }
 }
 
 .frost-select-dropdown-wrap-labels {
@@ -211,10 +187,6 @@
   & u {
     color: var(--frost-color-grey-2);
   }
-}
-
-.frost-select-list-item-container {
-  flex: 1;
 }
 
 .frost-select-list-item-focused {
@@ -267,26 +239,8 @@
   }
 }
 
-.frost-select-overlay {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 9001;
-}
-
 .frost-select-placeholder {
   color: var(--frost-select-placeholder-color);
-}
-
-.frost-select-text {
-  overflow: hidden;
-  padding-left: 5px;
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: calc(100% - 30px);
 }
 
 .frost-select-up-arrow {
@@ -296,17 +250,4 @@
   pointer-events: none;
   position: fixed;
   z-index: 9003;
-}
-
-.frost-select-up-arrow-shadow {
-  box-shadow: var(--frost-select-arrow-box-shadow);
-  content: '';
-  display: block;
-  height: 25px;
-  margin-top: 8px;
-  pointer-events: none;
-  position: fixed;
-  transform: rotate(45deg);
-  width: 25px;
-  z-index: 9001;
 }

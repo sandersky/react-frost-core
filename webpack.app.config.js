@@ -116,7 +116,7 @@ module.exports = {
       },
       {
         exclude: [/node_modules/],
-        loaders: ['babel-loader'],
+        loaders: ['babel-loader'/*, 'linaria/loader'*/],
         test: /\.js$/,
       },
     ],

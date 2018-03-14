@@ -20,35 +20,33 @@ import React, {Component, type Node} from 'react'
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
-// $FlowFixMe - babel-plugin-object-styles-to-template
-const ERRED_STYLE = css({
-  border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
+const ERRED_STYLE = css`
+  border: 1px solid ${COLOR_INPUT_ERROR_BORDER};
 
-  '&:hover': {
-    '&:enabled': {
-      '&:read-write': {
-        '&:not(:focus)': {
-          border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
-        },
-      },
-    },
-  },
-})
+  &:hover {
+    &:enabled {
+      &:read-write {
+        &:not(:focus) {
+          border: 1px solid ${COLOR_INPUT_ERROR_BORDER};
+        }
+      }
+    }
+  }
+`
 
-// $FlowFixMe - babel-plugin-object-styles-to-template
-const NOT_ERRED_STYLE = css({
-  border: `1px solid ${COLOR_INPUT_BORDER}`,
+const NOT_ERRED_STYLE = css`
+  border: 1px solid ${COLOR_INPUT_BORDER};
 
-  '&:hover': {
-    '&:enabled': {
-      '&:read-write': {
-        '&:not(:focus)': {
-          border: `1px solid ${COLOR_INPUT_HOVER_BORDER}`,
-        },
-      },
-    },
-  },
-})
+  &:hover {
+    &:enabled {
+      &:read-write {
+        &:not(:focus) {
+          border: 1px solid ${COLOR_INPUT_HOVER_BORDER};
+        }
+      }
+    }
+  }
+`
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
@@ -56,7 +54,7 @@ type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 export type TextProps = {
   align?: ?ALIGN,
   className?: ?string,
-  clearOffset: ?number,
+  clearOffset?: ?number,
   disabled?: ?boolean,
   error?: ?boolean,
   inputRef?: (el: ?HTMLInputElement) => void,
@@ -135,19 +133,18 @@ export default class Text extends Component<TextProps, TextState> {
     return (
       <button
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            display: 'inline-block',
-            fill: COLOR_GREY_6,
-            height: 23,
-            position: 'absolute',
-            top: 7,
-            width: 23,
+          css`
+            display: inline-block;
+            fill: ${COLOR_GREY_6};
+            height: 23px;
+            position: absolute;
+            top: 7px;
+            width: 23px;
 
-            '&:focus': {
-              outline: 'none',
-            },
-          }),
+            &:focus {
+              outline: none;
+            }
+          `,
           animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
         )}
         onAnimationEnd={this._handleClearButtonAnimationEnd}
@@ -221,49 +218,47 @@ export default class Text extends Component<TextProps, TextState> {
     return (
       <div
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            display: 'block',
-            minWidth: 175,
-            position: 'relative',
-          }),
+          css`
+            display: block;
+            min-width: 175px;
+            position: relative;
+          `,
           className,
         )}
       >
         <input
           className={names(
-            // $FlowFixMe - babel-plugin-object-styles-to-template
-            css({
-              color: COLOR_INPUT,
-              display: 'inline-block',
-              fontSize: FONT_SIZE_M,
-              fontWeight: 200,
-              height: 35,
-              outline: 'none',
-              padding: '0 30px 0 8px',
-              transition: 'border .2s ease',
+            css`
+              color: ${COLOR_INPUT};
+              display: inline-block;
+              font-size: ${FONT_SIZE_M};
+              font-weight: 200px;
+              height: 35px;
+              outline: none;
+              padding: 0 30px 0 8px;
+              transition: border 0.2s ease;
 
-              '&:disabled': {
-                backgroundColor: COLOR_INPUT_DISABLED_BG,
-                border: `1px solid ${COLOR_INPUT_DISABLED_BORDER}`,
-              },
+              &:disabled {
+                background-color: ${COLOR_INPUT_DISABLED_BG};
+                border: 1px solid ${COLOR_INPUT_DISABLED_BORDER};
+              }
 
-              '&:focus': {
-                border: `1px solid ${COLOR_INPUT_FOCUS_BORDER}`,
-              },
+              &:focus {
+                border: 1px solid ${COLOR_INPUT_FOCUS_BORDER};
+              }
 
-              '&:read-only': {
-                border: 0,
-              },
+              &:read-only {
+                border: 0;
+              }
 
               /**
                * Note: without this Firefox ends up applying the read-only pseudo selector
                * to number inputs which causes them not to get a border.
                */
-              '&[type="number"]': {
-                border: `1px solid ${COLOR_INPUT_BORDER}`,
-              },
-            }),
+              &[type='number'] {
+                border: 1px solid ${COLOR_INPUT_BORDER};
+              }
+            `,
             showError ? ERRED_STYLE : NOT_ERRED_STYLE,
           )}
           minLength={minLength}

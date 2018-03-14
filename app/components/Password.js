@@ -4,6 +4,7 @@
 
 import {CodeBlock, Password, PASSWORD_ALIGN_RIGHT} from '../../src'
 import route from '../factory'
+import {css, names} from 'linaria'
 import React, {type Element, type Node} from 'react'
 
 type DOC_TYPE = {|
@@ -79,6 +80,16 @@ const DOCS: Array<DOC_TYPE> = [
   },
 ]
 
+const EXAMPLE_STYLE = css`
+  margin: 0 10px;
+  width: 300px;
+`
+
+const EXAMPLES_STYLE = css`
+  display: flex;
+  flex-wrap: wrap;
+`
+
 const IMPORTS_CODE = `
 import {
   Password,
@@ -94,8 +105,16 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 
   return Object.keys(examples).map((key: string, index: number): Node => {
     return (
-      <div className="password-example" key={index}>
-        <h4>{key}</h4>
+      <div className={names(EXAMPLE_STYLE)} key={index}>
+        <h4
+          className={names(
+            css`
+              margin-top: 0;
+            `,
+          )}
+        >
+          {key}
+        </h4>
         {/* $FlowFixMe - Flow thinks examples could be null/undefined */}
         {examples[key]}
       </div>
@@ -111,8 +130,8 @@ export default route('Password', (): Node => {
       </section>
       <section>
         <h3>Default</h3>
-        <div className="password-examples">
-          <div className="password-example">
+        <div className={names(EXAMPLES_STYLE)}>
+          <div className={names(EXAMPLE_STYLE)}>
             <CodeBlock language="jsx" maxLineLength={30}>
               <Password />
             </CodeBlock>
@@ -123,7 +142,9 @@ export default route('Password', (): Node => {
         return (
           <section key={index}>
             <h3>{title}</h3>
-            <div className="password-examples">{renderExamples(examples)}</div>
+            <div className={names(EXAMPLES_STYLE)}>
+              {renderExamples(examples)}
+            </div>
           </section>
         )
       })}

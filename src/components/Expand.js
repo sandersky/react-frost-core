@@ -2,8 +2,11 @@
  * @flow
  */
 
+import {COLOR_BLUE_1, COLOR_GREY_3} from '../styles/colors'
+import {FONT_FAMILY, FONT_SIZE_S} from '../styles/typography'
 import Icon from './Icon'
 import t from 'grammatic'
+import {css, names} from 'linaria'
 import React, {Component, type Node} from 'react'
 
 const DEFAULT_COLLAPSED_LABEL = t(
@@ -14,6 +17,12 @@ const DEFAULT_EXPANDED_LABEL = t(
   'Collapse',
   'Label for toggle in expanded state',
 )
+const ICON_COLLAPSED_STYLE = css`
+  transform: rotate(-180deg);
+`
+const ICON_EXPANDED_STYLE = css`
+  transform: rotate(-90deg);
+`
 const PREFIX = 'frost-expand'
 
 export type ExpandProps = {|
@@ -40,7 +49,19 @@ export type ExpandState = {|
 function renderContent(children?: Node, expanded: boolean, id: string): Node {
   // TODO: wrap div in scroll component
   return expanded ? (
-    <div className={`${PREFIX}-content`} id={id} role="region" tabIndex={-1}>
+    <div
+      className={names(
+        css`
+          color: ${COLOR_GREY_3};
+          font-size: ${FONT_SIZE_S};
+          line-height: 1.4em;
+          padding: 15px;
+        `,
+      )}
+      id={id}
+      role="region"
+      tabIndex={-1}
+    >
       {children}
     </div>
   ) : null
@@ -62,7 +83,18 @@ function renderLabelText(
     ? expandedLabel || DEFAULT_EXPANDED_LABEL
     : collapsedLabel || DEFAULT_COLLAPSED_LABEL
 
-  return <div className={`${PREFIX}-label-text`}>{text}</div>
+  return (
+    <div
+      className={names(
+        css`
+          color: ${COLOR_BLUE_1};
+          padding-left: 10px;
+        `,
+      )}
+    >
+      {text}
+    </div>
+  )
 }
 
 let counter = 0
@@ -129,14 +161,42 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
     }
 
     return (
-      <div className={classNames.join(' ')}>
+      <div
+        className={names(
+          css`
+            display: flex;
+            flex-direction: column;
+            font-family: ${FONT_FAMILY};
+          `,
+        )}
+      >
         <button
           aria-controls={id}
           aria-expanded={expanded}
-          className={`${PREFIX}-label`}
+          className={names(
+            css`
+              align-items: center;
+              cursor: pointer;
+              display: flex;
+              flex-direction: row;
+              flex-shrink: 0;
+              justify-content: flex-start;
+              margin-bottom: 5px;
+            `,
+          )}
           onClick={this._handleToggle}
         >
-          <Icon icon="chevron" />
+          <Icon
+            className={names(
+              css`
+                height: 30px;
+                transition: transform 0.3s;
+                width: 30px;
+              `,
+              expanded ? ICON_EXPANDED_STYLE : ICON_COLLAPSED_STYLE,
+            )}
+            icon="chevron"
+          />
           {renderLabelText(collapsedLabel, expanded, expandedLabel)}
         </button>
         {renderContent(children, expanded, id)}

@@ -3,11 +3,14 @@
  */
 
 import KEY_CODES from '../key-codes'
+import {COLOR_GREY_3, COLOR_GREY_5, COLOR_LIGHT_GREY_3} from '../styles/colors'
+import {FONT_SIZE_M} from '../styles/typography'
 import {trimLongDataInElement} from '../utils'
 import Button from './Button'
 import Checkbox from './Checkbox'
 import Text from './Text'
 import t from 'grammatic'
+import {css, names} from 'linaria'
 import React, {Component, type Node as ReactNode} from 'react'
 
 export type Item = {|
@@ -423,7 +426,13 @@ export default class SelectDropdown extends Component<
           <Checkbox checked={isSelected} size={Checkbox.SIZES.MEDIUM} />
         ) : null}
         {item.secondaryLabels && item.secondaryLabels.length ? (
-          <div className={`${PREFIX}-list-item-container`}>
+          <div
+            className={names(
+              css`
+                flex: 1;
+              `,
+            )}
+          >
             <div className={dropdownTextClassName} data-text={item.label}>
               {item.label}
             </div>
@@ -639,7 +648,19 @@ export default class SelectDropdown extends Component<
 
     return (
       <div className={`${PREFIX}-dropdown-wrapper`}>
-        <div className={`${PREFIX}-overlay`} onClick={onClose} />
+        <div
+          className={names(
+            css`
+              bottom: 0;
+              left: 0;
+              position: fixed;
+              right: 0;
+              top: 0;
+              z-index: 9001;
+            `,
+          )}
+          onClick={onClose}
+        />
         <div
           className={
             top === 'auto'
@@ -672,10 +693,35 @@ export default class SelectDropdown extends Component<
             value={filter}
           />
           {multiselect ? (
-            <div className="multi-status">
-              <span className="number-selected">{selectedText}</span>
+            <div
+              className={names(
+                css`
+                  align-items: center;
+                  border-bottom: solid 5px ${COLOR_LIGHT_GREY_3};
+                  display: flex;
+                  flex: 1;
+                  flex-direction: row;
+                  font-size: ${FONT_SIZE_M};
+                  justify-content: space-between;
+                  padding: 5px;
+                `,
+              )}
+            >
+              <span
+                className={names(
+                  css`
+                    color: ${COLOR_GREY_5};
+                  `,
+                )}
+              >
+                {selectedText}
+              </span>
               <Button
-                className={`${PREFIX}-clear`}
+                className={names(
+                  css`
+                    float: right;
+                  `,
+                )}
                 onClick={this._handleClear}
                 priority={Button.PRIORITIES.TERTIARY}
                 text={CLEAR_ALL_LABEL}
@@ -690,7 +736,14 @@ export default class SelectDropdown extends Component<
             role="listbox"
           >
             {items.length === 0 ? (
-              <div className={`${PREFIX}-dropdown-empty-msg`}>
+              <div
+                className={names(
+                  css`
+                    color: ${COLOR_GREY_3};
+                    padding: 0 5px 5px;
+                  `,
+                )}
+              >
                 {filter ? NO_FILTERED_ITEMS_LABEL : NO_ITEMS_LABEL}
               </div>
             ) : (

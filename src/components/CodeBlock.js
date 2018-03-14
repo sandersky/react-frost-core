@@ -40,11 +40,10 @@ function renderCodeDemo(children?: Node, demo?: boolean): Node {
   return (
     <div
       className={names(
-        // $FlowFixMe - babel-plugin-object-styles-to-template
-        css({
-          border: `1px solid ${COLOR_LIGHT_GREY_2}`,
-          padding: 6,
-        }),
+        css`
+          border: 1px solid ${COLOR_LIGHT_GREY_2};
+          padding: 6;
+        `,
       )}
     >
       {children}
@@ -92,12 +91,11 @@ export default class CodeBlock extends Component<
     return [
       <div
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            backgroundColor: COLOR_NIGHT_3,
-            color: COLOR_NIGHT_2,
-            padding: 6,
-          }),
+          css`
+            background-color: ${COLOR_NIGHT_3};
+            color: ${COLOR_NIGHT_2};
+            padding: 6px;
+          `,
         )}
         key="language"
       >
@@ -106,10 +104,9 @@ export default class CodeBlock extends Component<
       <pre
         className={names(
           `language-${language}`,
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            marginTop: 0,
-          }),
+          css`
+            margin-top: 0;
+          `,
         )}
         key="code"
       >
@@ -136,10 +133,9 @@ export default class CodeBlock extends Component<
     return (
       <Expand
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            marginTop: 10,
-          }),
+          css`
+            margin-top: 10px;
+          `,
         )}
         collapsedLabel="Show code"
         expandedLabel="Hide code"

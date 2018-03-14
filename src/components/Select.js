@@ -4,6 +4,7 @@
 
 import KEY_CODES from '../key-codes'
 import SelectDropdown, {type Item} from './SelectDropdown'
+import {css, names} from 'linaria'
 import React, {Component, type Node} from 'react'
 import {createPortal} from 'react-dom'
 
@@ -403,7 +404,20 @@ export default class Select extends Component<SelectProps, SelectState> {
         style={width ? {maxWidth: 'initial', minWidth: 'initial', width} : null}
         tabIndex={disabled ? -1 : 0}
       >
-        <span className="frost-select-text">{text || placeholder}</span>
+        <span
+          className={names(
+            css`
+              overflow: hidden;
+              padding-eft: 5px;
+              text-align: left;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: calc(100% - 30px);
+            `,
+          )}
+        >
+          {text || placeholder}
+        </span>
         <svg viewBox="0 0 15 15">
           <polygon points="7.5,11.4 1.1,5 2.5,3.6 7.5,8.6 12.5,3.6 13.9,5" />
         </svg>

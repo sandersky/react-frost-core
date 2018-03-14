@@ -20,38 +20,38 @@ import React, {Component, type Node} from 'react'
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
 
-const ERRED_STYLE = css({
-  border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
-  color: COLOR_DANGER,
-  margin: 1,
+const ERRED_STYLE = css`
+  border: 1px solid ${COLOR_INPUT_ERROR_BORDER};
+  color: ${COLOR_DANGER};
+  margin: 1px;
 
-  '&:hover': {
-    '&:enabled': {
-      '&:read-write': {
-        '&:not(:focus)': {
-          border: `1px solid ${COLOR_INPUT_ERROR_BORDER}`,
-          outline: 'none',
-        },
-      },
-    },
-  },
-})
+  &:hover {
+    &:enabled {
+      &:read-write {
+        &:not(:focus) {
+          border: 1px solid ${COLOR_INPUT_ERROR_BORDER};
+          outline: none;
+        }
+      }
+    }
+  }
+`
 
-const NOT_ERRED_STYLE = css({
-  border: `1px solid ${COLOR_INPUT_BORDER}`,
-  color: COLOR_GREY_1,
+const NOT_ERRED_STYLE = css`
+  border: 1px solid ${COLOR_INPUT_BORDER};
+  color: ${COLOR_GREY_1};
 
-  '&:hover': {
-    '&:enabled': {
-      '&:read-write': {
-        '&:not(:focus)': {
-          border: `1px solid ${COLOR_INPUT_FOCUS_BORDER}`,
-          outline: 'none',
-        },
-      },
-    },
-  },
-})
+  &:hover {
+    &:enabled {
+      &:read-write {
+        &:not(:focus) {
+          border: 1px solid ${COLOR_INPUT_FOCUS_BORDER};
+          outline: none;
+        }
+      }
+    }
+  }
+`
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
@@ -135,20 +135,19 @@ export default class Textarea extends Component<TextareaProps, TextareaState> {
     return (
       <button
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            fill: COLOR_GREY_6,
-            height: 23,
-            position: 'relative',
-            right: 26,
-            top: 7,
-            transition: 'opacity .2s ease',
-            width: 23,
+          css`
+            fill: ${COLOR_GREY_6};
+            height: 23px;
+            position: relative;
+            right: 26px;
+            top: 7px;
+            transition: opacity 0.2s ease;
+            width: 23px;
 
-            '&:focus': {
-              outline: 'none',
-            },
-          }),
+            &:focus {
+              outline: none;
+            }
+          `,
           animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
         )}
         onAnimationEnd={this._handleClearButtonAnimationEnd}
@@ -209,37 +208,35 @@ export default class Textarea extends Component<TextareaProps, TextareaState> {
     return (
       <div
         className={names(
-          // $FlowFixMe - babel-plugin-object-styles-to-template
-          css({
-            display: 'flex',
-            position: 'relative',
-          }),
+          css`
+            display: flex;
+            position: relative;
+          `,
         )}
       >
         <textarea
           className={names(
-            // $FlowFixMe - babel-plugin-object-styles-to-template
-            css({
-              fontSize: FONT_SIZE_S,
-              padding: '5px 30px 5px 5px',
-              resize: 'none',
-              transition: 'border .2s ease',
+            css`
+              font-size: ${FONT_SIZE_S};
+              padding: 5px 30px 5px 5px;
+              resize: none;
+              transition: border 0.2s ease;
 
-              '&:disabled': {
-                backgroundColor: COLOR_INPUT_DISABLED_BG,
-                border: `1px solid ${COLOR_INPUT_DISABLED_BORDER}`,
-              },
+              &:disabled {
+                background-color: ${COLOR_INPUT_DISABLED_BG};
+                border: 1px solid ${COLOR_INPUT_DISABLED_BORDER};
+              }
 
-              '&:focus': {
-                border: `1px solid ${COLOR_INPUT_FOCUS_BORDER}`,
-                outline: 'none',
-              },
+              &:focus {
+                border: 1px solid ${COLOR_INPUT_FOCUS_BORDER};
+                outline: none;
+              }
 
-              '&:read-only': {
-                border: 0,
-                cursor: 'default',
-              },
-            }),
+              &:read-only {
+                border: 0;
+                cursor: default;
+              }
+            `,
             showError ? ERRED_STYLE : NOT_ERRED_STYLE,
           )}
           minLength={minLength}

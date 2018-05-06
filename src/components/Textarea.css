@@ -15,12 +15,12 @@
   --frost-textarea-hover-border: 1px solid var(--frost-color-input-focus-border);
 }
 
-.frost-textarea {
+.root {
   display: flex;
   position: relative;
 
-  &.frost-textarea-error {
-    & .frost-textarea-input {
+  &.error {
+    & .input {
       border: var(--frost-textarea-error-border);
       color: var(--frost-textarea-error-color);
       margin: var(--frost-textarea-error-margin);
@@ -38,7 +38,7 @@
   }
 }
 
-.frost-textarea-clear {
+.clear {
   fill: var(--frost-color-grey-6);
   height: 23px;
   position: relative;
@@ -52,7 +52,7 @@
   }
 }
 
-.frost-textarea-input {
+.input {
   border: var(--frost-textarea-border);
   color: var(--frost-textarea-color);
   font-size: var(--frost-textarea-font-size);
@@ -86,7 +86,7 @@
     cursor: default;
   }
 
-  &.frost-textarea-align-right {
+  &.align-right {
     text-align: right;
   }
 }

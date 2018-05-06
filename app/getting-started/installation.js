@@ -3,6 +3,7 @@
  */
 
 import {CodeBlock, Icon} from '../../src'
+import styles from './Installation.css'
 import t from 'grammatic'
 import React, {type Node} from 'react'
 
@@ -22,13 +23,13 @@ const Installation = (): Node => {
       <p dangerouslySetInnerHTML={{__html: INFO}} />
       <h3>
         <a
-          className="ExternalLink"
+          className={styles.externalLink}
           href="https://www.npmjs.com/"
           rel="noopener noreferrer"
           target="_blank"
           title={NPM_TITLE}
         >
-          npm <Icon icon={Icon.ICONS.OPEN_TABS} />
+          npm <Icon className={styles.icon} icon={Icon.ICONS.OPEN_TABS} />
         </a>
       </h3>
       <CodeBlock
@@ -45,7 +46,7 @@ const Installation = (): Node => {
           target="_blank"
           title={YARN_TITLE}
         >
-          yarn <Icon icon={Icon.ICONS.OPEN_TABS} />
+          yarn <Icon className={styles.icon} icon={Icon.ICONS.OPEN_TABS} />
         </a>
       </h3>
       <CodeBlock

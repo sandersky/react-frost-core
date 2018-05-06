@@ -1,6 +1,6 @@
 @import '../../src/styles/colors.css';
 
-.ColorPaletteSwatch {
+.color-palette-swatch {
   display: block;
   height: 50px;
   line-height: 50px;
@@ -8,7 +8,7 @@
   width: 50px;
 }
 
-.ColorPaletteTable {
+.color-palette-table {
   & td {
     &:nth-child(1) {
       padding: 0;
@@ -24,7 +24,7 @@
   }
 }
 
-.ColorPaletteTables {
+.color-palette-tables {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

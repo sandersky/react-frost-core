@@ -4,6 +4,7 @@
 
 import {CodeBlock, Loading} from '../../src'
 import route from '../factory'
+import styles from './Loading.css'
 import React, {type Node} from 'react'
 
 const IMPORTS_CODE = "import {Loading} from 'react-frost-core'"
@@ -14,7 +15,7 @@ export default route('Loading', (): Node => {
       <section>
         <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
       </section>
-      <section className="LoadingTypes">
+      <section className={styles.loadingTypes}>
         <h3>Types</h3>
         <CodeBlock language="jsx">
           <Loading type={Loading.TYPES.RING} />

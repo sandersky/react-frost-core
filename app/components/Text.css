@@ -1,4 +1,4 @@
-.text-example {
+.example {
   margin: 0 10px;
   width: 300px;
 
@@ -7,7 +7,7 @@
   }
 }
 
-.text-examples {
+.examples {
   display: flex;
   flex-wrap: wrap;
 }

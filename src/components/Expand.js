@@ -2,6 +2,7 @@
  * @flow
  */
 
+import styles from './Expand.css'
 import Icon from './Icon'
 import t from 'grammatic'
 import React, {Component, type Node} from 'react'
@@ -40,7 +41,7 @@ export type ExpandState = {|
 function renderContent(children?: Node, expanded: boolean, id: string): Node {
   // TODO: wrap div in scroll component
   return expanded ? (
-    <div className={`${PREFIX}-content`} id={id} role="region" tabIndex={-1}>
+    <div className={styles.content} id={id} role="region" tabIndex={-1}>
       {children}
     </div>
   ) : null
@@ -62,7 +63,7 @@ function renderLabelText(
     ? expandedLabel || DEFAULT_EXPANDED_LABEL
     : collapsedLabel || DEFAULT_COLLAPSED_LABEL
 
-  return <div className={`${PREFIX}-label-text`}>{text}</div>
+  return <div className={styles.labelText}>{text}</div>
 }
 
 let counter = 0
@@ -122,7 +123,10 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
   render(): Node {
     const {children, className, collapsedLabel, expandedLabel} = this.props
     const {expanded, id} = this.state
-    const classNames = [PREFIX, expanded ? 'expanded' : 'collapsed']
+    const classNames = [
+      styles.root,
+      expanded ? styles.expanded : styles.collapsed,
+    ]
 
     if (className) {
       classNames.push(className)
@@ -133,10 +137,10 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
         <button
           aria-controls={id}
           aria-expanded={expanded}
-          className={`${PREFIX}-label`}
+          className={styles.label}
           onClick={this._handleToggle}
         >
-          <Icon icon="chevron" />
+          <Icon className={styles.icon} icon="chevron" />
           {renderLabelText(collapsedLabel, expanded, expandedLabel)}
         </button>
         {renderContent(children, expanded, id)}

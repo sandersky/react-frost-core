@@ -1,115 +1,120 @@
 @import '../src/styles/colors.css';
 
-code[class*="language-"],
-pre[class*="language-"] {
-    color: var(--frost-color-teal-4);
-    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-    direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    font-size: 0.95em;
-    line-height: 1.2em;
+:global code[class*="language-"],
+:global pre[class*="language-"] {
+  color: var(--frost-color-teal-4);
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 0.95em;
+  line-height: 1.2em;
 
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
 
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-    background: #b3d4fc;
+:global pre[class*="language-"]::-moz-selection,
+:global pre[class*="language-"] ::-moz-selection,
+:global code[class*="language-"]::-moz-selection,
+:global code[class*="language-"] ::-moz-selection {
+  background: #b3d4fc;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-    background: #b3d4fc;
+:global pre[class*="language-"]::selection,
+:global pre[class*="language-"] ::selection,
+:global code[class*="language-"]::selection,
+:global code[class*="language-"] ::selection {
+  background: #b3d4fc;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-    padding: 1em;
-    margin: .5em 0;
-    overflow: auto;
-    background-color: var(--frost-color-grey-2);
+:global pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  background-color: var(--frost-color-grey-2);
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:global :not(pre) > code[class*="language-"],
+:global pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-    padding: .2em;
-    padding-top: 1px; padding-bottom: 1px;
-    background: #f8f8f8;
-    border: 1px solid #dddddd;
+:global :not(pre) > code[class*="language-"] {
+  padding: .2em;
+  padding-top: 1px; padding-bottom: 1px;
+  background: #f8f8f8;
+  border: 1px solid #dddddd;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-    color: #999988; font-style: italic;
+:global .token.comment,
+:global .token.prolog,
+:global .token.doctype,
+:global .token.cdata {
+  color: #999988; font-style: italic;
 }
 
-.token.namespace {
-    opacity: .7;
+:global .token.namespace {
+  opacity: .7;
 }
 
-.token.string,
-.token.attr-value {
-    color: var(--frost-color-orange-3);
-}
-.token.punctuation,
-.token.operator {
-    color: var(--frost-color-lilac-3); /* no highlight */
+:global .token.string,
+:global .token.attr-value {
+  color: var(--frost-color-orange-3);
 }
 
-.token.entity,
-.token.url,
-.token.symbol,
-.token.number,
-.token.boolean,
-.token.variable,
-.token.constant,
-.token.property,
-.token.regex,
-.token.inserted {
-    color: #36acaa;
+:global .token.punctuation,
+:global .token.operator {
+  color: var(--frost-color-lilac-3); /* no highlight */
 }
 
-.token.atrule,
-.token.keyword,
-.token.attr-name,
-.language-autohotkey .token.selector {
-    color: var(--frost-color-blue-4);
+:global .token.entity,
+:global .token.url,
+:global .token.symbol,
+:global .token.number,
+:global .token.boolean,
+:global .token.variable,
+:global .token.constant,
+:global .token.property,
+:global .token.regex,
+:global .token.inserted {
+  color: #36acaa;
 }
 
-.token.function,
-.token.deleted,
-.language-autohotkey .token.tag {
-    color: #9a050f;
+:global .token.atrule,
+:global .token.keyword,
+:global .token.attr-name,
+:global .language-autohotkey .token.selector {
+  color: var(--frost-color-blue-4);
 }
 
-.token.tag,
-.token.selector,
-.language-autohotkey .token.keyword {
-    color: var(--frost-color-green-5);
+:global .token.function,
+:global .token.deleted,
+:global .language-autohotkey .token.tag {
+  color: #9a050f;
 }
 
-.token.important,
-.token.function,
-.token.bold {
-    font-weight: bold;
+:global .token.tag,
+:global .token.selector,
+:global .language-autohotkey .token.keyword {
+  color: var(--frost-color-green-5);
 }
 
-.token.italic {
-    font-style: italic;
+:global .token.important,
+:global .token.function,
+:global .token.bold {
+  font-weight: bold;
+}
+
+:global .token.italic {
+  font-style: italic;
 }

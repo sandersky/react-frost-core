@@ -7,24 +7,24 @@
   --frost-color-expand-content-text: var(--frost-color-grey-3);
 }
 
-.frost-expand {
+.root {
   display: flex;
   flex-direction: column;
   font-family: var(--frost-font-family);
 
   &.collapsed {
-    & .frost-icon-frost-chevron {
+    & .icon {
       transform: rotate(-180deg);
     }
   }
 
   &.expanded {
-    & .frost-icon-frost-chevron {
+    & .icon {
       transform: rotate(-90deg);
     }
   }
 
-  & .frost-expand-label {
+  & .label {
     align-items: center;
     cursor: pointer;
     display: flex;
@@ -33,22 +33,22 @@
     justify-content: flex-start;
     margin-bottom: 5px;
 
-    & .frost-expand-label-text {
+    & .label-text {
       color: var(--frost-color-expand-label-text);
       padding-left: 10px;
     }
 
-    & .frost-icon-frost-chevron {
+    & .icon {
       height: 30px;
       transition: transform .3s;
       width: 30px;
     }
   }
 
-  & .frost-expand-scroll {
+  & .scroll {
     background-color: var(--frost-color-expand-content-bg);
 
-    & .frost-expand-content {
+    & .content {
       color: var(--frost-color-expand-content-text);
       font-size: var(--frost-font-size-s);
       line-height: 1.4em;

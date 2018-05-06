@@ -2,6 +2,7 @@
  * @flow
  */
 
+import styles from './Introduction.css'
 import t from 'grammatic'
 import React, {type Node} from 'react'
 
@@ -21,7 +22,7 @@ const Introduction = (): Node => {
   return (
     <div>
       <p dangerouslySetInnerHTML={{__html: DESCRIPTION}} />
-      <p className="Disclaimer">{DISCLAIMER}</p>
+      <p className={styles.disclaimer}>{DISCLAIMER}</p>
     </div>
   )
 }

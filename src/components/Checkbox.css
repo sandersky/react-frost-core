@@ -18,7 +18,7 @@
   --frost-checkbox-size-small: 20px;
 }
 
-.frost-checkbox {
+.root {
   display: inline-block;
   position: relative;
 
@@ -69,17 +69,17 @@
   }
 }
 
-.frost-checkbox-checked {
+.checked {
   & svg {
     visibility: visible;
   }
 
-  &.frost-checkbox-disabled svg {
+  &.disabled svg {
     fill: var(--frost-checkbox-disabled-fill);
   }
 }
 
-.frost-checkbox-disabled {
+.disabled {
   & label {
     cursor: default;
 
@@ -90,13 +90,13 @@
   }
 }
 
-.frost-checkbox-error {
+.error {
   & label::before {
     border: var(--frost-checkbox-error-border);
   }
 }
 
-.frost-checkbox-large {
+.large {
   & label::before {
     height: var(--frost-checkbox-size-large);
     width: var(--frost-checkbox-size-large);
@@ -108,7 +108,7 @@
   }
 }
 
-.frost-checkbox-medium {
+.medium {
   & label::before {
     height: var(--frost-checkbox-size-medium);
     width: var(--frost-checkbox-size-medium);
@@ -120,7 +120,7 @@
   }
 }
 
-.frost-checkbox-small {
+.small {
   & label::before  {
     height: var(--frost-checkbox-size-small);
     width: var(--frost-checkbox-size-small);

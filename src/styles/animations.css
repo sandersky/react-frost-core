@@ -1,4 +1,4 @@
-@keyframes frostFadeIn {
+:global @keyframes frostFadeIn {
   from {
     opacity: 0;
     visibility: hidden;
@@ -9,11 +9,11 @@
     visibility: visible;
   }
 }
-.frost-fade-in {
+:global .frost-fade-in {
   animation: frostFadeIn 0.2s;
 }
 
-@keyframes frostFadeOut {
+:global @keyframes frostFadeOut {
   from {
     opacity: 1;
     visibility: visible;
@@ -25,6 +25,6 @@
   }
 }
 
-.frost-fade-out {
+:global .frost-fade-out {
   animation: frostFadeOut 0.2s;
 }

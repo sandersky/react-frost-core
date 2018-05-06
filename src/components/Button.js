@@ -4,17 +4,16 @@
 
 /* global $Values */
 
+import styles from './Button.css'
 import Icon from './Icon'
 import React, {Component, type Node} from 'react'
 
 const DESIGNS = {
-  APP_BAR: 'app-bar',
-  INFO_BAR: 'info-bar',
-  INLINE: 'in-line',
+  APP_BAR: 'appBar',
+  INFO_BAR: 'infoBar',
+  INLINE: 'inLine',
   TAB: 'tab',
 }
-
-const PREFIX = 'frost-button'
 
 const PRIORITIES = {
   CANCEL: 'cancel',
@@ -69,18 +68,18 @@ function getClassName(
   text?: ?string,
   vertical?: ?boolean,
 ): string {
-  const classNames = [PREFIX]
+  const classNames = [styles.root]
 
   if (className) {
     classNames.push(className)
   }
 
   if (disabled) {
-    classNames.push(`${PREFIX}-disabled`)
+    classNames.push(styles.disabled)
   }
 
   if (design) {
-    classNames.push(design)
+    classNames.push(styles[design])
 
     if (!text && !icon) {
       throw new Error(
@@ -98,17 +97,17 @@ function getClassName(
   }
 
   if (size) {
-    classNames.push(size)
+    classNames.push(styles[size])
   }
 
   const priorityClassName = getPriorityClassName(priority)
 
   if (priorityClassName) {
-    classNames.push(priorityClassName)
+    classNames.push(styles[priorityClassName])
   }
 
   if (vertical) {
-    classNames.push('vertical')
+    classNames.push(styles.vertical)
   }
 
   return classNames.join(' ')
@@ -155,41 +154,43 @@ function renderButtonContents(
   switch (design) {
     case DESIGNS.INFO_BAR:
       return (
-        <div className={`${PREFIX}-content`}>
-          <div className={`${PREFIX}-text`}>
-            <div className={`${PREFIX}-svg`}>
-              {icon ? <Icon icon={icon} pack={pack} /> : null}
+        <div className={styles.content}>
+          <div className={styles.text}>
+            <div className={styles.svg}>
+              {icon ? (
+                <Icon className={styles.icon} icon={icon} pack={pack} />
+              ) : null}
             </div>
-            <div className={`${PREFIX}-text`}>{text}</div>
+            <div className={styles.text}>{text}</div>
           </div>
         </div>
       )
 
     case DESIGNS.INLINE:
-      return <div className={`${PREFIX}-text`}>{text}</div>
+      return <div className={styles.text}>{text}</div>
 
     default: {
       if (icon && text) {
         return (
-          <div className={`${PREFIX}-icon-text ${PREFIX}-text`}>
-            <div className={`${PREFIX}-icon`}>
-              <Icon icon={icon} pack={pack} />
+          <div className={`${styles.iconText} {styles.text}`}>
+            <div className={styles.icon}>
+              <Icon className={styles.icon} icon={icon} pack={pack} />
             </div>
-            <div className={`${PREFIX}-text`}>{text}</div>
+            <div className={styles.text}>{text}</div>
           </div>
         )
       }
 
       if (icon) {
         return (
-          <div className={`${PREFIX}-icon`}>
-            <Icon icon={icon} pack={pack} />
+          <div className={styles.icon}>
+            <Icon className={styles.icon} icon={icon} pack={pack} />
           </div>
         )
       }
 
       if (text) {
-        return <div className={`${PREFIX}-text`}>{text}</div>
+        return <div className={styles.text}>{text}</div>
       }
 
       return null

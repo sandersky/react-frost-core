@@ -4,6 +4,7 @@
 
 /* global HTMLElement */
 
+import styles from './CodeBlock'
 import Expand from './Expand'
 import React, {Component, type Node} from 'react'
 
@@ -31,7 +32,7 @@ function renderCodeDemo(children?: Node, demo?: boolean): Node {
     return null
   }
 
-  return <div className="frost-code-block-demo">{children}</div>
+  return <div className={styles.demo}>{children}</div>
 }
 
 export default class CodeBlock extends Component<
@@ -72,7 +73,7 @@ export default class CodeBlock extends Component<
     }
 
     return [
-      <div className="frost-code-block-language" key="language">
+      <div className={styles.language} key="language">
         {language}
       </div>,
       <pre className={`language-${language}`} key="code">
@@ -98,7 +99,7 @@ export default class CodeBlock extends Component<
 
     return (
       <Expand
-        className="frost-code-block-expand"
+        className={styles.expand}
         collapsedLabel="Show code"
         expandedLabel="Hide code"
         expanded={expanded}
@@ -117,7 +118,7 @@ export default class CodeBlock extends Component<
     const {children, demo, togglable} = this.props
 
     return (
-      <div className="frost-code-block">
+      <div className={styles.root}>
         {renderCodeDemo(children, demo)}
         {togglable !== false
           ? this._renderCodeToggle()

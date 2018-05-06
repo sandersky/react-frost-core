@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button functions as expected when design is info-bar with icon 1`] = `
+exports[`Button functions as expected when design is infoBar with icon 1`] = `
 <Button
-  design="info-bar"
+  design="infoBar"
   icon="add"
 >
   <button
@@ -39,9 +39,9 @@ exports[`Button functions as expected when design is info-bar with icon 1`] = `
 </Button>
 `;
 
-exports[`Button functions as expected when design is info-bar with text 1`] = `
+exports[`Button functions as expected when design is infoBar with text 1`] = `
 <Button
-  design="info-bar"
+  design="infoBar"
   text="foobar"
 >
   <button

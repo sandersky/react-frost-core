@@ -3,10 +3,11 @@
  */
 
 import Icon from './Icon'
+import styles from './Link.css'
 import React, {Component, type Node} from 'react'
 
 const DESIGNS = {
-  INFO_BAR: 'info-bar',
+  INFO_BAR: 'infoBar',
   INLINE: 'inline',
 }
 
@@ -46,18 +47,18 @@ function getClassName(
   priority?: ?PRIORITY,
   size?: ?SIZE,
 ): string {
-  const classNames = ['frost-link']
+  const classNames = ['']
 
   if (className) {
     classNames.push(className)
   }
 
   if (disabled) {
-    classNames.push('disabled')
+    classNames.push(styles.disabled)
   }
 
   if (design) {
-    classNames.push(design)
+    classNames.push(styles[design])
 
     if (priority || size) {
       throw new Error(
@@ -69,11 +70,11 @@ function getClassName(
   }
 
   if (priority) {
-    classNames.push(priority)
+    classNames.push(styles[priority])
   }
 
   if (size) {
-    classNames.push(size)
+    classNames.push(styles[size])
   }
 
   return classNames.join(' ')
@@ -103,11 +104,11 @@ export default class Link extends Component<LinkProps> {
       switch (design) {
         case DESIGNS.INFO_BAR:
           return (
-            <div className="frost-link-content">
-              <div className="frost-link-text">
+            <div className={styles.content}>
+              <div className={styles.text}>
                 {icon ? (
-                  <div className="frost-link-svg">
-                    <Icon icon={icon} pack={pack} />
+                  <div className={styles.svg}>
+                    <Icon className={styles.icon} icon={icon} pack={pack} />
                   </div>
                 ) : null}
                 {children}
@@ -117,7 +118,7 @@ export default class Link extends Component<LinkProps> {
 
         case DESIGNS.INLINE:
           return (
-            <div className="frost-link-content frost-link-text">{children}</div>
+            <div className={`${styles.content} ${styles.text}`}>{children}</div>
           )
       }
     }
@@ -125,18 +126,22 @@ export default class Link extends Component<LinkProps> {
     switch (priority) {
       case PRIORITIES.PRIMARY:
         return (
-          <div className="frost-link-content frost-link-text">
+          <div className={`${styles.content} ${styles.text}`}>
             {content}
-            <div className="frost-link-svg">
-              <Icon icon={Icon.ICONS.OPEN_TABS} pack={pack} />
+            <div className={styles.svg}>
+              <Icon
+                className={styles.icon}
+                icon={Icon.ICONS.OPEN_TABS}
+                pack={pack}
+              />
             </div>
           </div>
         )
 
       case PRIORITIES.SECONDARY:
         return (
-          <div className="frost-link-content">
-            <div className="frost-link-text">{content}</div>
+          <div className={styles.content}>
+            <div className={styles.text}>{content}</div>
           </div>
         )
 

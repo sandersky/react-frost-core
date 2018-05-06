@@ -4,6 +4,7 @@
 
 import {CodeBlock, Password, PASSWORD_ALIGN_RIGHT} from '../../src'
 import route from '../factory'
+import styles from './Password.css'
 import React, {type Element, type Node} from 'react'
 
 type DOC_TYPE = {|
@@ -94,7 +95,7 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 
   return Object.keys(examples).map((key: string, index: number): Node => {
     return (
-      <div className="password-example" key={index}>
+      <div className={styles.example} key={index}>
         <h4>{key}</h4>
         {/* $FlowFixMe - Flow thinks examples could be null/undefined */}
         {examples[key]}
@@ -111,8 +112,8 @@ export default route('Password', (): Node => {
       </section>
       <section>
         <h3>Default</h3>
-        <div className="password-examples">
-          <div className="password-example">
+        <div className={styles.examples}>
+          <div className={styles.example}>
             <CodeBlock language="jsx" maxLineLength={30}>
               <Password />
             </CodeBlock>
@@ -123,7 +124,7 @@ export default route('Password', (): Node => {
         return (
           <section key={index}>
             <h3>{title}</h3>
-            <div className="password-examples">{renderExamples(examples)}</div>
+            <div className={styles.examples}>{renderExamples(examples)}</div>
           </section>
         )
       })}

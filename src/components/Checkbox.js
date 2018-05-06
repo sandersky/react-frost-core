@@ -3,6 +3,7 @@
  */
 
 import KEY_CODES from '../key-codes'
+import styles from './Checkbox.css'
 import React, {Component, type Node} from 'react'
 
 const PREFIX = 'frost-checkbox'
@@ -60,22 +61,22 @@ function getClassName(
   error?: ?boolean,
   size?: ?SIZE,
 ): string {
-  const classNames = [PREFIX]
+  const classNames = [styles.root]
 
   if (checked) {
-    classNames.push(`${PREFIX}-checked`)
+    classNames.push(styles.checked)
   }
 
   if (disabled) {
-    classNames.push(`${PREFIX}-disabled`)
+    classNames.push(styles.disabled)
   }
 
   if (error) {
-    classNames.push(`${PREFIX}-error`)
+    classNames.push(styles.error)
   }
 
   if (size) {
-    classNames.push(`${PREFIX}-${size}`)
+    classNames.push(styles[size])
   }
 
   return classNames.join(' ')

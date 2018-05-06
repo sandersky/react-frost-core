@@ -13,6 +13,7 @@ const PREVIOUS_LABEL = t('Previous', 'Previous button label')
 
 /* eslint-disable flowtype/no-weak-types */
 type PROPS = {|
+  className?: ?string,
   history: any,
   location: any,
   match: any,
@@ -21,7 +22,7 @@ type PROPS = {|
 
 const ROUTE_PATHS = getRoutePaths()
 
-const Footer = ({location}: PROPS): Node => {
+const Footer = ({className, location}: PROPS): Node => {
   const {pathname} = location
   let nextRoute
   let prevRoute
@@ -37,7 +38,7 @@ const Footer = ({location}: PROPS): Node => {
   }
 
   return (
-    <div className="Footer">
+    <div className={className}>
       <Link
         disabled={!prevRoute}
         href={`/react-frost-core/#${prevRoute || ''}`}

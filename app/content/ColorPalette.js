@@ -3,6 +3,7 @@
  */
 
 import {CodeBlock} from '../../src'
+import styles from './ColorPalette.css'
 import route from '../factory'
 import React, {type Node} from 'react'
 
@@ -68,7 +69,7 @@ type SwatchProps = {|
 |}
 
 const Swatch = ({color}: SwatchProps): Node => {
-  return <span className={`ColorPaletteSwatch frost-bg-${color}`} />
+  return <span className={`${styles.colorPaletteSwatch} frost-bg-${color}`} />
 }
 
 type ColorProps = {|
@@ -98,7 +99,7 @@ type ColorTableProps = {|
 
 const ColorTable = ({colors, title}: ColorTableProps): Node => {
   return (
-    <table className="ColorPaletteTable">
+    <table className={styles.colorPalettteTable}>
       <caption>{title}</caption>
       <thead>
         <tr>
@@ -127,7 +128,7 @@ export default route('Color palette', (): Node => {
         particular color which are sometimes more useful then defining a bunch
         of extra classes that utilize the SASS variables.
       </p>
-      <div className="ColorPaletteTables">
+      <div className={styles.colorPaletteTables}>
         <ColorTable colors={WHITES} title="Whites" />
         <ColorTable colors={BLUES} title="Blues" />
         <ColorTable colors={NIGHTS} title="Nights" />

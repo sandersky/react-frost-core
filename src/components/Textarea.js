@@ -3,12 +3,11 @@
  */
 
 import ClearSVG from './ClearSVG'
+import styles from './Textarea.css'
 import React, {Component, type Node} from 'react'
 
 export const ALIGN_LEFT: 'left' = 'left'
 export const ALIGN_RIGHT: 'right' = 'right'
-
-const PREFIX = 'frost-textarea'
 
 type ALIGN = typeof ALIGN_LEFT | typeof ALIGN_RIGHT
 
@@ -45,7 +44,7 @@ function getClassName(
   minLength?: ?number,
   value?: ?string,
 ): string {
-  const classNames = [PREFIX]
+  const classNames = [styles.root]
 
   if (className) {
     classNames.push(className)
@@ -56,7 +55,7 @@ function getClassName(
     (typeof minLength === 'number' &&
       (typeof value !== 'string' || minLength > value.length))
   ) {
-    classNames.push(`${PREFIX}-error`)
+    classNames.push(styles.error)
   }
 
   return classNames.join(' ')
@@ -68,11 +67,11 @@ function getClassName(
  * @returns class name for text component's input
  */
 function getInputClassName(align?: ?ALIGN): string {
-  const classNames = [`${PREFIX}-input`]
+  const classNames = [styles.input]
 
   switch (align) {
     case ALIGN_RIGHT:
-      classNames.push(`${PREFIX}-align-right`)
+      classNames.push(styles.alignRight)
   }
 
   return classNames.join(' ')
@@ -137,7 +136,7 @@ export default class Textarea extends Component<TextareaProps, TextareaState> {
     }
 
     const classNames = [
-      `${PREFIX}-clear`,
+      styles.clear,
       animatingClearButtonOut ? 'frost-fade-out' : 'frost-fade-in',
     ]
 

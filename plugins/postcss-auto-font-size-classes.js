@@ -18,7 +18,7 @@ module.exports = postcss.plugin('auto-font-size-classes', () => {
 
       if (file === TYPOGRPAHY_CSS_FILE) {
         decl.parent.after(`
-          .${prop.replace('--', '')} {
+          :global .${prop.replace('--', '')} {
             font-size: var(${prop});
           }
         `)

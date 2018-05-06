@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link functions as expected when design is info-bar with icon 1`] = `
+exports[`Link functions as expected when design is infoBar with icon 1`] = `
 <Link
-  design="info-bar"
+  design="infoBar"
   icon="add"
 >
   <a
@@ -13,9 +13,9 @@ exports[`Link functions as expected when design is info-bar with icon 1`] = `
 </Link>
 `;
 
-exports[`Link functions as expected when design is info-bar with text 1`] = `
+exports[`Link functions as expected when design is infoBar with text 1`] = `
 <Link
-  design="info-bar"
+  design="infoBar"
   text="foobar"
 >
   <a
@@ -58,7 +58,7 @@ exports[`Link functions as expected when design is inline with text 1`] = `
 
 exports[`Link functions as expected when design is set with text 1`] = `
 <Link
-  design="info-bar"
+  design="infoBar"
   text="foobar"
 >
   <a

@@ -133,13 +133,13 @@ describe('Link', () => {
     ).toMatchSnapshot()
   })
 
-  it('functions as expected when design is info-bar with icon', () => {
+  it('functions as expected when design is infoBar with icon', () => {
     expect(
       mount(<Link design={Link.DESIGNS.INFO_BAR} icon={Icon.ICONS.ADD} />),
     ).toMatchSnapshot()
   })
 
-  it('functions as expected when design is info-bar with text', () => {
+  it('functions as expected when design is infoBar with text', () => {
     expect(
       mount(<Link design={Link.DESIGNS.INFO_BAR} text="foobar" />),
     ).toMatchSnapshot()

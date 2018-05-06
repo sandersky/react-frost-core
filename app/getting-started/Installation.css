@@ -5,20 +5,20 @@
   --external-link-hover-color: var(--frost-color-blue-2);
 }
 
-.ExternalLink {
+.external-link {
   color: var(--external-link-color);
   text-decoration: none;
 
   &:hover {
     color: var(--external-link-hover-color);
 
-    & .frost-icon {
+    & .icon {
       fill: var(--external-link-hover-color);
       stroke: var(--external-link-hover-color);
     }
   }
 
-  & .frost-icon {
+  & .icon {
     fill: var(--external-link-color);
     height: 16px;
     margin-bottom: -2px;

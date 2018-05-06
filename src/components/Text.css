@@ -15,13 +15,13 @@
   --frost-text-padding: 0 30px 0 8px;
 }
 
-.frost-text {
+.root {
   display: block;
   min-width: 175px;
   position: relative;
 
-  &.frost-text-error {
-    & .frost-text-input {
+  &.error {
+    & .input {
       border: var(--frost-text-error-border);
 
       &:hover {
@@ -36,14 +36,14 @@
     }
   }
 
-  &.frost-text-size {
-    & .frost-text-input {
+  &.size {
+    & .input {
       width: auto;
     }
   }
 }
 
-.frost-text-clear {
+.clear {
   display: inline-block;
   fill: var(--frost-color-grey-6);
   height: 23px;
@@ -57,7 +57,7 @@
   }
 }
 
-.frost-text-input {
+.input {
   border: var(--frost-text-border);
   color: var(--frost-text-color);
   display: inline-block;
@@ -100,7 +100,7 @@
     border: 1px solid var(--frost-color-input-border);
   }
 
-  &.frost-text-align-right {
+  &.align-right {
     text-align: right;
   }
 }

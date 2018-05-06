@@ -9,12 +9,6 @@ function getPlugins() {
     '@babel/plugin-proposal-object-rest-spread',
   ]
 
-  // Omit CSS modules in the test environment as Jest doesn't know how to handle
-  // them and they provide no value to Jest tests anyways.
-  if (NODE_ENV !== 'test') {
-    plugins.push('babel-plugin-auto-css-modules')
-  }
-
   plugins.push(
     './plugins/babel-plugin-auto-generate-typography',
     [

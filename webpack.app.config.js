@@ -100,6 +100,7 @@ module.exports = {
               options: {
                 importLoaders: 1,
                 minimize: IS_PRODUCTION,
+                modules: true,
                 sourceMap: true,
               },
             },

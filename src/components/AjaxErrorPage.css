@@ -8,39 +8,39 @@
   --frost-color-error-server-message: var(--frost-color-grey-6);
 }
 
-.frost-ajax-error-page {
+.root {
   display: inline-block;
   font-family: var(--frost-font-family);
 }
 
-.frost-ajax-error-page-description {
+.description {
   color: var(--frost-color-error-description);
   font-size: var(--frost-font-size-xxl);
   margin-bottom: 10px;
 }
 
-.frost-ajax-error-page-details {
+.details {
   white-space: pre-line;
 }
 
-.frost-ajax-error-page-expand {
+.expand {
   max-height: 400px;
   width: 600px;
 }
 
-.frost-ajax-error-page-http-error {
+.http-error {
   color: var(--frost-color-error-http);
   font-size: var(--frost-font-size-m);
   margin-bottom: 5px;
 }
 
-.frost-ajax-error-page-message {
+.message {
   color: var(--frost-color-error-server-message);
   font-size: var(--frost-font-size-s);
   margin-bottom: 20px;
 }
 
-.frost-ajax-error-page-suggestion {
+.suggestion {
   color: var(--frost-color-error-suggestion);
   font-size: var(--frost-font-size-l);
   margin-bottom: 15px;

@@ -4,7 +4,7 @@ html {
 }
 
 @for $i from 1 to 11 {
-  .frost-flex-$i {
+  :global .frost-flex-$i {
     flex: $i;
   }
 }

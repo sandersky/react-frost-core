@@ -12,7 +12,7 @@ module.exports = postcss.plugin('auto-bg-color-classes', () => {
 
       if (file === COLORS_CSS_FILE) {
         decl.parent.after(`
-          .frost-bg-${prop.replace('--frost-color-', '')} {
+          :global .frost-bg-${prop.replace('--frost-color-', '')} {
             background-color: var(${prop});
           }
         `)

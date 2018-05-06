@@ -4,6 +4,7 @@
 
 import {CodeBlock, Text, TEXT_ALIGN_RIGHT} from '../../src'
 import route from '../factory'
+import styles from './Text.css'
 import React, {type Element, type Node} from 'react'
 
 type DOC_TYPE = {|
@@ -89,7 +90,7 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
 
   return Object.keys(examples).map((key: string, index: number): Node => {
     return (
-      <div className="text-example" key={index}>
+      <div className={styles.example} key={index}>
         <h4>{key}</h4>
         {/* $FlowFixMe - Flow thinks examples could be null/undefined */}
         {examples[key]}
@@ -106,8 +107,8 @@ export default route('Text', (): Node => {
       </section>
       <section>
         <h3>Default</h3>
-        <div className="text-examples">
-          <div className="text-example">
+        <div className={styles.examples}>
+          <div className={styles.example}>
             <CodeBlock language="jsx" maxLineLength={30}>
               <Text />
             </CodeBlock>
@@ -118,7 +119,7 @@ export default route('Text', (): Node => {
         return (
           <section key={index}>
             <h3>{title}</h3>
-            <div className="text-examples">{renderExamples(examples)}</div>
+            <div className={styles.examples}>{renderExamples(examples)}</div>
           </section>
         )
       })}

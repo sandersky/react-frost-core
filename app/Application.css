@@ -1,17 +1,17 @@
 @import '../src/styles/frost-theme.css';
 @import '../src/styles/frost-app.css';
 
-body {
+:global body {
   display: flex;
 }
 
-caption {
+:global caption {
   font-size: var(--frost-font-size-l);
   padding-top: 10px;
   text-align: left;
 }
 
-tbody {
+:global tbody {
   & tr {
     &:nth-child(even) {
       background-color: var(--frost-color-lgrey-4);
@@ -19,23 +19,23 @@ tbody {
   }
 }
 
-td {
+:global td {
   padding: 6px;
 }
 
-th {
+:global th {
   background-color: var(--frost-color-blue-2);
   color: var(--frost-color-white);
   text-align: left;
   padding: 6px;
 }
 
-#root {
+:global #root {
   display: flex;
   flex: 1 auto;
 }
 
-.Application {
+.application {
   display: flex;
   flex: 1 auto;
   flex-direction: column;
@@ -116,11 +116,11 @@ th {
       margin-top: 0;
     }
 
-    & > div:not(.Footer) {
+    & > div:not(.footer) {
       flex-grow: 1;
     }
 
-    & .Footer {
+    & .footer {
       display: flex;
       flex-shrink: 1;
       justify-content: space-between;

@@ -2,6 +2,7 @@
  * @flow
  */
 
+import styles from './Application.css'
 import Footer from './Footer'
 import NotFound from './NotFound'
 import {getNavigation, getRoutes} from './routes'
@@ -20,7 +21,7 @@ const ROUTES = getRoutes()
 const Application = (): Node => {
   return (
     <HashRouter basename="/">
-      <div className="Application">
+      <div className={styles.application}>
         <header>
           <NavLink to="/">
             <h1>react-frost-core</h1>
@@ -37,14 +38,14 @@ const Application = (): Node => {
             />
           </a>
         </header>
-        <div className="body">
-          <div className="navigation">{NAVIGATION}</div>
-          <div className="content">
+        <div className={styles.body}>
+          <div className={styles.navigation}>{NAVIGATION}</div>
+          <div className={styles.content}>
             <Switch>
               {ROUTES}
               <Route path="*" render={(): Node => <NotFound />} />
             </Switch>
-            <Footer />
+            <Footer className={styles.footer} />
           </div>
         </div>
       </div>

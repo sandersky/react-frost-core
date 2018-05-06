@@ -239,6 +239,7 @@ export default class SelectDropdown extends Component<
         if (newFocusedIndex === 0) {
           // $FlowFixMe
           this._ul.scrollTop = 0
+          // $FlowFixMe
         } else if (newFocusedListItem.scrollIntoViewIfNeeded) {
           // $FlowFixMe
           newFocusedListItem.scrollIntoViewIfNeeded(false)

@@ -315,7 +315,7 @@ export default class Select extends Component<SelectProps, SelectState> {
   _handleKeyDown = (e: SyntheticKeyboardEvent<*>) => {
     if (
       [KEY_CODES.DOWN_ARROW, KEY_CODES.UP_ARROW].includes(e.which) &&
-      !this.state.openend
+      !this.state.opened
     ) {
       e.preventDefault() // Keep up/down arrow from scrolling page
       e.stopPropagation()

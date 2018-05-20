@@ -379,6 +379,7 @@ export default class Select extends Component<SelectProps, SelectState> {
 
     return (
       <div
+        aria-controls={`${id}-dropdown-container`}
         aria-expanded={opened}
         aria-haspopup="listbox"
         aria-label={getAriaLabel(label, opened)}

@@ -39,6 +39,8 @@ type SelectDropdownState = {|
   focusedIndex: number,
   left: number,
   maxHeight: number,
+  prevMultiselect: boolean,
+  prevWrapLabels: boolean,
   top: number | 'auto',
   width: number,
 |}
@@ -163,6 +165,30 @@ export default class SelectDropdown extends Component<
   _textInput: ?HTMLInputElement
   _ul: ?HTMLUListElement
 
+  /* eslint-disable flowtype/no-weak-types */
+  static getDerviedStateFromProps(
+    nextProps: SelectDropdownProps,
+    prevState: SelectDropdownState,
+  ): ?Object {
+    /* eslint-enable flowtype/no-weak-types */
+    const {multiselect, wrapLabels} = nextProps
+    const {prevMultiselect, prevWrapLabels} = prevState
+
+    if (prevMultiselect !== multiselect || prevWrapLabels !== wrapLabels) {
+      return {
+        dropdownClassName: getDropdownClassName(wrapLabels),
+        dropdownSecondaryLabelsTextClassName: getDropdownSecondaryLabelsTextClassName(
+          multiselect,
+        ),
+        dropdownTextClassName: getDropdownTextClassName(multiselect),
+        prevMultiselect,
+        prevWrapLabels,
+      }
+    }
+
+    return null
+  }
+
   constructor(props: SelectDropdownProps) {
     super(props)
 
@@ -179,6 +205,8 @@ export default class SelectDropdown extends Component<
       focusedIndex: 0,
       left: 0,
       maxHeight: 0,
+      prevMultiselect: multiselect,
+      prevWrapLabels: wrapLabels,
       top: 0,
       width: 0,
     }
@@ -585,23 +613,6 @@ export default class SelectDropdown extends Component<
 
   componentDidUpdate() {
     this._updateText()
-  }
-
-  componentWillReceiveProps(nextProps: SelectDropdownProps) {
-    const {multiselect, wrapLabels} = nextProps
-
-    if (
-      this.props.multiselect !== multiselect ||
-      this.props.wrapLabels !== wrapLabels
-    ) {
-      this.setState({
-        dropdownClassName: getDropdownClassName(wrapLabels),
-        dropdownSecondaryLabelsTextClassName: getDropdownSecondaryLabelsTextClassName(
-          multiselect,
-        ),
-        dropdownTextClassName: getDropdownTextClassName(multiselect),
-      })
-    }
   }
 
   componentWillUnmount() {

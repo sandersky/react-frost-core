@@ -92,6 +92,24 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
 
   static SIZES = SIZES
 
+  /* eslint-disable flowtype/no-weak-types */
+  static getDerivedStateFromProps(
+    nextProps: CheckboxProps,
+    prevState: CheckboxState,
+  ): ?Object {
+    /* eslint-enable flowtype/no-weak-types */
+    const {checked} = prevState
+
+    if (
+      typeof nextProps.checked === 'boolean' &&
+      nextProps.checked !== checked
+    ) {
+      return {checked: nextProps.checked}
+    }
+
+    return null
+  }
+
   _el: ?HTMLDivElement
 
   constructor(props: CheckboxProps) {
@@ -165,17 +183,6 @@ export default class Checkbox extends Component<CheckboxProps, CheckboxState> {
 
     if (this._el && autoFocus) {
       this._el.focus()
-    }
-  }
-
-  componentWillReceiveProps(nextProps: CheckboxProps) {
-    const {checked} = this.state
-
-    if (
-      typeof nextProps.checked === 'boolean' &&
-      nextProps.checked !== checked
-    ) {
-      this.setState({checked: nextProps.checked})
     }
   }
 

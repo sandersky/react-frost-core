@@ -30,6 +30,7 @@ export type TextProps = {
 type TextState = {|
   animatingClearButtonOut: boolean,
   focused: boolean,
+  prevValue?: ?string,
   value?: ?string,
 |}
 
@@ -87,6 +88,22 @@ function getInputClassName(align?: ?ALIGN): string {
 }
 
 export default class Text extends Component<TextProps, TextState> {
+  /* eslint-disable flowtype/no-weak-types */
+  static getDerivedStateFromProps(
+    nextProps: TextProps,
+    prevState: TextState,
+  ): ?Object {
+    /* eslint-enable flowtype/no-weak-types */
+    const {value} = nextProps
+    const {prevValue} = prevState
+
+    if (prevValue !== value) {
+      return {prevValue, value}
+    }
+
+    return null
+  }
+
   constructor(props: TextProps) {
     super(props)
 
@@ -186,14 +203,6 @@ export default class Text extends Component<TextProps, TextState> {
 
     if (onChange) {
       onChange(nextValue)
-    }
-  }
-
-  componentWillReceiveProps(nextProps: TextProps) {
-    const {value} = nextProps
-
-    if (this.props.value !== value) {
-      this.setState({value})
     }
   }
 

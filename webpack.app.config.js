@@ -23,62 +23,6 @@ function getPlugins() {
   return plugins
 }
 
-function getResolver() {
-  const resolver = {
-    alias: {},
-  }
-
-  if (process.env.INFERNO) {
-    const nodeModulesPath = path.join(__dirname, 'node_modules')
-    const infernCloneVnodePath = path.join(
-      nodeModulesPath,
-      'inferno-clone-vnode',
-      'dist',
-      'inferno-clone-vnode.min.js',
-    )
-    const infernoCompatPath = path.join(
-      nodeModulesPath,
-      'inferno-compat',
-      'dist',
-      'inferno-compat.min.js',
-    )
-    const infernoComponentPath = path.join(
-      nodeModulesPath,
-      'inferno-component',
-      'dist',
-      'inferno-component.min.js',
-    )
-    const infernoCreateClassPath = path.join(
-      nodeModulesPath,
-      'inferno-create-class',
-      'dist',
-      'inferno-create-class.min.js',
-    )
-    const infernoCreateElementPath = path.join(
-      nodeModulesPath,
-      'inferno-create-element',
-      'dist',
-      'inferno-create-element.min.js',
-    )
-
-    Object.assign(resolver.alias, {
-      'inferno-clone-vnode': infernCloneVnodePath,
-      'inferno-component': infernoComponentPath,
-      'inferno-create-class': infernoCreateClassPath,
-      'inferno-create-element': infernoCreateElementPath,
-      react: infernoCompatPath,
-      'react-dom': infernoCompatPath,
-    })
-  } else if (process.env.PREACT) {
-    Object.assign(resolver.alias, {
-      react: 'preact-compat',
-      'react-dom': 'preact-compat',
-    })
-  }
-
-  return resolver
-}
-
 module.exports = {
   devServer: {
     contentBase: PUBLIC_PATH,
@@ -127,5 +71,4 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: getPlugins(),
-  resolve: getResolver(),
 }

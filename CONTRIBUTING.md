@@ -7,9 +7,6 @@ We openly welcome contributions as open source is always better as a team effort
 *   [Development](#development)
     *   [Getting Started](#getting-started)
     *   [Running](#running)
-        *   [Running with Inferno](#running-with-inferno)
-        *   [Running with Preact](#running-with-preact)
-        *   [Running with React](#running-with-react)
     *   [Testing](#testing)
 *   [Pull Requests](#pull-requests)
 *   [License](#license)
@@ -40,57 +37,21 @@ Once you've cloned the project with one of the above you can run either `yarn in
 
 ### Running
 
-This project is designed to work with [Inferno][inferno], [Preact][preact], and [React][react]. You can run this project with each of these frameworks using the following:
-
-#### Running with Inferno
+You can run this project using the following commands:
 
 **npm**
 
 ```bash
-npm run build-app-dev-inferno # development
-npm run build-app-prod-inferno # production
+npm run build-app-dev # development
+npm run build-app-prod # production
 ```
 
 **yarn**
 
 ```bash
-yarn run build-app-dev-inferno # development
-yarn run build-app-prod-inferno # production
+yarn run build-app-dev # development
+yarn run build-app-prod # production
 ```
-
-#### Running with Preact
-
-**npm**
-
-```bash
-npm run build-app-dev-preact # development
-npm run build-app-prod-preact # production
-```
-
-**yarn**
-
-```bash
-yarn run build-app-dev-preact # development
-yarn run build-app-prod-preact # production
-```
-
-#### Running with React
-
-**npm**
-
-```bash
-npm run build-app-dev-react # development
-npm run build-app-prod-react # production
-```
-
-**yarn**
-
-```bash
-yarn run build-app-dev-react # development
-yarn run build-app-prod-react # production
-```
-
-> Note: If you plan to fix any bugs or add new features to this project it is pertinent that you verify the changes work with all of the above frameworks.
 
 ### Testing
 
@@ -138,7 +99,7 @@ Pull requests should be kept as small as possible, fixing a single bug or adding
 
 1.  If you are fixing a bug you should add tests that fail without the fix applied and pass with the fix applied.
 2.  If you are adding new functionality you should add full test coverage of the new functionality as well as update the docs as necessary.
-3.  The changes in your pull request should work for [Inferno][inferno], [Preact][preact], and [React][react] and should have been manually tested with all three.
+3.  The changes in your pull request should be manually verified as well, to ensure there are no visual regressions in any of the major web browsers (Chrome, Firefox, Safari, etc).
 4.  Before your pull request is landed all commits in your pull request should be squashed into a single commit.
 5.  If this is your first contribution to the project make sure to add yourself to the [contributors section of the package.json][package-contributors].
 
@@ -147,7 +108,4 @@ Pull requests should be kept as small as possible, fixing a single bug or adding
 By contributing to this project, you agree that your contributions will be licensed under this project's [MIT license](LICENSE.md).
 
 [fork-repo]: https://github.com/dogma-io/react-frost-core#fork-destination-box
-[inferno]: https://infernojs.org/
 [package-contributors]: https://docs.npmjs.com/files/package.json#people-fields-author-contributors
-[preact]: https://preactjs.com/
-[react]: https://reactjs.org/

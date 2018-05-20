@@ -1,6 +1,6 @@
 const {join} = require('path')
 
-const {INFERNO, NODE_ENV, PREACT} = process.env
+const {NODE_ENV} = process.env
 const TRANSLATIONS_DIRECTORY = join(__dirname, "src", "translations")
 
 function getPlugins() {
@@ -31,35 +31,12 @@ function getPlugins() {
     ],
   )
 
-  if (INFERNO) {
-    plugins.push(
-      join(__dirname, 'plugins', 'babel-plugin-react-to-inferno'),
-      'babel-plugin-inferno',
-    )
-  } else if (PREACT) {
-    plugins.push(
-      [
-        '@babel/transform-react-jsx',
-        {
-          pragma: 'h',
-        },
-      ],
-      'transform-preact-import',
-      [
-        'transform-rename-import',
-        {
-          original: '^react(-dom)?$',
-          replacement: 'preact',
-        },
-      ],
-    )
-  }
-
   return plugins
 }
 
-function getPresets() {
-  const presets = [
+module.exports = {
+  plugins: getPlugins(),
+  presets: [
     [
       '@babel/env',
       {
@@ -72,16 +49,6 @@ function getPresets() {
       },
     ],
     '@babel/flow',
-  ]
-
-  if (!INFERNO && !PREACT) {
-    presets.push('@babel/react')
-  }
-
-  return presets
-}
-
-module.exports = {
-  plugins: getPlugins(),
-  presets: getPresets(),
+    '@babel/react'
+  ],
 }

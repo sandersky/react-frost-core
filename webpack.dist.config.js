@@ -1,32 +1,18 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
-const webpack = require('webpack')
 
-const {INFERNO, NODE_ENV, PREACT} = process.env
+const {NODE_ENV} = process.env
+const DIST_PATH = path.join(__dirname, 'dist')
 const IS_PRODUCTION = NODE_ENV === 'production'
 
-let PREFIX
-let DIST_PATH
-
-if (INFERNO) {
-  DIST_PATH = path.join(__dirname, 'inferno', 'dist')
-  PREFIX = 'inferno'
-} else if (PREACT) {
-  DIST_PATH = path.join(__dirname, 'preact', 'dist')
-  PREFIX = 'preact'
-} else {
-  DIST_PATH = path.join(__dirname, 'dist')
-  PREFIX = 'react'
-}
-
 const CSS_FILE_NAME = IS_PRODUCTION
-  ? `${PREFIX}-frost-core.min.css`
-  : `${PREFIX}-frost-core.css`
+  ? `react-frost-core.min.css`
+  : `react-frost-core.css`
 
 const JS_FILE_NAME = IS_PRODUCTION
-  ? `${PREFIX}-frost-core.min.js`
-  : `${PREFIX}-frost-core.js`
+  ? `react-frost-core.min.js`
+  : `react-frost-core.js`
 
 function getPlugins() {
   const plugins = [
@@ -43,18 +29,7 @@ function getPlugins() {
 module.exports = {
   devtool: IS_PRODUCTION ? 'eval' : 'source-map',
   entry: path.resolve('src', 'index.js'),
-  externals: [
-    'grammatic',
-    'inferno',
-    'inferno-clone-vnode',
-    'inferno-compat',
-    'inferno-component',
-    'inferno-create-class',
-    'inferno-create-element',
-    'preact',
-    'react',
-    'react-dom',
-  ],
+  externals: ['grammatic', 'react', 'react-dom'],
   mode: IS_PRODUCTION ? 'production' : 'development',
   module: {
     rules: [
@@ -92,7 +67,7 @@ module.exports = {
   output: {
     path: DIST_PATH,
     filename: JS_FILE_NAME,
-    library: `${PREFIX}FrostCore`,
+    library: `reactFrostCore`,
     libraryTarget: 'umd',
   },
   plugins: getPlugins(),

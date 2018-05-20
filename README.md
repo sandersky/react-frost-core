@@ -5,46 +5,13 @@ The library of core frost components.
 ## Table of Contents
 
 *   [Installation](#installation)
-    *   [Installing for Inferno](#installing-for-inferno)
-    *   [Installing for Preact](#installing-for-preact)
-    *   [Installing for React](#installing-for-react)
 *   [Documentation](#documentation)
 *   [Contributing](#contributing)
 *   [License](#license)
 
 ## Installation
 
-This project is designed to work with [Inferno](inferno), [Preact](preact), and [React](react). You can install this project for use with any of these frameworks via the following:
-
-### Installing for Inferno
-
-**npm**
-
-```bash
-npm install inferno-frost-core
-```
-
-**yarn**
-
-```bash
-yarn add inferno-frost-core
-```
-
-### Installing for Preact
-
-**npm**
-
-```bash
-npm install preact-frost-core
-```
-
-**yarn**
-
-```bash
-yarn add preact-frost-core
-```
-
-### Installing for React
+You can install this project via the following command:
 
 **npm**
 

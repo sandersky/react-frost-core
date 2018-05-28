@@ -6,10 +6,10 @@ import KEY_CODES from '../key-codes'
 import {trimLongDataInElement} from '../utils'
 import Button from './Button'
 import Checkbox from './Checkbox'
-import DOMListener from './DOMListener'
 import Text from './Text'
 import t from 'grammatic'
 import React, {Component, type Node as ReactNode} from 'react'
+import {DOMListener} from 'react-domlistener'
 
 export type Item = {|
   className?: ?string,

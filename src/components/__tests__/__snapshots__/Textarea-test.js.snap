@@ -1476,6 +1476,12 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
           "baz",
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
 >
@@ -1526,6 +1532,16 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
           null,
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
 >
@@ -1575,6 +1591,16 @@ exports[`Textarea when onChange set when textarea is focused when value changed 
         Array [
           null,
         ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }

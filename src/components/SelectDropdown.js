@@ -9,6 +9,7 @@ import Checkbox from './Checkbox'
 import Text from './Text'
 import t from 'grammatic'
 import React, {Component, type Node as ReactNode} from 'react'
+import {DOMListener} from 'react-domlistener'
 
 export type Item = {|
   className?: ?string,
@@ -39,6 +40,8 @@ type SelectDropdownState = {|
   focusedIndex: number,
   left: number,
   maxHeight: number,
+  prevMultiselect: boolean,
+  prevWrapLabels: boolean,
   top: number | 'auto',
   width: number,
 |}
@@ -163,6 +166,30 @@ export default class SelectDropdown extends Component<
   _textInput: ?HTMLInputElement
   _ul: ?HTMLUListElement
 
+  /* eslint-disable flowtype/no-weak-types */
+  static getDerviedStateFromProps(
+    nextProps: SelectDropdownProps,
+    prevState: SelectDropdownState,
+  ): ?Object {
+    /* eslint-enable flowtype/no-weak-types */
+    const {multiselect, wrapLabels} = nextProps
+    const {prevMultiselect, prevWrapLabels} = prevState
+
+    if (prevMultiselect !== multiselect || prevWrapLabels !== wrapLabels) {
+      return {
+        dropdownClassName: getDropdownClassName(wrapLabels),
+        dropdownSecondaryLabelsTextClassName: getDropdownSecondaryLabelsTextClassName(
+          multiselect,
+        ),
+        dropdownTextClassName: getDropdownTextClassName(multiselect),
+        prevMultiselect,
+        prevWrapLabels,
+      }
+    }
+
+    return null
+  }
+
   constructor(props: SelectDropdownProps) {
     super(props)
 
@@ -179,6 +206,8 @@ export default class SelectDropdown extends Component<
       focusedIndex: 0,
       left: 0,
       maxHeight: 0,
+      prevMultiselect: multiselect,
+      prevWrapLabels: wrapLabels,
       top: 0,
       width: 0,
     }
@@ -345,13 +374,15 @@ export default class SelectDropdown extends Component<
       ARROW_HEIGHT +
       BORDER_HEIGHT
 
-    if (bottom === this.state.bottom) {
+    const maxHeight = window.innerHeight - bottom - WINDOW_SPACE
+
+    if (bottom === this.state.bottom && maxHeight === this.state.maxHeight) {
       return {}
     }
 
     return {
       bottom,
-      maxHeight: window.innerHeight - bottom - WINDOW_SPACE,
+      maxHeight,
       top: 'auto',
     }
   }
@@ -367,13 +398,15 @@ export default class SelectDropdown extends Component<
     // that connects dropdown to input
     top = top + height + ARROW_HEIGHT + BORDER_HEIGHT - window.pageYOffset
 
-    if (top === this.state.top) {
+    const maxHeight = window.innerHeight - top - WINDOW_SPACE
+
+    if (top === this.state.top && maxHeight === this.state.maxHeight) {
       return {}
     }
 
     return {
       bottom: 'auto',
-      maxHeight: window.innerHeight - top - WINDOW_SPACE,
+      maxHeight,
       top,
     }
   }
@@ -578,35 +611,10 @@ export default class SelectDropdown extends Component<
 
     this._updatePosition()
     this._updateText()
-
-    document.addEventListener('scroll', this._updatePosition)
-    window.addEventListener('resize', this._updatePosition)
   }
 
   componentDidUpdate() {
     this._updateText()
-  }
-
-  componentWillReceiveProps(nextProps: SelectDropdownProps) {
-    const {multiselect, wrapLabels} = nextProps
-
-    if (
-      this.props.multiselect !== multiselect ||
-      this.props.wrapLabels !== wrapLabels
-    ) {
-      this.setState({
-        dropdownClassName: getDropdownClassName(wrapLabels),
-        dropdownSecondaryLabelsTextClassName: getDropdownSecondaryLabelsTextClassName(
-          multiselect,
-        ),
-        dropdownTextClassName: getDropdownTextClassName(multiselect),
-      })
-    }
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this._updatePosition)
-    window.removeEventListener('resize', this._updatePosition)
   }
 
   render(): ReactNode {
@@ -639,8 +647,21 @@ export default class SelectDropdown extends Component<
     const selectedText = `${selectedItems.length} selected`
 
     return (
-      <div className={`${PREFIX}-dropdown-wrapper`}>
-        <div className={`${PREFIX}-overlay`} onClick={onClose} />
+      <div
+        className={`${PREFIX}-dropdown-wrapper`}
+        id={`${id}-dropdown-container`}
+      >
+        <DOMListener
+          listener={this._updatePosition}
+          target={document}
+          type="scroll"
+        />
+        <DOMListener
+          listener={this._updatePosition}
+          target={window}
+          type="resize"
+        />
+        <div className={`${PREFIX}-overlay`} onClick={onClose} role="none" />
         <div
           className={
             top === 'auto'
@@ -658,6 +679,7 @@ export default class SelectDropdown extends Component<
         <div
           className={dropdownClassName}
           onMouseDown={this._handleMouseDown}
+          role="none"
           style={{bottom, left, maxHeight, top, width}}
         >
           <Text

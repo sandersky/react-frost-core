@@ -68,6 +68,28 @@ function renderLabelText(
 let counter = 0
 
 export default class Expand extends Component<ExpandProps, ExpandState> {
+  /* eslint-disable flowtype/no-weak-types */
+  static getDerivedStateFromProps(
+    nextProps: ExpandProps,
+    prevState: ExpandState,
+  ): ?Object {
+    /* eslint-enable flowtype/no-weak-types */
+
+    const {expanded: expandedProp} = nextProps
+    const {expanded} = prevState
+
+    // If consumer is managing expanded state, ie prop is set, then only
+    // update state if incoming expanded state differs from current internal
+    // state.
+    if (expandedProp !== undefined && expandedProp !== expanded) {
+      return {
+        expanded: expandedProp,
+      }
+    }
+
+    return null
+  }
+
   constructor(props: ExpandProps) {
     super(props)
 
@@ -102,20 +124,6 @@ export default class Expand extends Component<ExpandProps, ExpandState> {
     // Notify consumer of changed state if they are listening for changes.
     if (onChange) {
       onChange(!expanded)
-    }
-  }
-
-  componentWillReceiveProps(nextProps: ExpandProps) {
-    const {expanded: expandedProp} = nextProps
-    const {expanded} = this.state
-
-    // If consumer is managing expanded state, ie prop is set, then only
-    // update state if incoming expanded state differs from current internal
-    // state.
-    if (expandedProp !== undefined && expandedProp !== expanded) {
-      this.setState({
-        expanded: expandedProp,
-      })
     }
   }
 

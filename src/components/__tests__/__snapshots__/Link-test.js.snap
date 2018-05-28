@@ -444,6 +444,12 @@ exports[`Link when large primary button when onClick set when className not set 
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -522,6 +528,12 @@ exports[`Link when large primary button when onClick set when className not set 
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -599,6 +611,12 @@ exports[`Link when large primary button when onClick set when className not set 
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -680,6 +698,12 @@ exports[`Link when large primary button when onClick set when className set with
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -760,6 +784,12 @@ exports[`Link when large primary button when onClick set when className set with
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -839,6 +869,12 @@ exports[`Link when large primary button when onClick set when className set with
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -2046,6 +2082,12 @@ exports[`Link when large primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -2126,6 +2168,12 @@ exports[`Link when large primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -2205,6 +2253,12 @@ exports[`Link when large primary explicitly enabled button when onClick set when
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -2288,6 +2342,12 @@ exports[`Link when large primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -2370,6 +2430,12 @@ exports[`Link when large primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -2451,6 +2517,12 @@ exports[`Link when large primary explicitly enabled button when onClick set when
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -2776,6 +2848,12 @@ exports[`Link when large secondary button when onClick set when className not se
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -2830,6 +2908,12 @@ exports[`Link when large secondary button when onClick set when className not se
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -2886,6 +2970,12 @@ exports[`Link when large secondary button when onClick set when className not se
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -2944,6 +3034,12 @@ exports[`Link when large secondary button when onClick set when className set wi
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -3000,6 +3096,12 @@ exports[`Link when large secondary button when onClick set when className set wi
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -3058,6 +3160,12 @@ exports[`Link when large secondary button when onClick set when className set wi
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -3970,6 +4078,12 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -4026,6 +4140,12 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -4084,6 +4204,12 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -4144,6 +4270,12 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -4202,6 +4334,12 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -4262,6 +4400,12 @@ exports[`Link when large secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -4656,6 +4800,12 @@ exports[`Link when medium primary button when onClick set when className not set
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -4734,6 +4884,12 @@ exports[`Link when medium primary button when onClick set when className not set
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -4811,6 +4967,12 @@ exports[`Link when medium primary button when onClick set when className not set
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -4892,6 +5054,12 @@ exports[`Link when medium primary button when onClick set when className set wit
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -4972,6 +5140,12 @@ exports[`Link when medium primary button when onClick set when className set wit
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -5051,6 +5225,12 @@ exports[`Link when medium primary button when onClick set when className set wit
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -6258,6 +6438,12 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -6338,6 +6524,12 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -6417,6 +6609,12 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -6500,6 +6698,12 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -6582,6 +6786,12 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -6663,6 +6873,12 @@ exports[`Link when medium primary explicitly enabled button when onClick set whe
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -6988,6 +7204,12 @@ exports[`Link when medium secondary button when onClick set when className not s
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -7042,6 +7264,12 @@ exports[`Link when medium secondary button when onClick set when className not s
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -7098,6 +7326,12 @@ exports[`Link when medium secondary button when onClick set when className not s
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -7156,6 +7390,12 @@ exports[`Link when medium secondary button when onClick set when className set w
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -7212,6 +7452,12 @@ exports[`Link when medium secondary button when onClick set when className set w
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -7270,6 +7516,12 @@ exports[`Link when medium secondary button when onClick set when className set w
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -8182,6 +8434,12 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -8238,6 +8496,12 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -8296,6 +8560,12 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -8356,6 +8626,12 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -8414,6 +8690,12 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -8474,6 +8756,12 @@ exports[`Link when medium secondary explicitly enabled button when onClick set w
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -8868,6 +9156,12 @@ exports[`Link when small primary button when onClick set when className not set 
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -8946,6 +9240,12 @@ exports[`Link when small primary button when onClick set when className not set 
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -9023,6 +9323,12 @@ exports[`Link when small primary button when onClick set when className not set 
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -9104,6 +9410,12 @@ exports[`Link when small primary button when onClick set when className set with
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -9184,6 +9496,12 @@ exports[`Link when small primary button when onClick set when className set with
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -9263,6 +9581,12 @@ exports[`Link when small primary button when onClick set when className set with
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -10470,6 +10794,12 @@ exports[`Link when small primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -10550,6 +10880,12 @@ exports[`Link when small primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -10629,6 +10965,12 @@ exports[`Link when small primary explicitly enabled button when onClick set when
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -10712,6 +11054,12 @@ exports[`Link when small primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -10794,6 +11142,12 @@ exports[`Link when small primary explicitly enabled button when onClick set when
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="primary"
@@ -10875,6 +11229,12 @@ exports[`Link when small primary explicitly enabled button when onClick set when
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -11200,6 +11560,12 @@ exports[`Link when small secondary button when onClick set when className not se
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -11254,6 +11620,12 @@ exports[`Link when small secondary button when onClick set when className not se
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -11310,6 +11682,12 @@ exports[`Link when small secondary button when onClick set when className not se
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -11368,6 +11746,12 @@ exports[`Link when small secondary button when onClick set when className set wi
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -11424,6 +11808,12 @@ exports[`Link when small secondary button when onClick set when className set wi
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -11482,6 +11872,12 @@ exports[`Link when small secondary button when onClick set when className set wi
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -12394,6 +12790,12 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -12450,6 +12852,12 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -12508,6 +12916,12 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -12568,6 +12982,12 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
   priority="secondary"
@@ -12626,6 +13046,12 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }
@@ -12686,6 +13112,12 @@ exports[`Link when small secondary explicitly enabled button when onClick set wh
     [MockFunction] {
       "calls": Array [
         Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }

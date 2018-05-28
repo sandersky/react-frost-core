@@ -1669,6 +1669,12 @@ exports[`Text when onChange set when input is focused when value changed functio
           "baz",
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
 >
@@ -1719,6 +1725,16 @@ exports[`Text when onChange set when input is focused when value changed when cl
           null,
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
 >
@@ -1768,6 +1784,16 @@ exports[`Text when onChange set when input is focused when value changed when cl
         Array [
           null,
         ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
       ],
     }
   }

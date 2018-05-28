@@ -29,7 +29,7 @@ function getPlugins() {
 module.exports = {
   devtool: IS_PRODUCTION ? 'eval' : 'source-map',
   entry: path.resolve('src', 'index.js'),
-  externals: ['grammatic', 'react', 'react-dom'],
+  externals: ['grammatic', 'react', 'react-dom', 'react-domlistener'],
   mode: IS_PRODUCTION ? 'production' : 'development',
   module: {
     rules: [

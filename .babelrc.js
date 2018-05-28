@@ -4,10 +4,7 @@ const {NODE_ENV} = process.env
 const TRANSLATIONS_DIRECTORY = join(__dirname, "src", "translations")
 
 function getPlugins() {
-  const plugins = [
-    '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-object-rest-spread',
-  ]
+  const plugins = []
 
   // Omit CSS modules in the test environment as Jest doesn't know how to handle
   // them and they provide no value to Jest tests anyways.
@@ -38,17 +35,10 @@ module.exports = {
   plugins: getPlugins(),
   presets: [
     [
-      '@babel/env',
+      'babel-preset-nodely',
       {
-        targets: {
-          browsers: [
-            'last 2 versions',
-            'ie 10',
-          ],
-        }
+        env: 'web',
       },
     ],
-    '@babel/flow',
-    '@babel/react'
   ],
 }

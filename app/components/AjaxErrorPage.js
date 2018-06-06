@@ -8,8 +8,9 @@ import React, {type Node} from 'react'
 
 const IMPORTS_CODE = "import {AjaxErrorPage} from 'react-frost-core'"
 
-export default route('Ajax error page', (): Node => {
-  return (
+export default route(
+  'Ajax error page',
+  (): Node => (
     <div>
       <section>
         <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
@@ -27,5 +28,5 @@ export default route('Ajax error page', (): Node => {
         </CodeBlock>
       </section>
     </div>
-  )
-})
+  ),
+)

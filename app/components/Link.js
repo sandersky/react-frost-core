@@ -8,8 +8,9 @@ import React, {type Node} from 'react'
 
 const IMPORTS_CODE = "import {Link} from 'react-frost-core'"
 
-export default route('Link', (): Node => {
-  return (
+export default route(
+  'Link',
+  (): Node => (
     <div>
       <section>
         <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
@@ -96,5 +97,5 @@ export default route('Link', (): Node => {
         </CodeBlock>
       </section>
     </div>
-  )
-})
+  ),
+)

@@ -95,19 +95,20 @@ const renderExamples = (examples: ?{[key: string]: Element<*>}): Node => {
     return null
   }
 
-  return Object.keys(examples).map((key: string, index: number): Node => {
-    return (
+  return Object.keys(examples).map(
+    (key: string, index: number): Node => (
       <div className="textarea-example" key={index}>
         <h4>{key}</h4>
         {/* $FlowFixMe - Flow thinks examples could be null/undefined */}
         {examples[key]}
       </div>
-    )
-  })
+    ),
+  )
 }
 
-export default route('Textarea', (): Node => {
-  return (
+export default route(
+  'Textarea',
+  (): Node => (
     <div>
       <section>
         <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
@@ -122,14 +123,14 @@ export default route('Textarea', (): Node => {
           </div>
         </div>
       </section>
-      {DOCS.map(({examples, title}: DOC_TYPE, index: number): Node => {
-        return (
+      {DOCS.map(
+        ({examples, title}: DOC_TYPE, index: number): Node => (
           <section key={index}>
             <h3>{title}</h3>
             <div className="textarea-examples">{renderExamples(examples)}</div>
           </section>
-        )
-      })}
+        ),
+      )}
     </div>
-  )
-})
+  ),
+)

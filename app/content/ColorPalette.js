@@ -96,28 +96,25 @@ type ColorTableProps = {|
   title: string,
 |}
 
-const ColorTable = ({colors, title}: ColorTableProps): Node => {
-  return (
-    <table className="ColorPaletteTable">
-      <caption>{title}</caption>
-      <thead>
-        <tr>
-          <th>Color</th>
-          <th>CSS Variable</th>
-          <th>Background Class</th>
-        </tr>
-      </thead>
-      <tbody>
-        {colors.map((color: string): Node => (
-          <Color color={color} key={color} />
-        ))}
-      </tbody>
-    </table>
-  )
-}
+const ColorTable = ({colors, title}: ColorTableProps): Node => (
+  <table className="ColorPaletteTable">
+    <caption>{title}</caption>
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>CSS Variable</th>
+        <th>Background Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      {colors.map((color: string): Node => <Color color={color} key={color} />)}
+    </tbody>
+  </table>
+)
 
-export default route('Color palette', (): Node => {
-  return (
+export default route(
+  'Color palette',
+  (): Node => (
     <div>
       <p>{INFO}</p>
       <CodeBlock code={IMPORTS_CODE} demo={false} language="css" />
@@ -145,5 +142,5 @@ export default route('Color palette', (): Node => {
         <ColorTable colors={ALARM_STATUSES} title="Alarm statuses" />
       </div>
     </div>
-  )
-})
+  ),
+)

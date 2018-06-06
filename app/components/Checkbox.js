@@ -8,8 +8,9 @@ import React, {type Node} from 'react'
 
 const IMPORTS_CODE = "import {Checkbox} from 'react-frost-core'"
 
-export default route('Checkbox', (): Node => {
-  return (
+export default route(
+  'Checkbox',
+  (): Node => (
     <div>
       <section>
         <CodeBlock code={IMPORTS_CODE} demo={false} language="js" />
@@ -46,5 +47,5 @@ export default route('Checkbox', (): Node => {
         </CodeBlock>
       </section>
     </div>
-  )
-})
+  ),
+)

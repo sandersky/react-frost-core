@@ -31,8 +31,9 @@ const Size = ({size}: SizeProps): Node => {
   )
 }
 
-export default route('Typography', (): Node => {
-  return (
+export default route(
+  'Typography',
+  (): Node => (
     <div>
       <p>
         For typography Frost has SASS variables for a predefined font and font
@@ -56,5 +57,5 @@ export default route('Typography', (): Node => {
         </tbody>
       </table>
     </div>
-  )
-})
+  ),
+)

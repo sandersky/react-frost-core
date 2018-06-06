@@ -115,26 +115,28 @@ function getItemsFromData(
 
   const normalizedFilter: string = filter.toLowerCase()
 
-  return data.filter((item: Item): boolean => {
-    if (!normalizedFilter) {
-      return true
-    }
+  return data.filter(
+    (item: Item): boolean => {
+      if (!normalizedFilter) {
+        return true
+      }
 
-    const label = item.label || ''
-    const secondaryLabels = item.secondaryLabels || []
+      const label = item.label || ''
+      const secondaryLabels = item.secondaryLabels || []
 
-    if (label.toLowerCase().indexOf(normalizedFilter) !== -1) {
-      return true
-    }
+      if (label.toLowerCase().indexOf(normalizedFilter) !== -1) {
+        return true
+      }
 
-    const filteredSecondaryLabels = secondaryLabels.filter(
-      (secondaryLabel: string): boolean => {
-        return secondaryLabel.toLowerCase().indexOf(normalizedFilter) !== -1
-      },
-    )
+      const filteredSecondaryLabels = secondaryLabels.filter(
+        (secondaryLabel: string): boolean => {
+          return secondaryLabel.toLowerCase().indexOf(normalizedFilter) !== -1
+        },
+      )
 
-    return filteredSecondaryLabels.length > 0
-  })
+      return filteredSecondaryLabels.length > 0
+    },
+  )
 }
 
 /**

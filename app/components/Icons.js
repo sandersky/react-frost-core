@@ -88,15 +88,15 @@ class IconDemo extends Component<{}, IconDemoState> {
           each color:
         </p>
         <div>
-          {BACKGROUND_COLORS.map((color: string): Node => {
-            return (
+          {BACKGROUND_COLORS.map(
+            (color: string): Node => (
               <IconBackgroundColorSwatch
                 color={color}
                 key={color}
                 onClick={this._changeBackground}
               />
-            )
-          })}
+            ),
+          )}
         </div>
         <p>
           Below are the icons in the frost pack, which are the default icons
@@ -108,16 +108,16 @@ class IconDemo extends Component<{}, IconDemoState> {
           JSON files.
         </p>
         <div className="IconSwatchGroup">
-          {Object.keys(Icon.ICONS).map((icon: string): Node => {
-            return (
+          {Object.keys(Icon.ICONS).map(
+            (icon: string): Node => (
               <IconSwatch
                 background={background}
                 icon={icon}
                 key={icon}
                 literal={Icon.ICONS[icon]}
               />
-            )
-          })}
+            ),
+          )}
         </div>
       </div>
     )

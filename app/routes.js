@@ -141,27 +141,29 @@ const ROUTES = [
 ]
 
 function _getNavigation(input: Array<ROUTE>, path: string): Array<Node> {
-  return input.map((routeInfo: ROUTE): Node => {
-    const {path: routePath} = routeInfo
-    const fullPath = `${path}${routePath}/`
+  return input.map(
+    (routeInfo: ROUTE): Node => {
+      const {path: routePath} = routeInfo
+      const fullPath = `${path}${routePath}/`
 
-    if (routeInfo.children) {
-      return (
-        <li key={fullPath}>
-          <NavLink to={fullPath}>{routeInfo.label}</NavLink>
-          <ul>{_getNavigation(routeInfo.children, fullPath)}</ul>
-        </li>
-      )
-    } else {
-      const {Component} = routeInfo
+      if (routeInfo.children) {
+        return (
+          <li key={fullPath}>
+            <NavLink to={fullPath}>{routeInfo.label}</NavLink>
+            <ul>{_getNavigation(routeInfo.children, fullPath)}</ul>
+          </li>
+        )
+      } else {
+        const {Component} = routeInfo
 
-      return (
-        <li key={fullPath}>
-          <NavLink to={fullPath}>{Component.title}</NavLink>
-        </li>
-      )
-    }
-  })
+        return (
+          <li key={fullPath}>
+            <NavLink to={fullPath}>{Component.title}</NavLink>
+          </li>
+        )
+      }
+    },
+  )
 }
 
 function _getRoutePaths(input: Array<ROUTE>, path: string): Array<string> {

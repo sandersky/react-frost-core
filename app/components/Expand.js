@@ -6,8 +6,9 @@ import {CodeBlock, Expand} from '../../src'
 import route from '../factory'
 import React, {type Node} from 'react'
 
-export default route('Expand', (): Node => {
-  return (
+export default route(
+  'Expand',
+  (): Node => (
     <div>
       <section>
         <h3>Basic usage</h3>
@@ -36,5 +37,5 @@ export default route('Expand', (): Node => {
         </CodeBlock>
       </section>
     </div>
-  )
-})
+  ),
+)

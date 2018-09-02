@@ -1,3 +1,7 @@
+# 0.0.28 (2018-09-02)
+
+*   Upgrade dependencies.
+
 ## 0.0.27
 
 *   Fix links in docs.

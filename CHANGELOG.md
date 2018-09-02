@@ -1,3 +1,11 @@
+# 0.1.0 (2018-09-02)
+
+*  **Changed** code to not use argument spread for passing props to parent components.
+*  **Changed** development builds to use `eval` instead of `source-map` for faster builds.
+*  **Removed** support of inferno and preact.
+*  **Upgraded** development dependencies to latest versions.
+
+
 # 0.0.28 (2018-09-02)
 
 *   Upgrade dependencies.

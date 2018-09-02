@@ -53,7 +53,11 @@ export default route(
           </tr>
         </thead>
         <tbody>
-          {SIZES.map((size: string): Node => <Size key={size} size={size} />)}
+          {SIZES.map(
+            (size: string): Node => (
+              <Size key={size} size={size} />
+            ),
+          )}
         </tbody>
       </table>
     </div>

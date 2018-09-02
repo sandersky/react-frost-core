@@ -107,7 +107,11 @@ const ColorTable = ({colors, title}: ColorTableProps): Node => (
       </tr>
     </thead>
     <tbody>
-      {colors.map((color: string): Node => <Color color={color} key={color} />)}
+      {colors.map(
+        (color: string): Node => (
+          <Color color={color} key={color} />
+        ),
+      )}
     </tbody>
   </table>
 )

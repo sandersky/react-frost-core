@@ -120,9 +120,37 @@ exports[`Button functions as expected when design is set with text 1`] = `
 </Button>
 `;
 
-exports[`Button functions as expected when priority is set alongside design 1`] = `"The \\"design\\" property takes precedence over \\"priority\\" and \\"size\\"."`;
+exports[`Button functions as expected when priority is set alongside design 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      [Error: The "design" property takes precedence over "priority" and "size".],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
 
-exports[`Button functions as expected when size is set alongside design 1`] = `"The \\"design\\" property takes precedence over \\"priority\\" and \\"size\\"."`;
+exports[`Button functions as expected when size is set alongside design 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      [Error: The "design" property takes precedence over "priority" and "size".],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
 
 exports[`Button functions as expected when vertical is set to false 1`] = `
 <Button
@@ -160,7 +188,21 @@ exports[`Button functions as expected when vertical is set to true 1`] = `
 </Button>
 `;
 
-exports[`Button when design property set throws an error if icon and text properties are missing 1`] = `"The \\"design\\" property requires the \\"icon\\" or \\"text\\" property to be set."`;
+exports[`Button when design property set throws an error if icon and text properties are missing 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      [Error: The "design" property requires the "icon" or "text" property to be set.],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
 
 exports[`Button when large cancel button when onClick not set when className not set with icon set functions as expected 1`] = `
 <Button

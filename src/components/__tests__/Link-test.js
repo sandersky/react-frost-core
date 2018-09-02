@@ -1,9 +1,19 @@
 import Link from '../Link'
 import Icon from '../Icon'
 import {mount} from 'enzyme'
-import React from 'react'
+import React, {Component} from 'react'
 
 const TESTS = []
+
+class Catcher extends Component {
+  componentDidCatch(err) {
+    this.props.onCatch(err) // eslint-disable-line
+  }
+
+  render() {
+    return this.props.children // eslint-disable-line
+  }
+}
 
 Object.keys(Link.PRIORITIES).forEach(priorityKey => {
   const priority = Link.PRIORITIES[priorityKey]
@@ -104,27 +114,35 @@ describe('Link', () => {
   })
 
   it('functions as expected when priority is set alongside design', () => {
-    expect(() => {
-      mount(
+    const onCatch = jest.fn()
+
+    mount(
+      <Catcher onCatch={onCatch}>
         <Link
           design={Link.DESIGNS.INFO_BAR}
           priority={Link.PRIORITIES.SECONDARY}
           text="foobar"
-        />,
-      )
-    }).toThrowErrorMatchingSnapshot()
+        />
+      </Catcher>,
+    )
+
+    expect(onCatch).toMatchSnapshot()
   })
 
   it('functions as expected when size is set alongside design', () => {
-    expect(() => {
-      mount(
+    const onCatch = jest.fn()
+
+    mount(
+      <Catcher onCatch={onCatch}>
         <Link
           design={Link.DESIGNS.INFO_BAR}
           size={Link.SIZES.MEDIUM}
           text="foobar"
-        />,
-      )
-    }).toThrowErrorMatchingSnapshot()
+        />
+      </Catcher>,
+    )
+
+    expect(onCatch).toMatchSnapshot()
   })
 
   it('functions as expected when design is set with text', () => {

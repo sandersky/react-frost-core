@@ -71,9 +71,37 @@ exports[`Link functions as expected when design is set with text 1`] = `
 </Link>
 `;
 
-exports[`Link functions as expected when priority is set alongside design 1`] = `"The \\"design\\" property takes precedence over \\"priority\\" and \\"size\\"."`;
+exports[`Link functions as expected when priority is set alongside design 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      [Error: The "design" property takes precedence over "priority" and "size".],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
 
-exports[`Link functions as expected when size is set alongside design 1`] = `"The \\"design\\" property takes precedence over \\"priority\\" and \\"size\\"."`;
+exports[`Link functions as expected when size is set alongside design 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      [Error: The "design" property takes precedence over "priority" and "size".],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
 
 exports[`Link when large primary button when onClick not set when className not set with icon set functions as expected 1`] = `
 <Link

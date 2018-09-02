@@ -1,9 +1,19 @@
 import Button from '../Button'
 import Icon from '../Icon'
 import {mount} from 'enzyme'
-import React from 'react'
+import React, {Component} from 'react'
 
 const TESTS = []
+
+class Catcher extends Component {
+  componentDidCatch(err) {
+    this.props.onCatch(err) // eslint-disable-line
+  }
+
+  render() {
+    return this.props.children // eslint-disable-line
+  }
+}
 
 Object.keys(Button.PRIORITIES).forEach(priorityKey => {
   const priority = Button.PRIORITIES[priorityKey]
@@ -105,34 +115,48 @@ describe('Button', () => {
 
   describe('when design property set', () => {
     it('throws an error if icon and text properties are missing', () => {
-      expect(() => {
-        mount(<Button design={Button.DESIGNS.APP_BAR} />)
-      }).toThrowErrorMatchingSnapshot()
+      const onCatch = jest.fn()
+
+      mount(
+        <Catcher onCatch={onCatch}>
+          <Button design={Button.DESIGNS.APP_BAR} />
+        </Catcher>,
+      )
+
+      expect(onCatch).toMatchSnapshot()
     })
   })
 
   it('functions as expected when priority is set alongside design', () => {
-    expect(() => {
-      mount(
+    const onCatch = jest.fn()
+
+    mount(
+      <Catcher onCatch={onCatch}>
         <Button
           design={Button.DESIGNS.APP_BAR}
           priority={Button.PRIORITIES.SECONDARY}
           text="foobar"
-        />,
-      )
-    }).toThrowErrorMatchingSnapshot()
+        />
+      </Catcher>,
+    )
+
+    expect(onCatch).toMatchSnapshot()
   })
 
   it('functions as expected when size is set alongside design', () => {
-    expect(() => {
-      mount(
+    const onCatch = jest.fn()
+
+    mount(
+      <Catcher onCatch={onCatch}>
         <Button
           design={Button.DESIGNS.APP_BAR}
           size={Button.SIZES.MEDIUM}
           text="foobar"
-        />,
-      )
-    }).toThrowErrorMatchingSnapshot()
+        />
+      </Catcher>,
+    )
+
+    expect(onCatch).toMatchSnapshot()
   })
 
   it('functions as expected when design is set with text', () => {
